@@ -1,0 +1,45 @@
+name: CI
+
+# Validate that the static site builds on every pull request (and on pushes to
+# non-main branches). The deploy workflow handles main; this just proves the
+# export compiles and type-checks before anything is merged.
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Syntax-check the news refresher
+        run: node --check scripts/fetch-news.mjs
+
+      - name: Build static export
+        env:
+          PAGES_BASE_PATH: /${{ github.event.repository.name }}
+        run: npm run build
+
+      - name: Verify export output
+        run: |
+          test -f out/index.html || { echo "missing out/index.html"; exit 1; }
+          test -f out/.nojekyll || { echo "missing out/.nojekyll"; exit 1; }
+          echo "Static export looks good."
