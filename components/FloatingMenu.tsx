@@ -46,9 +46,9 @@ export default function FloatingMenu() {
       {/* Two-row floating menu, fixed at the TOP — all sections always present */}
       <nav
         aria-label="Section navigation"
-        className="fixed inset-x-0 top-0 z-50 bg-blue-950/95 shadow-[0_6px_24px_rgba(0,0,0,0.28)] backdrop-blur"
+        className="fixed inset-x-0 top-0 z-50 bg-black/97 shadow-[0_4px_16px_rgba(0,0,0,0.4)] backdrop-blur"
       >
-        <div className="mx-auto grid max-w-5xl grid-cols-4 gap-1.5 px-2 py-2 sm:grid-cols-6 sm:gap-2 sm:px-4 sm:py-2.5">
+        <div className="mx-auto grid max-w-5xl grid-cols-4 gap-0.5 px-1.5 py-1 sm:grid-cols-6 sm:gap-1 sm:px-3 sm:py-1">
           {sections.map((s) => {
             const isActive = active === s.id;
             return (
@@ -56,18 +56,18 @@ export default function FloatingMenu() {
                 key={s.id}
                 onClick={() => go(s.id)}
                 aria-current={isActive ? 'true' : undefined}
-                className={`relative flex items-center justify-center gap-1 rounded-lg px-2 py-2 text-center transition ${
+                className={`relative flex items-center justify-center gap-0.5 rounded px-1 py-1 text-center transition ${
                   isActive
-                    ? 'bg-pitch-500 text-white shadow-sm'
-                    : 'text-blue-100/80 hover:bg-white/10 hover:text-white'
+                    ? 'bg-pitch-500 text-white'
+                    : 'text-slate-400 hover:bg-white/10 hover:text-white'
                 }`}
               >
                 {isActive && (
-                  <span className="text-sm leading-none" aria-hidden>
+                  <span className="text-[10px] leading-none" aria-hidden>
                     ⚽
                   </span>
                 )}
-                <span className="text-xs font-semibold leading-tight sm:text-sm">
+                <span className="text-[10px] font-semibold leading-tight sm:text-xs">
                   {s.short}
                 </span>
               </button>
@@ -75,11 +75,11 @@ export default function FloatingMenu() {
           })}
         </div>
         {/* Thin contrasting accent row under the bar */}
-        <div className="h-1 w-full bg-gradient-to-r from-pitch-400 via-emerald-300 to-pitch-500" />
+        <div className="h-0.5 w-full bg-gradient-to-r from-pitch-400 via-emerald-300 to-pitch-500" />
       </nav>
 
       {/* Spacer so the fixed top bar never covers page content */}
-      <div className="h-[5.25rem] sm:h-[5rem]" aria-hidden />
+      <div className="h-[3.75rem] sm:h-[3.5rem]" aria-hidden />
 
       {/* Always-floating back-to-top button (bottom-right), shown after scrolling */}
       <button
