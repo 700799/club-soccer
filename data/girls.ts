@@ -1,3 +1,5 @@
+import type { Region } from './clubs';
+
 // ---------------------------------------------------------------------------
 // The girls' NorCal pathway. The lower rungs (Rec → Select → NorCal Premier
 // Copper→Premier → NPL → ECNL RL) mirror the boys' ladder, so this section
@@ -188,4 +190,78 @@ export const girlsClubs: GirlsClub[] = [
   { name: 'Association FC', league: 'ECRL Girls' },
   { name: 'Stanislaus United', league: 'ECRL Girls' },
   { name: 'Valley Surf', league: 'ECRL Girls' },
+];
+
+// Gender-aware directory rows for the filterable club directory's GIRLS toggle.
+// `level` is the club's top GIRLS platform; `region` is by city. Regions are
+// confident from club locations; a couple of newer clubs are best-effort — as
+// always, confirm current league/region on the official links.
+export type GirlsDirLevel =
+  | 'ECNL Girls'
+  | 'Girls Academy'
+  | 'DPL'
+  | 'ECRL Girls'
+  | 'NPL'
+  | 'NorCal Premier';
+
+export interface GirlsDirClub {
+  name: string;
+  city: string;
+  region: Region;
+  level: GirlsDirLevel;
+  website?: string;
+}
+
+export const girlsDirLevelOrder: GirlsDirLevel[] = [
+  'ECNL Girls',
+  'Girls Academy',
+  'DPL',
+  'ECRL Girls',
+  'NPL',
+  'NorCal Premier',
+];
+
+export const girlsDirectoryClubs: GirlsDirClub[] = [
+  // ECNL Girls — Northern California Conference
+  { name: 'MVLA', city: 'Mountain View / Los Altos', region: 'South Bay', level: 'ECNL Girls', website: 'https://www.mvlasc.org/' },
+  { name: 'De Anza Force', city: 'Cupertino', region: 'South Bay', level: 'ECNL Girls', website: 'https://www.deanzaforce.org/' },
+  { name: 'Bay Area Surf', city: 'Santa Clara', region: 'South Bay', level: 'ECNL Girls', website: 'https://www.bayareasurf.com/' },
+  { name: 'Mustang SC', city: 'Danville', region: 'East Bay', level: 'ECNL Girls', website: 'https://www.mustangsoccer.com/' },
+  { name: 'Pleasanton RAGE', city: 'Pleasanton', region: 'East Bay', level: 'ECNL Girls', website: 'https://www.pleasantonrage.org/' },
+  { name: 'Marin FC', city: 'San Rafael / Marin', region: 'North Bay', level: 'ECNL Girls', website: 'https://marinfc.org/' },
+  { name: 'Santa Rosa United', city: 'Santa Rosa', region: 'North Bay', level: 'ECNL Girls', website: 'https://www.santarosaunited.com/' },
+  { name: 'San Juan SC', city: 'Sacramento', region: 'Sacramento & Foothills', level: 'ECNL Girls', website: 'https://www.sanjuansc.com/' },
+  { name: 'Davis Legacy', city: 'Davis', region: 'Sacramento & Foothills', level: 'ECNL Girls', website: 'https://www.davislegacysoccer.org/' },
+  { name: 'Placer United', city: 'Roseville / Placer County', region: 'Sacramento & Foothills', level: 'ECNL Girls', website: 'https://www.placerunited.com/' },
+  { name: 'California Odyssey', city: 'Fresno / Clovis', region: 'Central Valley', level: 'ECNL Girls' },
+
+  // Girls Academy (GA) / ASPIRE
+  { name: 'Sacramento United', city: 'Sacramento', region: 'Sacramento & Foothills', level: 'Girls Academy', website: 'https://www.sacunited.com/' },
+  { name: 'FC Bay Area Surf', city: 'Santa Clara / Bay Area', region: 'South Bay', level: 'Girls Academy', website: 'https://www.bayareasurf.org/' },
+
+  // DPL (Development Player League) pathway
+  { name: 'Dublin United (DUFC)', city: 'Dublin', region: 'East Bay', level: 'DPL', website: 'https://www.dublinsoccer.org/' },
+
+  // ECNL Regional League (ECRL) Girls — NorCal (2025-26 member clubs)
+  { name: 'Santa Clara Sporting', city: 'Santa Clara', region: 'South Bay', level: 'ECRL Girls', website: 'https://www.santaclarasporting.com/' },
+  { name: 'Los Gatos United', city: 'Los Gatos', region: 'South Bay', level: 'ECRL Girls', website: 'https://www.lgssc.org/' },
+  { name: 'San Ramon FC (SRFC)', city: 'San Ramon', region: 'East Bay', level: 'ECRL Girls', website: 'https://www.sanramonfc.com/' },
+  { name: 'Walnut Creek Surf SC', city: 'Walnut Creek', region: 'East Bay', level: 'ECRL Girls' },
+  { name: 'Diablo Valley FC', city: 'Concord / Walnut Creek', region: 'East Bay', level: 'ECRL Girls' },
+  { name: 'Eastshore Alliance FC', city: 'Berkeley / El Cerrito', region: 'East Bay', level: 'ECRL Girls' },
+  { name: 'Livermore Fusion FC', city: 'Livermore', region: 'East Bay', level: 'ECRL Girls' },
+  { name: 'California Magic SC', city: 'Concord', region: 'East Bay', level: 'ECRL Girls', website: 'https://www.camagicsc.com/' },
+  { name: 'San Francisco Elite Academy', city: 'San Francisco', region: 'Peninsula & SF', level: 'ECRL Girls' },
+  { name: 'SF United', city: 'San Francisco', region: 'Peninsula & SF', level: 'ECRL Girls' },
+  { name: 'Stanford Strikers FC', city: 'Palo Alto', region: 'Peninsula & SF', level: 'ECRL Girls' },
+  { name: 'Burlingame SC', city: 'Burlingame', region: 'Peninsula & SF', level: 'ECRL Girls' },
+  { name: 'Folsom Lake Surf', city: 'Folsom', region: 'Sacramento & Foothills', level: 'ECRL Girls' },
+  { name: 'Revolution FC', city: 'Sacramento area', region: 'Sacramento & Foothills', level: 'ECRL Girls', website: 'https://www.revolutionfc.org/' },
+  { name: 'Association FC', city: 'Sacramento area', region: 'Sacramento & Foothills', level: 'ECRL Girls' },
+  { name: 'Solano Surf', city: 'Solano County', region: 'North Bay', level: 'ECRL Girls' },
+  { name: 'North Coast FC', city: 'Sonoma County', region: 'North Bay', level: 'ECRL Girls', website: 'https://northcoastfc.org/' },
+  { name: 'Napa United', city: 'Napa', region: 'North Bay', level: 'ECRL Girls' },
+  { name: 'West Coast Soccer', city: 'Tracy', region: 'Central Valley', level: 'ECRL Girls' },
+  { name: 'Stanislaus United', city: 'Modesto / Turlock', region: 'Central Valley', level: 'ECRL Girls' },
+  { name: 'Valley Surf', city: 'Central Valley', region: 'Central Valley', level: 'ECRL Girls' },
 ];
