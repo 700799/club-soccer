@@ -1,17 +1,23 @@
 // ---------------------------------------------------------------------------
-// Showcase & talent-ID calendar — the big 2025-26 events where college and pro
-// scouts watch, plus NorCal talent-ID (ODP/PDP) windows.
+// FORWARD-LOOKING showcase & talent-ID calendar — the upcoming events where
+// college and pro scouts watch, plus NorCal talent-ID (ODP/PDP) windows.
+//
+// "Today" for this guide is mid-2026, so this lists what's AHEAD (the 2026-27
+// cycle and recurring annual windows), not events that have already happened.
+// Specific dates are confirmed where announced; recurring events show the
+// typical time of year until the next cycle's exact dates are published.
 //
 // Sources (verified May 2026):
-//  - MLS NEXT 2025-26 schedule (Fest, Flex, Cup, Generation adidas Cup):
-//    https://www.mlssoccer.com/mlsnext/news/2025-26-mls-next-schedule-key-dates-to-know
-//  - ECNL 2025-26 National Event schedule:
-//    https://theecnl.com/news/2025/4/17/ecnl-announces-2025-26-national-event-schedule.aspx
+//  - MLS NEXT event structure (Fest / Flex / Cup, annual cadence):
+//    https://www.mlssoccer.com/mlsnext/
+//  - ECNL National Event schedule structure:
+//    https://theecnl.com/sports/ecnl-boys/schedule/ , https://theecnl.com/sports/ecnl-girls/schedule/
 //  - Cal North ODP tryouts: https://www.calnorth.org/odp-tryouts
 //  - NorCal PDP: https://norcalpremier.com/competition/pdp/resource/program-overview/
+//  - NorCal Futsal (winter): https://norcalpremier.com/competition/futsal/news/
 //
-// Dates are confirmed where a specific date is given; "window" items are the
-// typical time of year. Always confirm exact dates on the official links.
+// To refresh: when the 2026-27 exact dates are announced, drop them into
+// `dates`, set `confirmed: true`, and (if needed) nudge `sortKey`.
 // ---------------------------------------------------------------------------
 
 export type EventKind = 'showcase' | 'talent-id' | 'futsal';
@@ -21,107 +27,123 @@ export interface CalendarEvent {
   name: string;
   kind: EventKind;
   gender: Gender;
-  dates: string;       // human-readable
-  sortKey: string;     // YYYY-MM for ordering (approx is fine)
+  dates: string;       // human-readable (forward-looking)
+  sortKey: string;     // YYYY-MM for ordering
   location: string;
   blurb: string;
   url: string;
   confirmed: boolean;  // true = specific announced dates; false = typical window
 }
 
+// Upcoming, in chronological order. Kept future-facing — refresh as the
+// 2026-27 schedules are published.
 export const calendarEvents: CalendarEvent[] = [
-  {
-    name: 'MLS NEXT Fest',
-    kind: 'showcase',
-    gender: 'boys',
-    dates: 'Dec 4–15, 2025',
-    sortKey: '2025-12',
-    location: 'Mesa, Arizona',
-    blurb:
-      'The largest talent-ID event in U.S. youth soccer — 1,000+ teams, U13–U19, with hundreds of college, pro and national-team scouts watching ~30,000 players.',
-    url: 'https://www.mlssoccer.com/mlsnext/',
-    confirmed: true,
-  },
-  {
-    name: 'NorCal Futsal State Cup',
-    kind: 'futsal',
-    gender: 'both',
-    dates: 'February 2026 (winter)',
-    sortKey: '2026-02',
-    location: 'Cal Expo, Sacramento',
-    blurb:
-      'NorCal\'s marquee winter futsal championship for U9–U14 boys & girls.',
-    url: 'https://norcalpremier.com/competition/futsal/news/',
-    confirmed: false,
-  },
-  {
-    name: 'ECNL National Events (multiple)',
-    kind: 'showcase',
-    gender: 'both',
-    dates: 'Fall 2025 – Spring 2026',
-    sortKey: '2026-01',
-    location: 'Nationwide',
-    blurb:
-      '24 regular-season ECNL National Events plus 14 ECNL Regional League events across the year — the premier college-recruiting showcases for boys & girls.',
-    url: 'https://theecnl.com/news/2025/4/17/ecnl-announces-2025-26-national-event-schedule.aspx',
-    confirmed: true,
-  },
-  {
-    name: 'Generation adidas Cup',
-    kind: 'showcase',
-    gender: 'boys',
-    dates: 'Mar 27 – Apr 4, 2026',
-    sortKey: '2026-03',
-    location: 'IMG Academy, Bradenton, FL',
-    blurb:
-      'Elite MLS NEXT / international academy competition — a top stage for the best academy boys.',
-    url: 'https://www.mlssoccer.com/mlsnext/',
-    confirmed: true,
-  },
-  {
-    name: 'MLS NEXT Flex',
-    kind: 'showcase',
-    gender: 'boys',
-    dates: 'Apr 23–28, 2026',
-    sortKey: '2026-04',
-    location: 'Frisco, Texas',
-    blurb: 'A spring MLS NEXT showcase event for additional scouting exposure.',
-    url: 'https://www.mlssoccer.com/mlsnext/',
-    confirmed: true,
-  },
   {
     name: 'Cal North ODP Tryouts',
     kind: 'talent-id',
     gender: 'both',
-    dates: 'Spring/Summer window (annual)',
-    sortKey: '2026-05',
+    dates: 'Summer 2026 (annual window)',
+    sortKey: '2026-06',
     location: 'Northern California',
     blurb:
-      'Olympic Development Program birth-year pool tryouts — the U.S. Soccer-sanctioned NorCal talent-ID pathway (State → Western Regional → National).',
+      'Olympic Development Program birth-year pool tryouts — the U.S. Soccer-sanctioned NorCal talent-ID pathway (State → Western Regional → National). Watch for the next window to open.',
     url: 'https://www.calnorth.org/odp-tryouts',
+    confirmed: false,
+  },
+  {
+    name: 'Club Tryouts / Team Formation',
+    kind: 'talent-id',
+    gender: 'both',
+    dates: 'Late spring – summer 2026',
+    sortKey: '2026-06b',
+    location: 'NorCal clubs',
+    blurb:
+      'Most NorCal clubs hold open tryouts and form 2026-27 rosters in this window — the on-ramp to every level from select up to ECNL.',
+    url: 'https://norcalpremier.com/',
+    confirmed: false,
+  },
+  {
+    name: 'MLS NEXT 2026-27 Season Kickoff',
+    kind: 'showcase',
+    gender: 'boys',
+    dates: 'Fall 2026',
+    sortKey: '2026-09',
+    location: 'Nationwide',
+    blurb:
+      'The expanded 2026-27 MLS NEXT season begins (the league moves to school-year age groups). Regular-season play is the runway to the winter/spring showcases below.',
+    url: 'https://www.mlssoccer.com/mlsnext/',
+    confirmed: false,
+  },
+  {
+    name: 'ECNL National Events (2026-27)',
+    kind: 'showcase',
+    gender: 'both',
+    dates: 'Fall 2026 – Spring 2027',
+    sortKey: '2026-10',
+    location: 'Nationwide',
+    blurb:
+      'The premier college-recruiting showcases for boys & girls — two dozen-plus National Events across the season, each drawing hundreds of college coaches. NorCal clubs travel to these.',
+    url: 'https://theecnl.com/',
+    confirmed: false,
+  },
+  {
+    name: 'NorCal Futsal & Winter League',
+    kind: 'futsal',
+    gender: 'both',
+    dates: 'Winter 2026-27 (Jan–Feb)',
+    sortKey: '2027-01',
+    location: 'Northern California',
+    blurb:
+      'NorCal Premier futsal play and the Futsal State Cup (Cal Expo, Sacramento) keep players sharp through the winter break. U9–U14 for the State Cup.',
+    url: 'https://norcalpremier.com/competition/futsal/news/',
+    confirmed: false,
+  },
+  {
+    name: 'MLS NEXT Fest 2026',
+    kind: 'showcase',
+    gender: 'boys',
+    dates: 'December 2026',
+    sortKey: '2026-12',
+    location: 'Mesa, Arizona (recent host)',
+    blurb:
+      'The largest talent-ID event in U.S. youth soccer — 1,000+ teams, U13–U19, with hundreds of college, pro and national-team scouts. The marquee winter showcase to aim for.',
+    url: 'https://www.mlssoccer.com/mlsnext/',
+    confirmed: false,
+  },
+  {
+    name: 'Generation adidas Cup 2027',
+    kind: 'showcase',
+    gender: 'boys',
+    dates: 'Spring 2027',
+    sortKey: '2027-03',
+    location: 'IMG Academy, Bradenton, FL (recent host)',
+    blurb:
+      'Elite MLS NEXT / international academy competition — a top stage for the best academy boys. Invitation via MLS NEXT performance.',
+    url: 'https://www.mlssoccer.com/mlsnext/',
+    confirmed: false,
+  },
+  {
+    name: 'MLS NEXT Cup 2027',
+    kind: 'showcase',
+    gender: 'boys',
+    dates: 'Late spring 2027',
+    sortKey: '2027-05',
+    location: 'TBA',
+    blurb:
+      'The MLS NEXT season-ending national championship (U13–U19) — the goal every academy team plays toward.',
+    url: 'https://www.mlssoccer.com/mlsnext/',
     confirmed: false,
   },
   {
     name: 'NorCal PDP Identification',
     kind: 'talent-id',
     gender: 'both',
-    dates: 'Seasonal windows (annual)',
-    sortKey: '2026-05',
+    dates: 'Ongoing seasonal windows',
+    sortKey: '2027-06',
     location: 'Northern California',
     blurb:
-      'NorCal Premier\'s Player Development Program — US Club Soccer id2/PDP identification & showcasing for top NorCal players.',
+      'NorCal Premier\'s Player Development Program — US Club Soccer id2/PDP identification & showcasing for top NorCal players. Runs in cycles through the year.',
     url: 'https://norcalpremier.com/competition/pdp/resource/program-overview/',
     confirmed: false,
-  },
-  {
-    name: 'MLS NEXT Cup',
-    kind: 'showcase',
-    gender: 'boys',
-    dates: 'May 23–31, 2026',
-    sortKey: '2026-05b',
-    location: 'Salt Lake City, Utah',
-    blurb: 'The MLS NEXT season-ending national championship (U13–U19).',
-    url: 'https://www.mlssoccer.com/mlsnext/',
-    confirmed: true,
   },
 ];

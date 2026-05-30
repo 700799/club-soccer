@@ -215,45 +215,8 @@ export default function Levels() {
         </div>
       </div>
 
-      {/* How players move up */}
-      <div className="mt-14 rounded-3xl border border-slate-200 bg-slate-900 p-6 text-white shadow-sm sm:p-8">
-        <h3 className="text-xl font-bold">How players actually move up</h3>
-        <p className="mt-1 max-w-3xl text-sm text-slate-300">
-          Climbing the pyramid isn&apos;t automatic — it runs on tryouts, results
-          and exposure. Here&apos;s how movement between levels really works.
-        </p>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            {
-              t: '1. Tryouts',
-              d: 'Clubs hold open tryouts each spring/summer. You re-earn your spot every year — and can try out at a higher-level club to move up.',
-            },
-            {
-              t: '2. Promotion / relegation',
-              d: 'NorCal Premier divisions (Copper→Premier) and NPL promote and relegate teams by record. Win consistently and your team moves up a tier.',
-            },
-            {
-              t: '3. The ECNL ladder',
-              d: 'Top NPL/ECRL NorCal clubs are considered for ECNL; the 1st-place NorCal NPL team plays the bottom ECNL club for a conference spot.',
-            },
-            {
-              t: '4. ID camps & showcases',
-              d: 'MLS NEXT/ECNL run ID camps and showcase events where academy and college scouts watch — the main route to the elite and college levels.',
-            },
-          ].map((s) => (
-            <div
-              key={s.t}
-              className="rounded-2xl border border-white/10 bg-white/5 p-4"
-            >
-              <p className="font-bold text-pitch-300">{s.t}</p>
-              <p className="mt-1 text-sm text-slate-300">{s.d}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
       {/* Beyond the club: ODP & PDP identification programs */}
-      <div className="mt-8 rounded-3xl border border-amber-200 bg-amber-50 p-6 shadow-sm sm:p-8">
+      <div className="mt-14 rounded-3xl border border-amber-200 bg-amber-50 p-6 shadow-sm sm:p-8">
         <h3 className="text-xl font-bold text-amber-900">
           Beyond the club: ODP &amp; PDP select programs
         </h3>
