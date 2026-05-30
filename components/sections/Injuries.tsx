@@ -5,6 +5,8 @@ import {
   commonInjuries,
   preventionProgram,
   preventionChecklist,
+  whyInjuriesHappen,
+  injurySources,
 } from '@/data/injuries';
 
 function AclChart() {
@@ -99,6 +101,28 @@ export default function Injuries() {
         </div>
       </div>
 
+      {/* why injuries happen */}
+      <div className="mt-10">
+        <h3 className="text-xl font-bold text-slate-900">
+          Why injuries happen
+        </h3>
+        <p className="mt-1 max-w-3xl text-sm text-slate-600">
+          Understanding the <em>mechanism</em> is the first step to preventing it.
+          Here&apos;s what the research points to.
+        </p>
+        <div className="mt-4 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+          {whyInjuriesHappen.map((c) => (
+            <div
+              key={c.title}
+              className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
+            >
+              <p className="font-bold text-red-700">{c.title}</p>
+              <p className="mt-1 text-sm text-slate-600">{c.detail}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* common injuries */}
       <div className="mt-10">
         <h3 className="text-xl font-bold text-slate-900">
@@ -110,17 +134,7 @@ export default function Injuries() {
               key={inj.name}
               className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm"
             >
-              <div className="flex items-start justify-between gap-2">
-                <h4 className="font-bold text-slate-900">{inj.name}</h4>
-                {inj.footwearLink && (
-                  <a
-                    href="#insoles"
-                    className="shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-semibold text-amber-800"
-                  >
-                    👟 insole helps
-                  </a>
-                )}
-              </div>
+              <h4 className="font-bold text-slate-900">{inj.name}</h4>
               <div className="mt-1 flex flex-wrap gap-2 text-xs text-slate-500">
                 <span className="rounded bg-slate-100 px-2 py-0.5">{inj.area}</span>
                 <span className="rounded bg-slate-100 px-2 py-0.5">
@@ -131,6 +145,31 @@ export default function Injuries() {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* sources */}
+      <div className="mt-10 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <h3 className="text-base font-bold text-slate-900">
+          Sources for these stats
+        </h3>
+        <p className="mt-1 text-sm text-slate-600">
+          The figures on this page come from peer-reviewed and clinical research:
+        </p>
+        <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+          {injurySources.map((s) => (
+            <li key={s.url}>
+              <a
+                href={s.url}
+                target="_blank"
+                rel="noreferrer"
+                className="flex gap-2 text-sm text-pitch-700 hover:underline"
+              >
+                <span aria-hidden>↗</span>
+                <span>{s.label}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
 
       <p className="mt-8 rounded-xl border border-slate-200 bg-white p-4 text-xs text-slate-500">
