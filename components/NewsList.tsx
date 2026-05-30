@@ -8,15 +8,15 @@ export interface NewsItem {
   url: string;
   source: string;
   sourceUrl?: string;
-  category: 'youth' | 'pro';
+  category: 'local' | 'national';
   date: string;
   summary: string;
 }
 
-const filters: { value: 'all' | 'youth' | 'pro'; label: string }[] = [
+const filters: { value: 'all' | 'local' | 'national'; label: string }[] = [
   { value: 'all', label: 'All' },
-  { value: 'youth', label: '🧒 Youth' },
-  { value: 'pro', label: '🏆 Pro' },
+  { value: 'local', label: '📍 NorCal' },
+  { value: 'national', label: '🌎 National' },
 ];
 
 function fmtDate(d: string) {
@@ -30,7 +30,7 @@ function fmtDate(d: string) {
 }
 
 export default function NewsList({ items }: { items: NewsItem[] }) {
-  const [filter, setFilter] = useState<'all' | 'youth' | 'pro'>('all');
+  const [filter, setFilter] = useState<'all' | 'local' | 'national'>('all');
 
   const visible = useMemo(() => {
     const sorted = [...items].sort(
@@ -75,12 +75,12 @@ export default function NewsList({ items }: { items: NewsItem[] }) {
               </span>
               <span
                 className={`rounded-full px-2 py-0.5 text-[11px] font-bold ${
-                  item.category === 'youth'
+                  item.category === 'local'
                     ? 'bg-pitch-100 text-pitch-800'
-                    : 'bg-amber-100 text-amber-800'
+                    : 'bg-blue-100 text-blue-800'
                 }`}
               >
-                {item.category === 'youth' ? 'Youth' : 'Pro'}
+                {item.category === 'local' ? 'NorCal' : 'National'}
               </span>
             </div>
             <h3 className="mt-3 font-bold leading-snug text-slate-900 group-hover:text-pitch-700">
