@@ -30,12 +30,15 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Syntax-check the news refresher
-        run: node --check scripts/fetch-news.mjs
+      - name: Test the news refresher
+        run: |
+          node --check scripts/fetch-news.mjs
+          node scripts/fetch-news.mjs --selftest
 
       - name: Build static export
         env:
           PAGES_BASE_PATH: /${{ github.event.repository.name }}
+          SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
         run: npm run build
 
       - name: Verify export output
