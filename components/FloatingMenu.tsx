@@ -59,16 +59,13 @@ export default function FloatingMenu() {
                 key={s.id}
                 onClick={() => go(s.id)}
                 aria-current={isActive ? 'true' : undefined}
-                className={`flex flex-col items-center justify-center gap-0.5 rounded-xl px-1 py-1.5 text-center transition ${
+                className={`flex items-center justify-center rounded-xl px-2 py-2 text-center transition ${
                   isActive
                     ? 'bg-pitch-500 text-white'
                     : 'text-slate-300 hover:bg-white/10 hover:text-white'
                 }`}
               >
-                <span className="text-lg leading-none" aria-hidden>
-                  {s.icon}
-                </span>
-                <span className="text-[10px] font-semibold leading-tight sm:text-[11px]">
+                <span className="text-xs font-semibold leading-tight sm:text-sm">
                   {s.short}
                 </span>
               </button>

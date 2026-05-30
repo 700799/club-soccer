@@ -1,5 +1,6 @@
 import SectionShell from '../SectionShell';
 import CommitmentsTable from '../CommitmentsTable';
+import ProPathway from './ProPathway';
 import {
   recruitingTiers,
   pipelineClubs,
@@ -116,6 +117,9 @@ export default function Recruiting() {
         Commitment data is maintained by TopDrawerSoccer and SoccerWire; always
         verify at the source.
       </p>
+
+      {/* The very top: youth→pro funnel, salaries & NIL */}
+      <ProPathway />
     </SectionShell>
   );
 }
