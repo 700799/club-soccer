@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '#girls',
     '#costs',
     '#standings',
+    '#near',
     '#injuries',
     '#insoles',
     '#news',

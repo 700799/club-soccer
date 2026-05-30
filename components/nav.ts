@@ -12,6 +12,7 @@ export const sections: NavSection[] = [
   { id: 'girls', label: 'Girls Pathway', short: 'Girls', icon: '👧' },
   { id: 'costs', label: 'Costs & Expectations', short: 'Costs', icon: '💵' },
   { id: 'standings', label: 'Standings & Records', short: 'Standings', icon: '📊' },
+  { id: 'near', label: 'Clubs Near You', short: 'Near You', icon: '📍' },
   { id: 'injuries', label: 'Injuries & Prevention', short: 'Injuries', icon: '🩹' },
   { id: 'insoles', label: 'Find Your Insole', short: 'Insoles', icon: '👟' },
   { id: 'news', label: 'Latest News', short: 'News', icon: '📰' },

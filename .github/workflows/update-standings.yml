@@ -1,0 +1,42 @@
+name: Refresh standings daily
+
+on:
+  schedule:
+    # 14:00 UTC ≈ 7:00am Pacific. Scheduled jobs run from the default branch.
+    - cron: '0 14 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: standings-refresh
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch latest ECNL/ECRL standings
+        run: node scripts/fetch-standings.mjs
+
+      - name: Commit updated standings (if changed)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/standings.json; then
+            echo "No standings changes today."
+          else
+            git add data/standings.json
+            git commit -m "chore(standings): daily refresh of ECNL/ECRL tables"
+            git push
+            echo "Pushed updated standings — Pages deploy will follow."
+          fi

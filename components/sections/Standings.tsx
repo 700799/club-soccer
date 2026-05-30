@@ -1,52 +1,33 @@
 import SectionShell from '../SectionShell';
 import ClubDirectory from '../ClubDirectory';
-import {
-  standingsSources,
-  directoryLastReviewed,
-  clubs,
-} from '@/data/clubs';
+import StandingsBoard from '../StandingsBoard';
+import { standingsSources, directoryLastReviewed, clubs } from '@/data/clubs';
+import { girlsStandingsSources } from '@/data/girls';
 
 export default function Standings() {
   return (
     <SectionShell
       id="standings"
       eyebrow="Records & Tables"
-      title="Standings & records for every NorCal club"
+      title="Standings & records — boys & girls"
       intro={
         <>
           Youth tables change every weekend and league rosters re-shuffle every
-          year. To keep this <strong>accurate</strong>, we link straight to each
-          league&apos;s <strong>official live standings</strong> — the single
-          source of truth for win/loss records — and keep a verified, filterable
-          directory of {clubs.length}+ NorCal clubs and the tiers they compete in.
+          year. Toggle between <strong>boys</strong> and <strong>girls</strong>{' '}
+          below — each links straight to the league&apos;s{' '}
+          <strong>official live standings</strong> (the source of truth for
+          win/loss) and shows live tables. Plus a verified, filterable directory of{' '}
+          {clubs.length}+ NorCal clubs.
         </>
       }
     >
-      {/* Live standings sources */}
-      <div className="grid gap-4 md:grid-cols-2">
-        {standingsSources.map((s) => (
-          <a
-            key={s.league}
-            href={s.url}
-            target="_blank"
-            rel="noreferrer"
-            className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-pitch-300 hover:shadow-md"
-          >
-            <div className="flex items-center justify-between">
-              <h3 className="text-base font-bold text-slate-900">{s.league}</h3>
-              <span className="text-pitch-600 transition group-hover:translate-x-0.5">
-                ↗
-              </span>
-            </div>
-            <p className="mt-2 text-sm text-slate-600">{s.description}</p>
-            <p className="mt-3 text-xs font-medium uppercase tracking-wide text-slate-400">
-              Live data · {s.provider}
-            </p>
-          </a>
-        ))}
-      </div>
+      {/* Boys/Girls toggle → official sources + live tables */}
+      <StandingsBoard
+        boysSources={standingsSources}
+        girlsSources={girlsStandingsSources}
+      />
 
-      <div className="mt-4 rounded-xl border border-sky-200 bg-sky-50 p-4 text-sm text-sky-900">
+      <div className="mt-6 rounded-xl border border-sky-200 bg-sky-50 p-4 text-sm text-sky-900">
         <strong className="font-semibold">How to read a youth table:</strong>{' '}
         most NorCal leagues run on GotSport and rank teams by points (3 for a win,
         1 for a draw), then goal difference. Open a league above, choose your age
@@ -66,7 +47,8 @@ export default function Standings() {
         </div>
         <p className="mt-1 text-sm text-slate-600">
           Filter by region and level, or search by name. Tap a club to open its
-          site and current standings.
+          site and current standings. (Most clubs field girls teams too — see the
+          Girls Pathway section.)
         </p>
 
         <div className="mt-5">

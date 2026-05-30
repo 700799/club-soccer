@@ -4,6 +4,7 @@ import Levels from '@/components/sections/Levels';
 import Girls from '@/components/sections/Girls';
 import Costs from '@/components/sections/Costs';
 import Standings from '@/components/sections/Standings';
+import Nearby from '@/components/sections/Nearby';
 import Injuries from '@/components/sections/Injuries';
 import Insoles from '@/components/sections/Insoles';
 import News from '@/components/sections/News';
@@ -18,6 +19,7 @@ export default function Home() {
       <Girls />
       <Costs />
       <Standings />
+      <Nearby />
       <Injuries />
       <Insoles />
       <News />
