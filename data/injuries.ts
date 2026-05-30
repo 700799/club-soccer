@@ -119,6 +119,67 @@ export const injurySources: InjurySource[] = [
     label: 'Maturation & knee biomechanics in young female players (PMC)',
     url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7250454/',
   },
+  {
+    label:
+      'Sokolove, M. — "Warrior Girls: Protecting Our Daughters Against the Injury Epidemic in Women\'s Sports" (Simon & Schuster, 2008)',
+    url: 'https://www.goodreads.com/book/show/3327089-warrior-girls',
+  },
+];
+
+// A deeper, book-informed treatment of WHY girls in particular get hurt, drawing
+// on Michael Sokolove's "Warrior Girls." All wording below is our own paraphrase
+// /summary of the book's reporting and arguments (not quotations) — see the
+// citation block in the UI. These are the book's central, widely-cited themes.
+export interface WarriorGirlsTheme {
+  title: string;
+  detail: string;
+}
+
+export const warriorGirlsIntro =
+  'Journalist Michael Sokolove\'s 2008 book "Warrior Girls: Protecting Our Daughters Against the Injury Epidemic in Women\'s Sports" reported on a wave of serious injuries — especially ACL tears — among girls and young women in the Title IX era. Soccer sits at the center of his reporting. His core argument: this is not a reason to hold girls back, but a reason to train smarter, diversify, and demand prevention. The themes below are our summary of his reporting; the stats are corroborated by the peer-reviewed sources listed above.';
+
+export const warriorGirlsThemes: WarriorGirlsTheme[] = [
+  {
+    title: 'A real injury epidemic — not a knock on female athletes',
+    detail:
+      'Sokolove documents that as girls\' participation exploded after Title IX, so did a wave of injuries. His point is the opposite of "girls are fragile": the gains are wonderful and worth protecting — which is exactly why the injury problem deserves honest attention instead of being swept aside out of fear it will be used against women\'s sports.',
+  },
+  {
+    title: 'The ACL gap is stark',
+    detail:
+      'The book popularized how dramatically female athletes tear ACLs more often than males in the same sports — by some measures several times the rate. Soccer and basketball, with their cutting and landing, are the highest-risk sports. This is the single most cited takeaway of the book.',
+  },
+  {
+    title: 'Why girls\' knees are different',
+    detail:
+      'Sokolove walks through the biomechanical and hormonal factors researchers point to: wider hips changing knee angles, a tendency to land more upright and "knock-kneed," quadriceps-dominant landing that leaves the hamstrings underused, greater ligament laxity, and the effects of the menstrual cycle. None of these doom a player — but together they raise risk if movement isn\'t trained.',
+  },
+  {
+    title: 'Year-round, single-sport specialization is the accelerant',
+    detail:
+      'A central villain in the book is the modern youth-sports culture that pushes kids — often by age 10 — to pick one sport and play it all year, on multiple teams, with no off-season. Sokolove ties this overuse and lack of recovery directly to the injury epidemic. Multi-sport athletes and real rest are protective.',
+  },
+  {
+    title: 'Concussions are part of the story too',
+    detail:
+      'The book highlights research that female soccer players sustain concussions at rates rivaling other collision sports — a then-underappreciated risk that has since driven heading limits for young players and better concussion protocols.',
+  },
+  {
+    title: 'The fix exists — and parents must demand it',
+    detail:
+      'Sokolove is ultimately hopeful: structured neuromuscular training (the lineage that became programs like FIFA 11+/PEP) measurably cuts ACL injuries. He argues parents and clubs should insist on prevention warm-ups, sane schedules, multi-sport play and rest — changing a culture that, as he puts it, "manufactures" injuries.',
+  },
+];
+
+// Concrete, parent-facing actions distilled from the book + sports-medicine
+// consensus. Pairs with the FIFA 11+ checklist already on the page.
+export const warriorGirlsTakeaways: string[] = [
+  'Do a proven prevention warm-up (FIFA 11+ / PEP) every session — it specifically retrains the landing and cutting mechanics behind most ACL tears.',
+  'Play more than one sport, especially before the mid-teens — varied movement builds resilience and avoids repetitive overload.',
+  'Insist on a real off-season and rest days; fatigue and year-round load are when injuries cluster.',
+  'Build hamstring and hip strength to balance quad-dominant landing.',
+  'Take concussions seriously: respect heading guidelines for young players and never "play through" a head knock.',
+  'Don\'t accept "she\'s just injury-prone." Ask your club what prevention program they run — and push for one if they don\'t.',
 ];
 
 export interface KeyStat {

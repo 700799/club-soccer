@@ -37,7 +37,7 @@ export default function CookieConsent() {
       role="dialog"
       aria-label="Cookie notice"
       aria-live="polite"
-      className="fixed inset-x-0 bottom-0 z-[70] animate-fade-up px-3 pb-3 sm:px-4 sm:pb-4"
+      className="fixed inset-x-0 bottom-[6rem] z-[70] animate-fade-up px-3 sm:bottom-28 sm:px-4"
     >
       <div className="mx-auto flex max-w-3xl flex-col gap-3 rounded-2xl border border-white/10 bg-slate-900/95 p-4 text-slate-200 shadow-2xl backdrop-blur sm:flex-row sm:items-center sm:gap-4 sm:p-5">
         <div className="flex items-start gap-3">

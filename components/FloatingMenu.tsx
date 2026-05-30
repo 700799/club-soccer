@@ -4,18 +4,14 @@ import { useEffect, useState } from 'react';
 import { sections } from './nav';
 
 /**
- * A vertical FLOATING menu — pinned to the right edge, floating over the content
- * (it does not consume a column or shift the page). Always visible, one click to
- * jump, scroll-spy highlights the current section, labels expand on hover.
+ * A two-row floating menu with EVERY section always visible — no hover, no
+ * open/close. A fixed bar at the bottom of the screen holds all sections in a
+ * two-row grid; the active section is highlighted (scroll-spy). One tap to jump.
  *
- *  - Desktop (md+): vertical icon dock on the right; hovering a row (or the dock)
- *    reveals the section label.
- *  - Mobile (<md): a floating round launcher bottom-right that opens a compact
- *    floating panel with the full list.
+ * A small always-floating back-to-top button sits just above the bar.
  */
 export default function FloatingMenu() {
   const [active, setActive] = useState('top');
-  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -36,107 +32,53 @@ export default function FloatingMenu() {
 
   const go = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    setOpen(false);
   };
 
   return (
     <>
-      {/* Desktop: vertical floating dock on the right edge */}
-      <nav
-        aria-label="Section navigation"
-        className="group fixed right-3 top-1/2 z-50 hidden max-h-[88vh] -translate-y-1/2 flex-col gap-1 overflow-y-auto rounded-2xl border border-white/10 bg-slate-900/90 p-2 shadow-2xl shadow-black/30 backdrop-blur md:flex"
-      >
-        {sections.map((s) => {
-          const isActive = active === s.id;
-          return (
-            <button
-              key={s.id}
-              onClick={() => go(s.id)}
-              aria-current={isActive ? 'true' : undefined}
-              title={s.label}
-              className={`flex items-center gap-2.5 rounded-xl px-2.5 py-2 text-left transition-all ${
-                isActive
-                  ? 'bg-pitch-500 text-white'
-                  : 'text-slate-300 hover:bg-white/10 hover:text-white'
-              }`}
-            >
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center text-lg leading-none" aria-hidden>
-                {s.icon}
-              </span>
-              {/* label reveals when hovering anywhere on the dock */}
-              <span className="hidden max-w-0 overflow-hidden whitespace-nowrap text-sm font-semibold opacity-0 transition-all duration-200 group-hover:max-w-[12rem] group-hover:opacity-100 md:inline">
-                {s.label}
-              </span>
-            </button>
-          );
-        })}
-      </nav>
-
-      {/* Mobile: floating launcher + compact panel */}
-      <div className="md:hidden">
-        {open && (
-          <button
-            aria-label="Close menu"
-            onClick={() => setOpen(false)}
-            className="fixed inset-0 z-40 bg-black/40"
-          />
-        )}
-
-        <button
-          onClick={() => setOpen((v) => !v)}
-          aria-label={open ? 'Close menu' : 'Open menu'}
-          aria-expanded={open}
-          className="fixed bottom-5 left-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-pitch-500 text-white shadow-2xl shadow-pitch-500/40 transition active:scale-95"
-        >
-          {open ? (
-            <span className="text-2xl leading-none">✕</span>
-          ) : (
-            <span className="flex flex-col gap-[3.5px]" aria-hidden>
-              <span className="block h-0.5 w-6 rounded bg-white" />
-              <span className="block h-0.5 w-6 rounded bg-white" />
-              <span className="block h-0.5 w-6 rounded bg-white" />
-            </span>
-          )}
-        </button>
-
-        {open && (
-          <nav
-            aria-label="Section navigation"
-            className="fixed bottom-24 left-5 z-50 max-h-[70vh] w-60 overflow-y-auto rounded-2xl border border-white/10 bg-slate-900/95 p-2 shadow-2xl backdrop-blur animate-fade-up"
-          >
-            {sections.map((s) => {
-              const isActive = active === s.id;
-              return (
-                <button
-                  key={s.id}
-                  onClick={() => go(s.id)}
-                  aria-current={isActive ? 'true' : undefined}
-                  className={`flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left transition ${
-                    isActive
-                      ? 'bg-pitch-500 text-white'
-                      : 'text-slate-300 hover:bg-white/10 hover:text-white'
-                  }`}
-                >
-                  <span className="text-lg leading-none" aria-hidden>
-                    {s.icon}
-                  </span>
-                  <span className="text-sm font-semibold">{s.label}</span>
-                </button>
-              );
-            })}
-          </nav>
-        )}
-      </div>
-
-      {/* Always-floating back-to-top button (bottom-right, all screen sizes) */}
+      {/* Always-floating back-to-top, just above the menu bar */}
       <button
         onClick={() => go('top')}
         aria-label="Back to top"
         title="Back to top"
-        className="fixed bottom-5 right-5 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-pitch-600 text-xl text-white shadow-2xl shadow-black/30 transition hover:scale-110 hover:bg-pitch-500 active:scale-95"
+        className="fixed bottom-[6.5rem] right-4 z-50 flex h-11 w-11 items-center justify-center rounded-full bg-pitch-600 text-xl text-white shadow-2xl shadow-black/30 transition hover:scale-110 hover:bg-pitch-500 active:scale-95 sm:bottom-28"
       >
         <span aria-hidden>↑</span>
       </button>
+
+      {/* Two-row floating menu — all sections always present */}
+      <nav
+        aria-label="Section navigation"
+        className="fixed inset-x-0 bottom-0 z-50 border-t border-white/10 bg-slate-950/95 shadow-[0_-8px_30px_rgba(0,0,0,0.25)] backdrop-blur"
+      >
+        <div className="mx-auto grid max-w-5xl grid-cols-4 gap-1.5 px-2 py-2 sm:grid-cols-6 sm:gap-2 sm:px-4 sm:py-3">
+          {sections.map((s) => {
+            const isActive = active === s.id;
+            return (
+              <button
+                key={s.id}
+                onClick={() => go(s.id)}
+                aria-current={isActive ? 'true' : undefined}
+                className={`flex flex-col items-center justify-center gap-0.5 rounded-xl px-1 py-1.5 text-center transition ${
+                  isActive
+                    ? 'bg-pitch-500 text-white'
+                    : 'text-slate-300 hover:bg-white/10 hover:text-white'
+                }`}
+              >
+                <span className="text-lg leading-none" aria-hidden>
+                  {s.icon}
+                </span>
+                <span className="text-[10px] font-semibold leading-tight sm:text-[11px]">
+                  {s.short}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+      </nav>
+
+      {/* Spacer so the fixed bottom bar never covers page content / footer */}
+      <div className="h-[5.5rem] sm:h-[6rem]" aria-hidden />
     </>
   );
 }
