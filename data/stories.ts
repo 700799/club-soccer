@@ -26,9 +26,9 @@ export const playerStories: PlayerStory[] = [
   },
   {
     levelId: 'select',
-    headline: 'Most pros started in select — not a national academy',
+    headline: 'Great for multi-sport athletes — look for a 2-day-a-week team',
     body:
-      'The overwhelming majority of college and pro players spent their early years in ordinary local club soccer, learning the game in a normal team environment. Select is where you build the foundation: consistent training, real games, and a love of competing. Late bloomers are the rule, not the exception.',
+      'Select is the sweet spot for kids who play more than one sport. The overwhelming majority of college and pro players started in ordinary local club soccer, and plenty were two- or three-sport athletes well into their teens. The practical catch: training frequency. A team that practices 3 days a week is tough to combine with a second sport — missing sessions hurts you and the team, and you don\'t want to be the player who\'s always absent. A 2-day-a-week select team is far more manageable for a two-sport athlete and still builds a strong foundation. Ask clubs about practice frequency before you commit, and find the team that fits your schedule.',
   },
   {
     levelId: 'norcal-premier',

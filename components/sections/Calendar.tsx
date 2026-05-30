@@ -21,14 +21,15 @@ export default function Calendar() {
   return (
     <SectionShell
       id="calendar"
-      eyebrow="Mark Your Calendar"
-      title="Showcase & talent-ID calendar (2025-26)"
+      eyebrow="What's Ahead"
+      title="Upcoming showcases & talent-ID"
       intro={
         <>
-          The big events where college and pro scouts watch — plus NorCal&apos;s
-          talent-ID windows. <strong>Showcases</strong> are where you get seen;{' '}
-          <strong>talent-ID</strong> (ODP/PDP) is where you get identified. Always
-          confirm exact dates on the official links.
+          What to aim for next — the upcoming events where college and pro scouts
+          watch, plus NorCal&apos;s talent-ID windows. <strong>Showcases</strong>{' '}
+          are where you get seen; <strong>talent-ID</strong> (ODP/PDP) is where you
+          get identified. Dates firm up as each cycle is announced — always confirm
+          on the official links.
         </>
       }
     >
@@ -52,7 +53,7 @@ export default function Calendar() {
                 </span>
                 {!e.confirmed && (
                   <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-500">
-                    typical window
+                    dates TBA
                   </span>
                 )}
                 <span className="ml-auto text-pitch-600 transition group-hover:translate-x-0.5">
