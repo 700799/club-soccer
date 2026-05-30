@@ -4,20 +4,24 @@
 // ECNL / ECRL standings on theECNL.com are served by TGS's PUBLIC JSON API:
 //   https://public.totalglobalsports.com/public/event/{eventId}/conference-standings/{conferenceId}
 //
-// For 2025-26 each league is ONE event and the conferenceId selects the region.
-// Verified across three seasons (URLs indexed publicly):
-//   ECNL Boys   2025-26 → event 3905, NorCal = conf 12  (Northwest = 8)
-//   ECNL Girls  2025-26 → event 3933, NorCal = conf 12  (Northwest = 8)
-//   ECNL RL Boys  2025-26 → event 3906, NorCal = conf 13 (Northwest = 9)
-//   ECNL RL Girls 2025-26 → event 3907, NorCal = conf 13 (Northwest = 9)
-// (2024-25 were 3324/3323/.../3325; 2023-24 were 2863/2862 — same conf ids.)
+// The eventId encodes league + REGION + season; the second URL number is a
+// fixed per-league "standings view" id (NOT the region):
+//   ECNL Boys      → /conference-standings/12   (confirmed: NorCal 23-24 = 2863)
+//   ECNL Girls     → /conference-standings/9    (confirmed across seasons)
+//   ECNL RL (both) → /conference-standings/13   (confirmed: RL Girls NorCal = 2328)
+// So the REGION comes entirely from the eventId.
 //
-// These are LEAGUE-WIDE events, so the conferenceId must be exact (conf 8 would
-// return Northwest, not NorCal). The endpoint returns every age group for the
-// region; fetch-standings.mjs groups the rows by age division.
+// CONFIRMED 2025-26 event:
+//   ECNL RL Boys NorCal 2025-26 = event 3906
+// BEST-GUESS 2025-26 events (NOT yet confirmed — see accuracy gate below):
+//   ECNL Boys NorCal ≈ 3905, ECNL Girls NorCal ≈ 3933, ECRL Girls NorCal ≈ 3907
 //
-// To roll the season forward, find next season's event IDs the same way:
-// search the indexed TGS URLs, or read them off theecnl.com standings pages.
+// ACCURACY GATE: because three eventIds are unconfirmed, fetch-standings.mjs
+// validates that the returned teams actually match known NorCal clubs. If a
+// guessed eventId points at the wrong region/season, the names won't match and
+// the table is REJECTED (logged) rather than shown — so the site never displays
+// wrong-region data. Confirm IDs on theecnl.com, then they'll populate. To roll
+// the season forward, find next season's eventIds the same way.
 // ---------------------------------------------------------------------------
 
 /**
@@ -45,7 +49,7 @@ export const conferenceTargets = [
     league: 'ECNL Girls',
     name: 'ECNL Girls — Northern California',
     eventId: 3933,
-    conferenceId: 12,
+    conferenceId: 9,
     enabled: true,
   },
   {

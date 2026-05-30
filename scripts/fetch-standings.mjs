@@ -32,6 +32,30 @@ const TGS_HEADERS = {
   Referer: 'https://www.theecnl.com/',
 };
 
+// ACCURACY GATE — known NorCal ECNL/ECRL club name fragments. Because some
+// eventIds are best-guesses, we only accept a fetched table if enough of its
+// teams match these NorCal names; otherwise the eventId is pointing at the
+// wrong region/season and we reject it (so the site never shows wrong data).
+const NORCAL_CLUB_HINTS = [
+  'de anza', 'mvla', 'mustang', 'san juan', 'davis legacy', 'marin',
+  'santa rosa', 'placer', 'santa clara sporting', 'los gatos', 'bay area surf',
+  'sf glens', 'sacramento', 'folsom', 'solano', 'walnut creek', 'san ramon',
+  'stanford strikers', 'livermore', 'eastshore', 'revolution', 'sf united',
+  'sf elite', 'san francisco elite', 'west coast', 'diablo', 'east bay united',
+  'clovis', 'union sacramento', 'south valley', 'stanislaus', 'valley surf',
+  'burlingame', 'california magic', 'association fc', 'sheriffs', 'napa',
+  'north coast', 'ballistic', 'juventus', 'lamorinda',
+];
+
+const MIN_NORCAL_MATCH = 0.34; // ≥34% of teams must be recognizable NorCal clubs
+
+function norcalMatchRatio(groups) {
+  const teams = groups.flatMap((g) => g.rows.map((r) => r.team.toLowerCase()));
+  if (teams.length === 0) return 0;
+  const hits = teams.filter((t) => NORCAL_CLUB_HINTS.some((h) => t.includes(h)));
+  return hits.length / teams.length;
+}
+
 const PATTERNS = {
   team: [/team_?name/i, /^team$/i, /^name$/i, /club_?name/i, /^club$/i],
   rank: [/^rank$/i, /position/i, /^place$/i],
@@ -180,7 +204,21 @@ async function fetchConference(target, tgsUrl) {
       );
       return null;
     }
-    console.log(`  ✓ ${target.name}: ${teamCount} teams across ${groups.length} age group(s)`);
+    // Accuracy gate: reject tables that don't look like NorCal (wrong eventId).
+    const ratio = norcalMatchRatio(groups);
+    if (ratio < MIN_NORCAL_MATCH) {
+      const names = groups[0]?.rows.slice(0, 4).map((r) => r.team).join(', ');
+      console.warn(
+        `  ⛔ ${target.name}: rejected — only ${(ratio * 100).toFixed(0)}% NorCal-recognized ` +
+          `(event ${target.eventId} likely wrong region/season). e.g. ${names}`,
+      );
+      return null;
+    }
+
+    console.log(
+      `  ✓ ${target.name}: ${teamCount} teams across ${groups.length} age group(s) ` +
+        `(${(ratio * 100).toFixed(0)}% NorCal-matched)`,
+    );
     return { id: target.id, league: target.league, name: target.name, source: url, groups };
   } catch (err) {
     console.warn(`  ✗ ${target.name}: ${err.message}`);
@@ -236,6 +274,27 @@ function selftest() {
   const groups = parseConferenceGroups(nested);
   const u15 = groups.find((g) => g.group === 'U15');
   const u17 = groups.find((g) => g.group === 'U17');
+
+  // Accuracy gate: a NorCal-looking table passes; a wrong-region table is rejected.
+  const norcalGroups = parseConferenceGroups({
+    standings: [
+      { divisionName: 'U15', rows: [
+        { teamName: 'De Anza Force', wins: 5, losses: 1, ties: 0 },
+        { teamName: 'MVLA', wins: 4, losses: 2, ties: 0 },
+        { teamName: 'Mustang SC', wins: 3, losses: 3, ties: 0 },
+      ] },
+    ],
+  });
+  const wrongRegionGroups = parseConferenceGroups({
+    standings: [
+      { divisionName: 'U15', rows: [
+        { teamName: 'Crossfire Premier', wins: 5, losses: 1, ties: 0 },
+        { teamName: 'Eastside FC', wins: 4, losses: 2, ties: 0 },
+        { teamName: 'Washington Premier', wins: 3, losses: 3, ties: 0 },
+      ] },
+    ],
+  });
+
   const checks = [
     [groups.length === 2, `group count: ${groups.length}`],
     [groups[0].group === 'U15', `age order first: ${groups[0]?.group}`],
@@ -244,6 +303,8 @@ function selftest() {
     [u15 && u15.rows[0].gd === 22, `gd computed: ${u15?.rows[0]?.gd}`],
     [u17 && u17.rows[0].team === 'Gamma United' && u17.rows[0].pts === 22, `snake_case map + pts: ${JSON.stringify(u17?.rows[0])}`],
     [u17 && u17.rows[0].gp === 10, `gp computed (7+2+1): ${u17?.rows[0]?.gp}`],
+    [norcalMatchRatio(norcalGroups) >= MIN_NORCAL_MATCH, `accuracy gate ACCEPTS NorCal: ${(norcalMatchRatio(norcalGroups) * 100).toFixed(0)}%`],
+    [norcalMatchRatio(wrongRegionGroups) < MIN_NORCAL_MATCH, `accuracy gate REJECTS wrong region: ${(norcalMatchRatio(wrongRegionGroups) * 100).toFixed(0)}%`],
   ];
   let ok = true;
   for (const [pass, msg] of checks) {
