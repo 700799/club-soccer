@@ -20,12 +20,12 @@ export default function News() {
       id="news"
       tinted
       eyebrow="Updated Daily"
-      title="Latest soccer news"
+      title="NorCal soccer news"
       intro={
         <>
-          A daily-refreshed feed of youth soccer news (about <strong>90%</strong>),
-          with a little pro coverage mixed in. Every card links straight to the
-          original article.
+          Local NorCal news by default — championships, high school results, club updates.
+          Tap <strong>National</strong> for tournament brackets and college commitments.
+          Refreshed every morning.
         </>
       }
     >
@@ -35,8 +35,7 @@ export default function News() {
           Feed last updated: {fmtUpdated(newsData.lastUpdated)}
         </span>
         <span className="text-slate-500">
-          Auto-refreshed every morning by a scheduled job from youth-soccer sources
-          (SoccerWire, TopDrawerSoccer, NorCal Premier, ECNL & more).
+          Auto-refreshed daily from NorCal Premier, Cal North, Bay Area prep, and national tournament sources.
         </span>
       </div>
 
