@@ -1,5 +1,4 @@
 import SectionShell from '../SectionShell';
-import CommitmentsTable from '../CommitmentsTable';
 import ProPathway from './ProPathway';
 import {
   recruitingTiers,
@@ -49,13 +48,15 @@ export default function Recruiting() {
       {/* Top NorCal pipeline clubs */}
       <div className="mt-10">
         <h3 className="text-xl font-bold text-slate-900">
-          NorCal&apos;s top college/pro pipeline clubs
+          See where each NorCal club sends players
         </h3>
         <p className="mt-1 max-w-3xl text-sm text-slate-600">
-          The NorCal clubs competing at MLS NEXT / ECNL place the most players into
-          college and pro programs. Commitment lists change constantly, so tap a
-          club to look up its <strong>actual, current</strong> commits on
-          TopDrawerSoccer rather than trusting a static list.
+          These NorCal clubs at MLS NEXT / ECNL place the most players into college
+          programs. Commitment counts change every week, so rather than print
+          numbers that go stale, each club links straight to its{' '}
+          <strong>live commitment board on TopDrawerSoccer</strong> — names,
+          colleges and the full <strong>D1 / D2 / D3</strong> breakdown, always
+          current.
         </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {pipelineClubs.map((c) => (
@@ -78,11 +79,6 @@ export default function Recruiting() {
             </a>
           ))}
         </div>
-      </div>
-
-      {/* Commitments-by-division table */}
-      <div className="mt-10">
-        <CommitmentsTable />
       </div>
 
       {/* Resources */}
