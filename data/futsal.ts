@@ -5,8 +5,8 @@
 // Sources (verified May 2026):
 //  - NorCal Premier Winter League & Futsal: https://norcalpremier.com/winter-league-and-futsal-registration-now-open/
 //  - NorCal Futsal State Cup (CalExpo, Sacramento): https://norcalpremier.com/23-teams-take-home-futsal-state-cup-titles/
-//  - LIGA NorCal Futsal League: https://norcalpremier.com/liga-norcal-futsal-league/
 //  - US Youth Futsal / Northern California Premier Futsal: http://www.usyouthfutsal.com/page/show/3635247-northern-california-premier-futsal
+//  - (LIGA NorCal is an ADULT futsal league — intentionally not listed here.)
 //  - COPA Walnut Creek indoor facility: https://copastc.com/blog/norcalpremier/
 //  - Ballistic United "Bulldogs" Futsal (2015 USFF national champs): https://bulldogsfutsal.com/about/
 // ---------------------------------------------------------------------------
@@ -35,13 +35,6 @@ export const futsalPrograms: FutsalProgram[] = [
       'The marquee event — held at Cal Expo in Sacramento — where dozens of teams compete for futsal state titles each winter.',
     who: 'U9 (2015) – U14 (2010), boys & girls',
     url: 'https://norcalpremier.com/23-teams-take-home-futsal-state-cup-titles/',
-  },
-  {
-    name: 'LIGA NorCal Futsal League',
-    what:
-      'A dedicated NorCal futsal league offering structured futsal-specific competition.',
-    who: 'Youth age groups',
-    url: 'https://norcalpremier.com/liga-norcal-futsal-league/',
   },
   {
     name: 'US Youth Futsal — Northern California Premier Futsal',

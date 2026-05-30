@@ -1,4 +1,5 @@
 import SectionShell from '../SectionShell';
+import CommitmentsTable from '../CommitmentsTable';
 import {
   recruitingTiers,
   pipelineClubs,
@@ -76,6 +77,11 @@ export default function Recruiting() {
             </a>
           ))}
         </div>
+      </div>
+
+      {/* Commitments-by-division table */}
+      <div className="mt-10">
+        <CommitmentsTable />
       </div>
 
       {/* Resources */}

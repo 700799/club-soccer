@@ -7,6 +7,9 @@ import {
   preventionChecklist,
   whyInjuriesHappen,
   injurySources,
+  warriorGirlsIntro,
+  warriorGirlsThemes,
+  warriorGirlsTakeaways,
 } from '@/data/injuries';
 
 function AclChart() {
@@ -121,6 +124,98 @@ export default function Injuries() {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Longevity framing */}
+      <div className="mt-10 rounded-3xl border border-pitch-200 bg-gradient-to-br from-pitch-50 to-white p-6 shadow-sm sm:p-8">
+        <p className="text-sm font-bold uppercase tracking-wider text-pitch-700">
+          Play for life
+        </p>
+        <h3 className="mt-2 text-2xl font-extrabold text-slate-900">
+          The goal isn&apos;t this season — it&apos;s a long, healthy career
+        </h3>
+        <p className="mt-3 max-w-3xl text-slate-700">
+          The single most important idea in this whole section: optimize for{' '}
+          <strong>longevity</strong>, not the next tournament. A player who stays
+          healthy, rests, and keeps loving the game at 13 is the one still playing —
+          and improving — at 18 and into college. Most careers don&apos;t end
+          because a player wasn&apos;t good enough; they end from{' '}
+          <strong>burnout and avoidable, repetitive injury</strong>. Durability is
+          a skill, and it compounds: the kid who misses fewer weeks trains more
+          weeks, and out-develops the &ldquo;phenom&rdquo; who is always hurt.
+          Win the decade, not the weekend.
+        </p>
+        <div className="mt-4 grid gap-3 sm:grid-cols-3">
+          {[
+            {
+              t: 'Availability is the best ability',
+              d: 'Consistent, healthy training months beat a few brilliant — then injured — ones. The most-developed players are usually the most available ones.',
+            },
+            {
+              t: 'Rest and variety are training',
+              d: 'Off-seasons, sleep and a second sport aren\'t lost time — they\'re what let a body absorb load and keep developing for years.',
+            },
+            {
+              t: 'Protect the love of the game',
+              d: 'Longevity is mental too. Avoiding burnout keeps players choosing to play — which is what actually produces long careers.',
+            },
+          ].map((c) => (
+            <div key={c.t} className="rounded-2xl border border-pitch-200 bg-white p-4">
+              <p className="font-bold text-pitch-800">{c.t}</p>
+              <p className="mt-1 text-sm text-slate-600">{c.d}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Warrior Girls deep-dive */}
+      <div className="mt-10">
+        <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+          <h3 className="text-xl font-bold text-slate-900">
+            Deeper dive: the female injury epidemic
+          </h3>
+          <span className="text-sm font-medium text-slate-500">
+            informed by <em>Warrior Girls</em> (Michael Sokolove)
+          </span>
+        </div>
+        <p className="mt-2 max-w-3xl text-sm text-slate-600">{warriorGirlsIntro}</p>
+
+        <div className="mt-5 grid gap-3 md:grid-cols-2">
+          {warriorGirlsThemes.map((t) => (
+            <div
+              key={t.title}
+              className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
+            >
+              <p className="font-bold text-red-700">{t.title}</p>
+              <p className="mt-1 text-sm text-slate-600">{t.detail}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* takeaways, framed around longevity */}
+        <div className="mt-5 rounded-2xl border border-pitch-200 bg-pitch-50 p-5">
+          <p className="font-bold text-pitch-900">
+            What it means for a long career
+          </p>
+          <ul className="mt-3 space-y-2">
+            {warriorGirlsTakeaways.map((t) => (
+              <li key={t} className="flex gap-2.5 text-sm text-slate-700">
+                <span className="mt-0.5 shrink-0 text-pitch-600" aria-hidden>
+                  ✓
+                </span>
+                <span>{t}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <p className="mt-3 text-xs text-slate-500">
+          Themes above are our paraphrased summary of the reporting and arguments
+          in Michael Sokolove&apos;s <em>Warrior Girls: Protecting Our Daughters
+          Against the Injury Epidemic in Women&apos;s Sports</em> (Simon &amp;
+          Schuster, 2008), corroborated by the peer-reviewed sources below — not
+          direct quotations.
+        </p>
       </div>
 
       {/* common injuries */}
