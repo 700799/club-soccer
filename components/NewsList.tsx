@@ -16,7 +16,7 @@ export interface NewsItem {
 const filters: { value: 'all' | 'local' | 'national'; label: string }[] = [
   { value: 'all', label: 'All' },
   { value: 'local', label: '📍 NorCal' },
-  { value: 'national', label: '🌎 National' },
+  { value: 'national', label: '🌎 Nationwide' },
 ];
 
 function fmtDate(d: string) {
@@ -27,6 +27,24 @@ function fmtDate(d: string) {
     day: 'numeric',
     year: 'numeric',
   });
+}
+
+/**
+ * Defensive last line: strip any HTML tags (and entity-encoded tags) that may
+ * have slipped into a title or summary, so raw <a href="..."> markup never
+ * renders as text — no matter what the feed/data contains.
+ */
+function stripHtml(s = '') {
+  return s
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
+    .replace(/<[^>]*>/g, ' ')
+    .replace(/&amp;/gi, '&')
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&quot;/gi, '"')
+    .replace(/&#0?39;|&apos;|&#x27;/gi, "'")
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 export default function NewsList({ items }: { items: NewsItem[] }) {
@@ -80,13 +98,13 @@ export default function NewsList({ items }: { items: NewsItem[] }) {
                     : 'bg-blue-100 text-blue-800'
                 }`}
               >
-                {item.category === 'local' ? 'NorCal' : 'National'}
+                {item.category === 'local' ? 'NorCal' : 'Nationwide'}
               </span>
             </div>
             <h3 className="mt-3 font-bold leading-snug text-slate-900 group-hover:text-pitch-700">
-              {item.title}
+              {stripHtml(item.title)}
             </h3>
-            <p className="mt-2 flex-1 text-sm text-slate-600">{item.summary}</p>
+            <p className="mt-2 flex-1 text-sm text-slate-600">{stripHtml(item.summary)}</p>
             <div className="mt-3 flex items-center justify-between text-xs text-slate-400">
               <span>{fmtDate(item.date)}</span>
               <span className="font-semibold text-pitch-600 group-hover:translate-x-0.5">
