@@ -29,15 +29,18 @@ jobs:
       - name: Fetch latest youth soccer news
         run: node scripts/fetch-news.mjs
 
+      - name: Fetch latest NorCal futsal news
+        run: node scripts/fetch-futsal-news.mjs
+
       - name: Commit updated news (if changed)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- data/news.json; then
+          if git diff --quiet -- data/news.json data/futsal-news.json; then
             echo "No news changes today."
           else
-            git add data/news.json
-            git commit -m "chore(news): daily refresh of latest soccer news"
+            git add data/news.json data/futsal-news.json
+            git commit -m "chore(news): daily refresh of soccer & futsal news"
             git push
             echo "Pushed updated news — Pages deploy will follow."
           fi

@@ -30,12 +30,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Test the news + standings refreshers
+      - name: Test the news, standings & futsal refreshers
         run: |
           node --check scripts/fetch-news.mjs
           node scripts/fetch-news.mjs --selftest
           node --check scripts/fetch-standings.mjs
           node scripts/fetch-standings.mjs --selftest
+          node --check scripts/fetch-futsal-news.mjs
+          node scripts/fetch-futsal-news.mjs --selftest
 
       - name: Build static export
         env:
