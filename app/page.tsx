@@ -1,5 +1,5 @@
 import Hero from '@/components/Hero';
-import Sidebar from '@/components/Sidebar';
+import FloatingMenu from '@/components/FloatingMenu';
 import Levels from '@/components/sections/Levels';
 import Girls from '@/components/sections/Girls';
 import Costs from '@/components/sections/Costs';
@@ -15,8 +15,8 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <main className="min-h-screen lg:pl-64">
-      <Sidebar />
+    <main className="min-h-screen">
+      <FloatingMenu />
       <Hero />
       <Levels />
       <Girls />

@@ -23,7 +23,7 @@ export default function SectionShell({
       id={id}
       className={`scroll-mt-20 ${tinted ? 'bg-slate-50' : 'bg-white'}`}
     >
-      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 md:pr-16">
         <p className="text-sm font-semibold uppercase tracking-wider text-pitch-600">
           {eyebrow}
         </p>

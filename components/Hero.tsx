@@ -26,7 +26,7 @@ export default function Hero() {
         aria-hidden
         className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-pitch-500/30 blur-3xl"
       />
-      <div className="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
+      <div className="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28 md:pr-16">
         <span className="inline-flex items-center gap-2 rounded-full border border-pitch-400/40 bg-pitch-500/10 px-3 py-1 text-sm font-medium text-pitch-200">
           ⚽ Northern California Youth Soccer · Boys &amp; Girls
         </span>
