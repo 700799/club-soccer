@@ -2,9 +2,11 @@
 /**
  * Daily youth-soccer news refresher.
  *
- * Runs in GitHub Actions (Node 20+, global fetch). Pulls a handful of RSS feeds,
- * keeps the mix ~90% youth / ~10% pro, merges with the existing seed items,
- * de-dupes, and writes data/news.json. Dependency-free on purpose.
+ * Runs in GitHub Actions (Node 20+, global fetch). Pulls news primarily from
+ * Google News RSS *search* feeds (which are built for programmatic access and
+ * don't block bots the way some club/site feeds do), keeps the mix ~90% youth /
+ * ~10% pro, merges with the existing seed items, de-dupes, and writes
+ * data/news.json. Dependency-free on purpose.
  *
  * It is defensive: any feed that fails is skipped, and if NOTHING can be
  * fetched the existing news.json is left untouched (the site never goes blank).
@@ -20,17 +22,31 @@ const NEWS_PATH = join(__dirname, '..', 'data', 'news.json');
 const MAX_ITEMS = 24;
 const MAX_PRO = 3; // keep pro coverage to ~10%
 
-/** feeds: category is the default; youth keywords can still promote pro→youth */
+const BROWSER_UA =
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
+
+// Build a Google News RSS search URL for a query.
+const gnews = (q) =>
+  `https://news.google.com/rss/search?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en`;
+
+// ~90% youth: lots of youth queries, a couple of pro ones (capped by MAX_PRO).
 const FEEDS = [
+  { url: gnews('ECNL youth soccer'), source: 'Google News', category: 'youth' },
+  { url: gnews('MLS NEXT youth soccer'), source: 'Google News', category: 'youth' },
+  { url: gnews('Girls Academy youth soccer league'), source: 'Google News', category: 'youth' },
+  { url: gnews('NorCal Premier youth soccer'), source: 'Google News', category: 'youth' },
+  { url: gnews('youth soccer college commitment'), source: 'Google News', category: 'youth' },
+  { url: gnews('"ECNL Girls" OR "ECNL Boys"'), source: 'Google News', category: 'youth' },
+  { url: gnews('US youth soccer development academy'), source: 'Google News', category: 'youth' },
+  // A little pro coverage:
+  { url: gnews('NWSL'), source: 'Google News', category: 'pro' },
+  { url: gnews('MLS homegrown academy'), source: 'Google News', category: 'pro' },
+  // Direct site feeds as a bonus (skipped automatically if they block bots):
   { url: 'https://www.soccerwire.com/feed/', source: 'SoccerWire', category: 'youth' },
-  { url: 'https://www.soccerwire.com/league/mls-youth-academy/feed/', source: 'SoccerWire · MLS NEXT', category: 'youth' },
-  { url: 'https://www.soccerwire.com/recruiting/feed/', source: 'SoccerWire · Recruiting', category: 'youth' },
-  { url: 'https://norcalpremier.com/feed/', source: 'NorCal Premier', category: 'youth' },
-  { url: 'https://www.espn.com/espn/rss/soccer/news', source: 'ESPN Soccer', category: 'pro' },
 ];
 
 const YOUTH_HINTS =
-  /\b(youth|academy|ecnl|ecrl|mls next|npl|u1[3-9]|u-1[3-9]|college|commit|recruit|high school|girls academy|ga\b|usl academy|homegrown)\b/i;
+  /\b(youth|academy|ecnl|ecrl|mls next|npl|u1[3-9]|u-1[3-9]|college|commit|recruit|high school|girls academy|ga aspire|usl academy|homegrown|club soccer)\b/i;
 
 function clean(s = '') {
   return s
@@ -64,57 +80,81 @@ function parseFeed(xml, feed) {
   const blocks = xml.match(/<(item|entry)[\s\S]*?<\/\1>/gi) || [];
   const out = [];
   for (const b of blocks) {
-    const title = field(b, 'title');
+    let title = field(b, 'title');
     const url = linkOf(b);
     if (!title || !url) continue;
+
+    // Google News items carry the publisher in <source> and append it to title.
+    const itemSource = field(b, 'source');
+    if (itemSource && title.endsWith(`- ${itemSource}`)) {
+      title = title.slice(0, -(itemSource.length + 2)).trim();
+    }
+
     const rawDate =
       field(b, 'pubDate') || field(b, 'published') || field(b, 'updated') || '';
-    const date = rawDate && !Number.isNaN(Date.parse(rawDate))
-      ? new Date(rawDate).toISOString().slice(0, 10)
-      : new Date().toISOString().slice(0, 10);
-    const summary =
+    const date =
+      rawDate && !Number.isNaN(Date.parse(rawDate))
+        ? new Date(rawDate).toISOString().slice(0, 10)
+        : new Date().toISOString().slice(0, 10);
+    const summaryRaw =
       field(b, 'description') || field(b, 'summary') || field(b, 'content') || '';
     const category =
-      feed.category === 'pro' && YOUTH_HINTS.test(`${title} ${summary}`)
+      feed.category === 'pro' && YOUTH_HINTS.test(`${title} ${summaryRaw}`)
         ? 'youth'
         : feed.category;
+
     out.push({
-      id: `feed-${Buffer.from(url).toString('base64url').slice(0, 24)}`,
+      id: `feed-${Buffer.from(title).toString('base64url').slice(0, 28)}`,
       title,
       url,
-      source: feed.source,
-      sourceUrl: new URL(url).origin,
+      source: itemSource || feed.source,
+      sourceUrl: safeOrigin(url),
       category,
       date,
-      summary: summary.slice(0, 240),
+      summary:
+        summaryRaw && !/^\s*$/.test(summaryRaw)
+          ? summaryRaw.slice(0, 220)
+          : `${title}.`,
     });
   }
   return out;
 }
 
+function safeOrigin(url) {
+  try {
+    return new URL(url).origin;
+  } catch {
+    return '';
+  }
+}
+
 async function fetchFeed(feed) {
   try {
     const res = await fetch(feed.url, {
-      headers: { 'User-Agent': 'NorCalSoccerGuide/1.0 (+news refresher)' },
+      headers: { 'User-Agent': BROWSER_UA, Accept: 'application/rss+xml, application/xml, text/xml, */*' },
       signal: AbortSignal.timeout(15000),
     });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const xml = await res.text();
     const items = parseFeed(xml, feed);
-    console.log(`  ✓ ${feed.source}: ${items.length} items`);
+    console.log(`  ✓ ${feed.source} (${feed.category}): ${items.length} items`);
     return items;
   } catch (err) {
-    console.warn(`  ✗ ${feed.source}: ${err.message}`);
+    console.warn(`  ✗ ${feed.url}: ${err.message}`);
     return [];
   }
+}
+
+function normTitle(t) {
+  return t.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 }
 
 function dedupe(items) {
   const seen = new Set();
   const out = [];
   for (const it of items) {
-    const key = (it.url || it.title).toLowerCase().replace(/\/+$/, '');
-    if (seen.has(key)) continue;
+    const key = normTitle(it.title) || (it.url || '').toLowerCase();
+    if (!key || seen.has(key)) continue;
     seen.add(key);
     out.push(it);
   }
@@ -134,7 +174,7 @@ async function main() {
     return;
   }
 
-  // Combine fresh + seed, de-dupe, sort newest first.
+  // Fresh items first, then seed as backfill; de-dupe, sort newest first.
   const all = dedupe([...fetched, ...seed]).sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
   );
@@ -161,7 +201,61 @@ async function main() {
   );
 }
 
-main().catch((err) => {
-  console.error('news refresh failed:', err);
-  process.exit(0); // never fail the pipeline over news
-});
+/**
+ * Deterministic parser self-test (no network). Run: `node fetch-news.mjs --selftest`.
+ * Validates Google News RSS parsing (title de-suffixing, source, link, category)
+ * and standard RSS parsing, so CI can verify the feed logic offline.
+ */
+function selftest() {
+  const gnewsSample = `<rss><channel>
+    <item>
+      <title>Local club earns ECNL promotion - SoccerWire</title>
+      <link>https://news.google.com/rss/articles/ABC123</link>
+      <pubDate>Fri, 29 May 2026 12:00:00 GMT</pubDate>
+      <description>&lt;a href="https://x"&gt;Local club earns ECNL promotion&lt;/a&gt;&nbsp;SoccerWire</description>
+      <source url="https://www.soccerwire.com">SoccerWire</source>
+    </item>
+  </channel></rss>`;
+  const proSample = `<rss><channel>
+    <item>
+      <title>NWSL expansion news - ESPN</title>
+      <link>https://news.google.com/rss/articles/XYZ789</link>
+      <pubDate>Thu, 28 May 2026 09:00:00 GMT</pubDate>
+      <description>Pro league roundup</description>
+      <source url="https://espn.com">ESPN</source>
+    </item>
+  </channel></rss>`;
+
+  const a = parseFeed(gnewsSample, { source: 'Google News', category: 'youth' })[0];
+  const b = parseFeed(proSample, { source: 'Google News', category: 'pro' })[0];
+
+  const checks = [
+    [a.title === 'Local club earns ECNL promotion', `title de-suffix: "${a?.title}"`],
+    [a.source === 'SoccerWire', `source from <source>: "${a?.source}"`],
+    [a.url === 'https://news.google.com/rss/articles/ABC123', `link: "${a?.url}"`],
+    [a.date === '2026-05-29', `date: "${a?.date}"`],
+    [a.category === 'youth', `category youth: "${a?.category}"`],
+    [b.title === 'NWSL expansion news', `pro title: "${b?.title}"`],
+    [b.category === 'pro', `category pro: "${b?.category}"`],
+  ];
+
+  let ok = true;
+  for (const [pass, msg] of checks) {
+    console.log(`  ${pass ? '✓' : '✗ FAIL'} ${msg}`);
+    if (!pass) ok = false;
+  }
+  if (!ok) {
+    console.error('selftest FAILED');
+    process.exit(1);
+  }
+  console.log('selftest passed ✓');
+}
+
+if (process.argv.includes('--selftest')) {
+  selftest();
+} else {
+  main().catch((err) => {
+    console.error('news refresh failed:', err);
+    process.exit(0); // never fail the pipeline over news
+  });
+}
