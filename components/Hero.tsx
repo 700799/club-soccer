@@ -2,7 +2,7 @@ import { sections } from './nav';
 
 const quickStats = [
   { value: '3,000+', label: 'NorCal Premier teams' },
-  { value: '7', label: 'levels from Rec to Pro' },
+  { value: '7', label: 'levels, Rec to MLS NEXT' },
   { value: '$0–$15k', label: 'annual cost range' },
   { value: '53%', label: 'fewer ACL tears with prevention' },
 ];

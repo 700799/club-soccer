@@ -260,35 +260,6 @@ export const leagues: LeagueLevel[] = [
     standingsUrl: 'https://www.mlssoccer.com/mlsnext/schedule/',
     standingsLabel: 'MLS NEXT — Schedule & Standings',
   },
-  {
-    id: 'beyond',
-    rung: 8,
-    name: 'Pro Pathway — MLS NEXT Pro & Beyond',
-    shortName: 'Pro',
-    tagline: 'Where the very best graduate: academy → pro.',
-    governingBody: 'MLS / MLS NEXT Pro / USL',
-    ageRange: 'U17+',
-    travel: 'Professional environment.',
-    selectivity: 'A tiny fraction of players. Homegrown & pro contracts.',
-    description:
-      'Above MLS NEXT sits the professional pathway: MLS NEXT Pro (the league\'s pro/reserve tier), homegrown signings to MLS first teams, USL clubs, and moves abroad. Only a very small fraction of youth players reach this level, but it is the apex the entire pyramid points toward. Each spring, MLS and MLS NEXT Pro signings clarify which top prospects turn pro versus going the college route.',
-    expectations: [
-      'A professional training and competition environment.',
-      'Contracts, homegrown rights and, for some, international moves.',
-      'Reached by a tiny percentage of youth players.',
-    ],
-    whoItsFor:
-      'Elite graduates of academy soccer pursuing the professional game.',
-    cost: {
-      duesLow: 0,
-      duesHigh: 0,
-      allInLow: 0,
-      allInHigh: 0,
-      note: 'Players are paid, not charged. This is professional soccer.',
-    },
-    color: '#b91c1c',
-    officialUrl: 'https://www.mlssoccer.com/mlsnextpro/',
-  },
 ];
 
 // The five NorCal Premier divisions, entry-competitive (Copper) to top (Premier).

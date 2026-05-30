@@ -137,8 +137,8 @@ export default function Levels() {
         <>
           U.S. youth soccer has no single, tidy pyramid — it&apos;s a stack of
           overlapping leagues. Here&apos;s how it actually lines up for{' '}
-          <strong>boys in NorCal</strong>, from the first rec game to the
-          professional pathway. Playing girls? The{' '}
+          <strong>boys in NorCal</strong>, from the first rec game up to MLS
+          NEXT. Playing girls? The{' '}
           <strong>Girls Pathway</strong> section just below covers what&apos;s
           different.
         </>
