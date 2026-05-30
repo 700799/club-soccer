@@ -15,23 +15,24 @@ export interface StandingRow {
   gd: number;
 }
 
+export interface AgeGroup {
+  group: string;
+  rows: StandingRow[];
+}
+
 export interface Conference {
   id: string;
   league: string;
   name: string;
   source: string;
-  rows: StandingRow[];
+  groups: AgeGroup[];
 }
 
 function fmtUpdated(iso: string | null) {
   if (!iso) return null;
   const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return null;
-  return d.toLocaleDateString('en-US', {
-    month: 'short',
-    day: 'numeric',
-    year: 'numeric',
-  });
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 }
 
 export default function StandingsTables({
@@ -41,38 +42,46 @@ export default function StandingsTables({
   conferences: Conference[];
   lastUpdated: string | null;
 }) {
-  const [active, setActive] = useState(0);
+  const withRows = (conferences ?? []).filter((c) =>
+    c.groups?.some((g) => g.rows?.length),
+  );
 
-  if (!conferences || conferences.length === 0) {
+  const [confIdx, setConfIdx] = useState(0);
+  const [grpIdx, setGrpIdx] = useState(0);
+
+  if (withRows.length === 0) {
     return (
       <div className="rounded-2xl border border-dashed border-slate-300 bg-white p-6 text-sm text-slate-600">
-        <p className="font-semibold text-slate-800">
-          ⏳ Live tables sync daily — populating soon.
-        </p>
+        <p className="font-semibold text-slate-800">⏳ Live tables sync daily — populating soon.</p>
         <p className="mt-1">
           The standings job pulls ECNL/ECRL tables from the official
-          TotalGlobalSports feed each morning and they&apos;ll render right here.
-          In the meantime, the <strong>official source links above</strong> always
+          TotalGlobalSports feed each morning and they&apos;ll render right here. In
+          the meantime, the <strong>official source links above</strong> always
           have the current win/loss records.
         </p>
       </div>
     );
   }
 
-  const conf = conferences[active] ?? conferences[0];
+  const conf = withRows[Math.min(confIdx, withRows.length - 1)];
+  const groups = conf.groups.filter((g) => g.rows?.length);
+  const group = groups[Math.min(grpIdx, groups.length - 1)];
   const updated = fmtUpdated(lastUpdated);
 
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6">
       {/* Conference tabs */}
-      {conferences.length > 1 && (
-        <div className="mb-4 flex flex-wrap gap-2">
-          {conferences.map((c, i) => (
+      {withRows.length > 1 && (
+        <div className="mb-3 flex flex-wrap gap-2">
+          {withRows.map((c, i) => (
             <button
               key={c.id}
-              onClick={() => setActive(i)}
+              onClick={() => {
+                setConfIdx(i);
+                setGrpIdx(0);
+              }}
               className={`rounded-full px-3 py-1.5 text-xs font-semibold transition ${
-                i === active
+                i === Math.min(confIdx, withRows.length - 1)
                   ? 'bg-pitch-600 text-white'
                   : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
               }`}
@@ -85,10 +94,27 @@ export default function StandingsTables({
 
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h4 className="text-base font-bold text-slate-900">{conf.name}</h4>
-        {updated && (
-          <span className="text-xs text-slate-400">Updated {updated}</span>
-        )}
+        {updated && <span className="text-xs text-slate-400">Updated {updated}</span>}
       </div>
+
+      {/* Age-group tabs */}
+      {groups.length > 1 && (
+        <div className="mt-3 flex flex-wrap gap-1.5">
+          {groups.map((g, i) => (
+            <button
+              key={g.group || i}
+              onClick={() => setGrpIdx(i)}
+              className={`rounded-md px-2.5 py-1 text-xs font-semibold transition ${
+                i === Math.min(grpIdx, groups.length - 1)
+                  ? 'bg-slate-900 text-white'
+                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+              }`}
+            >
+              {g.group || `Group ${i + 1}`}
+            </button>
+          ))}
+        </div>
+      )}
 
       <div className="mt-3 overflow-x-auto">
         <table className="w-full min-w-[520px] text-left text-sm">
@@ -107,7 +133,7 @@ export default function StandingsTables({
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-50">
-            {conf.rows.map((r) => (
+            {group.rows.map((r) => (
               <tr key={`${r.rank}-${r.team}`} className="hover:bg-slate-50">
                 <td className="py-2 pr-2 text-slate-400">{r.rank}</td>
                 <td className="py-2 pr-2 font-semibold text-slate-800">{r.team}</td>
@@ -118,9 +144,7 @@ export default function StandingsTables({
                 <td className="py-2 px-2 text-center text-slate-600">{r.gf}</td>
                 <td className="py-2 px-2 text-center text-slate-600">{r.ga}</td>
                 <td className="py-2 px-2 text-center text-slate-600">{r.gd}</td>
-                <td className="py-2 pl-2 text-center font-bold text-slate-900">
-                  {r.pts}
-                </td>
+                <td className="py-2 pl-2 text-center font-bold text-slate-900">{r.pts}</td>
               </tr>
             ))}
           </tbody>

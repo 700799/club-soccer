@@ -1,5 +1,5 @@
 {
   "lastUpdated": null,
-  "note": "Live ECNL/ECRL standings are populated here by the daily standings job (scripts/fetch-standings.mjs) pulling the TotalGlobalSports public API. Until the first successful run, use the official source links above.",
+  "note": "Live ECNL/ECRL boys & girls NorCal standings (by age group) are populated here by the daily standings job (scripts/fetch-standings.mjs) pulling the TotalGlobalSports public API. Until the first successful run, use the official source links above.",
   "conferences": []
 }
