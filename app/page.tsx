@@ -1,6 +1,7 @@
 import Hero from '@/components/Hero';
 import FloatingMenu from '@/components/FloatingMenu';
 import Levels from '@/components/sections/Levels';
+import Girls from '@/components/sections/Girls';
 import Costs from '@/components/sections/Costs';
 import Standings from '@/components/sections/Standings';
 import Injuries from '@/components/sections/Injuries';
@@ -14,6 +15,7 @@ export default function Home() {
       <FloatingMenu />
       <Hero />
       <Levels />
+      <Girls />
       <Costs />
       <Standings />
       <Injuries />

@@ -28,7 +28,7 @@ export default function Hero() {
       />
       <div className="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28 md:pr-16">
         <span className="inline-flex items-center gap-2 rounded-full border border-pitch-400/40 bg-pitch-500/10 px-3 py-1 text-sm font-medium text-pitch-200">
-          ⚽ Northern California Boys Soccer
+          ⚽ Northern California Youth Soccer · Boys &amp; Girls
         </span>
         <h1 className="mt-6 max-w-3xl text-4xl font-extrabold leading-tight tracking-tight sm:text-6xl">
           The complete guide to the{' '}
