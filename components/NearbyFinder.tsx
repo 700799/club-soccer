@@ -2,25 +2,59 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react';
 import 'leaflet/dist/leaflet.css';
-import { clubs, type Club } from '@/data/clubs';
-import { clubCoords } from '@/data/clubCoords';
+import { clubs } from '@/data/clubs';
+import { clubCoords, girlsClubCoords } from '@/data/clubCoords';
+import { girlsDirectoryClubs } from '@/data/girls';
 
 const NEAREST_N = 7;
 
-type Located = Club & { lat: number; lng: number };
+type Gender = 'boys' | 'girls';
+interface Located {
+  name: string;
+  city: string;
+  level: string;
+  website?: string;
+  lat: number;
+  lng: number;
+}
 type Origin = { lat: number; lng: number; label: string };
 
-const located: Located[] = clubs
+const boysLocated: Located[] = clubs
   .filter((c) => clubCoords[c.name])
-  .map((c) => ({ ...c, lat: clubCoords[c.name][0], lng: clubCoords[c.name][1] }));
+  .map((c) => ({
+    name: c.name,
+    city: c.city,
+    level: c.topLevel,
+    website: c.website,
+    lat: clubCoords[c.name][0],
+    lng: clubCoords[c.name][1],
+  }));
 
-const levelColor: Record<Club['topLevel'], string> = {
+const girlsLocated: Located[] = girlsDirectoryClubs
+  .filter((c) => girlsClubCoords[c.name])
+  .map((c) => ({
+    name: c.name,
+    city: c.city,
+    level: c.level,
+    website: c.website,
+    lat: girlsClubCoords[c.name][0],
+    lng: girlsClubCoords[c.name][1],
+  }));
+
+const levelColor: Record<string, string> = {
   'MLS NEXT': '#ef4444',
   ECNL: '#a855f7',
   ECRL: '#6366f1',
   NPL: '#0ea5e9',
   'NorCal Premier': '#16a34a',
+  // girls levels
+  'ECNL Girls': '#a855f7',
+  'Girls Academy': '#ec4899',
+  DPL: '#f59e0b',
+  'ECRL Girls': '#6366f1',
 };
+
+const colorFor = (level: string) => levelColor[level] ?? '#16a34a';
 
 // Haversine distance in miles.
 function distMiles(aLat: number, aLng: number, bLat: number, bLng: number) {
@@ -49,6 +83,9 @@ export default function NearbyFinder() {
   const [zip, setZip] = useState('');
   const [origin, setOrigin] = useState<Origin | null>(null);
   const [status, setStatus] = useState<string>('');
+  const [gender, setGender] = useState<Gender>('boys');
+
+  const located = gender === 'boys' ? boysLocated : girlsLocated;
 
   const nearest = useMemo(() => {
     if (!origin) return [];
@@ -56,7 +93,7 @@ export default function NearbyFinder() {
       .map((c) => ({ ...c, miles: distMiles(origin.lat, origin.lng, c.lat, c.lng) }))
       .sort((a, b) => a.miles - b.miles)
       .slice(0, NEAREST_N);
-  }, [origin]);
+  }, [origin, located]);
 
   // Init map once (Leaflet is imported dynamically to avoid SSR window access).
   useEffect(() => {
@@ -99,13 +136,13 @@ export default function NearbyFinder() {
     for (const c of located) {
       const isNear = nearestNames.has(c.name);
       const marker = L.circleMarker([c.lat, c.lng], {
-        radius: isNear ? 8 : 5,
+        radius: isNear ? 14 : 9,
         color: '#fff',
-        weight: isNear ? 2 : 1,
-        fillColor: levelColor[c.topLevel],
-        fillOpacity: isNear ? 1 : 0.45,
+        weight: isNear ? 3 : 2,
+        fillColor: colorFor(c.level),
+        fillOpacity: isNear ? 1 : 0.6,
       }).bindPopup(
-        `<strong>${c.name}</strong><br/>${c.city} · ${c.topLevel}` +
+        `<strong>${c.name}</strong><br/>${c.city} · ${c.level}` +
           (c.website ? `<br/><a href="${c.website}" target="_blank" rel="noreferrer">Club site ↗</a>` : ''),
       );
       layer.addLayer(marker);
@@ -113,9 +150,9 @@ export default function NearbyFinder() {
 
     if (origin) {
       const o = L.circleMarker([origin.lat, origin.lng], {
-        radius: 9,
+        radius: 13,
         color: '#0f172a',
-        weight: 3,
+        weight: 4,
         fillColor: '#fde047',
         fillOpacity: 1,
       }).bindPopup(`<strong>You</strong><br/>${origin.label}`);
@@ -127,7 +164,7 @@ export default function NearbyFinder() {
       ] as [number, number][];
       map.fitBounds(L.latLngBounds(pts).pad(0.2));
     }
-  }, [ready, origin, nearest]);
+  }, [ready, origin, nearest, located]);
 
   async function useZip(e: React.FormEvent) {
     e.preventDefault();
@@ -176,6 +213,26 @@ export default function NearbyFinder() {
 
   return (
     <div>
+      {/* Boys / Girls toggle */}
+      <div className="mb-4 inline-flex rounded-full border border-slate-200 bg-white p-1 shadow-sm">
+        {(['boys', 'girls'] as const).map((g) => (
+          <button
+            key={g}
+            onClick={() => setGender(g)}
+            aria-pressed={gender === g}
+            className={`rounded-full px-5 py-2 text-sm font-bold transition ${
+              gender === g
+                ? g === 'boys'
+                  ? 'bg-pitch-600 text-white'
+                  : 'bg-pink-600 text-white'
+                : 'text-slate-600 hover:bg-slate-100'
+            }`}
+          >
+            {g === 'boys' ? '⚽ Boys' : '👧 Girls'}
+          </button>
+        ))}
+      </div>
+
       {/* Controls */}
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
         <form onSubmit={useZip} className="flex flex-1 gap-2">
@@ -238,9 +295,9 @@ export default function NearbyFinder() {
                       {c.city} ·{' '}
                       <span
                         className="font-semibold"
-                        style={{ color: levelColor[c.topLevel] }}
+                        style={{ color: colorFor(c.level) }}
                       >
-                        {c.topLevel}
+                        {c.level}
                       </span>
                     </p>
                   </div>

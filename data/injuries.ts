@@ -46,6 +46,81 @@ export const aclByAge: AgeAclStat[] = [
   },
 ];
 
+// WHY youth soccer injuries happen — the mechanisms, with the research behind them.
+export interface InjuryCause {
+  title: string;
+  detail: string;
+}
+
+export const whyInjuriesHappen: InjuryCause[] = [
+  {
+    title: 'Growth spurts outpace muscle & coordination',
+    detail:
+      'During rapid growth, bones lengthen faster than muscles and tendons can keep up, creating temporary imbalances, longer "levers" at the knee, and a dip in coordination. That fast-growing, not-yet-filled-out teen is at higher risk than same-age peers — which is why heel (Sever\'s) and knee (Osgood-Schlatter) issues spike in growth years.',
+  },
+  {
+    title: 'Most ACL tears are non-contact',
+    detail:
+      'They usually happen on cutting, decelerating or landing — when the body isn\'t positioned to absorb the force — not from a tackle. The knee collapses inward (valgus) and the ligament fails. Because it\'s non-contact, technique and strength training can meaningfully lower the risk.',
+  },
+  {
+    title: 'Overuse & year-round training (fatigue failure)',
+    detail:
+      'Early specialization and playing one sport year-round pile up training load with too little rest. Many non-contact injuries are essentially "fatigue failure" from accumulated volume — tired muscles stop protecting joints, and overused tissues break down (stress fractures, tendinopathy).',
+  },
+  {
+    title: 'Underdeveloped neuromuscular control',
+    detail:
+      'Young athletes are still building the brain-to-muscle control that keeps movement safe and efficient. Poor landing/cutting mechanics — knees caving in, stiff landings — drive injury. This is exactly what neuromuscular warm-ups (like FIFA 11+) retrain, and why they work.',
+  },
+  {
+    title: 'Why girls are at higher ACL risk',
+    detail:
+      'After puberty, differences in hip/knee alignment, muscle activation patterns, ligament laxity and landing mechanics combine to make non-contact ACL tears 4–6× more common in girls than boys — which is why prevention programs matter even more for female players.',
+  },
+  {
+    title: 'Fatigue late in matches',
+    detail:
+      'A large share of injuries occur in the final third of games and practices, when players are tired. Conditioning, substitutions and load management directly reduce that end-of-game risk.',
+  },
+];
+
+// Explicit, clickable sources for the stats on this page.
+export interface InjurySource {
+  label: string;
+  url: string;
+}
+
+export const injurySources: InjurySource[] = [
+  {
+    label:
+      'Injury incidence & risk factors in youth soccer — systematic review (PMC)',
+    url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9806741/',
+  },
+  {
+    label:
+      'ACL incidence in youth & male soccer: 17,108 players, age sub-analysis',
+    url: 'https://www.researchgate.net/publication/368475757',
+  },
+  {
+    label: 'ACL injuries in the prepubescent & adolescent athlete (PMC)',
+    url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC2938325/',
+  },
+  {
+    label:
+      'Overuse non-contact ACL injury in young athletes — prevention (PMC)',
+    url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC9950994/',
+  },
+  {
+    label: 'Lateral ankle sprain epidemiology in soccer (ScienceDirect)',
+    url: 'https://www.sciencedirect.com/science/article/abs/pii/S0020138324004054',
+  },
+  {
+    label: 'Maturation & knee biomechanics in young female players (PMC)',
+    url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7250454/',
+  },
+];
+
 export interface KeyStat {
   value: string;
   label: string;
@@ -117,7 +192,7 @@ export const commonInjuries: CommonInjury[] = [
     area: 'Heel',
     typicalAge: 'Ages 8–14',
     what:
-      'Heel-growth-plate irritation in younger players — a leading cause of heel pain. Cushioned heel support and insoles can relieve it.',
+      'Heel-growth-plate irritation in younger players — a leading cause of heel pain. Managed with rest, calf stretching and cushioned heel support.',
     footwearLink: true,
   },
   {
@@ -133,7 +208,7 @@ export const commonInjuries: CommonInjury[] = [
     area: 'Foot / arch',
     typicalAge: 'Teens & up',
     what:
-      'Overuse irritation of the arch, aggravated by flat, unsupportive cleats. Proper arch support is directly protective.',
+      'Overuse irritation of the band along the bottom of the foot, aggravated by flat, unsupportive footwear and spikes in training load. Arch support and load management help.',
     footwearLink: true,
   },
   {
@@ -184,7 +259,7 @@ export const preventionChecklist: PreventionStep[] = [
   {
     title: 'Get the footwear & support right',
     detail:
-      'A supportive insole with the correct arch profile improves stability and cushioning and helps with heel, arch and ankle issues.',
+      'Well-fitting cleats with the right support improve stability and cushioning and help with heel, arch and ankle issues. (See the dedicated footwear section for how to choose.)',
   },
   {
     title: 'Hydrate, sleep, and never "play through" sharp pain',

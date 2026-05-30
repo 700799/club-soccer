@@ -1,5 +1,6 @@
 import SectionShell from '../SectionShell';
 import { leagues, norcalPremierDivisions, type LeagueLevel } from '@/data/leagues';
+import { storyForLevel } from '@/data/stories';
 
 function fmtMoney(n: number) {
   if (n === 0) return '$0';
@@ -37,6 +38,7 @@ function Pyramid() {
 }
 
 function LevelCard({ lvl }: { lvl: LeagueLevel }) {
+  const story = storyForLevel(lvl.id);
   return (
     <article
       id={`level-${lvl.id}`}
@@ -122,6 +124,28 @@ function LevelCard({ lvl }: { lvl: LeagueLevel }) {
             </a>
           )}
         </div>
+
+        {story && (
+          <div className="mt-4 rounded-xl border-l-4 border-pitch-400 bg-pitch-50/60 p-3">
+            <p className="text-xs font-bold uppercase tracking-wide text-pitch-700">
+              ★ Player story
+            </p>
+            <p className="mt-1 text-sm font-semibold text-slate-800">
+              {story.headline}
+            </p>
+            <p className="mt-1 text-sm text-slate-600">{story.body}</p>
+            {story.source && (
+              <a
+                href={story.source}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-1 inline-block text-xs font-semibold text-pitch-700 hover:underline"
+              >
+                Source ↗
+              </a>
+            )}
+          </div>
+        )}
       </div>
     </article>
   );
