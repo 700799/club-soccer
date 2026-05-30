@@ -26,6 +26,11 @@ dock on desktop, a floating pill on mobile) covering:
    All product links run through your affiliate tag.
 6. **Latest news** — a daily-refreshed feed (~90% youth, ~10% pro) with previews and
    links, updated automatically by a scheduled GitHub Action.
+7. **Clubs near you** — a Leaflet + OpenStreetMap map: enter a ZIP code (or use your
+   location) to see the **7 closest clubs**, ranked by distance, color-coded by level.
+   No API keys (ZIP lookup via the free Zippopotam.us API; map © OpenStreetMap).
+8. **Live ECNL / ECRL standings** — real win/loss tables auto-pulled daily from the
+   TotalGlobalSports public API, with graceful fallback to the official links.
 
 ## Tech
 
@@ -71,6 +76,16 @@ The site is served from `https://<owner>.github.io/<repo>/`. The build derives t
 ESPN, …), keeps the mix ~90% youth, commits `data/news.json` if it changed, and the
 resulting push triggers a fresh Pages deploy. Scheduled Actions run from `main`, so
 this activates once the workflow is on the default branch.
+
+`.github/workflows/update-standings.yml` runs daily (14:00 UTC), executes
+`scripts/fetch-standings.mjs` to pull ECNL/ECRL tables from the TotalGlobalSports
+public API, and commits `data/standings.json` if it changed.
+
+**Adding standings conferences:** open a conference's standings on theecnl.com,
+read the `eventId`/`conferenceId` from the embedded TotalGlobalSports request, add
+an entry to `scripts/standings-config.mjs`, and set `enabled: true`. The fetcher
+uses fuzzy field-detection, so it adapts to the feed's exact JSON keys; run it with
+`--selftest` to verify the parser offline.
 
 > Note: scheduled workflows only run after the workflow file exists on the default
 > branch, and GitHub may pause schedules on repos with no recent activity.

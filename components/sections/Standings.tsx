@@ -1,5 +1,7 @@
 import SectionShell from '../SectionShell';
 import ClubDirectory from '../ClubDirectory';
+import StandingsTables, { type Conference } from '../StandingsTables';
+import standingsData from '@/data/standings.json';
 import {
   standingsSources,
   directoryLastReviewed,
@@ -44,6 +46,22 @@ export default function Standings() {
             </p>
           </a>
         ))}
+      </div>
+
+      {/* Live ECNL / ECRL tables (auto-updated daily from TotalGlobalSports) */}
+      <div className="mt-8">
+        <h3 className="text-xl font-bold text-slate-900">Live ECNL / ECRL tables</h3>
+        <p className="mt-1 text-sm text-slate-600">
+          Real win/loss tables auto-pulled each morning from the official
+          TotalGlobalSports feed. More conferences are added as their feeds are
+          wired in; everything else links out above.
+        </p>
+        <div className="mt-4">
+          <StandingsTables
+            conferences={standingsData.conferences as Conference[]}
+            lastUpdated={standingsData.lastUpdated as string | null}
+          />
+        </div>
       </div>
 
       <div className="mt-4 rounded-xl border border-sky-200 bg-sky-50 p-4 text-sm text-sky-900">
