@@ -227,6 +227,63 @@ export default function Levels() {
           ))}
         </div>
       </div>
+
+      {/* Beyond the club: ODP & PDP identification programs */}
+      <div className="mt-8 rounded-3xl border border-amber-200 bg-amber-50 p-6 shadow-sm sm:p-8">
+        <h3 className="text-xl font-bold text-amber-900">
+          Beyond the club: ODP &amp; PDP select programs
+        </h3>
+        <p className="mt-1 max-w-3xl text-sm text-amber-800">
+          These are <strong>identification &amp; select programs, not leagues</strong>
+          {' '}— players do them <em>in addition</em> to club soccer. Both run a pool
+          system (tryout → train → showcase) and exist for boys and girls.
+        </p>
+        <div className="mt-6 grid gap-4 md:grid-cols-2">
+          <div className="rounded-2xl border border-amber-200 bg-white p-5">
+            <div className="flex items-center justify-between">
+              <h4 className="font-bold text-slate-900">ODP — Olympic Development Program</h4>
+              <a
+                href="https://www.calnorth.org/olympic-development-program"
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm font-semibold text-amber-700 hover:underline"
+              >
+                Cal North ↗
+              </a>
+            </div>
+            <p className="mt-2 text-sm text-slate-600">
+              Run by Cal North, ODP is the only U.S. Soccer–sanctioned talent-ID
+              program in NorCal. Try out for your birth-year/gender pool, then
+              advance: <strong>State → Western Regional → National</strong> pools,
+              with Far West Championships along the way. It feeds the U.S. Youth
+              National Team pathway.
+            </p>
+          </div>
+          <div className="rounded-2xl border border-amber-200 bg-white p-5">
+            <div className="flex items-center justify-between">
+              <h4 className="font-bold text-slate-900">PDP — Player Development Program</h4>
+              <a
+                href="https://norcalpremier.com/competition/pdp/resource/program-overview/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm font-semibold text-amber-700 hover:underline"
+              >
+                NorCal Premier ↗
+              </a>
+            </div>
+            <p className="mt-2 text-sm text-slate-600">
+              NorCal Premier&apos;s PDP identifies, develops and showcases the top
+              motivated players in Northern California. It&apos;s sanctioned as an
+              ODP equivalent via US Club Soccer&apos;s <strong>id2 / PDP</strong>{' '}
+              programs — a second route into national-level identification.
+            </p>
+          </div>
+        </div>
+        <p className="mt-4 text-sm text-amber-800">
+          Bottom line: ODP/PDP are about <strong>individual identification and
+          exposure</strong>, layered on top of whatever league your club plays in.
+        </p>
+      </div>
     </SectionShell>
   );
 }

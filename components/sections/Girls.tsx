@@ -4,14 +4,22 @@ import {
   girlsTopLeagues,
   girlsStandingsSources,
   girlsClubs,
-  type GirlsClub,
+  type GirlsLeagueTag,
 } from '@/data/girls';
 
-const leagueStyles: Record<GirlsClub['league'], string> = {
+const leagueStyles: Record<GirlsLeagueTag, string> = {
   'ECNL Girls': 'bg-purple-100 text-purple-800 border-purple-200',
   'Girls Academy': 'bg-pink-100 text-pink-800 border-pink-200',
+  DPL: 'bg-amber-100 text-amber-800 border-amber-200',
   'ECRL Girls': 'bg-indigo-100 text-indigo-800 border-indigo-200',
 };
+
+const leagueOrder: GirlsLeagueTag[] = [
+  'ECNL Girls',
+  'Girls Academy',
+  'DPL',
+  'ECRL Girls',
+];
 
 export default function Girls() {
   return (
@@ -23,14 +31,15 @@ export default function Girls() {
         <>
           The bottom of the ladder is the same for everyone — Rec → Select →
           NorCal Premier (Copper → Premier) → NPL → ECNL RL. What changes for
-          girls is the <strong>top tier</strong> and the <strong>pro route</strong>.
-          So the Costs, Injuries and Insoles sections all apply to girls too — here
-          is what&apos;s different.
+          girls is the <strong>top tier</strong>, the{' '}
+          <strong>GA / ASPIRE / DPL</strong> ecosystem, and the{' '}
+          <strong>pro route</strong>. So the Costs, Injuries and Insoles sections
+          all apply to girls too — here is what&apos;s different.
         </>
       }
     >
       {/* Top of the girls pyramid */}
-      <div className="grid gap-4 lg:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {girlsTopLeagues.map((l) => (
           <a
             key={l.name}
@@ -103,32 +112,49 @@ export default function Girls() {
         </div>
       </div>
 
-      {/* NorCal girls clubs */}
+      {/* NorCal girls clubs, grouped by league */}
       <div className="mt-10">
         <h3 className="text-xl font-bold text-slate-900">
-          NorCal girls clubs (top platforms)
+          NorCal girls clubs by league
         </h3>
         <p className="mt-1 text-sm text-slate-600">
-          Verified NorCal clubs by their top girls league. Most also field NPL and
-          NorCal Premier girls teams.
+          {girlsClubs.length} verified NorCal clubs grouped by their top girls
+          platform. Most also field NPL and NorCal Premier girls teams.
         </p>
-        <div className="mt-4 flex flex-wrap gap-2">
-          {girlsClubs.map((c) => (
-            <span
-              key={c.name}
-              className={`rounded-full border px-3 py-1.5 text-sm font-medium ${leagueStyles[c.league]}`}
-            >
-              {c.name}
-              <span className="ml-1.5 text-[11px] opacity-70">· {c.league}</span>
-            </span>
-          ))}
+        <div className="mt-4 space-y-5">
+          {leagueOrder.map((lg) => {
+            const inLeague = girlsClubs.filter((c) => c.league === lg);
+            if (inLeague.length === 0) return null;
+            return (
+              <div key={lg}>
+                <p className="mb-2 flex items-center gap-2 text-sm font-bold text-slate-700">
+                  <span
+                    className={`rounded-full border px-2 py-0.5 text-[11px] font-semibold ${leagueStyles[lg]}`}
+                  >
+                    {lg}
+                  </span>
+                  <span className="text-slate-400">{inLeague.length} clubs</span>
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {inLeague.map((c) => (
+                    <span
+                      key={c.name}
+                      className={`rounded-full border px-3 py-1.5 text-sm font-medium ${leagueStyles[lg]}`}
+                    >
+                      {c.name}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
 
       <p className="mt-8 rounded-xl border border-pink-200 bg-pink-50 p-4 text-sm text-pink-900">
-        Girls clubs and league placement change every year (clubs move between GA
-        and ECNL frequently). Always confirm a team&apos;s current league, age group
-        and record on the official links above.
+        Girls clubs and league placement change every year (clubs move between GA,
+        DPL and ECNL frequently). Always confirm a team&apos;s current league, age
+        group and record on the official links above.
       </p>
     </SectionShell>
   );
