@@ -4,7 +4,7 @@ import AffiliateDisclosure from './AffiliateDisclosure';
 export default function Footer() {
   return (
     <footer className="border-t border-slate-800 bg-slate-950 text-slate-400">
-      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 md:pr-16">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
             <p className="text-lg font-bold text-white">⚽ NorCal Soccer Guide</p>
