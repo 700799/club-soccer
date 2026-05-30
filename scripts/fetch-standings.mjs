@@ -105,34 +105,52 @@ export function parseStandings(json) {
   return rows.map((r, i) => ({ ...r, rank: r.rank || i + 1 }));
 }
 
+const TGS_HEADERS = {
+  'User-Agent': BROWSER_UA,
+  Accept: 'application/json, text/plain, */*',
+  Origin: 'https://www.theecnl.com',
+  Referer: 'https://www.theecnl.com/',
+};
+
 async function fetchConference(target, tgsUrl) {
-  const url = tgsUrl(target.eventId, target.conferenceId);
-  try {
-    const res = await fetch(url, {
-      headers: {
-        'User-Agent': BROWSER_UA,
-        Accept: 'application/json, text/plain, */*',
-        Origin: 'https://www.theecnl.com',
-        Referer: 'https://www.theecnl.com/',
-      },
-      signal: AbortSignal.timeout(20000),
-    });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const json = await res.json();
-    const rows = parseStandings(json);
-    if (rows.length === 0) {
-      console.warn(`  ! ${target.name}: 0 rows parsed (check schema/IDs)`);
-      // Log the first row's keys to make schema mapping easy on first run.
-      const sample = collectRows(json)[0];
-      if (sample) console.warn(`    sample keys: ${Object.keys(sample).join(', ')}`);
-      return null;
-    }
-    console.log(`  ✓ ${target.name}: ${rows.length} teams`);
-    return { id: target.id, league: target.league, name: target.name, source: url, rows };
-  } catch (err) {
-    console.warn(`  ✗ ${target.name}: ${err.message}`);
+  // For region-specific events, every table is already the right region, so we
+  // can safely try a few candidate conferenceIds. For league-wide events we
+  // only use the exact configured id (a wrong id would pull another region).
+  const candidates = target.regionSpecific
+    ? [...new Set([target.conferenceId, 13, 12, 11, 14, 9, 15].filter((n) => Number.isInteger(n) && n > 0))]
+    : [target.conferenceId].filter((n) => Number.isInteger(n) && n > 0);
+
+  if (candidates.length === 0) {
+    console.warn(`  ✗ ${target.name}: no conferenceId set`);
     return null;
   }
+
+  let lastErr = '';
+  for (const confId of candidates) {
+    const url = tgsUrl(target.eventId, confId);
+    try {
+      const res = await fetch(url, { headers: TGS_HEADERS, signal: AbortSignal.timeout(20000) });
+      if (!res.ok) {
+        lastErr = `HTTP ${res.status}`;
+        continue;
+      }
+      const json = await res.json();
+      const rows = parseStandings(json);
+      if (rows.length === 0) {
+        const sample = collectRows(json)[0];
+        if (sample) {
+          console.warn(`    ${target.name} conf ${confId}: 0 rows; sample keys: ${Object.keys(sample).join(', ')}`);
+        }
+        continue;
+      }
+      console.log(`  ✓ ${target.name}: ${rows.length} teams (event ${target.eventId}, conf ${confId})`);
+      return { id: target.id, league: target.league, name: target.name, source: url, rows };
+    } catch (err) {
+      lastErr = err.message;
+    }
+  }
+  console.warn(`  ✗ ${target.name}: no rows (event ${target.eventId}; tried conf ${candidates.join(',')}; last: ${lastErr})`);
+  return null;
 }
 
 async function main() {

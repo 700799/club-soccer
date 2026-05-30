@@ -4,16 +4,21 @@
 // ECNL / ECRL standings on theECNL.com are served by TGS's PUBLIC JSON API:
 //   https://public.totalglobalsports.com/public/event/{eventId}/conference-standings/{conferenceId}
 //
-// HOW TO FIND IDs: open the standings page on theecnl.com, choose a conference
-// + age group, and read eventId/conferenceId from the embedded TGS request
-// (iframe URL / network tab). Add an entry below and set enabled: true.
+// The eventId identifies a specific league + (often) region + season. When an
+// event is itself region-specific (e.g. "ECRL Boys NorCal 2025-26" = event
+// 3906), every table it returns is already NorCal data, so the fetcher can
+// safely try a few candidate conferenceIds and keep the first that returns rows.
+// For LEAGUE-WIDE events (one event holding many regions) do NOT rely on that —
+// set the exact NorCal conferenceId, or you may pull another region.
 //
-// The confirmed example is the ECNL Girls Regional League – NorCal conference
-// (eventId 2328 / conferenceId 13). Exact field names + current-season IDs
-// could not be verified from the build sandbox (the API blocks non-browser
-// requests), so fetch-standings.mjs uses defensive fuzzy field-detection and
-// the job runs live on GitHub's runners. Confirm the first run's logs, then add
-// more conferences here.
+// HOW TO FIND IDs: open the conference's standings on theecnl.com, choose the
+// NorCal conference + an age group, and copy eventId/conferenceId from the
+// embedded TotalGlobalSports request (iframe URL / network tab).
+//
+// NOTE: this build environment is firewalled from TGS, so the exact field names
+// and some IDs could not be verified here. The fetcher uses defensive fuzzy
+// field-detection + bounded conferenceId fallback and runs live on GitHub's
+// runners; the first run's logs confirm what mapped. Verify, then enable more.
 // ---------------------------------------------------------------------------
 
 /**
@@ -22,24 +27,55 @@
  * @property {'ECNL Boys'|'ECNL Girls'|'ECRL Boys'|'ECRL Girls'} league
  * @property {string} name
  * @property {number} eventId
- * @property {number} conferenceId
+ * @property {number} conferenceId   // primary guess; fetcher also tries fallbacks
  * @property {boolean} enabled
+ * @property {boolean} [regionSpecific] // true = safe to try fallback conf IDs
  */
 
 /** @type {ConferenceTarget[]} */
 export const conferenceTargets = [
   {
-    id: 'ecrl-girls-norcal',
-    league: 'ECRL Girls',
-    name: 'ECNL Girls Regional League — NorCal',
-    eventId: 2328,
+    // Confirmed current-season, NorCal-specific event (2025-26).
+    id: 'ecrl-boys-norcal',
+    league: 'ECRL Boys',
+    name: 'ECNL Regional League Boys — NorCal',
+    eventId: 3906,
     conferenceId: 13,
     enabled: true,
+    regionSpecific: true,
   },
-  // TODO (add confirmed IDs, then flip enabled: true):
-  // { id: 'ecnl-boys-norcal',  league: 'ECNL Boys',  name: 'ECNL Boys — Northern California',  eventId: 0, conferenceId: 0, enabled: false },
-  // { id: 'ecnl-girls-norcal', league: 'ECNL Girls', name: 'ECNL Girls — Northern California', eventId: 0, conferenceId: 0, enabled: false },
-  // { id: 'ecrl-boys-norcal',  league: 'ECRL Boys',  name: 'ECRL Boys — NorCal',              eventId: 0, conferenceId: 0, enabled: false },
+  // --- Add once confirmed on theecnl.com (kept disabled to avoid wrong data) ---
+  {
+    // event 3933 = ECNL Girls 2025-26 (league-wide). Set the exact NorCal
+    // conferenceId before enabling — do NOT rely on fallbacks for league-wide events.
+    id: 'ecnl-girls-norcal',
+    league: 'ECNL Girls',
+    name: 'ECNL Girls — Northern California',
+    eventId: 3933,
+    conferenceId: 0,
+    enabled: false,
+    regionSpecific: false,
+  },
+  {
+    id: 'ecnl-boys-norcal',
+    league: 'ECNL Boys',
+    name: 'ECNL Boys — Northern California',
+    eventId: 0,
+    conferenceId: 0,
+    enabled: false,
+    regionSpecific: false,
+  },
+  {
+    // 2328/13 was a confirmed NorCal ECRL Girls pairing but likely a prior
+    // season — replace eventId with the current 2025-26 NorCal girls event.
+    id: 'ecrl-girls-norcal',
+    league: 'ECRL Girls',
+    name: 'ECNL Regional League Girls — NorCal',
+    eventId: 2328,
+    conferenceId: 13,
+    enabled: false,
+    regionSpecific: true,
+  },
 ];
 
 export const TGS_BASE = 'https://public.totalglobalsports.com/public/event';
