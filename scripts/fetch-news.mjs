@@ -47,6 +47,13 @@ const FEEDS = [
 const LOCAL_HINTS =
   /\b(norcal|nor cal|bay area|northern california|cal north|california north|san jose|san francisco|oakland|sacramento|marin|contra costa|alameda|santa clara|fresno|stockton|modesto|napa|sonoma|solano|east bay)\b/i;
 
+// Pro / senior-team coverage we never want (this is a youth site). Drop an item
+// matching these unless it clearly carries a youth/academy signal.
+const PRO_DROP =
+  /\b(nwsl|uswnt|usmnt|mls cup|premier league|la liga|serie a|bundesliga|ligue 1|champions league|world cup|ballon d'?or|professional contract)\b/i;
+const YOUTH_KEEP =
+  /\b(youth|academy|ecnl|ecrl|mls next|npl|u1[0-9]|u-1[0-9]|high school|college commit|recruit|club soccer|girls academy|homegrown)\b/i;
+
 function clean(s = '') {
   return (
     s
@@ -103,8 +110,12 @@ function parseFeed(xml, feed) {
     const summaryRaw =
       field(b, 'description') || field(b, 'summary') || field(b, 'content') || '';
 
-    // Promote to local if the text mentions NorCal geography, even from a national feed.
     const combined = `${title} ${summaryRaw}`;
+
+    // Youth-only site: skip anything clearly about pro/senior soccer.
+    if (PRO_DROP.test(combined) && !YOUTH_KEEP.test(combined)) continue;
+
+    // Promote to local if the text mentions NorCal geography, even from a national feed.
     const category =
       feed.category === 'national' && LOCAL_HINTS.test(combined) ? 'local' : feed.category;
 
@@ -232,10 +243,23 @@ function selftest() {
     </item>
   </channel></rss>`;
 
+  // A clearly-pro item that should be dropped entirely (no youth signal).
+  const proSample = `<rss><channel>
+    <item>
+      <title>NWSL: Pride's Banda scores twice in win - ESPN</title>
+      <link>https://news.google.com/rss/articles/PRO111</link>
+      <pubDate>Thu, 28 May 2026 09:00:00 GMT</pubDate>
+      <description>NWSL scoring leader nets a brace</description>
+      <source url="https://espn.com">ESPN</source>
+    </item>
+  </channel></rss>`;
+
   const a = parseFeed(gnewsSample, { category: 'local' })[0];
   const b = parseFeed(nationalSample, { category: 'national' })[0];
+  const pro = parseFeed(proSample, { category: 'national' });
 
   const checks = [
+    [pro.length === 0, `pro NWSL item dropped (got ${pro.length})`],
     [a.title === 'Bay Area club wins NorCal championship', `title de-suffix: "${a?.title}"`],
     [a.source === 'SoccerWire', `source: "${a?.source}"`],
     [a.url === 'https://news.google.com/rss/articles/ABC123', `link: "${a?.url}"`],

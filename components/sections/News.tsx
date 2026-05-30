@@ -2,7 +2,8 @@ import SectionShell from '../SectionShell';
 import NewsList, { type NewsItem } from '../NewsList';
 import newsData from '@/data/news.json';
 
-function fmtUpdated(iso: string) {
+function fmtUpdated(iso: string | null) {
+  if (!iso) return 'pending first morning refresh';
   const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return iso;
   return d.toLocaleDateString('en-US', {
@@ -20,12 +21,13 @@ export default function News() {
       id="news"
       tinted
       eyebrow="Updated Daily"
-      title="NorCal soccer news"
+      title="NorCal youth soccer news"
       intro={
         <>
-          Local NorCal news by default — championships, high school results, club updates.
-          Tap <strong>National</strong> for tournament brackets and college commitments.
-          Refreshed every morning.
+          Local NorCal youth news by default — club championships, high school
+          results, and team updates. Tap <strong>Nationwide</strong> for youth
+          tournaments and college commitments across the country. Refreshed every
+          morning.
         </>
       }
     >
@@ -35,7 +37,8 @@ export default function News() {
           Feed last updated: {fmtUpdated(newsData.lastUpdated)}
         </span>
         <span className="text-slate-500">
-          Auto-refreshed daily from NorCal Premier, Cal North, Bay Area prep, and national tournament sources.
+          Auto-refreshed daily from NorCal Premier, Cal North, Bay Area prep, and
+          nationwide youth tournament sources.
         </span>
       </div>
 
