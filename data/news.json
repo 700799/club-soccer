@@ -1,0 +1,96 @@
+{
+  "lastUpdated": "2026-05-30T00:00:00.000Z",
+  "note": "Seed articles. The daily GitHub Action (scripts/fetch-news.mjs) prepends fresh items from youth-soccer RSS feeds and keeps the mix ~90% youth.",
+  "items": [
+    {
+      "id": "seed-mlsnext-2627-expansion",
+      "title": "MLS NEXT announces new clubs and conferences ahead of 2026-27 season",
+      "url": "https://www.soccerwire.com/news/mls-next-announces-new-clubs-and-conferences-ahead-of-2026-27-season/",
+      "source": "SoccerWire",
+      "sourceUrl": "https://www.soccerwire.com/",
+      "category": "youth",
+      "date": "2026-05-20",
+      "summary": "MLS NEXT will be represented in 40 states with 318 clubs and over 53,000 players across both divisions as it expands again for 2026-27."
+    },
+    {
+      "id": "seed-mlsnext-age-update",
+      "title": "MLS NEXT announces age-group update, taking effect in 2026-27 season",
+      "url": "https://www.soccerwire.com/news/mls-next-announces-age-group-update-taking-effect-in-2026-27-season/",
+      "source": "SoccerWire",
+      "sourceUrl": "https://www.soccerwire.com/",
+      "category": "youth",
+      "date": "2026-05-12",
+      "summary": "MLS NEXT is moving its Academy Division to a school-year age-group system to align with the broader U.S. youth soccer landscape."
+    },
+    {
+      "id": "seed-ecrl-norcal-realign",
+      "title": "ECNL Regional League expands and re-aligns with NorCal Premier for 2025-26",
+      "url": "https://theecnl.com/news/2025/2/27/ecnl-regional-league-expands-and-re-aligns-with-norcal-premier-soccer-for-2025-26-season.aspx",
+      "source": "theECNL.com",
+      "sourceUrl": "https://theecnl.com/",
+      "category": "youth",
+      "date": "2026-04-28",
+      "summary": "The ECRL re-aligned into NorCal and Golden State divisions, with ~20 teams per age group qualifying out of NorCal Premier and a promotion pathway to ECNL."
+    },
+    {
+      "id": "seed-norcal-25-clubs-ecrl",
+      "title": "NorCal Premier announces 25 clubs selected for realigned ECNL Regional League",
+      "url": "https://norcalpremier.com/norcal-premier-soccer-announces-25-clubs-selected-for-realigned-ecnl-regional-league-for-the-2025-26-season/",
+      "source": "NorCal Premier",
+      "sourceUrl": "https://norcalpremier.com/",
+      "category": "youth",
+      "date": "2026-04-15",
+      "summary": "NorCal Premier named the 25 clubs selected for the realigned ECRL NorCal division for the 2025-26 season."
+    },
+    {
+      "id": "seed-tds-recruiting-march",
+      "title": "2026 Men's DI Recruiting Rankings: March update",
+      "url": "https://www.topdrawersoccer.com/club-soccer-articles/2026-mens-di-recruiting-rankings:-march_aid55807",
+      "source": "TopDrawerSoccer",
+      "sourceUrl": "https://www.topdrawersoccer.com/",
+      "category": "youth",
+      "date": "2026-03-31",
+      "summary": "The latest men's Division I recruiting class rankings, with several prospects opting for the pro route over college."
+    },
+    {
+      "id": "seed-tds-top50-prospects",
+      "title": "2026 Top 50 MLS Prospects",
+      "url": "https://www.topdrawersoccer.com/club-soccer-articles/2026-top-50-mls-prospects:-nos-1-10_aid55689",
+      "source": "TopDrawerSoccer",
+      "sourceUrl": "https://www.topdrawersoccer.com/",
+      "category": "youth",
+      "date": "2026-03-18",
+      "summary": "TopDrawerSoccer ranks the top youth-academy prospects on the MLS radar this cycle."
+    },
+    {
+      "id": "seed-calnorth-mlsnext",
+      "title": "Cal North: MLS NEXT announces new clubs and conferences for 2026-27",
+      "url": "https://www.calnorth.org/news/mls-next-announces-new-clubs-and-conferences-ahead-of-2026-27-season",
+      "source": "Cal North",
+      "sourceUrl": "https://www.calnorth.org/",
+      "category": "youth",
+      "date": "2026-03-05",
+      "summary": "Cal North details how Northern California clubs fit into the expanded MLS NEXT footprint for 2026-27."
+    },
+    {
+      "id": "seed-ecnl-new-clubs",
+      "title": "ECNL & ECNL Regional League welcome new clubs",
+      "url": "https://theecnl.com/news/2025/3/25/ecnl-boys-ecnl-ecnl-regional-league-welcome-new-clubs.aspx",
+      "source": "theECNL.com",
+      "sourceUrl": "https://theecnl.com/",
+      "category": "youth",
+      "date": "2026-02-20",
+      "summary": "ECNL and the ECNL Regional League announced new member clubs across the country, including additions on the boys' side."
+    },
+    {
+      "id": "seed-mls-pro-pathway",
+      "title": "2026 MLS & MLS NEXT Pro signings clarify the youth-to-pro pathway",
+      "url": "https://www.mlssoccer.com/mlsnextpro/",
+      "source": "MLSsoccer.com",
+      "sourceUrl": "https://www.mlssoccer.com/",
+      "category": "pro",
+      "date": "2026-02-10",
+      "summary": "As the pro season opens, homegrown and MLS NEXT Pro signings show how academy graduates make the jump to the professional game."
+    }
+  ]
+}

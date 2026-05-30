@@ -1,0 +1,57 @@
+name: Deploy to GitHub Pages
+
+on:
+  # Deploy whenever the site (or the auto-updated news) lands on main.
+  push:
+    branches: [main]
+  # Allow manual deploys from the Actions tab.
+  workflow_dispatch:
+
+# Required for the GitHub Pages deployment action.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only one concurrent deploy; let in-progress runs finish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build static site
+        # basePath is derived from the repo name so the project page works at
+        # https://<owner>.github.io/<repo>/. Override the env for a custom domain.
+        env:
+          PAGES_BASE_PATH: /${{ github.event.repository.name }}
+        run: npm run build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
