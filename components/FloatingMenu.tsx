@@ -86,7 +86,7 @@ export default function FloatingMenu() {
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
-          className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-pitch-500 text-white shadow-2xl shadow-pitch-500/40 transition active:scale-95"
+          className="fixed bottom-5 left-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-pitch-500 text-white shadow-2xl shadow-pitch-500/40 transition active:scale-95"
         >
           {open ? (
             <span className="text-2xl leading-none">✕</span>
@@ -102,7 +102,7 @@ export default function FloatingMenu() {
         {open && (
           <nav
             aria-label="Section navigation"
-            className="fixed bottom-24 right-5 z-50 max-h-[70vh] w-60 overflow-y-auto rounded-2xl border border-white/10 bg-slate-900/95 p-2 shadow-2xl backdrop-blur animate-fade-up"
+            className="fixed bottom-24 left-5 z-50 max-h-[70vh] w-60 overflow-y-auto rounded-2xl border border-white/10 bg-slate-900/95 p-2 shadow-2xl backdrop-blur animate-fade-up"
           >
             {sections.map((s) => {
               const isActive = active === s.id;
@@ -127,6 +127,16 @@ export default function FloatingMenu() {
           </nav>
         )}
       </div>
+
+      {/* Always-floating back-to-top button (bottom-right, all screen sizes) */}
+      <button
+        onClick={() => go('top')}
+        aria-label="Back to top"
+        title="Back to top"
+        className="fixed bottom-5 right-5 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-pitch-600 text-xl text-white shadow-2xl shadow-black/30 transition hover:scale-110 hover:bg-pitch-500 active:scale-95"
+      >
+        <span aria-hidden>↑</span>
+      </button>
     </>
   );
 }
