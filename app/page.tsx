@@ -12,6 +12,7 @@ import Injuries from '@/components/sections/Injuries';
 import Insoles from '@/components/sections/Insoles';
 import News from '@/components/sections/News';
 import Footer from '@/components/Footer';
+import CookieConsent from '@/components/CookieConsent';
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
       <Insoles />
       <News />
       <Footer />
+      <CookieConsent />
     </main>
   );
 }
