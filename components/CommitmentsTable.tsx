@@ -61,10 +61,10 @@ export default function CommitmentsTable() {
 
       <p className="mt-2 text-sm text-slate-600">
         College commitment counts by division — the same breakdown TopDrawerSoccer
-        publishes. Counts change as players commit, so a{' '}
-        <span className="font-semibold">·</span> means we haven&apos;t locked in a
-        verified number yet — tap <strong>View ↗</strong> for that club&apos;s live
-        list.
+        publishes. We only print a number once we&apos;ve verified it against the
+        live source (✓ with the month). For every other club, tap{' '}
+        <strong>Live counts ↗</strong> to see that club&apos;s current breakdown on
+        TopDrawerSoccer — always up to date.
       </p>
 
       <div className="mt-4 overflow-x-auto">
@@ -78,12 +78,12 @@ export default function CommitmentsTable() {
               <th className="px-2 py-2 text-center">NAIA</th>
               <th className="px-2 py-2 text-center">NJCAA</th>
               <th className="px-2 py-2 text-center font-bold text-slate-500">Total</th>
-              <th className="py-2 pl-2 text-right">Source</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-50">
             {rows.map((c) => {
               const t = total(c);
+              const verified = t !== null;
               return (
                 <tr key={`${c.gender}-${c.club}`} className="hover:bg-slate-50">
                   <td className="py-2 pr-2 font-semibold text-slate-800">
@@ -94,28 +94,31 @@ export default function CommitmentsTable() {
                       </span>
                     )}
                   </td>
-                  <td className="px-2 py-2 text-center"><Cell n={c.d1} /></td>
-                  <td className="px-2 py-2 text-center"><Cell n={c.d2} /></td>
-                  <td className="px-2 py-2 text-center"><Cell n={c.d3} /></td>
-                  <td className="px-2 py-2 text-center"><Cell n={c.naia} /></td>
-                  <td className="px-2 py-2 text-center"><Cell n={c.njcaa} /></td>
-                  <td className="px-2 py-2 text-center">
-                    {t === null ? (
-                      <span className="text-slate-300">·</span>
-                    ) : (
-                      <span className="font-bold text-slate-900">{t}</span>
-                    )}
-                  </td>
-                  <td className="py-2 pl-2 text-right">
-                    <a
-                      href={c.tdsUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-sm font-semibold text-pitch-700 hover:underline"
-                    >
-                      View ↗
-                    </a>
-                  </td>
+                  {verified ? (
+                    <>
+                      <td className="px-2 py-2 text-center"><Cell n={c.d1} /></td>
+                      <td className="px-2 py-2 text-center"><Cell n={c.d2} /></td>
+                      <td className="px-2 py-2 text-center"><Cell n={c.d3} /></td>
+                      <td className="px-2 py-2 text-center"><Cell n={c.naia} /></td>
+                      <td className="px-2 py-2 text-center"><Cell n={c.njcaa} /></td>
+                      <td className="px-2 py-2 text-center">
+                        <span className="font-bold text-slate-900">{t}</span>
+                      </td>
+                    </>
+                  ) : (
+                    // Unverified: one clean CTA spanning the stat columns — no
+                    // empty dot grid that looks "incomplete".
+                    <td colSpan={6} className="px-2 py-2 text-right sm:text-center">
+                      <a
+                        href={c.tdsUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1 rounded-full bg-pitch-50 px-3 py-1 text-xs font-semibold text-pitch-700 transition hover:bg-pitch-100"
+                      >
+                        Live counts on TopDrawerSoccer ↗
+                      </a>
+                    </td>
+                  )}
                 </tr>
               );
             })}
@@ -128,8 +131,8 @@ export default function CommitmentsTable() {
         <a href={sourceUrl} target="_blank" rel="noreferrer" className="font-semibold text-pitch-700 hover:underline">
           TopDrawerSoccer — Commitments by Club ↗
         </a>
-        . Verified counts show a ✓ with the month checked; everything else links to
-        the live source. We don&apos;t publish unverified numbers.
+        . We print verified counts (✓ + month) and link the rest live — we
+        don&apos;t publish unverified numbers.
       </p>
     </div>
   );
