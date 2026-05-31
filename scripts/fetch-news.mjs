@@ -43,9 +43,20 @@ const FEEDS = [
   { url: gnews('"MLS NEXT" youth soccer tournament'), category: 'national' },
 ];
 
-// Recognise clearly NorCal/local content even when pulled from national query.
+// Recognise clearly NorCal/local content even when pulled from a national query.
+// The (?<!green ) lookbehind stops "Green Bay area" (Wisconsin) matching "bay area".
 const LOCAL_HINTS =
-  /\b(norcal|nor cal|bay area|northern california|cal north|california north|san jose|san francisco|oakland|sacramento|marin|contra costa|alameda|santa clara|fresno|stockton|modesto|napa|sonoma|solano|east bay)\b/i;
+  /\b(norcal|nor cal|(?<!green )bay area|northern california|cal north|california north|san francisco|san jose|oakland|sacramento|marin|contra costa|alameda|santa clara|fresno|stockton|modesto|napa|sonoma|solano|east bay|peninsula|silicon valley|fremont|berkeley|palo alto|mountain view|livermore|pleasanton|dublin|san ramon|danville|davis|roseville|folsom|elk grove|santa rosa|petaluma|san mateo|redwood city|sunnyvale|milpitas|hayward|concord|walnut creek)\b/i;
+
+// This is a SOCCER site: every item must clearly be about soccer/futsal. This
+// drops generic "high school sports results" and off-topic local crime/news that
+// only matched on a city name (e.g. an Oakland stabbing from the "Oakland" query).
+const SOCCER_RE =
+  /\b(soccer|futsal|ecnl|ecrl|mls next|npl|usl|girls academy|goalkeeper|midfielder)\b/i;
+
+// Other-region "bay"/city names that collide with the broad NorCal queries.
+// Drop these unless a genuine NorCal token is also present.
+const NON_NORCAL = /\b(green bay|bay city|tampa bay|morro bay|wisconsin|michigan)\b/i;
 
 // Pro / senior-team coverage we never want (this is a youth site). Drop an item
 // matching these unless it clearly carries a youth/academy signal.
@@ -53,6 +64,19 @@ const PRO_DROP =
   /\b(nwsl|uswnt|usmnt|mls cup|premier league|la liga|serie a|bundesliga|ligue 1|champions league|world cup|ballon d'?or|professional contract)\b/i;
 const YOUTH_KEEP =
   /\b(youth|academy|ecnl|ecrl|mls next|npl|u1[0-9]|u-1[0-9]|high school|college commit|recruit|club soccer|girls academy|homegrown)\b/i;
+
+/**
+ * Quality gate shared by fresh items AND existing seed items: must be about
+ * soccer, must not be an other-region "bay"/city false positive, and must not be
+ * pro/senior coverage. Applied to seed too, so any bad items already in
+ * news.json get purged on the next run.
+ */
+function passesQuality(text) {
+  if (!SOCCER_RE.test(text)) return false;
+  if (NON_NORCAL.test(text) && !LOCAL_HINTS.test(text)) return false;
+  if (PRO_DROP.test(text) && !YOUTH_KEEP.test(text)) return false;
+  return true;
+}
 
 function clean(s = '') {
   return (
@@ -112,8 +136,8 @@ function parseFeed(xml, feed) {
 
     const combined = `${title} ${summaryRaw}`;
 
-    // Youth-only site: skip anything clearly about pro/senior soccer.
-    if (PRO_DROP.test(combined) && !YOUTH_KEEP.test(combined)) continue;
+    // Must be on-topic soccer, in-region, and youth (not pro).
+    if (!passesQuality(combined)) continue;
 
     // Promote to local if the text mentions NorCal geography, even from a national feed.
     const category =
@@ -186,7 +210,11 @@ async function main() {
   console.log('Refreshing NorCal soccer news…');
 
   const existing = JSON.parse(await readFile(NEWS_PATH, 'utf8'));
-  const seed = Array.isArray(existing.items) ? existing.items : [];
+  // Re-run the quality gate over existing items so anything that slipped in
+  // before this filter existed gets dropped on this run.
+  const seed = (Array.isArray(existing.items) ? existing.items : []).filter((it) =>
+    passesQuality(`${it.title ?? ''} ${it.summary ?? ''}`),
+  );
 
   const fetched = (await Promise.all(FEEDS.map(fetchFeed))).flat();
 
@@ -223,52 +251,92 @@ async function main() {
  * Self-test (no network). Run: `node fetch-news.mjs --selftest`
  */
 function selftest() {
-  // Entity-encoded HTML in description (the bug this clean() fix addresses)
+  // Entity-encoded HTML in description (the clean() fix) + a real soccer term.
   const gnewsSample = `<rss><channel>
     <item>
-      <title>Bay Area club wins NorCal championship - SoccerWire</title>
+      <title>Bay Area soccer club wins NorCal championship - SoccerWire</title>
       <link>https://news.google.com/rss/articles/ABC123</link>
       <pubDate>Fri, 29 May 2026 12:00:00 GMT</pubDate>
-      <description>&lt;a href="https://x"&gt;Bay Area club wins NorCal championship&lt;/a&gt;&nbsp;SoccerWire</description>
+      <description>&lt;a href="https://x"&gt;Bay Area soccer club wins NorCal championship&lt;/a&gt;&nbsp;SoccerWire</description>
       <source url="https://www.soccerwire.com">SoccerWire</source>
     </item>
   </channel></rss>`;
   const nationalSample = `<rss><channel>
     <item>
-      <title>ECNL nationals bracket released - TopDrawer</title>
+      <title>ECNL nationals soccer bracket released - TopDrawer</title>
       <link>https://news.google.com/rss/articles/XYZ789</link>
       <pubDate>Thu, 28 May 2026 09:00:00 GMT</pubDate>
-      <description>National tournament roundup with no local mentions</description>
+      <description>National youth soccer tournament roundup with no local mentions</description>
       <source url="https://topdrawersoccer.com">TopDrawer</source>
     </item>
   </channel></rss>`;
 
-  // A clearly-pro item that should be dropped entirely (no youth signal).
+  // Clearly-pro (has a soccer term so it reaches the PRO_DROP gate). Dropped.
   const proSample = `<rss><channel>
     <item>
-      <title>NWSL: Pride's Banda scores twice in win - ESPN</title>
+      <title>NWSL soccer: Pride's Banda scores twice in win - ESPN</title>
       <link>https://news.google.com/rss/articles/PRO111</link>
       <pubDate>Thu, 28 May 2026 09:00:00 GMT</pubDate>
-      <description>NWSL scoring leader nets a brace</description>
+      <description>NWSL professional soccer scoring leader nets a brace</description>
       <source url="https://espn.com">ESPN</source>
+    </item>
+  </channel></rss>`;
+
+  // Green Bay, WI high-school sports: NOT soccer, and "Green Bay area" must not be
+  // read as the SF "Bay Area". Dropped.
+  const greenBaySample = `<rss><channel>
+    <item>
+      <title>Green Bay area high school sports results for Thursday - Press-Gazette</title>
+      <link>https://news.google.com/rss/articles/GB1</link>
+      <pubDate>Thu, 28 May 2026 09:00:00 GMT</pubDate>
+      <description>Roundup of area results</description>
+      <source url="https://packersnews.com">Press-Gazette</source>
+    </item>
+  </channel></rss>`;
+
+  // Bay City, MI soccer: on-topic but wrong region. Dropped.
+  const bayCitySample = `<rss><channel>
+    <item>
+      <title>Bay City area soccer roundup: Garber, Standish reach title round - MLive</title>
+      <link>https://news.google.com/rss/articles/BC1</link>
+      <pubDate>Wed, 27 May 2026 09:00:00 GMT</pubDate>
+      <description>Michigan high school soccer results</description>
+      <source url="https://mlive.com">MLive</source>
+    </item>
+  </channel></rss>`;
+
+  // Oakland (NorCal) but NOT about soccer — off-topic crime. Dropped.
+  const crimeSample = `<rss><channel>
+    <item>
+      <title>Family mourns 19-year-old fatally stabbed near Oakland park - KTVU</title>
+      <link>https://news.google.com/rss/articles/CR1</link>
+      <pubDate>Tue, 26 May 2026 09:00:00 GMT</pubDate>
+      <description>Local crime report</description>
+      <source url="https://ktvu.com">KTVU</source>
     </item>
   </channel></rss>`;
 
   const a = parseFeed(gnewsSample, { category: 'local' })[0];
   const b = parseFeed(nationalSample, { category: 'national' })[0];
   const pro = parseFeed(proSample, { category: 'national' });
+  const greenBay = parseFeed(greenBaySample, { category: 'local' });
+  const bayCity = parseFeed(bayCitySample, { category: 'local' });
+  const crime = parseFeed(crimeSample, { category: 'local' });
 
   const checks = [
     [pro.length === 0, `pro NWSL item dropped (got ${pro.length})`],
-    [a.title === 'Bay Area club wins NorCal championship', `title de-suffix: "${a?.title}"`],
-    [a.source === 'SoccerWire', `source: "${a?.source}"`],
-    [a.url === 'https://news.google.com/rss/articles/ABC123', `link: "${a?.url}"`],
-    [a.date === '2026-05-29', `date: "${a?.date}"`],
-    [a.category === 'local', `category local: "${a?.category}"`],
+    [greenBay.length === 0, `Green Bay WI dropped — non-soccer + false "bay area" (got ${greenBay.length})`],
+    [bayCity.length === 0, `Bay City MI soccer dropped — wrong region (got ${bayCity.length})`],
+    [crime.length === 0, `Oakland crime dropped — off-topic (got ${crime.length})`],
+    [a?.title === 'Bay Area soccer club wins NorCal championship', `title de-suffix: "${a?.title}"`],
+    [a?.source === 'SoccerWire', `source: "${a?.source}"`],
+    [a?.url === 'https://news.google.com/rss/articles/ABC123', `link: "${a?.url}"`],
+    [a?.date === '2026-05-29', `date: "${a?.date}"`],
+    [a?.category === 'local', `category local: "${a?.category}"`],
     // Key fix: description must NOT contain raw HTML tags
-    [!a.summary.includes('<a '), `summary clean (no <a> tag): "${a?.summary}"`],
-    [b.title === 'ECNL nationals bracket released', `national title: "${b?.title}"`],
-    [b.category === 'national', `category national: "${b?.category}"`],
+    [a && !a.summary.includes('<a '), `summary clean (no <a> tag): "${a?.summary}"`],
+    [b?.title === 'ECNL nationals soccer bracket released', `national title: "${b?.title}"`],
+    [b?.category === 'national', `category national: "${b?.category}"`],
   ];
 
   let ok = true;
