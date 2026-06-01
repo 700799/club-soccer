@@ -353,6 +353,29 @@ function selftest() {
 
 if (process.argv.includes('--selftest')) {
   selftest();
+} else if (process.argv.includes('--purge')) {
+  // Apply the quality gate to the existing news.json in place (no network).
+  // Immediately drops items that pre-date a filter change, instead of waiting
+  // for the next scheduled run. Run: node fetch-news.mjs --purge
+  (async () => {
+    const existing = JSON.parse(await readFile(NEWS_PATH, 'utf8'));
+    const items = Array.isArray(existing.items) ? existing.items : [];
+    const kept = items.filter((it) =>
+      passesQuality(`${it.title ?? ''} ${it.summary ?? ''}`),
+    );
+    for (const it of items) {
+      if (!kept.includes(it)) console.log(`  ✗ dropped: ${it.title}`);
+    }
+    await writeFile(
+      NEWS_PATH,
+      JSON.stringify({ ...existing, items: kept }, null, 2) + '\n',
+      'utf8',
+    );
+    console.log(`Purged ${items.length - kept.length} item(s); ${kept.length} remain.`);
+  })().catch((err) => {
+    console.error('purge failed:', err);
+    process.exit(1);
+  });
 } else {
   main().catch((err) => {
     console.error('news refresh failed:', err);
