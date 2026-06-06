@@ -5,6 +5,7 @@ export default function Nearby() {
   return (
     <SectionShell
       id="near"
+      gateUntilOpen
       eyebrow="Find Clubs"
       title="Clubs near you"
       intro={
