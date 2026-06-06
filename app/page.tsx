@@ -1,5 +1,6 @@
 import Hero from '@/components/Hero';
 import FloatingMenu from '@/components/FloatingMenu';
+import { DrawerProvider } from '@/components/DrawerContext';
 import Levels from '@/components/sections/Levels';
 import Girls from '@/components/sections/Girls';
 import Costs from '@/components/sections/Costs';
@@ -16,22 +17,24 @@ import CookieConsent from '@/components/CookieConsent';
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <FloatingMenu />
-      <Hero />
-      <Levels />
-      <Girls />
-      <Costs />
-      <Standings />
-      <Recruiting />
-      <Nearby />
-      <Futsal />
-      <Calendar />
-      <Injuries />
-      <Insoles />
-      <News />
-      <Footer />
-      <CookieConsent />
-    </main>
+    <DrawerProvider>
+      <main className="min-h-screen">
+        <FloatingMenu />
+        <Hero />
+        <Levels />
+        <Girls />
+        <Costs />
+        <Standings />
+        <Recruiting />
+        <Nearby />
+        <Futsal />
+        <Calendar />
+        <Injuries />
+        <Insoles />
+        <News />
+        <Footer />
+        <CookieConsent />
+      </main>
+    </DrawerProvider>
   );
 }

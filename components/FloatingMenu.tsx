@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { sections } from './nav';
+import { useDrawers } from './DrawerContext';
 
 /**
  * A two-row floating menu fixed at the TOP of the screen, with every section
@@ -12,6 +13,7 @@ import { sections } from './nav';
 export default function FloatingMenu() {
   const [active, setActive] = useState('top');
   const [scrolled, setScrolled] = useState(false);
+  const { open } = useDrawers();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -38,6 +40,7 @@ export default function FloatingMenu() {
   }, []);
 
   const go = (id: string) => {
+    if (id !== 'top') open(id); // open the target drawer; Hero ('top') isn't one
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
