@@ -1,16 +1,6 @@
 {
-  "lastUpdated": "2026-06-12T16:30:15.223Z",
+  "lastUpdated": "2026-06-13T15:16:20.441Z",
   "items": [
-    {
-      "id": "feed-V29ybGQgQ3VwIGZldmVyIGhpdHMg",
-      "title": "World Cup fever hits San Jose: SJUSD hosts youth soccer clinic and match viewing",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPNEZXclpsVnp6N05KOFpyblNSWm1hMWdLajNjTDNCTXlQNWZsbER3R3FGS1k3Ty12aEpkS29OOFdQRUdPMFkxbGVoWl90blU5bkNKSlFoZWlRS1JyVmxzY1UyZUJLQWhwV1VHMFA5clB5aEtOMW9EemNOZWVfLWEydjRiaFNsb0RHWmwwbUw0T0xsa2FzR1R3Ni0wM2p3aFFwUDBZ0gGoAUFVX3lxTFBkSFA4eS1WdlV3R3REcU0xMHJpZzhIWFJkbDZxcnVobUlfYTI5MlNoUUF1ZS01UnhnOXYyOG9ieVZoSEtEclNOX2hzdVpaT1JMZkJXM1ZMUXZsYnhhYjN6V2swMHZ6NnNGSG1zRFVXUkZISEdiWkd3VldvRkU1VlNDQW8zWUNGUW5vYTlRVGY3TGVPQnZYSDFKNjZycWtobHB4NTVabXFYUw?oc=5",
-      "source": "KTVU",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-06-12",
-      "summary": "World Cup fever hits San Jose: SJUSD hosts youth soccer clinic and match viewing KTVU"
-    },
     {
       "id": "feed-QW4gT2FrbGFuZCBTb2NjZXIgUHJv",
       "title": "An Oakland Soccer Program Helps Immigrant Youth Find Belonging",
@@ -20,6 +10,16 @@
       "category": "local",
       "date": "2026-06-12",
       "summary": "An Oakland Soccer Program Helps Immigrant Youth Find Belonging KQED"
+    },
+    {
+      "id": "feed-V29ybGQgQ3VwIGZldmVyIGhpdHMg",
+      "title": "World Cup fever hits San Jose: SJUSD hosts youth soccer clinic and match viewing",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPNEZXclpsVnp6N05KOFpyblNSWm1hMWdLajNjTDNCTXlQNWZsbER3R3FGS1k3Ty12aEpkS29OOFdQRUdPMFkxbGVoWl90blU5bkNKSlFoZWlRS1JyVmxzY1UyZUJLQWhwV1VHMFA5clB5aEtOMW9EemNOZWVfLWEydjRiaFNsb0RHWmwwbUw0T0xsa2FzR1R3Ni0wM2p3aFFwUDBZ0gGoAUFVX3lxTFBkSFA4eS1WdlV3R3REcU0xMHJpZzhIWFJkbDZxcnVobUlfYTI5MlNoUUF1ZS01UnhnOXYyOG9ieVZoSEtEclNOX2hzdVpaT1JMZkJXM1ZMUXZsYnhhYjN6V2swMHZ6NnNGSG1zRFVXUkZISEdiWkd3VldvRkU1VlNDQW8zWUNGUW5vYTlRVGY3TGVPQnZYSDFKNjZycWtobHB4NTVabXFYUw?oc=5",
+      "source": "KTVU",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-06-12",
+      "summary": "World Cup fever hits San Jose: SJUSD hosts youth soccer clinic and match viewing KTVU"
     },
     {
       "id": "feed-U0pVU0QgaG9zdHMgeW91dGggc29j",
@@ -40,6 +40,16 @@
       "category": "local",
       "date": "2026-06-11",
       "summary": "Girls soccer 2026 state finals pairings for Oakland County teams The Oakland Press"
+    },
+    {
+      "id": "feed-QXJsaW5ndG9uIFlvdXRoIFNvY2Nl",
+      "title": "Arlington Youth Soccer Team Raises Money For National Playoffs Trip",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRWNjSWZXYnZ1LUJzYjRZVFJpS1k3TU40cFJha1oySEtaMHZzT0VRRXkzanRxV09yaGN5UG9renU2UWtmLVdhMmRWYzVmN2RtODlWQVNRUzU5R241by1xOVQ5LVpZRFBHVEhVc0w3VkFVNzJ6eVI4bnFwS0hmZVBEMV9aaXpKei1GTmdmTGU1M0VaSjJYOTF3clNGaEJLRnpMc0RDSENB0gG8AUFVX3lxTE1FN1dBVVREbmEtekViUnVxWHl2WUVZRkVteUlGVWpFZHZQYmR3Mld4eWVhR0JDb1dxamNYQTBqaFpkekNMOGswcy1pb0tnSGZ2MHdmUUJnSmZDRUZNaGJ1Y2lWblNUTXRqUzkxOFpFRWdVcEN6ZC11My1MS0Z4eXhVN3JkSmhkQTR5R1JidjMxbzZ5clBZRmlsb0hiVEVYRVN0R3NqZm9rNnhQVUViRWh1dEVXOFUyeVJtd2N4?oc=5",
+      "source": "Patch",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-06-11",
+      "summary": "Arlington Youth Soccer Team Raises Money For National Playoffs Trip Patch"
     },
     {
       "id": "feed-UGxhbnQgQ2l0eSBMYW5jZXJzIEFk",
@@ -130,16 +140,6 @@
       "category": "national",
       "date": "2026-06-05",
       "summary": "ECNL Girls North Carolina Best XI | Club Soccer | Youth Soccer Top Drawer Soccer"
-    },
-    {
-      "id": "feed-UGxheWVycyBUaGF0IEltcHJlc3Nl",
-      "title": "Players That Impressed: ECNL Girls North Carolina National Event (Spring 2026)",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPLXp4SWJQZ1NzS0psYkxra1ZtUmIwUnZGdWJZQjBhejBneTVZLWtTSGVnU0ljck16S1hBek4xaTZiX3N5amlZUnp5Zjk2RkxCN3haRExTbWtlNEhxZDJkRG9qaGRvakd3YjJXTXFuc2hjVU9RcTQxYUQ2cmNsVG92cFdNbHlLMTRoa2hZTXJhOFQ1akJZaXJuMDA1b3ZNczdncnY3ZE4yUlNzU0hQc056ejJFMA?oc=5",
-      "source": "SoccerWire",
-      "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-06-04",
-      "summary": "Players That Impressed: ECNL Girls North Carolina National Event (Spring 2026) SoccerWire"
     },
     {
       "id": "feed-R2lybHMgc29jY2VyIDIwMjYgcmVn",
