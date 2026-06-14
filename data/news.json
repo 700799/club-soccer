@@ -1,6 +1,16 @@
 {
-  "lastUpdated": "2026-06-13T15:16:20.441Z",
+  "lastUpdated": "2026-06-14T15:24:32.944Z",
   "items": [
+    {
+      "id": "feed-UGhvdG8gZ2FsbGVyeSBmcm9tIENv",
+      "title": "Photo gallery from Country Day vs. GR West Catholic in the D3 girls soccer state final",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbEQzcEhGd3hweld4clIxemtNY3BYUHdmaDljSWFGQkRqZHlRNUpINFVtZnkySmJVU0c3dmpBVi0xaEs3SE5DbTBYQzFUcGZHbWZRVFZtRG0ta3JlUV9SSVBnMTB5NmJZeHpwX1lrcXRHS0R3c2VnVlY5aUdsZ3VlWWJpV1N3X1NnZnIxYUp5ZV9OWklfMnNiUUNPWnFWblh2Nzg5RW54dGswczhkMnRVaTZvUms2azVMVy11RTNCSlZGRFNZTVl2RA?oc=5",
+      "source": "The Oakland Press",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-06-14",
+      "summary": "Photo gallery from Country Day vs. GR West Catholic in the D3 girls soccer state final The Oakland Press"
+    },
     {
       "id": "feed-QW4gT2FrbGFuZCBTb2NjZXIgUHJv",
       "title": "An Oakland Soccer Program Helps Immigrant Youth Find Belonging",
@@ -42,16 +52,6 @@
       "summary": "Girls soccer 2026 state finals pairings for Oakland County teams The Oakland Press"
     },
     {
-      "id": "feed-QXJsaW5ndG9uIFlvdXRoIFNvY2Nl",
-      "title": "Arlington Youth Soccer Team Raises Money For National Playoffs Trip",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRWNjSWZXYnZ1LUJzYjRZVFJpS1k3TU40cFJha1oySEtaMHZzT0VRRXkzanRxV09yaGN5UG9renU2UWtmLVdhMmRWYzVmN2RtODlWQVNRUzU5R241by1xOVQ5LVpZRFBHVEhVc0w3VkFVNzJ6eVI4bnFwS0hmZVBEMV9aaXpKei1GTmdmTGU1M0VaSjJYOTF3clNGaEJLRnpMc0RDSENB0gG8AUFVX3lxTE1FN1dBVVREbmEtekViUnVxWHl2WUVZRkVteUlGVWpFZHZQYmR3Mld4eWVhR0JDb1dxamNYQTBqaFpkekNMOGswcy1pb0tnSGZ2MHdmUUJnSmZDRUZNaGJ1Y2lWblNUTXRqUzkxOFpFRWdVcEN6ZC11My1MS0Z4eXhVN3JkSmhkQTR5R1JidjMxbzZ5clBZRmlsb0hiVEVYRVN0R3NqZm9rNnhQVUViRWh1dEVXOFUyeVJtd2N4?oc=5",
-      "source": "Patch",
-      "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-06-11",
-      "summary": "Arlington Youth Soccer Team Raises Money For National Playoffs Trip Patch"
-    },
-    {
       "id": "feed-UGxhbnQgQ2l0eSBMYW5jZXJzIEFk",
       "title": "Plant City Lancers Advance to US Youth Soccer National Championships",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWXUxcWhTX1VQY3RpTmlYOHUwbUJUVnBNSVlYUEtkVEVnTXdUODBDVmNXQU1HWnBzQnB5QXRQY1BjWmJTdXVlUHVMcFJiZG5mRk1QMXBPbXBFRDQ1eWo4MExRU2lXWFNmbUhzTkRwZXZnMkM5Mi15d1o5WWh3aVJqY1ktdF9uYmljQ2xlZEtWMmZzcFNrcXM0S0VfYll4SW5fQUVEeHFB?oc=5",
@@ -60,6 +60,16 @@
       "category": "national",
       "date": "2026-06-11",
       "summary": "Plant City Lancers Advance to US Youth Soccer National Championships Plant City Observer"
+    },
+    {
+      "id": "feed-QXJsaW5ndG9uIFlvdXRoIFNvY2Nl",
+      "title": "Arlington Youth Soccer Team Raises Money For National Playoffs Trip",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRWNjSWZXYnZ1LUJzYjRZVFJpS1k3TU40cFJha1oySEtaMHZzT0VRRXkzanRxV09yaGN5UG9renU2UWtmLVdhMmRWYzVmN2RtODlWQVNRUzU5R241by1xOVQ5LVpZRFBHVEhVc0w3VkFVNzJ6eVI4bnFwS0hmZVBEMV9aaXpKei1GTmdmTGU1M0VaSjJYOTF3clNGaEJLRnpMc0RDSENB0gG8AUFVX3lxTE1FN1dBVVREbmEtekViUnVxWHl2WUVZRkVteUlGVWpFZHZQYmR3Mld4eWVhR0JDb1dxamNYQTBqaFpkekNMOGswcy1pb0tnSGZ2MHdmUUJnSmZDRUZNaGJ1Y2lWblNUTXRqUzkxOFpFRWdVcEN6ZC11My1MS0Z4eXhVN3JkSmhkQTR5R1JidjMxbzZ5clBZRmlsb0hiVEVYRVN0R3NqZm9rNnhQVUViRWh1dEVXOFUyeVJtd2N4?oc=5",
+      "source": "Patch",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-06-11",
+      "summary": "Arlington Youth Soccer Team Raises Money For National Playoffs Trip Patch"
     },
     {
       "id": "feed-VS0xOSBnaXJscyBSViBUaW1iZXJz",
@@ -182,6 +192,16 @@
       "summary": "Schedule - Oakland Christian Lancers (Auburn Hills, MI) Girls Soccer 25-26 MaxPreps"
     },
     {
+      "id": "feed-U2NoZWR1bGUgLSBTb3V0aGVybiBS",
+      "title": "Schedule - Southern Rams (Oakland, MD) Girls Soccer 26-27",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBfRWJqUzVFdm1hNFQzbTVyYzRvY19BRnJkSDhFX0NkLXFRaThrWnJRNTVVeUY3ekFqbHFxOTUzVTJLbzN0Qndsb0VycmlqYnhrNHlPUWlSeENqVjhSYmxNclhmM291eGlsWE5ZTDEwaWdkbFVCbGkyb2lKOVY?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-05-27",
+      "summary": "Schedule - Southern Rams (Oakland, MD) Girls Soccer 26-27 MaxPreps"
+    },
+    {
       "id": "feed-UGhvdG8gZ2FsbGVyeSBmcm9tIExh",
       "title": "Photo gallery from Lakeland vs. No. 7 Hartland in a D1 girls soccer district semifinal",
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxORnRNMHMxc2YyQkM2NllKZnktbVUzT1JQZWN1eklNZDc1OXpEUjJMZHZrRGFvcWl0SVhrX2o0WDJQR19LakVESUlFMU9lUnBkOFhkbkt5eGpwdUhWZzA3UjNJZ08wVTNmbS1DS2ZnYVVvbWFxTkZIYzBDT3B4TzhNYUlHUlJuM1E2UVNvVkRTSmZGVmlDbVFScktJdlA4U1VTNXEydUNlYUNCM25TWEhNaGdzNm9VRlhlaWVOWTllWHpzYnRGeWU0?oc=5",
@@ -220,26 +240,6 @@
       "category": "local",
       "date": "2026-05-27",
       "summary": "Shrine Catholic vs Oakland Christian | Girls Soccer | 5/27 MaxPreps"
-    },
-    {
-      "id": "feed-UGhvdG8gZ2FsbGVyeSBmcm9tIFdh",
-      "title": "Photo gallery from Walled Lake Northern vs. Lakeland in a D1 girls soccer district opener",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQQWFiNUJ2V3VnVVNYaDZ6WFNKMElGelFmUkhJS2c4cXRLV1g0d2tjdF9yYlBxeFhrTDBHMFF0Rkpna2JDaF9MTERFWTA4TW5WTm5VOGNGZjdJSUx0aVd6MnVpSDBsX0N2bFY2SmE4ek1IRW1mS2g3UVB0Z1lnZEZscTVncEliV05NU1JIZFVkdDRFaHU5cUw3YW5vZ2d5Uk85ZFZ0YzloRkZhd0RPRnJCTmJvcFBxMlB1cjFhTElBbjAyemw2enpqNnN0RzE?oc=5",
-      "source": "The Oakland Press",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-05-21",
-      "summary": "Photo gallery from Walled Lake Northern vs. Lakeland in a D1 girls soccer district opener The Oakland Press"
-    },
-    {
-      "id": "feed-RWFzdCBCYXkgWW91dGggU29jY2Vy",
-      "title": "East Bay Youth Soccer League team asks for help to head to national championship",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUndUU2tSYlhOQ3JaaVQ0OFBreVBxSXp4NTUtZDYwWUYybGtpRlpZV1p5MDVKNlhESk5OV2I0WnJHVFVEaGNuT201NTUtbkkyV1FlYnJiZjA1NE11U1FKNDloSkw0MFhnbVI3NXliX3JTY0dobjVaZ2JiUVRpSEpFUjFHbTNzcXJ5SnhpS3k2VnVta2VxSnfSAZ4BQVVfeXFMUEt5enRJLUVRTWlvbGR3eUVqTW5jOTZqclRYYnVXNVBUby11UE1RZUxfNFBoeTBxcGJfOWdaMlFMVk9qbTVKNmQxdkR3eGRKMU56amRURUhvSjJMdUprTXBaWEIzN1NTa2pRZVpGVm5uYWVVUmFzeXBFVml0UEFhN0VPNlkxbUd1RmgxVFVJQXBNZDRoRC1sbndyMW1BQmc?oc=5",
-      "source": "NBC Bay Area",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-05-20",
-      "summary": "East Bay Youth Soccer League team asks for help to head to national championship NBC Bay Area"
     }
   ]
 }
