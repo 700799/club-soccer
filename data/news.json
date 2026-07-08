@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-07T16:00:32.770Z",
+  "lastUpdated": "2026-07-08T15:40:30.423Z",
   "items": [
     {
       "id": "feed-UGxheWVycyB0byBXYXRjaDogRUNO",
@@ -30,6 +30,16 @@
       "category": "national",
       "date": "2026-07-05",
       "summary": "North’s Espejel to play in US Youth Soccer National Championships The Republic News"
+    },
+    {
+      "id": "feed-VGhlIHByb2JsZW0gd2l0aCBBbWVy",
+      "title": "The problem with America’s youth-soccer system",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbGJabWQ4Q1hUYnVXVVBrdklfNGdnaGhMUEdZdFRRYlNQSTlNZkxjQlFlc05BeFpudklQbjlZNFFlaXVqZHpkQVBONmlIZE5VQnVyN0I1dGo5WWVibEpueUlkS0NqMkh3Zmo1VDVUMEdXOXpZZ3JTb3hPUTZwTnJIeEowTFdLMjFYRGZYMUxqVTU2MFR3dTJhOFh3MzhucTlGUS1KN2tDc1VKNTdqLUpfQkdfcS0xUjN2Qk82MnQ4b3NESHNnR1RTOEFKY3dWelk?oc=5",
+      "source": "The Seattle Times",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-07-05",
+      "summary": "The problem with America’s youth-soccer system The Seattle Times"
     },
     {
       "id": "feed-VmFsbGV5IENocmlzdGlhbiBIaWdo",
@@ -102,16 +112,6 @@
       "summary": "Solano Surf Soccer Club hosts a camp for kids CBS News"
     },
     {
-      "id": "feed-SnVuZWF1IHBsYXllcnMgaGVscGlu",
-      "title": "Juneau players helping Alaska to national soccer tournament",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPczQteEtWek9TOVJaaUJKSzR3SGRxZ1F3anpEY0dLWFVaSVJmZWZXNm5nc3hSRFlsWkxqNFB2R2JZM2RvcEF2NVhKVy1BVmdYdmt6bmtvcFV6ZTJFYlpwZkhsZnpMSGJ2ZDVISldBN0RfSFlVenZqVHVKbG1Ba2tJWkhpOUxkRlk3Y1NpckRPZUFjQUhyaUZoTjRHZFhBc1U?oc=5",
-      "source": "Juneau Independent",
-      "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-06-30",
-      "summary": "Juneau players helping Alaska to national soccer tournament Juneau Independent"
-    },
-    {
       "id": "feed-RUEgU1BPUlRTIFJlbm92YXRlcyBP",
       "title": "EA SPORTS Renovates Oakland Youth Soccer Field Through Bay Area Host Committee Partnership",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPMllmZjdxLUJEam5sTk1NUThncm8telhtOTQ0T21ZNEt1S2hPWDhXcnNXY2JLSnZoUFdGcUxFdTdrR0RGOTlVdGpId2JTcG1RX1gzdktMOGt3OG01QmlETGM3V3l3Y2lST0tSSlNfV2EycGtucTNvLU9aTXE5OWwycDdNRlRHdmkzVUZETms1TjdzUXJ0TFhBQUVwWFpDWHBUWk8wSTlPN1lhSFFhOU91bmdjZlV1a1NsU0NzZ2x1ZDNTRk8yZjdLWg?oc=5",
@@ -140,6 +140,16 @@
       "category": "local",
       "date": "2026-06-25",
       "summary": "Freeport vs Oakland Cath. - Girls Varsity Soccer 10/14/2026 | Live & On Demand NFHS Network"
+    },
+    {
+      "id": "feed-V29vZCBNZW1vcmlhbCBIaWdoIFNj",
+      "title": "Wood Memorial High School (Oakland City, IN) Girls Soccer",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQaEFHMERfMUVRbUZ0VHdIYkpfN2xfSXhtR0pfRzRLV3A0Z3NDOWJWWHltdzRqQklhRm8xNXAtSmVhTlREZFBUbnc3MnpJdmlicEtvNmtSNlBSYlRJeWFoc0dCYkVjWUg1d0g2Yjlva1I2RWNTakVWVmh4N2d4Ymlkc0pR?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-06-23",
+      "summary": "Wood Memorial High School (Oakland City, IN) Girls Soccer MaxPreps"
     },
     {
       "id": "feed-TWVzc2Fsb25za2VlIHZzIFNrb3do",
@@ -230,16 +240,6 @@
       "category": "local",
       "date": "2026-06-15",
       "summary": "2026 Cal North Hall of Fame nominations are now open Cal North Soccer"
-    },
-    {
-      "id": "feed-UGhvdG8gZ2FsbGVyeSBmcm9tIENv",
-      "title": "Photo gallery from Country Day vs. GR West Catholic in the D3 girls soccer state final",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbEQzcEhGd3hweld4clIxemtNY3BYUHdmaDljSWFGQkRqZHlRNUpINFVtZnkySmJVU0c3dmpBVi0xaEs3SE5DbTBYQzFUcGZHbWZRVFZtRG0ta3JlUV9SSVBnMTB5NmJZeHpwX1lrcXRHS0R3c2VnVlY5aUdsZ3VlWWJpV1N3X1NnZnIxYUp5ZV9OWklfMnNiUUNPWnFWblh2Nzg5RW54dGswczhkMnRVaTZvUms2azVMVy11RTNCSlZGRFNZTVl2RA?oc=5",
-      "source": "The Oakland Press",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-06-14",
-      "summary": "Photo gallery from Country Day vs. GR West Catholic in the D3 girls soccer state final The Oakland Press"
     }
   ]
 }
