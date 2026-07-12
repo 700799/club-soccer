@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-11T14:34:50.908Z",
+  "lastUpdated": "2026-07-12T14:40:41.787Z",
   "items": [
     {
       "id": "feed-UGxheWVycyB0byBXYXRjaDogRUNO",
@@ -42,6 +42,16 @@
       "summary": "Local youth soccer teams headed to nationals Bowling Green Daily News"
     },
     {
+      "id": "feed-Q2hhZ3JpbiBGYWxscyBIaWdoIFNj",
+      "title": "Chagrin Falls High School (OH) Soccer",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9EQ2NHWEliYk1pZ3BDdGRMbGQtclZHdHZVTGgzMmNnTWI5d09Ib2NMNVJzeTNXYVplbHFqVi1ZRngwWTZwa3RMZ3dmc1NyaE42MExjOUJGQkJQSFB3WnhVNFNGN1ZLdm5VcmhOMUtteVZNckxKbThBMTVR?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-07-09",
+      "summary": "Chagrin Falls High School (OH) Soccer MaxPreps"
+    },
+    {
       "id": "feed-TW9iaWxlIFVuaXRlZCBSdXNoIGJv",
       "title": "Mobile United Rush boys and girls teams headed to U.S. Youth Soccer National Championships",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRHF1TG1XZGJPME5ZdmV1YXhLLWJBdW1VUE14VGVWeHdwbTBLcW5Ca3IyVGxvYVdBd3R4ZWFCR2JNeFFUVzk3amE5VmRWWmtNdnpvRnFERGh1eFBDMF9XRGRJQmJqa1h1NFREYk50MEJGYmNDajBIU09pcTNGTEtDV3ZaRmRjSEhEN2tzTVJBamEzbFVSWGxOaGdBWVZwN29NVGJvdzFqZU9TNzRyNUJJR0FHOHdfOF9P0gHMAUFVX3lxTFBCZkJETGRuUnBNVS1xdy1EQzljcmZVNGZNSmZ6N09JTXpLcWs3aDFFUkJfb3V6LWdjaDFjM3g1XzRNbTVRWXRfTjQwVG5qdElhbmowWi0wUnpGWFhJWHJxc1NIU3V2eVNzZHB4bmpsQWNGREpKd0VrTnFHUm1YNDhyajhwa28tV010ZTBoaHdILWlaZzVjNGZKckwwSFd4X1N1cHNHaUsySlNsby16RlNHcW5jRkEzcW5BRnZFVE11UGZzZ2ViOFMzMUprbA?oc=5",
@@ -80,6 +90,16 @@
       "category": "local",
       "date": "2026-07-07",
       "summary": "Ravenwood vs Oakland - Girls Junior Varsity Soccer 08/06/2026 | Watch Live & On Demand NFHS Network"
+    },
+    {
+      "id": "feed-UmF2ZW53b29kIHZzIE9ha2xhbmQg",
+      "title": "Ravenwood vs Oakland - Girls Varsity Soccer 08/06/2026 | Watch Live & On Demand",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTGMzN3lremEzSVR5U19EeWsxdV9qOHV1dEZjTGp2eWp3WUJQYUozN3FqZzRPc09UTm8yZlB6VjExVV81cEF1M3Y0MVgxMnVBcUUtQXBSMDRzRjc0Vk1RYk9OaEUzUzNZVjloSWZXZ2diT1FIWlRkWGx5ZU9rNG45eWlETXFBQXFCaVhv?oc=5",
+      "source": "NFHS Network",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-07-07",
+      "summary": "Ravenwood vs Oakland - Girls Varsity Soccer 08/06/2026 | Watch Live & On Demand NFHS Network"
     },
     {
       "id": "feed-TWFyeXN2aWxsZSB0byBob3N0IGhp",
@@ -220,26 +240,6 @@
       "category": "local",
       "date": "2026-06-20",
       "summary": "Watch Youth soccer development in Richmond - FOX LOCAL San Francisco FOX One"
-    },
-    {
-      "id": "feed-WW91dGggc29jY2VyIGRldmVsb3Bt",
-      "title": "Youth soccer development in Richmond",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5kdVRzWXhrYTVzS241UktXb2pfTmthYTlULVc0ZDQtXzItOWZGTjdpT2otbTF4b0hjcnE5bDZvV0dBVUpoLXhWbXZrRWxERHlIV3ZwSUtxc3dfVFXSAWBBVV95cUxNLVpjcVhWbUYwLUdWX2RRUGFjWnhnQTJHcTJLOEpkTnpOWkwyYW5SeFQ0V2JqQ0dUZW1PN1lGVXR6OGFLNm9iN0xuODJYNXpVM0M4bG5pelBfVHVERFc1aXQ?oc=5",
-      "source": "KTVU",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-06-20",
-      "summary": "Youth soccer development in Richmond KTVU"
-    },
-    {
-      "id": "feed-Q2hyaXN0aWFuIEFjYWRlbXktTG91",
-      "title": "Christian Academy-Louisville vs North Oldham | JV Soccer | 9/8",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQbkcyNGQ2TURzYzZSREtBazZVWVg2TE5KNWNJcEUwcktZYjVGTHFJRG1PWmRDbVoydEplOGJEOUcyM0VvWWhEb05XUzZRRm5aRi1qbzNXVE4tU1ZGY0RKQ0tLdmhoX1k4Ym0xZWVLc0RQQ0RIRW9Xa3F3T1N2NTNWdUVLMlVlSGJVVGwzaUphbGRLdjlrTl8wZ29EZ3BHdUNiQjRHWHdYeEdycXhFQ3lETlVvUDJST3psZ1prWHN1ZFlMQnhj?oc=5",
-      "source": "MaxPreps",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-06-19",
-      "summary": "Christian Academy-Louisville vs North Oldham | JV Soccer | 9/8 MaxPreps"
     }
   ]
 }
