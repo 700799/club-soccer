@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-22T15:19:43.699Z",
+  "lastUpdated": "2026-07-23T15:30:55.650Z",
   "items": [
     {
       "id": "feed-SW4gT2FrbGFuZCwgYSBsaWJyYXJ5",
@@ -142,16 +142,6 @@
       "summary": "Kimberly's Urban headlines area all-state girls soccer players The Post-Crescent"
     },
     {
-      "id": "feed-Q2hhZ3JpbiBGYWxscyBIaWdoIFNj",
-      "title": "Chagrin Falls High School (OH) Soccer",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9EQ2NHWEliYk1pZ3BDdGRMbGQtclZHdHZVTGgzMmNnTWI5d09Ib2NMNVJzeTNXYVplbHFqVi1ZRngwWTZwa3RMZ3dmc1NyaE42MExjOUJGQkJQSFB3WnhVNFNGN1ZLdm5VcmhOMUtteVZNckxKbThBMTVR?oc=5",
-      "source": "MaxPreps",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-07-13",
-      "summary": "Chagrin Falls High School (OH) Soccer MaxPreps"
-    },
-    {
       "id": "feed-TWNDbGF0Y2h5IEhpZ2ggU2Nob29s",
       "title": "McClatchy High School (Sacramento, CA) Girls Soccer",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQallPQmFCX2RaVFpaTlNjVFV2T0JnWTg0eVhTU3NuQ0M3c3F4V1NSY2tVTnd3NGRuLUgwMDAyR0FjU2RjUEtYX0dFUXBFdURHNXlmekF5Vzd0Y1diUTJYcEJENThjRUtoeXhWY0ZIaEN3SmViZVNjSV9fdHBYa0labQ?oc=5",
@@ -160,6 +150,16 @@
       "category": "local",
       "date": "2026-07-13",
       "summary": "McClatchy High School (Sacramento, CA) Girls Soccer MaxPreps"
+    },
+    {
+      "id": "feed-Q2hhZ3JpbiBGYWxscyBIaWdoIFNj",
+      "title": "Chagrin Falls High School (OH) Soccer",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9EQ2NHWEliYk1pZ3BDdGRMbGQtclZHdHZVTGgzMmNnTWI5d09Ib2NMNVJzeTNXYVplbHFqVi1ZRngwWTZwa3RMZ3dmc1NyaE42MExjOUJGQkJQSFB3WnhVNFNGN1ZLdm5VcmhOMUtteVZNckxKbThBMTVR?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-07-13",
+      "summary": "Chagrin Falls High School (OH) Soccer MaxPreps"
     },
     {
       "id": "feed-TWVuJ3MgU29jY2VyIEFubm91bmNl",
