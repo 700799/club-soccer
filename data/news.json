@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-07-24T15:12:13.416Z",
+  "lastUpdated": "2026-07-25T14:46:26.486Z",
   "items": [
+    {
+      "id": "feed-SGlzdG9yaWMgQW5ub3VuY2VtZW50",
+      "title": "Historic Announcement: MLS NEXT Academy Division Regional Event Comes to Roseville",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUHp4Y09GQVhva1dwc0g3bXhvYlFyVVhqUWpONnZoeUNDVE82OVVHdGZ3bm9ib3EyaEYyMy1ncm1Tam9nbUJJYlVKaHdQS1ljcEVUd2tMbm5aRE51VWFOOUtRUGZ1T1F6QkEzQnZvR0xVQzlmMHpYRThoVkZRQXR1Sjd3YjRmeWR3ejBaOFpaNGxWRUxNNEM4SWRaNnRIc0JxQUZQbXBxSGthQ2F2Wm0yMGgwYkVGclFOc3BOOC1LLXXSAcABQVVfeXFMT1B6eGNPRkFYb2tXcHNIN214b2JRclVYalFqTjZ2aHlDQ1RPNjlVR3Rmd25vYm9xMmhGMjMtZ3JtU2pvZ21CSWJVSmh3UEtZY3BFVHdrTG5uWkROdVVhTjlLUVBmdU9RekJBM0J2b0dMVUM5ZjB6WEU4aFZGUUF0dUo3d2I0Znlkd3owWjhaWjRsVkVMTTRDOElkWjZ0SHNCcUFGUG1wcUhrYUNhdlptMjBoMGJFRnJRTnNwTjgtSy11?oc=5",
+      "source": "Cal North",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-07-25",
+      "summary": "Historic Announcement: MLS NEXT Academy Division Regional Event Comes to Roseville Cal North"
+    },
+    {
+      "id": "feed-SGFtcHRvbi1EdW1vbnQvQ0FMIEJv",
+      "title": "Hampton-Dumont/CAL Boys Varsity Soccer @ DNWHS",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNQWhvcHNhZHhIc3pZem5LUDA0WlcwR01Qd0o0Y3ItX0NRU09SU3ZsdER1OTBITi1yQ2tja19GQlRrZlp6UFliclEwTGE3Xy1RUFNqSmJQSlJqWEptOVB0aVB1NXhXM2dmbEtlTHZnNG90V240Rk1iR1RoWjQyU0RIWUhrQWtfT0k0S1NHMFZoZkluWHliRDZxakZIbEJxX2c2eFhhcXg5LTdlNDAxNlg2WnJSM24xWkNzcWh3X1dtM3Q3cGwxeExGZFBHck5QN3pCaUE?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-07-24",
+      "summary": "Hampton-Dumont/CAL Boys Varsity Soccer @ DNWHS MaxPreps"
+    },
     {
       "id": "feed-RHJlYW0gVGVhbSBxdWFydGV0IGhl",
       "title": "Dream Team quartet headlines Oakland County’s girls soccer postseason award winners",
@@ -10,6 +30,16 @@
       "category": "local",
       "date": "2026-07-24",
       "summary": "Dream Team quartet headlines Oakland County’s girls soccer postseason award winners The Oakland Press"
+    },
+    {
+      "id": "feed-MyBWYWlsIFZhbGxleSBTb2NjZXIg",
+      "title": "3 Vail Valley Soccer Clubs compete at US Youth Soccer National Championships",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNX3ZCVFBHWTVPZ05iUkl1RGxkZjVMMXNPd1g5TTdJMXM1VzFEUmYwOHB5cnhpMy1JeFRhaDdkWG5rVHU3THpla3F0cDNhSnlYRy1KdklNZmZZT0JocDBwMGRVLXJyTUhBXzVfdExlOWxLZWRHTlNIV05hS2VWemhEWXBUS2lKZ0dRMkpmTzZCOUdFWTRQUVFHTjdmQ1J3dXQzWFRzcDlqTlFKRVR2?oc=5",
+      "source": "VailDaily.com",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-07-24",
+      "summary": "3 Vail Valley Soccer Clubs compete at US Youth Soccer National Championships VailDaily.com"
     },
     {
       "id": "feed-U291bmQgRkMgR2lybHMgMTNVIHRl",
@@ -60,16 +90,6 @@
       "category": "national",
       "date": "2026-07-21",
       "summary": "ECNL Boys National Finals Best XI | Club Soccer | Youth Soccer Top Drawer Soccer"
-    },
-    {
-      "id": "feed-RUNOTCBHaXJscyBVMTQtMTUgTmF0",
-      "title": "ECNL Girls U14-15 National Finals Best XI | Club Soccer | Youth Soccer",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNVUtjSlBObG9DQjhDcEpLRGd0M1hVeVJnNDd1WWF0TEJOam1FM3UwMG9kS1FrbThWdEN1TzJJeVZ3QmRNdEVsZUwwSXhTNnpSQW9tMnQ4MGlLOWJwbTlOZUdjMFE1Nl9OSjZfaHIxdi0xcDZjNFNTSldUX1ZmVUxEcVozdW9hLU1Xd0FTQUdPeG5neWR0bGQ5TnhYaGtsYTVBaU5JZi1n?oc=5",
-      "source": "Top Drawer Soccer",
-      "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-07-21",
-      "summary": "ECNL Girls U14-15 National Finals Best XI | Club Soccer | Youth Soccer Top Drawer Soccer"
     },
     {
       "id": "feed-RWFzdGVybiBOQyBzaGluZXMgaW4g",
@@ -142,6 +162,16 @@
       "summary": "Independence vs Oakland - Girls Varsity Soccer 08/18/2026 | Watch Live & On Demand NFHS Network"
     },
     {
+      "id": "feed-TGljZW5zYWJsZSBwaWN0dXJlOiA1",
+      "title": "Licensable picture: 57753 Bergen, Oakland 11/07/09 GIRLS SOCCER IHA VS NORTHERN HIGHLANDS: Immaculate Heart Academy's Tara Schwitter celebrates",
+      "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxOSkFDb0Q0SVRMWG95REstWEQtV3R6RVRHWHpnTGdNVmpoQnRHZjUzZldjektWTDlNc3ppTmJpT04wZ3VWMmZQRm83R0VNZzhaWkxWbnhFWGxPLVFEV2N6ZG9BSG92eGgyRXRsdXJJT3MzRnNuSmtwd0FZNjcwWHQ2dWhPM0lfc0taWHlOc3N1RVlFQW1JLWx1MDExaHZUZlNxWDJJQ1BDOXIxcDFleFZUaTlCQ2VJa1QtNFZEVVFSWEppdVB0SW93cmpMTG9iOHpFdDFTR2tsdV9DSENtbGVpSEEtN3FENEFnd2RraC1aNG5mc2xCY0g2S3RIbFNnckZya0JQa1U3dF83YWZBbjFZa2Nka0JsRlV2dDdnMnZpcFBObkZSUmFPSS1KQzZOSU04bWNJUjBzZklYYjhyRnM4?oc=5",
+      "source": "reutersconnect.com",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-07-16",
+      "summary": "Licensable picture: 57753 Bergen, Oakland 11/07/09 GIRLS SOCCER IHA VS NORTHERN HIGHLANDS: Immaculate Heart Academy's Tara Schwitter celebrates reutersconnect.com"
+    },
+    {
       "id": "feed-S2ltYmVybHkncyBVcmJhbiBoZWFk",
       "title": "Kimberly's Urban headlines area all-state girls soccer players",
       "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxObkY4enRBRVBSZVpPWkx3cXlqa0RBbDRMeXBsWVo3dVdFUkNrMEd4QjhXcUtOZlB6MGpBcEdiNlp4b2lBUVhaVlhCV0tOUkVuSnc3RzZSdW1xUm9URkJ2dm55akU0aF9rREdUdTJuMjFUMEI4dmRFRnVyQWN4cXRwaGJ0UnFCODR2WE5aXy1hNnVmZXhFc1kxYkFfYlFJN2hUaUJfZ2Q2TV9aVHNQWXhLVlA3RHNsb3dxNm1OdWVvbE1fS2J5N3VhYmVnNnJXa3hPWDFuczFQUktZYWJORncyXzh3?oc=5",
@@ -210,36 +240,6 @@
       "category": "local",
       "date": "2026-07-07",
       "summary": "Ravenwood vs Oakland - Girls Varsity Soccer 08/06/2026 | Watch Live & On Demand NFHS Network"
-    },
-    {
-      "id": "feed-TWFyeXN2aWxsZSB0byBob3N0IGhp",
-      "title": "Marysville to host high school soccer all-star games for area athletes",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOeTBTVGpqS2t4VjV4bHk5SldwbmhsSjI3Rm5iUGZXRlpuR2VBa0xuZjBGalNPOGwyaXRsbGRjZE0yRzgwbEdJcjBjUHM0dG1IRFp6ZUI3c1prOHZ6eUt1QjVhbWFnOXdHTzdHaUFvT3BUTG5RMGl6ZjFmLWh1OHNMNFNHeFc?oc=5",
-      "source": "AOL.com",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-07-07",
-      "summary": "Marysville to host high school soccer all-star games for area athletes AOL.com"
-    },
-    {
-      "id": "feed-QXMgeW91dGggc29jY2VyIGdyb3dz",
-      "title": "As youth soccer grows in the Bay area, some kids still struggle for opportunities to play",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNYm96S3NMMG1lWkxKYXZfVHdJZ2dMeW5LSXdGbTV3Nkh6bFRMaEQzbHBReWdzRUZtWHR6Q25XRWt3U1NtMXdLVV9uYk1xY3BmT1ZpZEpSWVRJT0pYZmJ0UW9DSkptSFVVVmEyVVVGY21za1NKYTUta3g4OXhseE5IWVVB0gGKAUFVX3lxTE54SE5VR1NaUjlPVHBBTDl3WGgwYTZqNGtfRlRmeWRQNUdtT00yWElaRGI4bXFGNDlhbDJBeGQ1dzk4V3dKV1E5N3FST0xUZ0p2a1VRcmZvUUNpMFpQd0tUZzQyNkxFajNyclN4MTRwVFgzUVVSTGZSOVE3alF0YmctY0FGek42M21PZw?oc=5",
-      "source": "NBC Bay Area",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-07-06",
-      "summary": "As youth soccer grows in the Bay area, some kids still struggle for opportunities to play NBC Bay Area"
-    },
-    {
-      "id": "feed-VmFsbGV5IENocmlzdGlhbiBIaWdo",
-      "title": "Valley Christian High School (San Jose, CA) Girls Soccer",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOR0RmVFdtYXdKZ0pVNWZadmRaSDlUTFhhNE9LY2lXOC1yR3ZzUGFzcVpRdTVhMndPZnRpLXk2U0hKMG05NEN0OW5DVEJtQ1pzcldEOEJtSFp2OW93VVQteXZqNUhRaW5oQlo1OENSdVN6RkwyOHlFVHJYUDAydVQ1cWtuRzAzVXl2TjdZ?oc=5",
-      "source": "MaxPreps",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-07-04",
-      "summary": "Valley Christian High School (San Jose, CA) Girls Soccer MaxPreps"
     }
   ]
 }
