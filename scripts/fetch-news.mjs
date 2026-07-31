@@ -397,6 +397,19 @@ function selftest() {
     </item>
   </channel></rss>`;
 
+  // Live scan admin notice — passes SOCCER_RE because "Soccer" appears in the
+  // source name that Google News appends to the description, and "Cal North"
+  // satisfies LOCAL_HINTS; but \blive scan\b in OFF_TOPIC_DROP catches it.
+  const liveScanSample = `<rss><channel>
+    <item>
+      <title>Cal North Member Update: Capital Live Scan Requirements</title>
+      <link>https://news.google.com/rss/articles/LS1</link>
+      <pubDate>Mon, 01 Jun 2026 10:00:00 GMT</pubDate>
+      <description>New fingerprinting rules for Cal North coaches. Cal North Soccer</description>
+      <source url="https://calnorth.org">Cal North Soccer</source>
+    </item>
+  </channel></rss>`;
+
   const a = parseFeed(gnewsSample, { category: 'local' })[0];
   const b = parseFeed(nationalSample, { category: 'national' })[0];
   const pro = parseFeed(proSample, { category: 'national' });
@@ -406,6 +419,16 @@ function selftest() {
   const oaklandCounty = parseFeed(oaklandCountySample, { category: 'local' });
   const stateParen = parseFeed(stateParenSample, { category: 'local' });
   const iceDetention = parseFeed(iceSample, { category: 'local' });
+  const liveScan = parseFeed(liveScanSample, { category: 'local' });
+
+  // capPerSource: 3 items from the same source → only 2 kept; distinct source unaffected.
+  const capInput = [
+    { source: 'ESPN', title: 'ESPN-1' },
+    { source: 'ESPN', title: 'ESPN-2' },
+    { source: 'ESPN', title: 'ESPN-3' },
+    { source: 'SoccerWire', title: 'SW-1' },
+  ];
+  const capResult = capPerSource(capInput);
 
   const checks = [
     [pro.length === 0, `pro NWSL item dropped (got ${pro.length})`],
@@ -415,6 +438,9 @@ function selftest() {
     [oaklandCounty.length === 0, `Oakland County MI dropped — wrong region (got ${oaklandCounty.length})`],
     [stateParen.length === 0, `"(Oakland City, IN)" parenthetical dropped (got ${stateParen.length})`],
     [iceDetention.length === 0, `ICE detention story dropped — off-topic (got ${iceDetention.length})`],
+    [liveScan.length === 0, `Cal North live scan admin notice dropped — OFF_TOPIC_DROP (got ${liveScan.length})`],
+    [capResult.length === 3, `capPerSource kept 3 of 4 (expected 3, got ${capResult.length})`],
+    [!capResult.some((i) => i.title === 'ESPN-3'), `capPerSource dropped 3rd same-source item`],
     [a?.title === 'Bay Area soccer club wins NorCal championship', `title de-suffix: "${a?.title}"`],
     [a?.source === 'SoccerWire', `source: "${a?.source}"`],
     [a?.url === 'https://news.google.com/rss/articles/ABC123', `link: "${a?.url}"`],
