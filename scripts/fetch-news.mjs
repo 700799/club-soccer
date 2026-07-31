@@ -32,8 +32,9 @@ const FEEDS = [
   { url: gnews('"Bay Area" youth soccer'), category: 'local' },
   { url: gnews('"Northern California" youth soccer championship'), category: 'local' },
   { url: gnews('Cal North soccer OR "California North" soccer'), category: 'local' },
-  { url: gnews('Bay Area high school soccer'), category: 'local' },
-  { url: gnews('"San Jose" OR "San Francisco" OR "Oakland" youth soccer'), category: 'local' },
+  { url: gnews('"Bay Area" high school soccer'), category: 'local' },
+  { url: gnews('"San Jose" OR "San Francisco" youth soccer'), category: 'local' },
+  { url: gnews('"Oakland" youth soccer California -Michigan -Indiana'), category: 'local' },
   { url: gnews('"Sacramento" youth soccer club'), category: 'local' },
   { url: gnews('NorCal ECNL OR "ECNL NorCal"'), category: 'local' },
   // National tournaments / college recruiting
@@ -45,8 +46,12 @@ const FEEDS = [
 
 // Recognise clearly NorCal/local content even when pulled from a national query.
 // The (?<!green ) lookbehind stops "Green Bay area" (Wisconsin) matching "bay area".
+// The (?!\s+(count|city|press|christian)) lookahead stops Michigan false positives:
+//   "Oakland County" (Oakland County, MI), "Oakland City" (IN),
+//   "Oakland Press" (The Oakland Press, Michigan newspaper whose name
+//    appears in article summaries), and "Oakland Christian" (Michigan school).
 const LOCAL_HINTS =
-  /\b(norcal|nor cal|(?<!green )bay area|northern california|cal north|california north|san francisco|san jose|oakland|sacramento|marin|contra costa|alameda|santa clara|fresno|stockton|modesto|napa|sonoma|solano|east bay|peninsula|silicon valley|fremont|berkeley|palo alto|mountain view|livermore|pleasanton|dublin|san ramon|danville|davis|roseville|folsom|elk grove|santa rosa|petaluma|san mateo|redwood city|sunnyvale|milpitas|hayward|concord|walnut creek)\b/i;
+  /\b(norcal|nor cal|(?<!green )bay area|northern california|cal north|california north|san francisco|san jose|oakland(?!\s+(count|city|press|christian))|sacramento|marin|contra costa|alameda|santa clara|fresno|stockton|modesto|napa|sonoma|solano|east bay|peninsula|silicon valley|fremont|berkeley|palo alto|mountain view|livermore|pleasanton|dublin|san ramon|danville|davis|roseville|folsom|elk grove|santa rosa|petaluma|san mateo|redwood city|sunnyvale|milpitas|hayward|concord|walnut creek)\b/i;
 
 // This is a SOCCER site: every item must clearly be about soccer/futsal. This
 // drops generic "high school sports results" and off-topic local crime/news that
@@ -54,9 +59,24 @@ const LOCAL_HINTS =
 const SOCCER_RE =
   /\b(soccer|futsal|ecnl|ecrl|mls next|npl|usl|girls academy|goalkeeper|midfielder)\b/i;
 
-// Other-region "bay"/city names that collide with the broad NorCal queries.
-// Drop these unless a genuine NorCal token is also present.
-const NON_NORCAL = /\b(green bay|bay city|tampa bay|morro bay|wisconsin|michigan)\b/i;
+// Other-region city/state names that collide with the broad NorCal queries.
+// "michigan", "indiana", "ohio" are absolute wrong-state signals — no NorCal
+// youth soccer article uses these state names. Michigan-specific terms
+// (auburn hills, walled lake, mihssca, oakland county) catch common false
+// positives from the "Oakland" query.
+const NON_NORCAL =
+  /\b(green bay|bay city|tampa bay|morro bay|wisconsin|michigan|indiana|ohio|auburn hills|walled lake|mihssca|oakland county)\b/i;
+
+// Parenthetical non-CA state abbreviation in title/text (MaxPreps style):
+// e.g. "(Oakland City, IN)" or "(Auburn Hills, MI)". Absolute drop.
+const TITLE_NON_CA =
+  /\([^)]+,\s*(MI|IN|OH|WI|IL|MN|TX|FL|GA|PA|VA|NC|NY|NJ|MA|CT|WA|OR|AZ|NV|UT|CO|ID|MT|WY|SD|ND|NE|KS|OK|AR|LA|MS|AL|TN|KY|WV|MD|DE|RI|NH|VT|ME|AK|HI)\b/;
+
+// Stories where "soccer" appears tangentially — not as the subject.
+// E.g. immigration/detention stories and administrative club notices that only
+// pass SOCCER_RE because the source name ("Cal North Soccer") contains the word.
+const OFF_TOPIC_DROP =
+  /\bdetained by ice\b|\bice detention\b|\bice detain|\blive scan\b|\bbackground check\b/i;
 
 // Pro / senior-team coverage we never want (this is a youth site). Drop an item
 // matching these unless it clearly carries a youth/academy signal.
@@ -73,6 +93,8 @@ const YOUTH_KEEP =
  */
 function passesQuality(text) {
   if (!SOCCER_RE.test(text)) return false;
+  if (OFF_TOPIC_DROP.test(text)) return false;
+  if (TITLE_NON_CA.test(text)) return false;
   if (NON_NORCAL.test(text) && !LOCAL_HINTS.test(text)) return false;
   if (PRO_DROP.test(text) && !YOUTH_KEEP.test(text)) return false;
   return true;
@@ -135,6 +157,12 @@ function parseFeed(xml, feed) {
       field(b, 'description') || field(b, 'summary') || field(b, 'content') || '';
 
     const combined = `${title} ${summaryRaw}`;
+
+    // For local-labeled feed items, require actual NorCal geography. Local
+    // queries (e.g. "Oakland youth soccer") can return Michigan results
+    // ("Oakland County", "Oakland Christian") that pass topic/pro filters but
+    // have no California geography in the text.
+    if (feed.category === 'local' && !LOCAL_HINTS.test(combined)) continue;
 
     // Must be on-topic soccer, in-region, and youth (not pro).
     if (!passesQuality(combined)) continue;
@@ -206,15 +234,32 @@ function dedupe(items) {
   return out;
 }
 
+// Cap the number of items per source so no single outlet dominates.
+// Items must be date-sorted before this runs so the freshest ones are kept.
+function capPerSource(items, max = 2) {
+  const counts = new Map();
+  return items.filter((it) => {
+    const src = (it.source || '').toLowerCase();
+    const n = counts.get(src) ?? 0;
+    if (n >= max) return false;
+    counts.set(src, n + 1);
+    return true;
+  });
+}
+
 async function main() {
   console.log('Refreshing NorCal soccer news…');
 
   const existing = JSON.parse(await readFile(NEWS_PATH, 'utf8'));
   // Re-run the quality gate over existing items so anything that slipped in
-  // before this filter existed gets dropped on this run.
-  const seed = (Array.isArray(existing.items) ? existing.items : []).filter((it) =>
-    passesQuality(`${it.title ?? ''} ${it.summary ?? ''}`),
-  );
+  // before this filter existed gets dropped on this run. Local items must also
+  // have NorCal geography — the same requirement we impose on new local-feed items.
+  const seed = (Array.isArray(existing.items) ? existing.items : []).filter((it) => {
+    const text = `${it.title ?? ''} ${it.summary ?? ''}`;
+    if (!passesQuality(text)) return false;
+    if (it.category === 'local' && !LOCAL_HINTS.test(text)) return false;
+    return true;
+  });
 
   const fetched = (await Promise.all(FEEDS.map(fetchFeed))).flat();
 
@@ -227,8 +272,9 @@ async function main() {
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
   );
 
-  const local = all.filter((i) => i.category === 'local');
-  const national = all.filter((i) => i.category === 'national');
+  const capped = capPerSource(all);
+  const local = capped.filter((i) => i.category === 'local');
+  const national = capped.filter((i) => i.category === 'national');
   const chosen = [
     ...local.slice(0, MAX_ITEMS - Math.min(MAX_NATIONAL, national.length)),
     ...national.slice(0, MAX_NATIONAL),
@@ -316,18 +362,85 @@ function selftest() {
     </item>
   </channel></rss>`;
 
+  // Oakland County, MI — no NorCal geography; fails local-feed check AND NON_NORCAL.
+  const oaklandCountySample = `<rss><channel>
+    <item>
+      <title>Girls soccer 2026 district pairings for Oakland County teams - The Oakland Press</title>
+      <link>https://news.google.com/rss/articles/OAKCO1</link>
+      <pubDate>Mon, 01 Jun 2026 10:00:00 GMT</pubDate>
+      <description>Oakland County high school girls soccer district pairings for 2026</description>
+      <source url="https://theoaklandpress.com">The Oakland Press</source>
+    </item>
+  </channel></rss>`;
+
+  // Parenthetical non-CA state "(Oakland City, IN)" — caught by TITLE_NON_CA
+  // even though "San Jose" passes LOCAL_HINTS.
+  const stateParenSample = `<rss><channel>
+    <item>
+      <title>San Jose vs Wood Memorial (Oakland City, IN) Girls Soccer - MaxPreps</title>
+      <link>https://news.google.com/rss/articles/STAT1</link>
+      <pubDate>Sun, 31 May 2026 10:00:00 GMT</pubDate>
+      <description>Girls soccer match results</description>
+      <source url="https://maxpreps.com">MaxPreps</source>
+    </item>
+  </channel></rss>`;
+
+  // ICE detention — "soccer" is tangential; caught by OFF_TOPIC_DROP and
+  // fails local-feed LOCAL_HINTS check (no NorCal geography).
+  const iceSample = `<rss><channel>
+    <item>
+      <title>CPS student detained by ICE for 2 months reunites with high school soccer team - CBS News</title>
+      <link>https://news.google.com/rss/articles/ICE1</link>
+      <pubDate>Tue, 27 May 2026 10:00:00 GMT</pubDate>
+      <description>A student detained by ICE has reunited with his high school soccer team</description>
+      <source url="https://cbsnews.com">CBS News</source>
+    </item>
+  </channel></rss>`;
+
+  // Live scan admin notice — passes SOCCER_RE because "Soccer" appears in the
+  // source name that Google News appends to the description, and "Cal North"
+  // satisfies LOCAL_HINTS; but \blive scan\b in OFF_TOPIC_DROP catches it.
+  const liveScanSample = `<rss><channel>
+    <item>
+      <title>Cal North Member Update: Capital Live Scan Requirements</title>
+      <link>https://news.google.com/rss/articles/LS1</link>
+      <pubDate>Mon, 01 Jun 2026 10:00:00 GMT</pubDate>
+      <description>New fingerprinting rules for Cal North coaches. Cal North Soccer</description>
+      <source url="https://calnorth.org">Cal North Soccer</source>
+    </item>
+  </channel></rss>`;
+
   const a = parseFeed(gnewsSample, { category: 'local' })[0];
   const b = parseFeed(nationalSample, { category: 'national' })[0];
   const pro = parseFeed(proSample, { category: 'national' });
   const greenBay = parseFeed(greenBaySample, { category: 'local' });
   const bayCity = parseFeed(bayCitySample, { category: 'local' });
   const crime = parseFeed(crimeSample, { category: 'local' });
+  const oaklandCounty = parseFeed(oaklandCountySample, { category: 'local' });
+  const stateParen = parseFeed(stateParenSample, { category: 'local' });
+  const iceDetention = parseFeed(iceSample, { category: 'local' });
+  const liveScan = parseFeed(liveScanSample, { category: 'local' });
+
+  // capPerSource: 3 items from the same source → only 2 kept; distinct source unaffected.
+  const capInput = [
+    { source: 'ESPN', title: 'ESPN-1' },
+    { source: 'ESPN', title: 'ESPN-2' },
+    { source: 'ESPN', title: 'ESPN-3' },
+    { source: 'SoccerWire', title: 'SW-1' },
+  ];
+  const capResult = capPerSource(capInput);
 
   const checks = [
     [pro.length === 0, `pro NWSL item dropped (got ${pro.length})`],
     [greenBay.length === 0, `Green Bay WI dropped — non-soccer + false "bay area" (got ${greenBay.length})`],
     [bayCity.length === 0, `Bay City MI soccer dropped — wrong region (got ${bayCity.length})`],
     [crime.length === 0, `Oakland crime dropped — off-topic (got ${crime.length})`],
+    [oaklandCounty.length === 0, `Oakland County MI dropped — wrong region (got ${oaklandCounty.length})`],
+    [stateParen.length === 0, `"(Oakland City, IN)" parenthetical dropped (got ${stateParen.length})`],
+    [iceDetention.length === 0, `ICE detention story dropped — off-topic (got ${iceDetention.length})`],
+    [liveScan.length === 0, `Cal North live scan admin notice dropped — OFF_TOPIC_DROP (got ${liveScan.length})`],
+    [capResult.length === 3, `capPerSource kept 3 of 4 (expected 3, got ${capResult.length})`],
+    [!capResult.some((i) => i.title === 'ESPN-3'), `capPerSource dropped 3rd same-source item`],
     [a?.title === 'Bay Area soccer club wins NorCal championship', `title de-suffix: "${a?.title}"`],
     [a?.source === 'SoccerWire', `source: "${a?.source}"`],
     [a?.url === 'https://news.google.com/rss/articles/ABC123', `link: "${a?.url}"`],
@@ -360,8 +473,15 @@ if (process.argv.includes('--selftest')) {
   (async () => {
     const existing = JSON.parse(await readFile(NEWS_PATH, 'utf8'));
     const items = Array.isArray(existing.items) ? existing.items : [];
-    const kept = items.filter((it) =>
-      passesQuality(`${it.title ?? ''} ${it.summary ?? ''}`),
+    // Items in news.json are already date-sorted (newest first), so capPerSource
+    // retains the freshest articles when trimming per-source duplicates.
+    const kept = capPerSource(
+      items.filter((it) => {
+        const text = `${it.title ?? ''} ${it.summary ?? ''}`;
+        if (!passesQuality(text)) return false;
+        if (it.category === 'local' && !LOCAL_HINTS.test(text)) return false;
+        return true;
+      }),
     );
     for (const it of items) {
       if (!kept.includes(it)) console.log(`  ✗ dropped: ${it.title}`);
