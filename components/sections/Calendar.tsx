@@ -14,9 +14,12 @@ const genderStyle: Record<string, string> = {
 };
 
 export default function Calendar() {
-  const events = [...calendarEvents].sort((a, b) =>
-    a.sortKey.localeCompare(b.sortKey),
-  );
+  // At build time, filter out events whose sortKey month has already passed.
+  // The daily news refresh triggers a rebuild, so this stays current automatically.
+  const thisMonth = new Date().toISOString().slice(0, 7); // "YYYY-MM"
+  const events = [...calendarEvents]
+    .filter((e) => e.sortKey.slice(0, 7) >= thisMonth)
+    .sort((a, b) => a.sortKey.localeCompare(b.sortKey));
 
   return (
     <SectionShell
@@ -33,6 +36,9 @@ export default function Calendar() {
         </>
       }
     >
+      {events.length === 0 && (
+        <p className="text-slate-500">No upcoming events at the moment — check back soon.</p>
+      )}
       <ol className="relative space-y-3 border-l-2 border-slate-200 pl-5">
         {events.map((e) => (
           <li key={e.name} className="relative">
