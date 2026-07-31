@@ -73,8 +73,10 @@ const TITLE_NON_CA =
   /\([^)]+,\s*(MI|IN|OH|WI|IL|MN|TX|FL|GA|PA|VA|NC|NY|NJ|MA|CT|WA|OR|AZ|NV|UT|CO|ID|MT|WY|SD|ND|NE|KS|OK|AR|LA|MS|AL|TN|KY|WV|MD|DE|RI|NH|VT|ME|AK|HI)\b/;
 
 // Stories where "soccer" appears tangentially — not as the subject.
-// E.g. immigration/detention stories about players that happen to have a team.
-const OFF_TOPIC_DROP = /\bdetained by ice\b|\bice detention\b|\bice detain/i;
+// E.g. immigration/detention stories and administrative club notices that only
+// pass SOCCER_RE because the source name ("Cal North Soccer") contains the word.
+const OFF_TOPIC_DROP =
+  /\bdetained by ice\b|\bice detention\b|\bice detain|\blive scan\b|\bbackground check\b/i;
 
 // Pro / senior-team coverage we never want (this is a youth site). Drop an item
 // matching these unless it clearly carries a youth/academy signal.
@@ -232,6 +234,19 @@ function dedupe(items) {
   return out;
 }
 
+// Cap the number of items per source so no single outlet dominates.
+// Items must be date-sorted before this runs so the freshest ones are kept.
+function capPerSource(items, max = 2) {
+  const counts = new Map();
+  return items.filter((it) => {
+    const src = (it.source || '').toLowerCase();
+    const n = counts.get(src) ?? 0;
+    if (n >= max) return false;
+    counts.set(src, n + 1);
+    return true;
+  });
+}
+
 async function main() {
   console.log('Refreshing NorCal soccer news…');
 
@@ -257,8 +272,9 @@ async function main() {
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
   );
 
-  const local = all.filter((i) => i.category === 'local');
-  const national = all.filter((i) => i.category === 'national');
+  const capped = capPerSource(all);
+  const local = capped.filter((i) => i.category === 'local');
+  const national = capped.filter((i) => i.category === 'national');
   const chosen = [
     ...local.slice(0, MAX_ITEMS - Math.min(MAX_NATIONAL, national.length)),
     ...national.slice(0, MAX_NATIONAL),
@@ -431,12 +447,16 @@ if (process.argv.includes('--selftest')) {
   (async () => {
     const existing = JSON.parse(await readFile(NEWS_PATH, 'utf8'));
     const items = Array.isArray(existing.items) ? existing.items : [];
-    const kept = items.filter((it) => {
-      const text = `${it.title ?? ''} ${it.summary ?? ''}`;
-      if (!passesQuality(text)) return false;
-      if (it.category === 'local' && !LOCAL_HINTS.test(text)) return false;
-      return true;
-    });
+    // Items in news.json are already date-sorted (newest first), so capPerSource
+    // retains the freshest articles when trimming per-source duplicates.
+    const kept = capPerSource(
+      items.filter((it) => {
+        const text = `${it.title ?? ''} ${it.summary ?? ''}`;
+        if (!passesQuality(text)) return false;
+        if (it.category === 'local' && !LOCAL_HINTS.test(text)) return false;
+        return true;
+      }),
+    );
     for (const it of items) {
       if (!kept.includes(it)) console.log(`  ✗ dropped: ${it.title}`);
     }
