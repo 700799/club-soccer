@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-01T14:44:08.052Z",
+  "lastUpdated": "2026-08-02T14:46:20.711Z",
   "items": [
     {
       "id": "feed-UmVjcnVpdGluZyBSb3VuZHVwOiBC",
@@ -15,11 +15,11 @@
       "id": "feed-S09TQSB3aW5zIFUuUy4gU29jY2Vy",
       "title": "KOSA wins U.S. Soccer Championship",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9YcWZBRXVFTTZKZHZkZWJnWmpCT3hCTmFjakVpVjIwcldHNDF0ZEV5NTNIaXFYMXgtcXcxLUZkbjNLWnNFeG4xYlY2anJxQVNvX3FNcTNKeTVDZmJWRHNmcHdwRjJWOUZjajBB?oc=5",
-      "source": "North Myrtle Beach Times",
+      "source": "nmbtimes.com",
       "sourceUrl": "https://news.google.com",
       "category": "national",
       "date": "2026-07-30",
-      "summary": "KOSA wins U.S. Soccer Championship North Myrtle Beach Times"
+      "summary": "KOSA wins U.S. Soccer Championship nmbtimes.com"
     },
     {
       "id": "feed-TWVuJ3MgU29jY2VyIFJlbGVhc2Vz",
@@ -72,16 +72,6 @@
       "summary": "Hampton-Dumont/CAL Boys Varsity Soccer @ DNWHS MaxPreps"
     },
     {
-      "id": "feed-QWxhc2thIGdpcmxzIHNvY2NlciB0",
-      "title": "Alaska girls soccer team makes history winning state’s first USYS National Championship",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQWU1jSWxCWHJiR2x5UTQtNGdTSmc0c2VieG96M241WWdwd0pIZkMzajZrSUw3eFBXaDhzOFNaMW85MjB0QkkzOExBMF9QcnhGXzVRNXFkRTd6UTFxSl9ZaG9kTVkyVHFjNGFWYlBLWDhDTG9FNUF6bUNKWUFISkNEYkVUazdjRGxuS29XMmRKaGh2UTVMU1RXd1A2OXdIbnJWWmZmUXRkQUY4NjdjQ1pDWkFzUWpVYXhrQk92UjBDMXN4YVBLZ2RVdEtDWWLSAeABQVVfeXFMTnNlbV9rMDNrcmNhQnBZd3JzQW51MU9CUHN4ZDd4UTg0aVA2WlNTYzB1SEFmTm0zZW1RekRVa1ZKLWFiVkZsOTVkUXlHZE5HMG1vX1dVYVFaVVdDaEhZelowNm52Uk1fZFdBSmdQZ2diOTBJMUtxR1BkRHVLUmFUOUlXNG5SVC1jSWFiWllzdTZuSFJ0UG1Hc2g4bUNrYWY4aGtieTRTSXZDbExTcWNIcGF1LTFvd21FblBQSTZWZzAzeW9TUmZPNDBmWlZRR1RzTXBPUjZ5bDJsQ3FtRW9aTjA?oc=5",
-      "source": "alaskasnewssource.com",
-      "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-07-24",
-      "summary": "Alaska girls soccer team makes history winning state’s first USYS National Championship alaskasnewssource.com"
-    },
-    {
       "id": "feed-MyBWYWlsIFZhbGxleSBTb2NjZXIg",
       "title": "3 Vail Valley Soccer Clubs compete at US Youth Soccer National Championships",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNX3ZCVFBHWTVPZ05iUkl1RGxkZjVMMXNPd1g5TTdJMXM1VzFEUmYwOHB5cnhpMy1JeFRhaDdkWG5rVHU3THpla3F0cDNhSnlYRy1KdklNZmZZT0JocDBwMGRVLXJyTUhBXzVfdExlOWxLZWRHTlNIV05hS2VWemhEWXBUS2lKZ0dRMkpmTzZCOUdFWTRQUVFHTjdmQ1J3dXQzWFRzcDlqTlFKRVR2?oc=5",
@@ -110,6 +100,16 @@
       "category": "local",
       "date": "2026-07-23",
       "summary": "Dream Team quartet headlines Oakland County’s girls soccer postseason award winners The Oakland Press"
+    },
+    {
+      "id": "feed-QWxhc2thIGdpcmxzIHNvY2NlciB0",
+      "title": "Alaska girls soccer team makes history winning state’s first USYS National Championship",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQWU1jSWxCWHJiR2x5UTQtNGdTSmc0c2VieG96M241WWdwd0pIZkMzajZrSUw3eFBXaDhzOFNaMW85MjB0QkkzOExBMF9QcnhGXzVRNXFkRTd6UTFxSl9ZaG9kTVkyVHFjNGFWYlBLWDhDTG9FNUF6bUNKWUFISkNEYkVUazdjRGxuS29XMmRKaGh2UTVMU1RXd1A2OXdIbnJWWmZmUXRkQUY4NjdjQ1pDWkFzUWpVYXhrQk92UjBDMXN4YVBLZ2RVdEtDWWLSAeABQVVfeXFMTnNlbV9rMDNrcmNhQnBZd3JzQW51MU9CUHN4ZDd4UTg0aVA2WlNTYzB1SEFmTm0zZW1RekRVa1ZKLWFiVkZsOTVkUXlHZE5HMG1vX1dVYVFaVVdDaEhZelowNm52Uk1fZFdBSmdQZ2diOTBJMUtxR1BkRHVLUmFUOUlXNG5SVC1jSWFiWllzdTZuSFJ0UG1Hc2g4bUNrYWY4aGtieTRTSXZDbExTcWNIcGF1LTFvd21FblBQSTZWZzAzeW9TUmZPNDBmWlZRR1RzTXBPUjZ5bDJsQ3FtRW9aTjA?oc=5",
+      "source": "Alaska's News Source",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-07-23",
+      "summary": "Alaska girls soccer team makes history winning state’s first USYS National Championship Alaska's News Source"
     },
     {
       "id": "feed-SW4gT2FrbGFuZCwgYSBsaWJyYXJ5",
@@ -223,16 +223,6 @@
     },
     {
       "id": "feed-TWVuJ3MgU29jY2VyIEFubm91bmNl",
-      "title": "Men's Soccer Announces 2026 Recruiting Class - American University",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRXlxbDcxamhZRUJuaFJBWjJiRll4TktESWNCOGwwRmprU3BEdHlPd2RLb1Mwck5fMkJPZkcxSHF3UEVhQ2dDTmlTbEpnWHh4ZzBvWWpyWjZJWnRkYjRRZmZPWEhySzFKbDRpVHhVM2ltLWRGODJYZmdPYzVwMUhRT19mUEZGeVhPUXRv?oc=5",
-      "source": "aueagles.com",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-07-09",
-      "summary": "Men's Soccer Announces 2026 Recruiting Class - American University aueagles.com"
-    },
-    {
-      "id": "feed-TWVuJ3MgU29jY2VyIEFubm91bmNl",
       "title": "Men's Soccer Announces 2026 Recruiting Class",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRXlxbDcxamhZRUJuaFJBWjJiRll4TktESWNCOGwwRmprU3BEdHlPd2RLb1Mwck5fMkJPZkcxSHF3UEVhQ2dDTmlTbEpnWHh4ZzBvWWpyWjZJWnRkYjRRZmZPWEhySzFKbDRpVHhVM2ltLWRGODJYZmdPYzVwMUhRT19mUEZGeVhPUXRv?oc=5",
       "source": "aueagles.com",
@@ -240,6 +230,16 @@
       "category": "local",
       "date": "2026-07-09",
       "summary": "Men's Soccer Announces 2026 Recruiting Class aueagles.com"
+    },
+    {
+      "id": "feed-TWVuJ3MgU29jY2VyIEFubm91bmNl",
+      "title": "Men's Soccer Announces 2026 Recruiting Class - American University",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRXlxbDcxamhZRUJuaFJBWjJiRll4TktESWNCOGwwRmprU3BEdHlPd2RLb1Mwck5fMkJPZkcxSHF3UEVhQ2dDTmlTbEpnWHh4ZzBvWWpyWjZJWnRkYjRRZmZPWEhySzFKbDRpVHhVM2ltLWRGODJYZmdPYzVwMUhRT19mUEZGeVhPUXRv?oc=5",
+      "source": "aueagles.com",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-07-09",
+      "summary": "Men's Soccer Announces 2026 Recruiting Class - American University aueagles.com"
     }
   ]
 }
