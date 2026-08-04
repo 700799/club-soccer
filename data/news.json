@@ -1,6 +1,16 @@
 {
-  "lastUpdated": "2026-08-03T16:00:42.126Z",
+  "lastUpdated": "2026-08-04T15:53:57.908Z",
   "items": [
+    {
+      "id": "feed-Q2VudHJhbCBDb2FzdCBVbml0ZWQg",
+      "title": "Central Coast United BU15 South-Gold wins national soccer title at USYS National Championships",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPRmhKSlpBYlViV0FqMVljOEpGb2hWRDA5eGhwMmRoa3owdlkyRHlabjRBWlVPZnNfa0NQeWlYVExORjRNd2oyRGMyR2pocTg0bUV1M3hReHBUVjZRNXlKYkRWVGo4Z0llZlhTU1k4VGlQVXFXUkRaLWc3ZngzYzJQRkRsaUZ4MkRJX2NtTkh3U0FqVGNNTlhZeXVYRzR2VmtjNnlRaVp4b1ByLVlCd0xhYmdVdkVJcjRVMUhHSm9tanRaRGJDcG53Z0x0MGNNYUNhVUhVYlUwN2xrVC16WVRlVHVkWXNDVkdheC10MHV1NU5rUDkzU3JfeWFQLVBRTEg5b09TMDVuM1l3YndGOV9uOVR1WdIBmAJBVV95cUxQMWpCbmhtV3NfYlNlOEY1WUs3V3pzbURuYThlMUEzVXZINnk2cHNXZlhNV09OSzd3Q3o2ckw4RlNaVi1PUllsVTZQeGFscmp4ck10QV9PMkNWc3E2MGhYakZfVVZheXNKU3pjTTU4NDZrUldNdDNhSDFhX1Zxb1RmYVVYTEg1ZTduMHJnSHVMY0hfcjFoMGYwbjBKNDc0QTl5Y1JpeHZia1ZLMEpIa0xJYWxkYnlPWW5HaVQyQ0o4THZ6bEhuUHpjTWNVbkN6TjI5VFp1UnE0dGFKaGdzcGhPUDZpTVFVNHR3MWxkZFg3V0taT090WThDMEZ0eHBVZTdvaUtOaml0aDNFZEs3aUpTcjlKX3dzbFNK?oc=5",
+      "source": "Santa Maria Times",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-07-31",
+      "summary": "Central Coast United BU15 South-Gold wins national soccer title at USYS National Championships Santa Maria Times"
+    },
     {
       "id": "feed-UmVjcnVpdGluZyBSb3VuZHVwOiBC",
       "title": "Recruiting Roundup: Breaking down 9 key girls commitments from July",
@@ -15,11 +25,11 @@
       "id": "feed-S09TQSB3aW5zIFUuUy4gU29jY2Vy",
       "title": "KOSA wins U.S. Soccer Championship",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9YcWZBRXVFTTZKZHZkZWJnWmpCT3hCTmFjakVpVjIwcldHNDF0ZEV5NTNIaXFYMXgtcXcxLUZkbjNLWnNFeG4xYlY2anJxQVNvX3FNcTNKeTVDZmJWRHNmcHdwRjJWOUZjajBB?oc=5",
-      "source": "North Myrtle Beach Times",
+      "source": "nmbtimes.com",
       "sourceUrl": "https://news.google.com",
       "category": "national",
       "date": "2026-07-30",
-      "summary": "KOSA wins U.S. Soccer Championship North Myrtle Beach Times"
+      "summary": "KOSA wins U.S. Soccer Championship nmbtimes.com"
     },
     {
       "id": "feed-TWVuJ3MgU29jY2VyIFJlbGVhc2Vz",
@@ -45,21 +55,21 @@
       "id": "feed-VVMgWW91dGggU29jY2VyIE5hdGlv",
       "title": "US Youth Soccer National Championships 2026: 13U-19U Champions and Award Winners",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQb2tIdlY5Q19SaVE0SEU0UzVuYnAyaGVFcU5hRExjTmpKcTVObEtzNFI0Y2gtLXZOT2JPQW4yYnFyVDFlVFBjRUpGSWJIRVIzdTg2UUZEVTFDRHJITUtvb1BuaUNJRFkzTkY5VlhJVC1WZi1md1FKNFFiTjQ2QVdnMFc0WlVTZWxwTmFQaVVCWTNBaGphRDJjbXJObGU5Q3Bpbk5VNldGTTVxc1JwMXU1RTB3?oc=5",
-      "source": "soccerwire.com",
+      "source": "SoccerWire",
       "sourceUrl": "https://news.google.com",
       "category": "national",
       "date": "2026-07-28",
-      "summary": "US Youth Soccer National Championships 2026: 13U-19U Champions and Award Winners soccerwire.com"
+      "summary": "US Youth Soccer National Championships 2026: 13U-19U Champions and Award Winners SoccerWire"
     },
     {
       "id": "feed-TUxTIE5FWFQgQWxsLVN0YXIgR2Ft",
       "title": "MLS NEXT All-Star Game rosters selected ahead of showdown in North Carolina",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVW5SRzEzc1JqQ2k4QnhrRjNlUVJOOWxBZEtzaGlOd245S0dvOFhKWW93Yk1QWElndVNPeEFDRGtCc04wbEFoYkxmYWRjaGFmQzNReWVMZE1DcXRCeWFFOGg1UThyZG4zRnRKUTZsUFlhY2IwRUs1aUtmVFlFb0lMX25zOGpJM1ZjYjhlaXpVZ1JCbVNFblYtVmJSUmF5UldwdklxRkxLTG9mRnFE?oc=5",
-      "source": "soccerwire.com",
+      "source": "SoccerWire",
       "sourceUrl": "https://news.google.com",
       "category": "national",
       "date": "2026-07-27",
-      "summary": "MLS NEXT All-Star Game rosters selected ahead of showdown in North Carolina soccerwire.com"
+      "summary": "MLS NEXT All-Star Game rosters selected ahead of showdown in North Carolina SoccerWire"
     },
     {
       "id": "feed-SGlzdG9yaWMgQW5ub3VuY2VtZW50",
@@ -85,21 +95,11 @@
       "id": "feed-MyBWYWlsIFZhbGxleSBTb2NjZXIg",
       "title": "3 Vail Valley Soccer Clubs compete at US Youth Soccer National Championships",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNX3ZCVFBHWTVPZ05iUkl1RGxkZjVMMXNPd1g5TTdJMXM1VzFEUmYwOHB5cnhpMy1JeFRhaDdkWG5rVHU3THpla3F0cDNhSnlYRy1KdklNZmZZT0JocDBwMGRVLXJyTUhBXzVfdExlOWxLZWRHTlNIV05hS2VWemhEWXBUS2lKZ0dRMkpmTzZCOUdFWTRQUVFHTjdmQ1J3dXQzWFRzcDlqTlFKRVR2?oc=5",
-      "source": "vaildaily.com",
+      "source": "VailDaily.com",
       "sourceUrl": "https://news.google.com",
       "category": "national",
       "date": "2026-07-24",
-      "summary": "3 Vail Valley Soccer Clubs compete at US Youth Soccer National Championships vaildaily.com"
-    },
-    {
-      "id": "feed-Q2xhc3Mgb2YgMjAyODogR2lybHMg",
-      "title": "Class of 2028: Girls soccer commitments from New England",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPYkhaamdLN3NlaG41Y1p4RzVZelk2MFM4c0hNcC1jdXh3TTE3RzdYay15Y2tRcTZTLWZkOGR5S1NROFpTblY5X25tbVJXX0h5bGQ2akNaM3o2THRPYWVEWVR2UjdvdDNIQ0Mzc2cwNklCOXNkOWtfVG9pclJYQ2l3Q2dveDZ6LTZ0ZVdLdXNjVQ?oc=5",
-      "source": "New England Soccer Journal",
-      "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-07-24",
-      "summary": "Class of 2028: Girls soccer commitments from New England New England Soccer Journal"
+      "summary": "3 Vail Valley Soccer Clubs compete at US Youth Soccer National Championships VailDaily.com"
     },
     {
       "id": "feed-RHJlYW0gVGVhbSBxdWFydGV0IGhl",
@@ -135,11 +135,11 @@
       "id": "feed-T2FrbGFuZCBVbmlmaWVkIGV4cGFu",
       "title": "Oakland Unified expands Soccer at Schools partnership with U.S. Soccer across district",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPcjVQZnV0RGxMMGs3aEtpTzctNXJKeC1Ka1Z0bnExcTFOZXVpRDZRY18wbVFWZFlyV3NwZ2piSHo2SVg0TmVVN2REZldodFYwVnpXcklOeVhHakM4V1haN19UcG1mMU5xY05vSGtCcGtfT01HWXJ5b3pDT0pOaUlRMGFxQ0Utc0xBM1IyOHNGV3NLYzZ1Q2VyTUtSdEFsLVFTZ2laS0l2WFE3cVFFWVBJcEJ2cEpROXRGVEt1SUhhNk1Oa25W?oc=5",
-      "source": "Local News Matters",
+      "source": "localnewsmatters.org",
       "sourceUrl": "https://news.google.com",
       "category": "local",
       "date": "2026-07-18",
-      "summary": "Oakland Unified expands Soccer at Schools partnership with U.S. Soccer across district Local News Matters"
+      "summary": "Oakland Unified expands Soccer at Schools partnership with U.S. Soccer across district localnewsmatters.org"
     },
     {
       "id": "feed-T2FrbGFuZCBVbmlmaWVkIGV4cGFu",
@@ -223,16 +223,6 @@
     },
     {
       "id": "feed-TWVuJ3MgU29jY2VyIEFubm91bmNl",
-      "title": "Men's Soccer Announces 2026 Recruiting Class",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRXlxbDcxamhZRUJuaFJBWjJiRll4TktESWNCOGwwRmprU3BEdHlPd2RLb1Mwck5fMkJPZkcxSHF3UEVhQ2dDTmlTbEpnWHh4ZzBvWWpyWjZJWnRkYjRRZmZPWEhySzFKbDRpVHhVM2ltLWRGODJYZmdPYzVwMUhRT19mUEZGeVhPUXRv?oc=5",
-      "source": "aueagles.com",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-07-09",
-      "summary": "Men's Soccer Announces 2026 Recruiting Class aueagles.com"
-    },
-    {
-      "id": "feed-TWVuJ3MgU29jY2VyIEFubm91bmNl",
       "title": "Men's Soccer Announces 2026 Recruiting Class - American University",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRXlxbDcxamhZRUJuaFJBWjJiRll4TktESWNCOGwwRmprU3BEdHlPd2RLb1Mwck5fMkJPZkcxSHF3UEVhQ2dDTmlTbEpnWHh4ZzBvWWpyWjZJWnRkYjRRZmZPWEhySzFKbDRpVHhVM2ltLWRGODJYZmdPYzVwMUhRT19mUEZGeVhPUXRv?oc=5",
       "source": "aueagles.com",
@@ -240,6 +230,16 @@
       "category": "local",
       "date": "2026-07-09",
       "summary": "Men's Soccer Announces 2026 Recruiting Class - American University aueagles.com"
+    },
+    {
+      "id": "feed-TWVuJ3MgU29jY2VyIEFubm91bmNl",
+      "title": "Men's Soccer Announces 2026 Recruiting Class",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRXlxbDcxamhZRUJuaFJBWjJiRll4TktESWNCOGwwRmprU3BEdHlPd2RLb1Mwck5fMkJPZkcxSHF3UEVhQ2dDTmlTbEpnWHh4ZzBvWWpyWjZJWnRkYjRRZmZPWEhySzFKbDRpVHhVM2ltLWRGODJYZmdPYzVwMUhRT19mUEZGeVhPUXRv?oc=5",
+      "source": "aueagles.com",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-07-09",
+      "summary": "Men's Soccer Announces 2026 Recruiting Class aueagles.com"
     }
   ]
 }
