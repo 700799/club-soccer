@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-04T15:53:57.908Z",
+  "lastUpdated": "2026-08-05T15:37:02.846Z",
   "items": [
     {
       "id": "feed-Q2VudHJhbCBDb2FzdCBVbml0ZWQg",
@@ -223,16 +223,6 @@
     },
     {
       "id": "feed-TWVuJ3MgU29jY2VyIEFubm91bmNl",
-      "title": "Men's Soccer Announces 2026 Recruiting Class - American University",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRXlxbDcxamhZRUJuaFJBWjJiRll4TktESWNCOGwwRmprU3BEdHlPd2RLb1Mwck5fMkJPZkcxSHF3UEVhQ2dDTmlTbEpnWHh4ZzBvWWpyWjZJWnRkYjRRZmZPWEhySzFKbDRpVHhVM2ltLWRGODJYZmdPYzVwMUhRT19mUEZGeVhPUXRv?oc=5",
-      "source": "aueagles.com",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-07-09",
-      "summary": "Men's Soccer Announces 2026 Recruiting Class - American University aueagles.com"
-    },
-    {
-      "id": "feed-TWVuJ3MgU29jY2VyIEFubm91bmNl",
       "title": "Men's Soccer Announces 2026 Recruiting Class",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRXlxbDcxamhZRUJuaFJBWjJiRll4TktESWNCOGwwRmprU3BEdHlPd2RLb1Mwck5fMkJPZkcxSHF3UEVhQ2dDTmlTbEpnWHh4ZzBvWWpyWjZJWnRkYjRRZmZPWEhySzFKbDRpVHhVM2ltLWRGODJYZmdPYzVwMUhRT19mUEZGeVhPUXRv?oc=5",
       "source": "aueagles.com",
@@ -240,6 +230,16 @@
       "category": "local",
       "date": "2026-07-09",
       "summary": "Men's Soccer Announces 2026 Recruiting Class aueagles.com"
+    },
+    {
+      "id": "feed-TWVuJ3MgU29jY2VyIEFubm91bmNl",
+      "title": "Men's Soccer Announces 2026 Recruiting Class - American University",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRXlxbDcxamhZRUJuaFJBWjJiRll4TktESWNCOGwwRmprU3BEdHlPd2RLb1Mwck5fMkJPZkcxSHF3UEVhQ2dDTmlTbEpnWHh4ZzBvWWpyWjZJWnRkYjRRZmZPWEhySzFKbDRpVHhVM2ltLWRGODJYZmdPYzVwMUhRT19mUEZGeVhPUXRv?oc=5",
+      "source": "aueagles.com",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-07-09",
+      "summary": "Men's Soccer Announces 2026 Recruiting Class - American University aueagles.com"
     }
   ]
 }
