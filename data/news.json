@@ -1,15 +1,35 @@
 {
-  "lastUpdated": "2026-08-07T14:30:50.926Z",
+  "lastUpdated": "2026-08-08T14:05:16.204Z",
   "items": [
+    {
+      "id": "feed-VVMgWW91dGggU29jY2VyIE9EUCBJ",
+      "title": "US Youth Soccer ODP Interregional Rosters: Girls West Region Teams (2026-27)",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNakpLMGpSY1RNSUhublhqdTZnaUZManNibVpjdXpEVnNSMTR1QW94UVl0bVM2NE8xQW9ERmw1VDI4MzhHd3FSYTlRZXAxTGNkT0pidjExTGlaVTNKSkliYlJrUm8wdWlka2pUU1ZWSFdVUW4yY1NmOUtqbkVmdzdhdS12YkFqTG1EWnd4dHhQalc0c2NHTnVXcFd4Y1lnNVZTZHRNQlN5X1hoQQ?oc=5",
+      "source": "SoccerWire",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-08-07",
+      "summary": "US Youth Soccer ODP Interregional Rosters: Girls West Region Teams (2026-27) SoccerWire"
+    },
     {
       "id": "feed-RUNOTCBBTk5PVU5DRVMgMjAyNS0y",
       "title": "ECNL ANNOUNCES 2025-26 ECNL GIRLS ALL-AMERICAN TEAMS, NATIONAL PLAYERS OF THE YEAR",
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQOGNkb1d6NExGa0V1TTl1UDlyUkRaZklGM1dxR2lfYjBYajAzSUI4YTlob2dRbkg3UGZzc284TnBmVWh2Zk9CZEhnbW9SbmRTQk4yaUprbHMzeWdnWTd1WWNBcEhlazQ3VkhCUDN5eURqV3BtWkpZc1VsUEhncWxFRDNtNFlGTDU0VEtnUG51U0dlS3QxQUY1eXpBTDdZSEI4ZVM5b2lVdWRldHBoSWRrNFpZaVRBR3VrZTlZb0xkdEZMYkdlQzFvblVfMA?oc=5",
-      "source": "theecnl.com",
+      "source": "ECNL",
       "sourceUrl": "https://news.google.com",
       "category": "national",
       "date": "2026-08-06",
-      "summary": "ECNL ANNOUNCES 2025-26 ECNL GIRLS ALL-AMERICAN TEAMS, NATIONAL PLAYERS OF THE YEAR theecnl.com"
+      "summary": "ECNL ANNOUNCES 2025-26 ECNL GIRLS ALL-AMERICAN TEAMS, NATIONAL PLAYERS OF THE YEAR ECNL"
+    },
+    {
+      "id": "feed-RUNOTCBBTk5PVU5DRVMgMjAyNS0y",
+      "title": "ECNL ANNOUNCES 2025-26 ECNL BOYS ALL-AMERICAN TEAMS, NATIONAL PLAYERS OF THE YEAR",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOT29SUDhwcERPbEZFeEFKWTA3SHlYaTlCNGRGeEpNVExiRWdPU0RNcjg3WFRNT1RNZzJKVFlZZm4yMXVQbkt4Tl9sOVU1SElNMngwMVBDc1JITWRjeWtGWFdzZmNoZVZ0WTlROEt4aHF2MjR5cE92SDJpNnVVd0VCcFJXcGNManFCUVNLS0RmZlRZU3haQnlxZkcyVkZGX2d1V1o5ZlRRUlRzc1ZzWlEyeTh0N0MwSGZDTG9oREozYURoR2M1ak1MOQ?oc=5",
+      "source": "ECNL",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-08-06",
+      "summary": "ECNL ANNOUNCES 2025-26 ECNL BOYS ALL-AMERICAN TEAMS, NATIONAL PLAYERS OF THE YEAR ECNL"
     },
     {
       "id": "feed-WU9VVEggU09DQ0VSOiAyMDI1LTI2",
@@ -23,13 +43,33 @@
     },
     {
       "id": "feed-RUNOTCBBTk5PVU5DRVMgMjAyNS0y",
-      "title": "ECNL ANNOUNCES 2025-26 ECNL BOYS ALL-AMERICAN TEAMS, NATIONAL PLAYERS OF THE YEAR",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOT29SUDhwcERPbEZFeEFKWTA3SHlYaTlCNGRGeEpNVExiRWdPU0RNcjg3WFRNT1RNZzJKVFlZZm4yMXVQbkt4Tl9sOVU1SElNMngwMVBDc1JITWRjeWtGWFdzZmNoZVZ0WTlROEt4aHF2MjR5cE92SDJpNnVVd0VCcFJXcGNManFCUVNLS0RmZlRZU3haQnlxZkcyVkZGX2d1V1o5ZlRRUlRzc1ZzWlEyeTh0N0MwSGZDTG9oREozYURoR2M1ak1MOQ?oc=5",
-      "source": "theecnl.com",
+      "title": "ECNL ANNOUNCES 2025-26 ECNL GIRLS ALL-CONFERENCE TEAMS, PLAYERS OF THE YEAR",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSzZGVmpqT0lwU25FY0lYNTFWQTk2YzZnWmJPdy1XbHpORDR2YlNNX0U4YlJnc0lhU3U4OWdWNzVwUmpyNWFkTFhFU19Ma19xdEdUc25uRmZHbTR1TzRyZ1R4YVNaUENEZmtiQjNIRTU4eXBLRHloVENPeHZtc2hLejlGdUFhUWJCUGEtNVhBX0VpanBFOUFnR3hiNnd4cUpjX0MwalJoYTRfODB0Zk54X2FacXZXNFhGY3QyaVNXU1NjQQ?oc=5",
+      "source": "ECNL",
       "sourceUrl": "https://news.google.com",
       "category": "national",
-      "date": "2026-08-06",
-      "summary": "ECNL ANNOUNCES 2025-26 ECNL BOYS ALL-AMERICAN TEAMS, NATIONAL PLAYERS OF THE YEAR theecnl.com"
+      "date": "2026-08-05",
+      "summary": "ECNL ANNOUNCES 2025-26 ECNL GIRLS ALL-CONFERENCE TEAMS, PLAYERS OF THE YEAR ECNL"
+    },
+    {
+      "id": "feed-U3QuIElnbmF0aXVzIENvbGxlZ2Ug",
+      "title": "St. Ignatius College Preparatory High School (San Francisco, CA) Girls Soccer",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTjJVSzBEejVfNUVRX2g4cEZSeXRrelJXVWRxemU0T3hJQUdKdTZPd1pfZzlkX3VzTU9oZEpTWW1VQ2tmUGd3Q2ZiS0JQQVRnb2ZtWjVvRnZDN2I2QjFKa2R2d3A4NXNHLWI3MGNGakFxR3BmR09JNkI5Q2JMWklvaDVSV3BxYzhOamhnODM1LXpEaUNYQTRNbmtBWmRObzRDdlZlXzVB?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-08-04",
+      "summary": "St. Ignatius College Preparatory High School (San Francisco, CA) Girls Soccer MaxPreps"
+    },
+    {
+      "id": "feed-TWNDbGF0Y2h5IEhpZ2ggU2Nob29s",
+      "title": "McClatchy High School (Sacramento, CA) Girls Soccer",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQallPQmFCX2RaVFpaTlNjVFV2T0JnWTg0eVhTU3NuQ0M3c3F4V1NSY2tVTnd3NGRuLUgwMDAyR0FjU2RjUEtYX0dFUXBFdURHNXlmekF5Vzd0Y1diUTJYcEJENThjRUtoeXhWY0ZIaEN3SmViZVNjSV9fdHBYa0labQ?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-08-04",
+      "summary": "McClatchy High School (Sacramento, CA) Girls Soccer MaxPreps"
     },
     {
       "id": "feed-U2NoZWR1bGUgLSBNaXNzaW9uIFNh",
@@ -42,14 +82,14 @@
       "summary": "Schedule - Mission San Jose Warriors (Fremont, CA) Girls Soccer 26-27 MaxPreps"
     },
     {
-      "id": "feed-TWNDbGF0Y2h5IEhpZ2ggU2Nob29s",
-      "title": "McClatchy High School (Sacramento, CA) Girls Soccer",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQallPQmFCX2RaVFpaTlNjVFV2T0JnWTg0eVhTU3NuQ0M3c3F4V1NSY2tVTnd3NGRuLUgwMDAyR0FjU2RjUEtYX0dFUXBFdURHNXlmekF5Vzd0Y1diUTJYcEJENThjRUtoeXhWY0ZIaEN3SmViZVNjSV9fdHBYa0labQ?oc=5",
+      "id": "feed-U2NoZWR1bGUgLSBTaWx2ZXIgQ3Jl",
+      "title": "Schedule - Silver Creek Raiders (San Jose, CA) Girls Soccer 26-27",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPa3ZzQnRYdFVpT3pEei1pWU5GbXI3NkVhdUt5OXJWMElwRjQwWDdvVGwtbWtZS3VmSWZKV19ITFVrbXVCM1pjZGdkUzRPOEZfMEhtdG1UNVlRenVDS3hMR1kxdVowSUNzeXNIalE0cFVwSkVhSTE1VVZKblFMWVNRQjdSand1cjd6TUpYUVJjZjQ?oc=5",
       "source": "MaxPreps",
       "sourceUrl": "https://news.google.com",
       "category": "local",
       "date": "2026-07-31",
-      "summary": "McClatchy High School (Sacramento, CA) Girls Soccer MaxPreps"
+      "summary": "Schedule - Silver Creek Raiders (San Jose, CA) Girls Soccer 26-27 MaxPreps"
     },
     {
       "id": "feed-Q2VudHJhbCBDb2FzdCBVbml0ZWQg",
@@ -72,14 +112,14 @@
       "summary": "Recruiting Roundup: Breaking down 9 key girls commitments from July New England Soccer Journal"
     },
     {
-      "id": "feed-S09TQSB3aW5zIFUuUy4gU29jY2Vy",
-      "title": "KOSA wins U.S. Soccer Championship",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9YcWZBRXVFTTZKZHZkZWJnWmpCT3hCTmFjakVpVjIwcldHNDF0ZEV5NTNIaXFYMXgtcXcxLUZkbjNLWnNFeG4xYlY2anJxQVNvX3FNcTNKeTVDZmJWRHNmcHdwRjJWOUZjajBB?oc=5",
-      "source": "North Myrtle Beach Times",
+      "id": "feed-TWVuJ3MgU29jY2VyIFJlbGVhc2Vz",
+      "title": "Men's Soccer Releases 2026 Home Game Promotions Schedule",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSDhvc1F3MU1UWE9Gc1JQNmJwU1hRS0JCQUlVa3NoM19Na19YWmZGUWZYWEtXNEIyWjlndU8zdXZCLUYwNnFvZmJZZ2Nvb0Yzc1ZIM2F3bDdweE9mUDNndVJLMU5hcEE4MTFUbHgzM0VJV2pUWTlKR0stSVVHNHJCcVh1TVZkcldiTE9SSllJLUlmX09MOGtsbWVVNXg5a2hnZFZINlR3?oc=5",
+      "source": "Oakland University Athletics",
       "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-07-30",
-      "summary": "KOSA wins U.S. Soccer Championship North Myrtle Beach Times"
+      "category": "local",
+      "date": "2026-07-29",
+      "summary": "Men's Soccer Releases 2026 Home Game Promotions Schedule Oakland University Athletics"
     },
     {
       "id": "feed-V29tZW4ncyBTb2NjZXIgUmV2ZWFs",
@@ -92,34 +132,24 @@
       "summary": "Women's Soccer Reveals 2026 Home Game Promotions Oakland University Athletics"
     },
     {
-      "id": "feed-TWVuJ3MgU29jY2VyIFJlbGVhc2Vz",
-      "title": "Men's Soccer Releases 2026 Home Game Promotions Schedule",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSDhvc1F3MU1UWE9Gc1JQNmJwU1hRS0JCQUlVa3NoM19Na19YWmZGUWZYWEtXNEIyWjlndU8zdXZCLUYwNnFvZmJZZ2Nvb0Yzc1ZIM2F3bDdweE9mUDNndVJLMU5hcEE4MTFUbHgzM0VJV2pUWTlKR0stSVVHNHJCcVh1TVZkcldiTE9SSllJLUlmX09MOGtsbWVVNXg5a2hnZFZINlR3?oc=5",
-      "source": "Oakland University Athletics",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-07-29",
-      "summary": "Men's Soccer Releases 2026 Home Game Promotions Schedule Oakland University Athletics"
-    },
-    {
       "id": "feed-U2lnbWEgWCBGQyBNYWtlcyBIaXN0",
       "title": "Sigma X FC Makes History, Captures 2026 US Youth Soccer National Championship",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWXNtQWVmblFkRUVnaE5TU2psR3VHak5FQUk3aW9DUEhPQkJWelpQUURmNnh1RGcyQlNhR1VPcXJ5aXBWc2ctNjI5NlBKalVfeXl1dXBQQUoxdGRLamo4TVVWWE1NZXlJSVRGRUh1X2p3TExLOFFnUlJ4YU0tS3pELVQwcFRCWlVzM0Y2dkNEWE02c0FsOFd0c0p6ME9nbjlWY2FuaFpYRWVLUdIBugFBVV95cUxPOWQ4V0R6dnpVZHNLMTF6ME9EbjN5NHh3czFXVmVicnNaUDRLczU5cWF0OWdTNmh5aWFncjRoeS10OXFYMWRhR2JDN0dQQUFOOXNBdEhHd0Q4NnpLUzRCY2UydlpFTFhlUG5GYWlGOWFPYWJ0ZGk1b0dQNjhnclNjczJ1M1c1TS1RdG93bGp3cld1clVrVDQ1aE9Ja29GeG9mSmlIcFVJMmUxempFTU9NZTAyYUYzREI2SXc?oc=5",
-      "source": "calnorth.org",
+      "source": "Cal North",
       "sourceUrl": "https://news.google.com",
       "category": "local",
       "date": "2026-07-28",
-      "summary": "Sigma X FC Makes History, Captures 2026 US Youth Soccer National Championship calnorth.org"
+      "summary": "Sigma X FC Makes History, Captures 2026 US Youth Soccer National Championship Cal North"
     },
     {
       "id": "feed-SGlzdG9yaWMgQW5ub3VuY2VtZW50",
       "title": "Historic Announcement: MLS NEXT Academy Division Regional Event Comes to Roseville",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQaHNYMnRMaUtVWWg5ejc5M2F3RFotUGlwR3p3dnBGMmNhRDVtWm1KakRXd2FPYkEtU19HZ240Si1ucEpxQTRfdmRLSzRBLVdqU1hYaTcwVkxlY2Z3dWZaejRjVk1KV2FicDZObVBTRmRWalJTNG54YnhIZHR1TnVBdjRITEpxQTV0NlFmYXpFN3pLd3pBU01FVTJKc0VlMXI3Z093UWw3QTcwUmZHTnplRtIBwAFBVV95cUxPUHp4Y09GQVhva1dwc0g3bXhvYlFyVVhqUWpONnZoeUNDVE82OVVHdGZ3bm9ib3EyaEYyMy1ncm1Tam9nbUJJYlVKaHdQS1ljcEVUd2tMbm5aRE51VWFOOUtRUGZ1T1F6QkEzQnZvR0xVQzlmMHpYRThoVkZRQXR1Sjd3YjRmeWR3ejBaOFpaNGxWRUxNNEM4SWRaNnRIc0JxQUZQbXBxSGthQ2F2Wm0yMGgwYkVGclFOc3BOOC1LLXU?oc=5",
-      "source": "calnorth.org",
+      "source": "Cal North",
       "sourceUrl": "https://news.google.com",
       "category": "local",
       "date": "2026-07-24",
-      "summary": "Historic Announcement: MLS NEXT Academy Division Regional Event Comes to Roseville calnorth.org"
+      "summary": "Historic Announcement: MLS NEXT Academy Division Regional Event Comes to Roseville Cal North"
     },
     {
       "id": "feed-SGFtcHRvbi1EdW1vbnQvQ0FMIEJv",
@@ -210,36 +240,6 @@
       "category": "local",
       "date": "2026-07-16",
       "summary": "Independence vs Oakland - Girls Varsity Soccer 08/18/2026 | Watch Live & On Demand NFHS Network"
-    },
-    {
-      "id": "feed-TGljZW5zYWJsZSBwaWN0dXJlOiA1",
-      "title": "Licensable picture: 57753 Bergen, Oakland 11/07/09 GIRLS SOCCER IHA VS NORTHERN HIGHLANDS: Immaculate Heart Academy's Tara Schwitter celebrates",
-      "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxOSkFDb0Q0SVRMWG95REstWEQtV3R6RVRHWHpnTGdNVmpoQnRHZjUzZldjektWTDlNc3ppTmJpT04wZ3VWMmZQRm83R0VNZzhaWkxWbnhFWGxPLVFEV2N6ZG9BSG92eGgyRXRsdXJJT3MzRnNuSmtwd0FZNjcwWHQ2dWhPM0lfc0taWHlOc3N1RVlFQW1JLWx1MDExaHZUZlNxWDJJQ1BDOXIxcDFleFZUaTlCQ2VJa1QtNFZEVVFSWEppdVB0SW93cmpMTG9iOHpFdDFTR2tsdV9DSENtbGVpSEEtN3FENEFnd2RraC1aNG5mc2xCY0g2S3RIbFNnckZya0JQa1U3dF83YWZBbjFZa2Nka0JsRlV2dDdnMnZpcFBObkZSUmFPSS1KQzZOSU04bWNJUjBzZklYYjhyRnM4?oc=5",
-      "source": "reutersconnect.com",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-07-16",
-      "summary": "Licensable picture: 57753 Bergen, Oakland 11/07/09 GIRLS SOCCER IHA VS NORTHERN HIGHLANDS: Immaculate Heart Academy's Tara Schwitter celebrates reutersconnect.com"
-    },
-    {
-      "id": "feed-S2ltYmVybHkncyBVcmJhbiBoZWFk",
-      "title": "Kimberly's Urban headlines area all-state girls soccer players",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxObkY4enRBRVBSZVpPWkx3cXlqa0RBbDRMeXBsWVo3dVdFUkNrMEd4QjhXcUtOZlB6MGpBcEdiNlp4b2lBUVhaVlhCV0tOUkVuSnc3RzZSdW1xUm9URkJ2dm55akU0aF9rREdUdTJuMjFUMEI4dmRFRnVyQWN4cXRwaGJ0UnFCODR2WE5aXy1hNnVmZXhFc1kxYkFfYlFJN2hUaUJfZ2Q2TV9aVHNQWXhLVlA3RHNsb3dxNm1OdWVvbE1fS2J5N3VhYmVnNnJXa3hPWDFuczFQUktZYWJORncyXzh3?oc=5",
-      "source": "The Post-Crescent",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-07-14",
-      "summary": "Kimberly's Urban headlines area all-state girls soccer players The Post-Crescent"
-    },
-    {
-      "id": "feed-Q2hhZ3JpbiBGYWxscyBIaWdoIFNj",
-      "title": "Chagrin Falls High School (OH) Soccer",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9EQ2NHWEliYk1pZ3BDdGRMbGQtclZHdHZVTGgzMmNnTWI5d09Ib2NMNVJzeTNXYVplbHFqVi1ZRngwWTZwa3RMZ3dmc1NyaE42MExjOUJGQkJQSFB3WnhVNFNGN1ZLdm5VcmhOMUtteVZNckxKbThBMTVR?oc=5",
-      "source": "MaxPreps",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-07-13",
-      "summary": "Chagrin Falls High School (OH) Soccer MaxPreps"
     }
   ]
 }
