@@ -1,9 +1,9 @@
 name: Refresh news daily
 
 on:
-  schedule:
-    # 13:30 UTC ≈ 6:30am Pacific. Scheduled jobs run from the default branch.
-    - cron: '30 13 * * *'
+  # schedule:
+  #   # 13:30 UTC ≈ 6:30am Pacific. Scheduled jobs run from the default branch.
+  #   - cron: '30 13 * * *'
   workflow_dispatch:
 
 permissions:

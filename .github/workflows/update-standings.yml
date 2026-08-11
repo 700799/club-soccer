@@ -1,9 +1,9 @@
 name: Refresh standings daily
 
 on:
-  schedule:
-    # 14:00 UTC ≈ 7:00am Pacific. Scheduled jobs run from the default branch.
-    - cron: '0 14 * * *'
+  # schedule:
+  #   # 14:00 UTC ≈ 7:00am Pacific. Scheduled jobs run from the default branch.
+  #   - cron: '0 14 * * *'
   workflow_dispatch:
 
 permissions:
