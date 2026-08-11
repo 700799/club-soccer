@@ -1,15 +1,35 @@
 {
-  "lastUpdated": "2026-08-10T14:35:12.250Z",
+  "lastUpdated": "2026-08-11T14:34:52.200Z",
   "items": [
+    {
+      "id": "feed-WU9VVEggU09DQ0VSOiAyMDI1LTI2",
+      "title": "YOUTH SOCCER: 2025-26 ECNL Boys All-Americans and National Players of the Year",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZy11N29JTGxjM3U3R05ScmVyU0h0MVhhSzNLMkpfeVpiRTNrTTdENUxYaHk1RzJraTFQZS1OUjhuSnlRbGp0T19pZ1Aya2J3d014aEs2aG13NTNBY3lGbUdBN0h4ZzE2VlJKbnM0QV9Bc2lBaDVJZ1g2aC0yb2ZYZFJKWWxOWTlSVEV5Q0lUQU5kZFFxbl9WVURWX1dnZWZ6Q1hFLUVVYllmQ1lX?oc=5",
+      "source": "Soccer America",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-08-11",
+      "summary": "YOUTH SOCCER: 2025-26 ECNL Boys All-Americans and National Players of the Year Soccer America"
+    },
     {
       "id": "feed-VVMgWW91dGggU29jY2VyIE9EUCBJ",
       "title": "US Youth Soccer ODP Interregional Rosters: Girls West Region Teams (2026-27) |",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNakpLMGpSY1RNSUhublhqdTZnaUZManNibVpjdXpEVnNSMTR1QW94UVl0bVM2NE8xQW9ERmw1VDI4MzhHd3FSYTlRZXAxTGNkT0pidjExTGlaVTNKSkliYlJrUm8wdWlka2pUU1ZWSFdVUW4yY1NmOUtqbkVmdzdhdS12YkFqTG1EWnd4dHhQalc0c2NHTnVXcFd4Y1lnNVZTZHRNQlN5X1hoQQ?oc=5",
-      "source": "SoccerWire.com",
+      "source": "SoccerWire",
       "sourceUrl": "https://news.google.com",
       "category": "local",
       "date": "2026-08-07",
-      "summary": "US Youth Soccer ODP Interregional Rosters: Girls West Region Teams (2026-27) | SoccerWire.com"
+      "summary": "US Youth Soccer ODP Interregional Rosters: Girls West Region Teams (2026-27) | SoccerWire"
+    },
+    {
+      "id": "feed-WEYgQUNBREVNWSBOQU1FRCBFQ05M",
+      "title": "XF ACADEMY NAMED ECNL BOYS OVERALL CLUB CHAMPION FOR THIRD YEAR IN A ROW, TOP 25 CLUBS REVEALED",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQTW9jdG1SUkVoMkdtSHJ5Rk5zcjc0eUFNUFNJR0JtdXZsY2F4RGhiTXpFeHF1dENJV3NIc2FBRVh5WTBqMEFWR3ZVcEwzdExSYVA5Um16MTJpQjdsRmRxMWFGVUFWYnRiQndUYWNpQlJRNDBiUU5pRjlwRk9tZ0MwWnRVaDY4NGpsZ05WbUQ2bW0zU2l0Q0xzZHRDVDNzVWVNbUJNTjEtdGJQVEtReFFFQ1d3UXhvMWJYQmQ2dnJHZ1hLRENYcFIyeDJKUmYxcVhMbDc1dWc2dWRMT2c?oc=5",
+      "source": "ECNL",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-08-07",
+      "summary": "XF ACADEMY NAMED ECNL BOYS OVERALL CLUB CHAMPION FOR THIRD YEAR IN A ROW, TOP 25 CLUBS REVEALED ECNL"
     },
     {
       "id": "feed-U0xBTU1FUlMgRkMgSEIgS8OYR0Ug",
@@ -62,16 +82,6 @@
       "summary": "ECNL ANNOUNCES 2025-26 ECNL BOYS ALL-AMERICAN TEAMS, NATIONAL PLAYERS OF THE YEAR ECNL"
     },
     {
-      "id": "feed-Q2xhc3Mgb2YgMjAyNzogQm95cyBz",
-      "title": "Class of 2027: Boys soccer commitments from New England",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNQ3JKamQ2VVd3dlJYUFRkbmg1YnQ4SXVkV3FpU3FxRm81aVFGZWFHdjM1NldXRVdDNWViSnY4bUpmczB5VlN2TjhfZVRsMmtWbnFpbXdmeFFrWmJUNndOZXJIMHdEMXZHeDJycjBTc0w1TS1rNEVVUzc4d2xTblo3QXlrbjdVUTg?oc=5",
-      "source": "New England Soccer Journal",
-      "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-08-06",
-      "summary": "Class of 2027: Boys soccer commitments from New England New England Soccer Journal"
-    },
-    {
       "id": "feed-SW5kZXJrdW0gSGlnaCBTY2hvb2wg",
       "title": "Inderkum High School (Sacramento, CA) Girls Soccer",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNT1NBWmJMaTVMN2lSc0RWdjBIQmR0MFhiUmFGMERvR3JtMG9Yb3pwZC1oYVFIcnRFZncyTHlLaFloQV8wOERJTVk3cHE4NW15WUdvMGVhUnhNVnhMVXRrc21nQXJ5RmV6YmdxdEVHUTNvN1hvQWtPUUlJQnF3YUctUQ?oc=5",
@@ -80,26 +90,6 @@
       "category": "local",
       "date": "2026-08-05",
       "summary": "Inderkum High School (Sacramento, CA) Girls Soccer MaxPreps"
-    },
-    {
-      "id": "feed-RUNOTCBBTk5PVU5DRVMgMjAyNS0y",
-      "title": "ECNL ANNOUNCES 2025-26 ECNL GIRLS ALL-CONFERENCE TEAMS, PLAYERS OF THE YEAR",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSzZGVmpqT0lwU25FY0lYNTFWQTk2YzZnWmJPdy1XbHpORDR2YlNNX0U4YlJnc0lhU3U4OWdWNzVwUmpyNWFkTFhFU19Ma19xdEdUc25uRmZHbTR1TzRyZ1R4YVNaUENEZmtiQjNIRTU4eXBLRHloVENPeHZtc2hLejlGdUFhUWJCUGEtNVhBX0VpanBFOUFnR3hiNnd4cUpjX0MwalJoYTRfODB0Zk54X2FacXZXNFhGY3QyaVNXU1NjQQ?oc=5",
-      "source": "ECNL",
-      "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-08-05",
-      "summary": "ECNL ANNOUNCES 2025-26 ECNL GIRLS ALL-CONFERENCE TEAMS, PLAYERS OF THE YEAR ECNL"
-    },
-    {
-      "id": "feed-QXJjaGJpc2hvcCBNaXR0eSBIaWdo",
-      "title": "Archbishop Mitty High School (San Jose, CA) Girls Soccer",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcjY0blJkTUR1c0xYMzBZV01MbFd3bXdwUTY5NHFUWDNaN0dncnhnYm5ZZU5xZHczT2VBZlhucnBrS1d2SnY2Uk1PR20xeFROSS1MeVdXT1hPSkFseGdyWTdRNmU5MTJjNU93ZVJUcmtLaEhFX2FaX2h5R1RLWmxvVTdvSkVlOHhOY19R?oc=5",
-      "source": "MaxPreps",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-08-04",
-      "summary": "Archbishop Mitty High School (San Jose, CA) Girls Soccer MaxPreps"
     },
     {
       "id": "feed-U3QuIElnbmF0aXVzIENvbGxlZ2Ug",
@@ -120,6 +110,16 @@
       "category": "local",
       "date": "2026-08-04",
       "summary": "McClatchy High School (Sacramento, CA) Girls Soccer MaxPreps"
+    },
+    {
+      "id": "feed-QXJjaGJpc2hvcCBNaXR0eSBIaWdo",
+      "title": "Archbishop Mitty High School (San Jose, CA) Girls Soccer",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcjY0blJkTUR1c0xYMzBZV01MbFd3bXdwUTY5NHFUWDNaN0dncnhnYm5ZZU5xZHczT2VBZlhucnBrS1d2SnY2Uk1PR20xeFROSS1MeVdXT1hPSkFseGdyWTdRNmU5MTJjNU93ZVJUcmtLaEhFX2FaX2h5R1RLWmxvVTdvSkVlOHhOY19R?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-08-04",
+      "summary": "Archbishop Mitty High School (San Jose, CA) Girls Soccer MaxPreps"
     },
     {
       "id": "feed-U2NoZWR1bGUgLSBNaXNzaW9uIFNh",
