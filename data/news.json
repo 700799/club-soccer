@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-12T14:34:44.218Z",
+  "lastUpdated": "2026-08-13T14:35:57.645Z",
   "items": [
     {
       "id": "feed-VGhlIE5hdGlvbuKAmXMgT2xkZXN0",
@@ -152,16 +152,6 @@
       "summary": "Schedule - Silver Creek Raiders (San Jose, CA) Girls Soccer 26-27 MaxPreps"
     },
     {
-      "id": "feed-TWVuJ3MgU29jY2VyIFJlbGVhc2Vz",
-      "title": "Men's Soccer Releases 2026 Home Game Promotions Schedule",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSDhvc1F3MU1UWE9Gc1JQNmJwU1hRS0JCQUlVa3NoM19Na19YWmZGUWZYWEtXNEIyWjlndU8zdXZCLUYwNnFvZmJZZ2Nvb0Yzc1ZIM2F3bDdweE9mUDNndVJLMU5hcEE4MTFUbHgzM0VJV2pUWTlKR0stSVVHNHJCcVh1TVZkcldiTE9SSllJLUlmX09MOGtsbWVVNXg5a2hnZFZINlR3?oc=5",
-      "source": "Oakland University Athletics",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-07-29",
-      "summary": "Men's Soccer Releases 2026 Home Game Promotions Schedule Oakland University Athletics"
-    },
-    {
       "id": "feed-V29tZW4ncyBTb2NjZXIgUmV2ZWFs",
       "title": "Women's Soccer Reveals 2026 Home Game Promotions",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQS2ZkV1B1NWM4TFVoc0h3eEJUZEJ1S2E5N09tdFdqQzRzRnFQMzVzTE9PRWI2bTJqUlBheXUwSmFTSFRPU2gwam16a1U1RkJpQjlsZ0pTb2hLRGswck9HRk1ueC1QM2E4SnZLeXNiaFR2TEEyRllIZXJwMVJSODJpY2NyamRIT3NwVkxvWjdKeU5CZTlIblRoMTVLdw?oc=5",
@@ -170,6 +160,16 @@
       "category": "local",
       "date": "2026-07-29",
       "summary": "Women's Soccer Reveals 2026 Home Game Promotions Oakland University Athletics"
+    },
+    {
+      "id": "feed-TWVuJ3MgU29jY2VyIFJlbGVhc2Vz",
+      "title": "Men's Soccer Releases 2026 Home Game Promotions Schedule",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSDhvc1F3MU1UWE9Gc1JQNmJwU1hRS0JCQUlVa3NoM19Na19YWmZGUWZYWEtXNEIyWjlndU8zdXZCLUYwNnFvZmJZZ2Nvb0Yzc1ZIM2F3bDdweE9mUDNndVJLMU5hcEE4MTFUbHgzM0VJV2pUWTlKR0stSVVHNHJCcVh1TVZkcldiTE9SSllJLUlmX09MOGtsbWVVNXg5a2hnZFZINlR3?oc=5",
+      "source": "Oakland University Athletics",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-07-29",
+      "summary": "Men's Soccer Releases 2026 Home Game Promotions Schedule Oakland University Athletics"
     },
     {
       "id": "feed-U2lnbWEgWCBGQyBNYWtlcyBIaXN0",
@@ -235,11 +235,11 @@
       "id": "feed-R3JlYXQgVVMgeW91dGggc29jY2Vy",
       "title": "Great US youth soccer debate heats up in pricey Bay Area",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQaXBJbHhKbGhIX2NnbmtWNjQtbEhiMG1sSjBJMjUwSnk0MVhpaVBSaEt2N2d3eHZPODFhclpEaGdOUGxHeVhPVVVfN0xURXliLVRmRlBtVG1NaXp3ZEtIYVB3YTBvMDZpLVhTakF0YkhYZzlZOE5lc2E1eTBJSE9lTGt4WTIxYmZFcUhMckpoQ3pQMGxMVWZuVGQ4Y2JhWXI4V0ZPSjRua2txQnZHWnB3aGNoWnpNQdIBuwFBVV95cUxOd2U5WGRaOXNncE82UTM3cjAyeGFxYVFsZkhUXzBYa01IT1ppeUEtS00tdmlQN2NXTk02N2tyOXpxMjl5d284RENpRDdlV2dnUHB4RjA3TVVjSkJfMXh0OGdEMGlBQ3dhUUdxSmhBSl9BSVRxT0hrSzRWV09IeUZHcVF0NTRGZW0zU1o0cjZ0bC1qOFlTZGVKVUk3VUk5Tk4yMHlOdXBpVjMydU82dzltaU9IZFo2TkFmRVo0?oc=5",
-      "source": "The Mercury News",
+      "source": "mercurynews.com",
       "sourceUrl": "https://news.google.com",
       "category": "local",
       "date": "2026-07-19",
-      "summary": "Great US youth soccer debate heats up in pricey Bay Area The Mercury News"
+      "summary": "Great US youth soccer debate heats up in pricey Bay Area mercurynews.com"
     }
   ]
 }
