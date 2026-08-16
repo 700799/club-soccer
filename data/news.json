@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-15T13:51:02.878Z",
+  "lastUpdated": "2026-08-16T13:51:53.261Z",
   "items": [
     {
       "id": "feed-RUNOTCBSTCBBTk5PVU5DRVMgMjAy",
@@ -15,11 +15,11 @@
       "id": "feed-VGhlIE5hdGlvbuKAmXMgT2xkZXN0",
       "title": "The Nation’s Oldest Community-Owned Soccer Club Lives on the West Side",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONDF3M3F3dUxNaHF1ZzllcU5SSk1ZOTVhVkV0YVJtY0hEd2s5QW9TbzNxdnN2TjBPVGJkVlFGdUVGTkQ4clUyNTFocGFNVW9NcDYxT3NiTFNTTmRSM2xVb2hDX1JSNGJZQkJCdldLNFFrZHUwT1ktZ2lfb2t5MU9VY3Y5d2dNdm5OX2txLWpWQ2hKLVRVc2JsQnN4UXZhRzZwV0dJdDB4M0NXVjY2d3Vla3dB?oc=5",
-      "source": "richmondsunsetnews.com",
+      "source": "Richmond Review/Sunset Beacon",
       "sourceUrl": "https://news.google.com",
       "category": "local",
       "date": "2026-08-12",
-      "summary": "The Nation’s Oldest Community-Owned Soccer Club Lives on the West Side richmondsunsetnews.com"
+      "summary": "The Nation’s Oldest Community-Owned Soccer Club Lives on the West Side Richmond Review/Sunset Beacon"
     },
     {
       "id": "feed-WU9VVEggU09DQ0VSOiAyMDI1LTI2",
@@ -82,16 +82,6 @@
       "summary": "SLAMMERS FC HB KØGE NAMED ECNL GIRLS OVERALL CLUB CHAMPION FOR SECOND YEAR IN A ROW, TOP 25 CLUBS REVEALED ECNL"
     },
     {
-      "id": "feed-RUNOTCBHaXJscyBBbGwtQW1lcmlj",
-      "title": "ECNL Girls All-Americans and 2025-26 National Players of the Year honored",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdEVsUm0ySUNpMzd2TjFXY0FkZW9PR1htd0tBdWlBMTIzMG1Ua09iQko5QnotVE1KNnFpcU9MRjNpblEtSUN6NERicDFmUmx1RU1qallYSGEyTUpWZEFKMV92WUp4M3dXQnFGWC1sYW1MTHRqOHpoMGFORi13amxWa2o3SldNSlYtd0xPVy1OTjBBZmhLa3pfMG9yXzFNTnlRU29IU3VjZW83UQ?oc=5",
-      "source": "SoccerWire",
-      "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-08-06",
-      "summary": "ECNL Girls All-Americans and 2025-26 National Players of the Year honored SoccerWire"
-    },
-    {
       "id": "feed-WU9VVEggU09DQ0VSOiAyMDI1LTI2",
       "title": "YOUTH SOCCER: 2025-26 ECNL Girls All-Americans and National Players of the Year",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcmVQVU1CNDhONmg2b2hCWWdURGdQd01QaEZZVXM1ODVSRmxPalp4akpvUWRxNURoT21FSmxzanItTmpGZklVc3VoOW5JQUhQV3ozd1ZRRXJ2cjkzakE4b0U3TlBKS05TcEkxTjA1NDBOT1I2OW84TlNmb200THhvNHhUcFlFbGtLU0Q0NHVfOTFIOWlUWGliYVpxUWRNcmpPNnRVM0djNHRRcnZlWEE?oc=5",
@@ -110,6 +100,16 @@
       "category": "national",
       "date": "2026-08-06",
       "summary": "Class of 2027: Boys soccer commitments from New England New England Soccer Journal"
+    },
+    {
+      "id": "feed-RUNOTCBHaXJscyBBbGwtQW1lcmlj",
+      "title": "ECNL Girls All-Americans and 2025-26 National Players of the Year honored",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdEVsUm0ySUNpMzd2TjFXY0FkZW9PR1htd0tBdWlBMTIzMG1Ua09iQko5QnotVE1KNnFpcU9MRjNpblEtSUN6NERicDFmUmx1RU1qallYSGEyTUpWZEFKMV92WUp4M3dXQnFGWC1sYW1MTHRqOHpoMGFORi13amxWa2o3SldNSlYtd0xPVy1OTjBBZmhLa3pfMG9yXzFNTnlRU29IU3VjZW83UQ?oc=5",
+      "source": "SoccerWire",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-08-06",
+      "summary": "ECNL Girls All-Americans and 2025-26 National Players of the Year honored SoccerWire"
     },
     {
       "id": "feed-SW5kZXJrdW0gSGlnaCBTY2hvb2wg",
@@ -194,7 +194,7 @@
     {
       "id": "feed-U2lnbWEgWCBGQyBNYWtlcyBIaXN0",
       "title": "Sigma X FC Makes History, Captures 2026 US Youth Soccer National Championship",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWXNtQWVmblFkRUVnaE5TU2psR3VHak5FQUk3aW9DUEhPQkJWelpQUURmNnh1RGcyQlNhR1VPcXJ5aXBWc2ctNjI5NlBKalVfeXl1dXBQQUoxdGRLamo4TVVWWE1NZXlJSVRGRUh1X2p3TExLOFFnUlJ4YU0tS3pELVQwcFRCWlVzM0Y2dkNEWE02c0FsOFd0c0p6ME9nbjlWY2FuaFpYRWVLUdIBugFBVV95cUxPOWQ4V0R6dnpVZHNLMTF6ME9EbjN5NHh3czFXVmVicnNaUDRLczU5cWF0OWdTNmh5aWFncjRoeS10OXFYMWRhR2JDN0dQQUFOOXNBdEhHd0Q4NnpLUzRCY2UydlpFTFhlUG5GYWlGOWFPYWJ0ZGk1b0dQNjhnclNjczJ1M1c1TS1RdG93bGp3cld1clVrVDQ1aE9Ja29GeG9mSmlIcFVJMmUxempFTU9NZTAyYUYzREI2SXc?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPOWQ4V0R6dnpVZHNLMTF6ME9EbjN5NHh3czFXVmVicnNaUDRLczU5cWF0OWdTNmh5aWFncjRoeS10OXFYMWRhR2JDN0dQQUFOOXNBdEhHd0Q4NnpLUzRCY2UydlpFTFhlUG5GYWlGOWFPYWJ0ZGk1b0dQNjhnclNjczJ1M1c1TS1RdG93bGp3cld1clVrVDQ1aE9Ja29GeG9mSmlIcFVJMmUxempFTU9NZTAyYUYzREI2SXfSAboBQVVfeXFMTzlkOFdEenZ6VWRzSzExejBPRG4zeTR4d3MxV1ZlYnJzWlA0S3M1OXFhdDlnUzZoeWlhZ3I0aHktdDlxWDFkYUdiQzdHUEFBTjlzQXRIR3dEODZ6S1M0QmNlMnZaRUxYZVBuRmFpRjlhT2FidGRpNW9HUDY4Z3JTY3MydTNXNU0tUXRvd2xqd3JXdXJVa1Q0NWhPSWtvRnhvZkppSHBVSTJlMXpqRU1PTWUwMmFGM0RCNkl3?oc=5",
       "source": "Cal North",
       "sourceUrl": "https://news.google.com",
       "category": "local",
