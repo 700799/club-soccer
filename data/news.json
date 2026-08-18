@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-08-17T14:00:28.084Z",
+  "lastUpdated": "2026-08-18T14:04:46.477Z",
   "items": [
     {
       "id": "feed-RUNOTCBSTCBBTk5PVU5DRVMgMjAy",
       "title": "ECNL RL ANNOUNCES 2025-26 ECNL RL GIRLS ALL-REGIONAL LEAGUE TEAMS",
       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNVHo0VUZUazh4TUVtRXJvQzM5UEhzeDE5WVU3dDVkQ29wYzNTNUg2UEVqRXhMVjVBdHpZeWRGSDUyejhtVXhzQjlTSWJLRzJvOVlwMmRmUzBEcGJoX1hEOTJsYUNSSDl5NGFsc0JqUDlVeUJia2ZsVUpNNGUxVHZFQW0zUHV2MjYtWUVueFZlY3R6OEQ0a0dMWHh0OWZFVWVoNWhmTGJjeWRPbEExd05FYUJpTXFsVDVMWG1lRExZRTY1LXFMbmxnUTlGSThURi16Njc2V2FmQmFuZw?oc=5",
-      "source": "theecnl.com",
+      "source": "ECNL",
       "sourceUrl": "https://news.google.com",
       "category": "local",
       "date": "2026-08-13",
-      "summary": "ECNL RL ANNOUNCES 2025-26 ECNL RL GIRLS ALL-REGIONAL LEAGUE TEAMS theecnl.com"
+      "summary": "ECNL RL ANNOUNCES 2025-26 ECNL RL GIRLS ALL-REGIONAL LEAGUE TEAMS ECNL"
     },
     {
       "id": "feed-VGhlIE5hdGlvbuKAmXMgT2xkZXN0",
@@ -75,21 +75,11 @@
       "id": "feed-U0xBTU1FUlMgRkMgSEIgS8OYR0Ug",
       "title": "SLAMMERS FC HB KØGE NAMED ECNL GIRLS OVERALL CLUB CHAMPION FOR SECOND YEAR IN A ROW, TOP 25 CLUBS REVEALED",
       "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQYy15N0dxSTVERHMzUlQzVHJub2I5RnZlWV81ekxjanZlNU55VTVJRElqVlFTem9GNG1SemRVZnVxRzhETjROTnQ3WkVyYmkyd0pubWFKa2Ffd0g1S0JON2RWRE40R3J6QWxwY00wWGhFSG9kbFVIbzJiRVRvd2NJdGNKeGNxOG92c1FMd1NiWENMUWNhSGRWdnhlOEhvdmFMUWw1X3lLZFhCbXZ6ZzdDeWxkaVd3TUlsUUhfRUZ1aGpETzhobkdCVGV5OXM0am05Z1gxd3F4QmVXaDQ1QWNfU3pTWlgtYzl2OWY4?oc=5",
-      "source": "theecnl.com",
+      "source": "ECNL",
       "sourceUrl": "https://news.google.com",
       "category": "national",
       "date": "2026-08-06",
-      "summary": "SLAMMERS FC HB KØGE NAMED ECNL GIRLS OVERALL CLUB CHAMPION FOR SECOND YEAR IN A ROW, TOP 25 CLUBS REVEALED theecnl.com"
-    },
-    {
-      "id": "feed-WU9VVEggU09DQ0VSOiAyMDI1LTI2",
-      "title": "YOUTH SOCCER: 2025-26 ECNL Girls All-Americans and National Players of the Year",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcmVQVU1CNDhONmg2b2hCWWdURGdQd01QaEZZVXM1ODVSRmxPalp4akpvUWRxNURoT21FSmxzanItTmpGZklVc3VoOW5JQUhQV3ozd1ZRRXJ2cjkzakE4b0U3TlBKS05TcEkxTjA1NDBOT1I2OW84TlNmb200THhvNHhUcFlFbGtLU0Q0NHVfOTFIOWlUWGliYVpxUWRNcmpPNnRVM0djNHRRcnZlWEE?oc=5",
-      "source": "Soccer America",
-      "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-08-06",
-      "summary": "YOUTH SOCCER: 2025-26 ECNL Girls All-Americans and National Players of the Year Soccer America"
+      "summary": "SLAMMERS FC HB KØGE NAMED ECNL GIRLS OVERALL CLUB CHAMPION FOR SECOND YEAR IN A ROW, TOP 25 CLUBS REVEALED ECNL"
     },
     {
       "id": "feed-Q2xhc3Mgb2YgMjAyNzogQm95cyBz",
@@ -100,6 +90,16 @@
       "category": "national",
       "date": "2026-08-06",
       "summary": "Class of 2027: Boys soccer commitments from New England New England Soccer Journal"
+    },
+    {
+      "id": "feed-WU9VVEggU09DQ0VSOiAyMDI1LTI2",
+      "title": "YOUTH SOCCER: 2025-26 ECNL Girls All-Americans and National Players of the Year",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcmVQVU1CNDhONmg2b2hCWWdURGdQd01QaEZZVXM1ODVSRmxPalp4akpvUWRxNURoT21FSmxzanItTmpGZklVc3VoOW5JQUhQV3ozd1ZRRXJ2cjkzakE4b0U3TlBKS05TcEkxTjA1NDBOT1I2OW84TlNmb200THhvNHhUcFlFbGtLU0Q0NHVfOTFIOWlUWGliYVpxUWRNcmpPNnRVM0djNHRRcnZlWEE?oc=5",
+      "source": "Soccer America",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-08-06",
+      "summary": "YOUTH SOCCER: 2025-26 ECNL Girls All-Americans and National Players of the Year Soccer America"
     },
     {
       "id": "feed-RUNOTCBHaXJscyBBbGwtQW1lcmlj",
@@ -122,16 +122,6 @@
       "summary": "Inderkum High School (Sacramento, CA) Girls Soccer MaxPreps"
     },
     {
-      "id": "feed-U3QuIElnbmF0aXVzIENvbGxlZ2Ug",
-      "title": "St. Ignatius College Preparatory High School (San Francisco, CA) Girls Soccer",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTjJVSzBEejVfNUVRX2g4cEZSeXRrelJXVWRxemU0T3hJQUdKdTZPd1pfZzlkX3VzTU9oZEpTWW1VQ2tmUGd3Q2ZiS0JQQVRnb2ZtWjVvRnZDN2I2QjFKa2R2d3A4NXNHLWI3MGNGakFxR3BmR09JNkI5Q2JMWklvaDVSV3BxYzhOamhnODM1LXpEaUNYQTRNbmtBWmRObzRDdlZlXzVB?oc=5",
-      "source": "MaxPreps",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-08-04",
-      "summary": "St. Ignatius College Preparatory High School (San Francisco, CA) Girls Soccer MaxPreps"
-    },
-    {
       "id": "feed-TWNDbGF0Y2h5IEhpZ2ggU2Nob29s",
       "title": "McClatchy High School (Sacramento, CA) Girls Soccer",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQallPQmFCX2RaVFpaTlNjVFV2T0JnWTg0eVhTU3NuQ0M3c3F4V1NSY2tVTnd3NGRuLUgwMDAyR0FjU2RjUEtYX0dFUXBFdURHNXlmekF5Vzd0Y1diUTJYcEJENThjRUtoeXhWY0ZIaEN3SmViZVNjSV9fdHBYa0labQ?oc=5",
@@ -140,6 +130,16 @@
       "category": "local",
       "date": "2026-08-04",
       "summary": "McClatchy High School (Sacramento, CA) Girls Soccer MaxPreps"
+    },
+    {
+      "id": "feed-U3QuIElnbmF0aXVzIENvbGxlZ2Ug",
+      "title": "St. Ignatius College Preparatory High School (San Francisco, CA) Girls Soccer",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTjJVSzBEejVfNUVRX2g4cEZSeXRrelJXVWRxemU0T3hJQUdKdTZPd1pfZzlkX3VzTU9oZEpTWW1VQ2tmUGd3Q2ZiS0JQQVRnb2ZtWjVvRnZDN2I2QjFKa2R2d3A4NXNHLWI3MGNGakFxR3BmR09JNkI5Q2JMWklvaDVSV3BxYzhOamhnODM1LXpEaUNYQTRNbmtBWmRObzRDdlZlXzVB?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-08-04",
+      "summary": "St. Ignatius College Preparatory High School (San Francisco, CA) Girls Soccer MaxPreps"
     },
     {
       "id": "feed-QXJjaGJpc2hvcCBNaXR0eSBIaWdo",
