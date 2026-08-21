@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-20T14:07:13.084Z",
+  "lastUpdated": "2026-08-21T14:05:23.731Z",
   "items": [
     {
       "id": "feed-VVMgWW91dGggU29jY2VyIE9EUCBJ",
@@ -10,6 +10,16 @@
       "category": "local",
       "date": "2026-08-19",
       "summary": "US Youth Soccer ODP Interregional Rosters: Boys West Region Teams (2026-27) SoccerWire"
+    },
+    {
+      "id": "feed-Q2xhc3Mgb2YgMjAyODogR2lybHMg",
+      "title": "Class of 2028: Girls soccer commitments from New England",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPYkhaamdLN3NlaG41Y1p4RzVZelk2MFM4c0hNcC1jdXh3TTE3RzdYay15Y2tRcTZTLWZkOGR5S1NROFpTblY5X25tbVJXX0h5bGQ2akNaM3o2THRPYWVEWVR2UjdvdDNIQ0Mzc2cwNklCOXNkOWtfVG9pclJYQ2l3Q2dveDZ6LTZ0ZVdLdXNjVQ?oc=5",
+      "source": "New England Soccer Journal",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-08-18",
+      "summary": "Class of 2028: Girls soccer commitments from New England New England Soccer Journal"
     },
     {
       "id": "feed-RUNOTCBSTCBBTk5PVU5DRVMgMjAy",
@@ -50,6 +60,16 @@
       "category": "national",
       "date": "2026-08-11",
       "summary": "YOUTH SOCCER: 2025-26 ECNL Boys All-Americans and National Players of the Year Soccer America"
+    },
+    {
+      "id": "feed-RUNOTCBHaXJscyBBbm5vdW5jZXMg",
+      "title": "ECNL Girls Announces 2025-26 All-Americans | Club Soccer | Youth Soccer",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUnYwa1BjU2VWQ1Y3MnBweHNMWFpQVDRhdEFUQUdhcXpqcUhDRDBRV2tMY1pET3RFeVNIM1lhWTRJTzJnZDYyUzNmLXhSVVRUU3c1UElxblc3TDZiWVZJb1BqRDBaMmRYUXNjcUtyeS1WUDNPcnFkSWNqdG9EUTZRVF9mZFROSmRvMGdPbW9VbkpZTUJWYldJckdsZWktay0xRWYxREtMbw?oc=5",
+      "source": "Top Drawer Soccer",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-08-10",
+      "summary": "ECNL Girls Announces 2025-26 All-Americans | Club Soccer | Youth Soccer Top Drawer Soccer"
     },
     {
       "id": "feed-Tm9ydGhlcm4gQ2FsaWZvcm5pYSBN",
@@ -100,26 +120,6 @@
       "category": "national",
       "date": "2026-08-06",
       "summary": "SLAMMERS FC HB KØGE NAMED ECNL GIRLS OVERALL CLUB CHAMPION FOR SECOND YEAR IN A ROW, TOP 25 CLUBS REVEALED ECNL"
-    },
-    {
-      "id": "feed-Q2xhc3Mgb2YgMjAyNzogQm95cyBz",
-      "title": "Class of 2027: Boys soccer commitments from New England",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNQ3JKamQ2VVd3dlJYUFRkbmg1YnQ4SXVkV3FpU3FxRm81aVFGZWFHdjM1NldXRVdDNWViSnY4bUpmczB5VlN2TjhfZVRsMmtWbnFpbXdmeFFrWmJUNndOZXJIMHdEMXZHeDJycjBTc0w1TS1rNEVVUzc4d2xTblo3QXlrbjdVUTg?oc=5",
-      "source": "New England Soccer Journal",
-      "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-08-06",
-      "summary": "Class of 2027: Boys soccer commitments from New England New England Soccer Journal"
-    },
-    {
-      "id": "feed-WU9VVEggU09DQ0VSOiAyMDI1LTI2",
-      "title": "YOUTH SOCCER: 2025-26 ECNL Girls All-Americans and National Players of the Year",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcmVQVU1CNDhONmg2b2hCWWdURGdQd01QaEZZVXM1ODVSRmxPalp4akpvUWRxNURoT21FSmxzanItTmpGZklVc3VoOW5JQUhQV3ozd1ZRRXJ2cjkzakE4b0U3TlBKS05TcEkxTjA1NDBOT1I2OW84TlNmb200THhvNHhUcFlFbGtLU0Q0NHVfOTFIOWlUWGliYVpxUWRNcmpPNnRVM0djNHRRcnZlWEE?oc=5",
-      "source": "Soccer America",
-      "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-08-06",
-      "summary": "YOUTH SOCCER: 2025-26 ECNL Girls All-Americans and National Players of the Year Soccer America"
     },
     {
       "id": "feed-SW5kZXJrdW0gSGlnaCBTY2hvb2wg",
