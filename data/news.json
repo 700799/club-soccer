@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24T14:09:35.350Z",
+  "lastUpdated": "2026-08-25T14:12:19.671Z",
   "items": [
     {
       "id": "feed-VVMgWW91dGggU29jY2VyIE9EUCBJ",
@@ -22,16 +22,6 @@
       "summary": "Class of 2028: Girls soccer commitments from New England New England Soccer Journal"
     },
     {
-      "id": "feed-RUNOTCBSTCBBTk5PVU5DRVMgMjAy",
-      "title": "ECNL RL ANNOUNCES 2025-26 ECNL RL GIRLS ALL-REGIONAL LEAGUE TEAMS",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNVHo0VUZUazh4TUVtRXJvQzM5UEhzeDE5WVU3dDVkQ29wYzNTNUg2UEVqRXhMVjVBdHpZeWRGSDUyejhtVXhzQjlTSWJLRzJvOVlwMmRmUzBEcGJoX1hEOTJsYUNSSDl5NGFsc0JqUDlVeUJia2ZsVUpNNGUxVHZFQW0zUHV2MjYtWUVueFZlY3R6OEQ0a0dMWHh0OWZFVWVoNWhmTGJjeWRPbEExd05FYUJpTXFsVDVMWG1lRExZRTY1LXFMbmxnUTlGSThURi16Njc2V2FmQmFuZw?oc=5",
-      "source": "ECNL",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-08-13",
-      "summary": "ECNL RL ANNOUNCES 2025-26 ECNL RL GIRLS ALL-REGIONAL LEAGUE TEAMS ECNL"
-    },
-    {
       "id": "feed-Q2xhc3Mgb2YgMjAyNzogR2lybHMg",
       "title": "Class of 2027: Girls soccer commitments from New England",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNUTJZWHByQjA1M1dTRDRaWDVwQUQ4RG9HbkUwckFLaUFuUW92MXJ1TzlGWFVUeEp5YmRaZDBsRUJIcXdFSmg4Y1o5ZmlIUkJqYkNiQUktRFBCY3J6YXM5TU5FMFFUUTZ3NlJzeUlRWmZKbFU3ZlZEMXVUN0JIeGhCb1Z4SjdDVG9ZM1F6X1psMA?oc=5",
@@ -40,6 +30,16 @@
       "category": "national",
       "date": "2026-08-13",
       "summary": "Class of 2027: Girls soccer commitments from New England New England Soccer Journal"
+    },
+    {
+      "id": "feed-RUNOTCBSTCBBTk5PVU5DRVMgMjAy",
+      "title": "ECNL RL ANNOUNCES 2025-26 ECNL RL GIRLS ALL-REGIONAL LEAGUE TEAMS",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYml2WFp4eFU3M0hmaE1LYjg3Tlctb0c2TkpxTFdRVmlsa0RUVXVyd0ZfSFhVcGYxQVlXXzdfWXBlOEhYdndGYVJhdlA1a29SWVRKb21RaTNEYVdVV1ZkMUNoNFVoYlFtZkV1bUNydS1PV3hCazBVbk54MndwZF9zLUVFWGFlZFZ3d2hRaXVFb0p2TDdQZGVRX1VWZVRENHdtTC1hZ2IyWVEzTFNTQXRTS1VuZ0ZnWHllSmZJSWcxR2xtSWplM2d3bC00TXk?oc=5",
+      "source": "ECNL",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-08-12",
+      "summary": "ECNL RL ANNOUNCES 2025-26 ECNL RL GIRLS ALL-REGIONAL LEAGUE TEAMS ECNL"
     },
     {
       "id": "feed-VGhlIE5hdGlvbuKAmXMgT2xkZXN0",
@@ -132,16 +132,6 @@
       "summary": "Inderkum High School (Sacramento, CA) Girls Soccer MaxPreps"
     },
     {
-      "id": "feed-TWNDbGF0Y2h5IEhpZ2ggU2Nob29s",
-      "title": "McClatchy High School (Sacramento, CA) Girls Soccer",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQallPQmFCX2RaVFpaTlNjVFV2T0JnWTg0eVhTU3NuQ0M3c3F4V1NSY2tVTnd3NGRuLUgwMDAyR0FjU2RjUEtYX0dFUXBFdURHNXlmekF5Vzd0Y1diUTJYcEJENThjRUtoeXhWY0ZIaEN3SmViZVNjSV9fdHBYa0labQ?oc=5",
-      "source": "MaxPreps",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-08-04",
-      "summary": "McClatchy High School (Sacramento, CA) Girls Soccer MaxPreps"
-    },
-    {
       "id": "feed-U3QuIElnbmF0aXVzIENvbGxlZ2Ug",
       "title": "St. Ignatius College Preparatory High School (San Francisco, CA) Girls Soccer",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTjJVSzBEejVfNUVRX2g4cEZSeXRrelJXVWRxemU0T3hJQUdKdTZPd1pfZzlkX3VzTU9oZEpTWW1VQ2tmUGd3Q2ZiS0JQQVRnb2ZtWjVvRnZDN2I2QjFKa2R2d3A4NXNHLWI3MGNGakFxR3BmR09JNkI5Q2JMWklvaDVSV3BxYzhOamhnODM1LXpEaUNYQTRNbmtBWmRObzRDdlZlXzVB?oc=5",
@@ -150,6 +140,16 @@
       "category": "local",
       "date": "2026-08-04",
       "summary": "St. Ignatius College Preparatory High School (San Francisco, CA) Girls Soccer MaxPreps"
+    },
+    {
+      "id": "feed-TWNDbGF0Y2h5IEhpZ2ggU2Nob29s",
+      "title": "McClatchy High School (Sacramento, CA) Girls Soccer",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQallPQmFCX2RaVFpaTlNjVFV2T0JnWTg0eVhTU3NuQ0M3c3F4V1NSY2tVTnd3NGRuLUgwMDAyR0FjU2RjUEtYX0dFUXBFdURHNXlmekF5Vzd0Y1diUTJYcEJENThjRUtoeXhWY0ZIaEN3SmViZVNjSV9fdHBYa0labQ?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-08-04",
+      "summary": "McClatchy High School (Sacramento, CA) Girls Soccer MaxPreps"
     },
     {
       "id": "feed-QXJjaGJpc2hvcCBNaXR0eSBIaWdo",
