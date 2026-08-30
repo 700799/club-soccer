@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T17:17:41.306Z",
+  "lastUpdated": "2026-08-30T17:40:07.370Z",
   "items": [
     {
       "id": "feed-Q2xhc3Mgb2YgMjAyODogR2lybHMg",
@@ -162,16 +162,6 @@
       "summary": "Inderkum High School (Sacramento, CA) Girls Soccer MaxPreps"
     },
     {
-      "id": "feed-U3QuIElnbmF0aXVzIENvbGxlZ2Ug",
-      "title": "St. Ignatius College Preparatory High School (San Francisco, CA) Girls Soccer",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTjJVSzBEejVfNUVRX2g4cEZSeXRrelJXVWRxemU0T3hJQUdKdTZPd1pfZzlkX3VzTU9oZEpTWW1VQ2tmUGd3Q2ZiS0JQQVRnb2ZtWjVvRnZDN2I2QjFKa2R2d3A4NXNHLWI3MGNGakFxR3BmR09JNkI5Q2JMWklvaDVSV3BxYzhOamhnODM1LXpEaUNYQTRNbmtBWmRObzRDdlZlXzVB?oc=5",
-      "source": "MaxPreps",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-08-04",
-      "summary": "St. Ignatius College Preparatory High School (San Francisco, CA) Girls Soccer MaxPreps"
-    },
-    {
       "id": "feed-TWNDbGF0Y2h5IEhpZ2ggU2Nob29s",
       "title": "McClatchy High School (Sacramento, CA) Girls Soccer",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQallPQmFCX2RaVFpaTlNjVFV2T0JnWTg0eVhTU3NuQ0M3c3F4V1NSY2tVTnd3NGRuLUgwMDAyR0FjU2RjUEtYX0dFUXBFdURHNXlmekF5Vzd0Y1diUTJYcEJENThjRUtoeXhWY0ZIaEN3SmViZVNjSV9fdHBYa0labQ?oc=5",
@@ -180,6 +170,16 @@
       "category": "local",
       "date": "2026-08-04",
       "summary": "McClatchy High School (Sacramento, CA) Girls Soccer MaxPreps"
+    },
+    {
+      "id": "feed-U3QuIElnbmF0aXVzIENvbGxlZ2Ug",
+      "title": "St. Ignatius College Preparatory High School (San Francisco, CA) Girls Soccer",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTjJVSzBEejVfNUVRX2g4cEZSeXRrelJXVWRxemU0T3hJQUdKdTZPd1pfZzlkX3VzTU9oZEpTWW1VQ2tmUGd3Q2ZiS0JQQVRnb2ZtWjVvRnZDN2I2QjFKa2R2d3A4NXNHLWI3MGNGakFxR3BmR09JNkI5Q2JMWklvaDVSV3BxYzhOamhnODM1LXpEaUNYQTRNbmtBWmRObzRDdlZlXzVB?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-08-04",
+      "summary": "St. Ignatius College Preparatory High School (San Francisco, CA) Girls Soccer MaxPreps"
     },
     {
       "id": "feed-QXJjaGJpc2hvcCBNaXR0eSBIaWdo",
