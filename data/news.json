@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-04T16:56:12.769Z",
+  "lastUpdated": "2026-09-05T16:09:55.707Z",
   "items": [
     {
       "id": "feed-U29jY2VyIHN1ZmZlcnMgZmlyc3Qg",
@@ -15,21 +15,11 @@
       "id": "feed-SGVyZSBhcmUgMjEgb2YgdGhlIHRv",
       "title": "Here are 21 of the top boys soccer players in the Appleton area",
       "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOZjJnMjdIbk8xLW5kT0k5WUV1YzY5eUtLRmk3djQybjU5MXhlc19YY09FeTlOX3o2eTZMc3NIZU0xUmJhR2EwLXFueHVHeTZMeVRJcklwLUxCVk0yOHZ5V1RCcC1BR0N3Ml9McWI4ZTJWREVRb3BlRHJ4RWxtN0gzMmY3c1FkOU5jT09kVlVyMjJyUmhwSnVUUHg0WjZWVnU0SWYyNFV0MU1XRXotTUtuQnZ4WGJleUk4S3hyWmJkcjV6RV9YTjZNRGt4Y2pkTzVRemFSV1hNRzVfa29lOWlR?oc=5",
-      "source": "postcrescent.com",
+      "source": "The Post-Crescent",
       "sourceUrl": "https://news.google.com",
       "category": "local",
       "date": "2026-09-04",
-      "summary": "Here are 21 of the top boys soccer players in the Appleton area postcrescent.com"
-    },
-    {
-      "id": "feed-RUNOTCBCb3lzIFRleGFzIENvbmZl",
-      "title": "ECNL Boys Texas Conference Players to Know | Club Soccer | Youth Soccer",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYnpNNjVEY09VTjZublRJemZjNHlsV1JwODlFVHFkVW1DX2I3N1FscmRBbTlFVXBFbUoyUVl5Z3BqX0Y1QmVkRG5PeEJ6WnFZd3l2a1EyTlZiVzR1Rkc5T3gxbnFXZUgwcm03MDI2VmV2SUFNcktYbWVtWWw3eGx2U0Q3LUx2dFJJU0NNN01aQjJheWJ1cmFrcW1uRU9rdmRqTE9sbXg0Yw?oc=5",
-      "source": "Top Drawer Soccer",
-      "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-09-03",
-      "summary": "ECNL Boys Texas Conference Players to Know | Club Soccer | Youth Soccer Top Drawer Soccer"
+      "summary": "Here are 21 of the top boys soccer players in the Appleton area The Post-Crescent"
     },
     {
       "id": "feed-R3JlZW4gSG9ybmV0cyBDYXAgVGhl",
@@ -55,11 +45,21 @@
       "id": "feed-TUxTIE5FWFQgc2V0IHRvIGtpY2tv",
       "title": "MLS NEXT set to kickoff 2026-27 campaign, marking league’s 7th season",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPMnc5OVF0eTIxT2NIandCYXhaT2VEMjYzdk9ObkZROTNVM0FlYmFTSlYyN051WUdzTlpYS3EzdTZ4SGVfd1R0NHN3SkhRZ2tjOWxOam1BcEpBWDdVaGR1WEFaYmVSYVY4MlJ5aHdGMGlseWhuc3U1R0xjMmdtZmVRTFFEaW5zM2VYS1JZNUJVOW93dzNJdG1mM3VJZVh4eTZMaVE?oc=5",
-      "source": "soccerwire.com",
+      "source": "SoccerWire",
       "sourceUrl": "https://news.google.com",
       "category": "national",
       "date": "2026-09-03",
-      "summary": "MLS NEXT set to kickoff 2026-27 campaign, marking league’s 7th season soccerwire.com"
+      "summary": "MLS NEXT set to kickoff 2026-27 campaign, marking league’s 7th season SoccerWire"
+    },
+    {
+      "id": "feed-RUNOTCBCb3lzIFRleGFzIENvbmZl",
+      "title": "ECNL Boys Texas Conference Players to Know | Club Soccer | Youth Soccer",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYnpNNjVEY09VTjZublRJemZjNHlsV1JwODlFVHFkVW1DX2I3N1FscmRBbTlFVXBFbUoyUVl5Z3BqX0Y1QmVkRG5PeEJ6WnFZd3l2a1EyTlZiVzR1Rkc5T3gxbnFXZUgwcm03MDI2VmV2SUFNcktYbWVtWWw3eGx2U0Q3LUx2dFJJU0NNN01aQjJheWJ1cmFrcW1uRU9rdmRqTE9sbXg0Yw?oc=5",
+      "source": "Top Drawer Soccer",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-09-03",
+      "summary": "ECNL Boys Texas Conference Players to Know | Club Soccer | Youth Soccer Top Drawer Soccer"
     },
     {
       "id": "feed-RGlzdHJpY3QgOC1BQUEgZ2lybHMg",
@@ -82,24 +82,34 @@
       "summary": "Urban High School (San Francisco, CA) Girls Soccer MaxPreps"
     },
     {
+      "id": "feed-U3QuIElnbmF0aXVzIENvbGxlZ2Ug",
+      "title": "St. Ignatius College Preparatory High School (San Francisco, CA) Girls Soccer",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTjJVSzBEejVfNUVRX2g4cEZSeXRrelJXVWRxemU0T3hJQUdKdTZPd1pfZzlkX3VzTU9oZEpTWW1VQ2tmUGd3Q2ZiS0JQQVRnb2ZtWjVvRnZDN2I2QjFKa2R2d3A4NXNHLWI3MGNGakFxR3BmR09JNkI5Q2JMWklvaDVSV3BxYzhOamhnODM1LXpEaUNYQTRNbmtBWmRObzRDdlZlXzVB?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-09-01",
+      "summary": "St. Ignatius College Preparatory High School (San Francisco, CA) Girls Soccer MaxPreps"
+    },
+    {
       "id": "feed-RUNOTCBSZWdpb25hbCBMZWFndWUg",
       "title": "ECNL Regional League Girls 2025-26 All-Conference Teams: Mountain League",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOLUo1NU4tZnpQQmNGVVRaNS1VZ1BrNU5QQkphZmF3NFVXYnE5RTJ5dEp6b1lha3ZJanhOOFNoOGt5Qlpzc25UZTVuWUs0QXZGZG5GbWdUZ0t5ZFExb0FkaEVOc0UwbWVjcjhxM3AyVjRpYlBEeGFuU0RPQmlFVDkwcFFISFNaTkVrSF9fT202Z3p3SXNUVGVIakxxbWhkUDYteUhmUFdCcw?oc=5",
-      "source": "soccerwire.com",
+      "source": "SoccerWire",
       "sourceUrl": "https://news.google.com",
       "category": "national",
       "date": "2026-08-31",
-      "summary": "ECNL Regional League Girls 2025-26 All-Conference Teams: Mountain League soccerwire.com"
+      "summary": "ECNL Regional League Girls 2025-26 All-Conference Teams: Mountain League SoccerWire"
     },
     {
       "id": "feed-QlJFQUtJTkc6IFVTIFlvdXRoIFNv",
       "title": "BREAKING: US Youth Soccer State Associations vote to integrate with U.S. Soccer",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObWZ3eWhsZWV1Y19jSkppdnZ1WXhuN2FMdnR0VmlfWjQyTEdfYVY3OU8ydFV2clFnWTVOVVllTzd6QXpYUDBHWml1ZmNaTE5Lbjd2MVI5ZE5uTjlSXzBLNS04YXhDSHFIcmNDNnA5VFV6MnNnOGlRN2dwVFkyY1Jyb1Y4VFNHX3lzMFllVWtMS180ZHppUV80TmVTLTB5M09HcXplYXhPcVA5NUZPRXpJ?oc=5",
-      "source": "soccerwire.com",
+      "source": "SoccerWire",
       "sourceUrl": "https://news.google.com",
       "category": "national",
       "date": "2026-08-29",
-      "summary": "BREAKING: US Youth Soccer State Associations vote to integrate with U.S. Soccer soccerwire.com"
+      "summary": "BREAKING: US Youth Soccer State Associations vote to integrate with U.S. Soccer SoccerWire"
     },
     {
       "id": "feed-VW5pdmVyc2l0eSBIaWdoIFNjaG9v",
@@ -125,11 +135,51 @@
       "id": "feed-VVMgWW91dGggU29jY2VyIE9EUCBJ",
       "title": "US Youth Soccer ODP Interregional Rosters: Boys West Region Teams (2026-27)",
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQLWlJNHp1MkFLa0x2TXJ0dmJTUHIxU0V0bDh0bVFZSmRGUlRZdWtWcWVHcUx4OEl2RnduQ24wSU9RSk92RzN1N0x6RWZER0dzX3BZdFV4VmhDS2ZGNFdCT29pX2pSMVdWVjBLdFVLa2NaaUdhSlRnWHJYdVE5bFRENjJjMjFXbDNNb2VNZFJtQ29zTEg5M0VxbU9GMnh0V2J6VFNSenRSaWw?oc=5",
-      "source": "soccerwire.com",
+      "source": "SoccerWire",
       "sourceUrl": "https://news.google.com",
       "category": "local",
       "date": "2026-08-19",
-      "summary": "US Youth Soccer ODP Interregional Rosters: Boys West Region Teams (2026-27) soccerwire.com"
+      "summary": "US Youth Soccer ODP Interregional Rosters: Boys West Region Teams (2026-27) SoccerWire"
+    },
+    {
+      "id": "feed-U2NoZWR1bGUgLSBMZWxhbmQgQ2hh",
+      "title": "Schedule - Leland Chargers (San Jose, CA) Girls Soccer 26-27",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRTdFR0VPUnBQU1dFbzdFRlRRYkUwTXJyQ09GWTdkR1lYRk9lNDkxUUU4T01JSHpaNWpLM1RXR3VSYVEtSWRjLVp1MzVtRDFpeGxzOFAwNm8zN0dGQnFJZ0F0cVRSMmpieWt5cGtwSGllVUNueW9YNFU5MmU0WXpKaG00U1cyZ2ZpcEE?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-08-19",
+      "summary": "Schedule - Leland Chargers (San Jose, CA) Girls Soccer 26-27 MaxPreps"
+    },
+    {
+      "id": "feed-U2NoZWR1bGUgLSBMZWlnaCBMb25n",
+      "title": "Schedule - Leigh Longhorns (San Jose, CA) Girls Soccer 26-27",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQb3BqWmFTNDVTa3hia2tCUEtCeWRFTnVlZmtTOTQ3WEtweVlnRDhua1FtcVVISDZmaHdoVHJoNnpUZ1I0ZGhDYWpHdnR5ay1uT0QzUWpsUFFFSTNHZVVHdmEwOE9wUkpWanpBczh0ZU93ejNidm5DZzVLVXJkLWdJSlQ2dkIxUVBLN3c?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-08-19",
+      "summary": "Schedule - Leigh Longhorns (San Jose, CA) Girls Soccer 26-27 MaxPreps"
+    },
+    {
+      "id": "feed-U2NoZWR1bGUgLSBQaWVkbW9udCBI",
+      "title": "Schedule - Piedmont Hills Pirates (San Jose, CA) Girls Soccer 26-27",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSUdZei12cDhNRVFQU2VkWFEzLVIxT0dDakNjNUFYWThCZ3QtZUdENENaT25sb0F1VkFudEgxU3lkV3duR1JRbW02VTRoaVFORzRjSHlEMmlMZGJJUC1KUUJwaVFPcWhjYTVsZkVxQTNxZmc0N2FVaFBlaWFMeHJZTHRNWU5Zb3pQMC1lWEFLbGwwSXc?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-08-19",
+      "summary": "Schedule - Piedmont Hills Pirates (San Jose, CA) Girls Soccer 26-27 MaxPreps"
+    },
+    {
+      "id": "feed-U2NoZWR1bGUgLSBCcmFuaGFtIEJy",
+      "title": "Schedule - Branham Bruins (San Jose, CA) Girls Soccer 26-27",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPLWQ2LVJlN3VqdXZuUmVRYlV0aWNnbGUzbF9fRXpZX0EtTlFqSkhDVDZISEVkVVVHRnZuT3g2TTl2Vk9BelphWVA4NVN2REVTUlp0TnhobUFETzZjNm5tU1M5cUJKOWdfWHVlOENPbUVSX1VqaGlJVWpsSThXdU8xZDA5M1hYa1c3?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-08-19",
+      "summary": "Schedule - Branham Bruins (San Jose, CA) Girls Soccer 26-27 MaxPreps"
     },
     {
       "id": "feed-TWVzc2Fsb25za2VlIHZzIEJlbGZh",
@@ -168,7 +218,7 @@
       "source": "Cal North",
       "sourceUrl": "https://news.google.com",
       "category": "local",
-      "date": "2026-08-08",
+      "date": "2026-08-07",
       "summary": "Northern California MLS NEXT Academy teams set for 2027 MLS NEXT Cup Regional Qualifier events Cal North"
     },
     {
@@ -190,56 +240,6 @@
       "category": "local",
       "date": "2026-08-07",
       "summary": "US Youth Soccer ODP Interregional Rosters: Girls West Region Teams (2026-27) | soccerwire.com"
-    },
-    {
-      "id": "feed-U2NoZWR1bGUgLSBQaWVkbW9udCBI",
-      "title": "Schedule - Piedmont Hills Pirates (San Jose, CA) Girls Soccer 26-27",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSUdZei12cDhNRVFQU2VkWFEzLVIxT0dDakNjNUFYWThCZ3QtZUdENENaT25sb0F1VkFudEgxU3lkV3duR1JRbW02VTRoaVFORzRjSHlEMmlMZGJJUC1KUUJwaVFPcWhjYTVsZkVxQTNxZmc0N2FVaFBlaWFMeHJZTHRNWU5Zb3pQMC1lWEFLbGwwSXc?oc=5",
-      "source": "MaxPreps",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-08-06",
-      "summary": "Schedule - Piedmont Hills Pirates (San Jose, CA) Girls Soccer 26-27 MaxPreps"
-    },
-    {
-      "id": "feed-SW5kZXJrdW0gSGlnaCBTY2hvb2wg",
-      "title": "Inderkum High School (Sacramento, CA) Girls Soccer",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNT1NBWmJMaTVMN2lSc0RWdjBIQmR0MFhiUmFGMERvR3JtMG9Yb3pwZC1oYVFIcnRFZncyTHlLaFloQV8wOERJTVk3cHE4NW15WUdvMGVhUnhNVnhMVXRrc21nQXJ5RmV6YmdxdEVHUTNvN1hvQWtPUUlJQnF3YUctUQ?oc=5",
-      "source": "MaxPreps",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-08-05",
-      "summary": "Inderkum High School (Sacramento, CA) Girls Soccer MaxPreps"
-    },
-    {
-      "id": "feed-TWNDbGF0Y2h5IEhpZ2ggU2Nob29s",
-      "title": "McClatchy High School (Sacramento, CA) Girls Soccer",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQallPQmFCX2RaVFpaTlNjVFV2T0JnWTg0eVhTU3NuQ0M3c3F4V1NSY2tVTnd3NGRuLUgwMDAyR0FjU2RjUEtYX0dFUXBFdURHNXlmekF5Vzd0Y1diUTJYcEJENThjRUtoeXhWY0ZIaEN3SmViZVNjSV9fdHBYa0labQ?oc=5",
-      "source": "maxpreps.com",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-08-04",
-      "summary": "McClatchy High School (Sacramento, CA) Girls Soccer maxpreps.com"
-    },
-    {
-      "id": "feed-U3QuIElnbmF0aXVzIENvbGxlZ2Ug",
-      "title": "St. Ignatius College Preparatory High School (San Francisco, CA) Girls Soccer",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTjJVSzBEejVfNUVRX2g4cEZSeXRrelJXVWRxemU0T3hJQUdKdTZPd1pfZzlkX3VzTU9oZEpTWW1VQ2tmUGd3Q2ZiS0JQQVRnb2ZtWjVvRnZDN2I2QjFKa2R2d3A4NXNHLWI3MGNGakFxR3BmR09JNkI5Q2JMWklvaDVSV3BxYzhOamhnODM1LXpEaUNYQTRNbmtBWmRObzRDdlZlXzVB?oc=5",
-      "source": "MaxPreps",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-08-04",
-      "summary": "St. Ignatius College Preparatory High School (San Francisco, CA) Girls Soccer MaxPreps"
-    },
-    {
-      "id": "feed-QXJjaGJpc2hvcCBNaXR0eSBIaWdo",
-      "title": "Archbishop Mitty High School (San Jose, CA) Girls Soccer",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcjY0blJkTUR1c0xYMzBZV01MbFd3bXdwUTY5NHFUWDNaN0dncnhnYm5ZZU5xZHczT2VBZlhucnBrS1d2SnY2Uk1PR20xeFROSS1MeVdXT1hPSkFseGdyWTdRNmU5MTJjNU93ZVJUcmtLaEhFX2FaX2h5R1RLWmxvVTdvSkVlOHhOY19R?oc=5",
-      "source": "MaxPreps",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-08-04",
-      "summary": "Archbishop Mitty High School (San Jose, CA) Girls Soccer MaxPreps"
     }
   ]
 }
