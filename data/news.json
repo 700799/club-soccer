@@ -1,16 +1,6 @@
 {
-  "lastUpdated": "2026-09-17T17:41:26.709Z",
+  "lastUpdated": "2026-09-18T17:08:29.814Z",
   "items": [
-    {
-      "id": "feed-Q29tbWl0bWVudHM6IEhlYWRpbmcg",
-      "title": "Commitments: Heading Back to the Bay Area | Club Soccer | Youth Soccer",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQmR1X0V6WmxLOHE1MkxLQ3JtVmpoa2VvVjdlZlg3emczQzMzYkM5c3k5S0twcVRFa1NLVFVHRlRHUExUOGkyWEFtNlR5ekZLNTVlVElpWTFiRkhzUlhINGI0V1Zvb3NRWXc4SHBGb3U3QlFlWEd4ckV6LVVuLV9SRVp0eVZVbnZPUmY1c3pLOEhPOWdnbnFzQUJJZUlIREdDRVRtcXZR?oc=5",
-      "source": "Top Drawer Soccer",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-09-16",
-      "summary": "Commitments: Heading Back to the Bay Area | Club Soccer | Youth Soccer Top Drawer Soccer"
-    },
     {
       "id": "feed-QWxsLUVDTkwgUmVnaW9uYWwgTGVh",
       "title": "All-ECNL Regional League Girls Teams: NorCal (2025-26)",
@@ -20,6 +10,16 @@
       "category": "local",
       "date": "2026-09-16",
       "summary": "All-ECNL Regional League Girls Teams: NorCal (2025-26) SoccerWire"
+    },
+    {
+      "id": "feed-Q29tbWl0bWVudHM6IEhlYWRpbmcg",
+      "title": "Commitments: Heading Back to the Bay Area | Club Soccer | Youth Soccer",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQmR1X0V6WmxLOHE1MkxLQ3JtVmpoa2VvVjdlZlg3emczQzMzYkM5c3k5S0twcVRFa1NLVFVHRlRHUExUOGkyWEFtNlR5ekZLNTVlVElpWTFiRkhzUlhINGI0V1Zvb3NRWXc4SHBGb3U3QlFlWEd4ckV6LVVuLV9SRVp0eVZVbnZPUmY1c3pLOEhPOWdnbnFzQUJJZUlIREdDRVRtcXZR?oc=5",
+      "source": "Top Drawer Soccer",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-09-16",
+      "summary": "Commitments: Heading Back to the Bay Area | Club Soccer | Youth Soccer Top Drawer Soccer"
     },
     {
       "id": "feed-Q2xhc3Mgb2YgMjAyODogR2lybHMg",
@@ -132,14 +132,14 @@
       "summary": "ECNL Boys Mid-Atlantic Players to Know | Club Soccer | Youth Soccer Top Drawer Soccer"
     },
     {
-      "id": "feed-V29tZW7igJlzIFNvY2NlciBUbyBC",
-      "title": "Women’s Soccer To Begin ACC Play Thursday Night",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZnBDOGFueHhEY0RVSE93NUE5eWRndFo0SmNBZUkwaFlZWnpzOGVkZnEyVXdBQzlsQ01hay1BelRWU3NOU2UyS2hudTUxY1VIUHo5U3doZFpBa25POUxldGx2YzA0bkZrWW16OWZvM1NWTWhNT2NOSW5tcGEyOE9BZEYtbU1EVHhwZFpjQXJIeVA3VVpEdWxIMkZn?oc=5",
-      "source": "University of North Carolina Athletics",
+      "id": "feed-VU5DIG1vdmVzIHVwIGluIHdvbWVu",
+      "title": "UNC moves up in women’s soccer Top 25 ahead of ACC opener vs. Cal",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUnA3UV9CTHB0Zi1HY3VFbnp0UkJwZ0xYWENqRGRnWTBsTkwyazUyM01oLUJKREtORnZHcmp1WXBUWGhtME5LeVdrUVo5emhMb2dTSkluOTlKUWM5eUVIUjhPdVB4WmhSNUFfNFBLQU5SYUo2Zl9vLXl0OU1ESTdvWE16VWhsaUVXanVkYjZHR2cxMW80emhGZ2c2RkdCRWJwUzZMZQ?oc=5",
+      "source": "Tar Heel Tribune",
       "sourceUrl": "https://news.google.com",
       "category": "local",
       "date": "2026-09-09",
-      "summary": "Women’s Soccer To Begin ACC Play Thursday Night University of North Carolina Athletics"
+      "summary": "UNC moves up in women’s soccer Top 25 ahead of ACC opener vs. Cal Tar Heel Tribune"
     },
     {
       "id": "feed-Q29tbWl0bWVudHM6IEJheSBBcmVh",
@@ -162,14 +162,14 @@
       "summary": "Marquette opens area boys soccer power rankings as the No. 1 team Milwaukee Journal Sentinel"
     },
     {
-      "id": "feed-VU5DIG1vdmVzIHVwIGluIHdvbWVu",
-      "title": "UNC moves up in women’s soccer Top 25 ahead of ACC opener vs. Cal",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUnA3UV9CTHB0Zi1HY3VFbnp0UkJwZ0xYWENqRGRnWTBsTkwyazUyM01oLUJKREtORnZHcmp1WXBUWGhtME5LeVdrUVo5emhMb2dTSkluOTlKUWM5eUVIUjhPdVB4WmhSNUFfNFBLQU5SYUo2Zl9vLXl0OU1ESTdvWE16VWhsaUVXanVkYjZHR2cxMW80emhGZ2c2RkdCRWJwUzZMZQ?oc=5",
-      "source": "Tar Heel Tribune",
+      "id": "feed-V29tZW7igJlzIFNvY2NlciBUbyBC",
+      "title": "Women’s Soccer To Begin ACC Play Thursday Night",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZnBDOGFueHhEY0RVSE93NUE5eWRndFo0SmNBZUkwaFlZWnpzOGVkZnEyVXdBQzlsQ01hay1BelRWU3NOU2UyS2hudTUxY1VIUHo5U3doZFpBa25POUxldGx2YzA0bkZrWW16OWZvM1NWTWhNT2NOSW5tcGEyOE9BZEYtbU1EVHhwZFpjQXJIeVA3VVpEdWxIMkZn?oc=5",
+      "source": "University of North Carolina Athletics",
       "sourceUrl": "https://news.google.com",
       "category": "local",
       "date": "2026-09-09",
-      "summary": "UNC moves up in women’s soccer Top 25 ahead of ACC opener vs. Cal Tar Heel Tribune"
+      "summary": "Women’s Soccer To Begin ACC Play Thursday Night University of North Carolina Athletics"
     },
     {
       "id": "feed-VEFIUyB2cyBPYWtsYW5kIENhdGgu",
@@ -205,11 +205,11 @@
       "id": "feed-Q2FsIHdvbWVu4oCZcyBzb2NjZXIg",
       "title": "Cal women’s soccer remains undefeated at home, heads to North Carolina for revenge",
       "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNd2Uxczctcll1WkpkNEZQMmd2ZzBwR0h6RkZ6WTROXzhPV01LbGtrTTlhX0ZXM0FVMGFHN2M5eDhuWkRlcG90dFQycEdma3pmMWZJUTJubmdlR1NRUE1kbFBZVXZUMkNEZUJNYzI4b0x6bmZWUTUyaUJRejlYc1VtVkFFeld6V0d6aF9xM1V1MUlrcE1xYzJfM000MWdvN2MtZ2dSZjd3SGwzeVN3Q0UyRjJ1RS1SV0Q2aUxiYTM2aU1IX2tJQmotZkVoVmxuVVVsckhjb0F4dkh4LTg0clJuSVAyRFg5RTV5MElsTDB1SjV2Yzd5X3JJem5uSHhPRzJQajl5TklEdVNPdw?oc=5",
-      "source": "dailycal.org",
+      "source": "Daily Cal",
       "sourceUrl": "https://news.google.com",
       "category": "local",
       "date": "2026-09-08",
-      "summary": "Cal women’s soccer remains undefeated at home, heads to North Carolina for revenge dailycal.org"
+      "summary": "Cal women’s soccer remains undefeated at home, heads to North Carolina for revenge Daily Cal"
     },
     {
       "id": "feed-SmFkZSBTYW4gSm9zZSAtIEFyY2Fk",
