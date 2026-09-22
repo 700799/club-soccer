@@ -1,6 +1,16 @@
 {
-  "lastUpdated": "2026-09-21T18:51:00.237Z",
+  "lastUpdated": "2026-09-22T17:41:16.126Z",
   "items": [
+    {
+      "id": "feed-U29waG9tb3JlIEVhdG9uIGNvbXBl",
+      "title": "Sophomore Eaton competes for international select team, furthers soccer career",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNV0swbUxFOThSQkZ2a2dpYUl2VTMwekN5MHJfZWU4TDFqQTI4ZzJQc2lyQWxkZFVDaENiYjRnbG9TcEZIbGNXUFRJWEh3THdsVTludmpLTEo2bEhDU1RpWnRfamZPRU93dmUtSU5UeDRBc3Fjekh6ekxZY0ZGS2pMRnlrY2gweERTS2RyX2VYeWw2bGN0SjBtVDF1WVZGUDdPSzA1N0pYSnJndWpPalU2VXpQZS0wSkM5M1JzSFJ4OUxBeGs?oc=5",
+      "source": "the Southerner Online",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-09-22",
+      "summary": "Sophomore Eaton competes for international select team, furthers soccer career the Southerner Online"
+    },
     {
       "id": "feed-U3V0dG9ucyBCYXkgdnMgQXdheSAt",
       "title": "Suttons Bay vs Away - Boys Varsity Soccer 09/19/2026 | Watch Live & On Demand",
@@ -45,11 +55,21 @@
       "id": "feed-Q2FsIE5vcnRoIE9EUCBvZmZpY2lh",
       "title": "Cal North ODP officially sanctioned by U.S. Soccer for 2026-2027 year",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSVh5X2ktY2poNzNRc29qNlR4TXdNeF9NU2hkbEFMM0VqcUIxVHFjcDlfQlJHZDc4ZzJoNjJ0U20yeWR2UWZFM1RuQV85bzNDRzhNQnNtTzdaTVd2c1BJMTVpdWdEelFYYTdJMENBdlFGRmE2Z2FtWGJ3VGFidWJheTlaczZ6MDZJNFV2R0JiUFNaLUptakZndnhkN05WaDJV0gGwAUFVX3lxTFA0X1JWV1FvOXg4TWsyMkpmQ2VIeENRMHpoVWJqZ0RaQUgxS1FNUkY3NThEV2ZhM0tabk81WURXS3lENzh4OGVHdXlTYS1ZT1JuSWhmQ0ZnZkNNZW9TT0VtTzQxWF8wNWNEenczVE1vbEItSHJ3S1ZwM3lxRlgybzdmcDhrOUVORTdEZlFqcVpOYXlXLWpuQjZLNnp6TWk4NXNsaFdhOUtBamJOZTBLaE5m?oc=5",
-      "source": "Cal North Soccer",
+      "source": "calnorth.org",
       "sourceUrl": "https://news.google.com",
       "category": "local",
       "date": "2026-09-16",
-      "summary": "Cal North ODP officially sanctioned by U.S. Soccer for 2026-2027 year Cal North Soccer"
+      "summary": "Cal North ODP officially sanctioned by U.S. Soccer for 2026-2027 year calnorth.org"
+    },
+    {
+      "id": "feed-QWxsLUVDTkwgUmVnaW9uYWwgTGVh",
+      "title": "All-ECNL Regional League Girls Teams: NorCal (2025-26)",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSlg2RGROa3BCYmxGX1ROS293RFlDeXBKVnhsVkEtSENzWGt0NjFReDhNMjJrT2hrSkUzR3ltT1FyWld6TkdXQmZrU2ZyM2h5M0JBX0lHOFU1QnpZZDBhV3Z4ajFONlpUU0hPSDVhY2lPRVc1dGthQlh6dzlRYVkwTlFvWWNQZS03VHI0OA?oc=5",
+      "source": "SoccerWire",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-09-16",
+      "summary": "All-ECNL Regional League Girls Teams: NorCal (2025-26) SoccerWire"
     },
     {
       "id": "feed-Q2FsIE5vcnRoIGFuZCBNZW1iZXIg",
@@ -63,13 +83,13 @@
     },
     {
       "id": "feed-QWxsLUVDTkwgUmVnaW9uYWwgTGVh",
-      "title": "All-ECNL Regional League Girls Teams: NorCal (2025-26)",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSlg2RGROa3BCYmxGX1ROS293RFlDeXBKVnhsVkEtSENzWGt0NjFReDhNMjJrT2hrSkUzR3ltT1FyWld6TkdXQmZrU2ZyM2h5M0JBX0lHOFU1QnpZZDBhV3Z4ajFONlpUU0hPSDVhY2lPRVc1dGthQlh6dzlRYVkwTlFvWWNQZS03VHI0OA?oc=5",
+      "title": "All-ECNL Regional League Girls Teams: Mid-America (2025-26)",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZm5jeXpiWnl0VVVGTTE0UUxUOXpSdUtwVllaMmItem56LU0yU0t5ZVBSWlljc1JWTlBzb0s4RjVPdDdfbzd4NmZNb2lqdU9WVzNHS3BmejhtWXF0SG00V2xEalV6M1VuUkpqRjBtNmxzeW5TaExmNURJQlpuTWt6dUJnNV83Q0hGbTF4OGJDM3JKOTA?oc=5",
       "source": "SoccerWire",
       "sourceUrl": "https://news.google.com",
-      "category": "local",
+      "category": "national",
       "date": "2026-09-16",
-      "summary": "All-ECNL Regional League Girls Teams: NorCal (2025-26) SoccerWire"
+      "summary": "All-ECNL Regional League Girls Teams: Mid-America (2025-26) SoccerWire"
     },
     {
       "id": "feed-Q2xhc3Mgb2YgMjAyODogR2lybHMg",
@@ -122,16 +142,6 @@
       "summary": "ECNL Girls Southwest Players to Know | Club Soccer | Youth Soccer Top Drawer Soccer"
     },
     {
-      "id": "feed-RUNOTCBCb3lzIFNvdXRod2VzdCBQ",
-      "title": "ECNL Boys Southwest Players to Know | Club Soccer | Youth Soccer",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQUm1LT3lBOTB0MzM1anpZS3NEc0NhX2R1ZXVzYU1US3dvWEZMZDZwNEc4NzFoeGw5b25iX3hQbjZscW9rdWFQZXZITHhuNm43Rm1NRW1nWmI1S2R6M3lGQnNyQUR0QkFnX0NSalpkT2laYUlvNHlZNnRkcUpubnRvb0ZXUWNhc0VmRUtCWUN0cGVCTkpDLVZjSFpDTlh5QQ?oc=5",
-      "source": "Top Drawer Soccer",
-      "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-09-11",
-      "summary": "ECNL Boys Southwest Players to Know | Club Soccer | Youth Soccer Top Drawer Soccer"
-    },
-    {
       "id": "feed-V29tZW7igJlzIFNvY2NlciBTaHV0",
       "title": "Women’s Soccer Shuts Out Cal To Open ACC Play, 3-0",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPU1Q5ZEpzbFhFZzZnemdWWVVlUThBRUxkMWZKVHpxUzNKNFpwQlBxLTFLZFhmbkQ1YVR5cHJKZGZmcUFkd2QzTVVMY3llMUN5N3hwQkFzQmxQOENONjA4U2NvdTdSc3FoYUx3bWRTeG83OWVOckNxYko4LU1keXRwR2VvdmlBYVdtVHkwR2QxQ3NUU1RtWDExVW9tcUhMdw?oc=5",
@@ -152,16 +162,6 @@
       "summary": "TAHS vs Oakland Cath. - Girls Varsity Soccer 09/09/2026 | Watch Live & On Demand NFHS Network"
     },
     {
-      "id": "feed-RUNOTCBCb3lzIE5vcnRod2VzdCBQ",
-      "title": "ECNL Boys Northwest Players to Know | Club Soccer | Youth Soccer",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWnQtMWFwaUFjaFJEVk1SaTJFQjNyTUFadUVueUxvR3JYc2J4ZUhmRmg4NnpzRDd3d2R1MExXTWhram9qb2tVZXhTZzQ4WHplNmh5NWp6ZEYxWWx3dzJjV3FOeEhvS2dhU2dqWlpkMDlBUmRzX0tLUFdGMlQ5MDRxYzUwTzFsdGc3TFFBQldLRmF1Y0NUWUZxMWRuNWFLUQ?oc=5",
-      "source": "Top Drawer Soccer",
-      "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-09-10",
-      "summary": "ECNL Boys Northwest Players to Know | Club Soccer | Youth Soccer Top Drawer Soccer"
-    },
-    {
       "id": "feed-VU5DIG1vdmVzIHVwIGluIHdvbWVu",
       "title": "UNC moves up in women’s soccer Top 25 ahead of ACC opener vs. Cal",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUnA3UV9CTHB0Zi1HY3VFbnp0UkJwZ0xYWENqRGRnWTBsTkwyazUyM01oLUJKREtORnZHcmp1WXBUWGhtME5LeVdrUVo5emhMb2dTSkluOTlKUWM5eUVIUjhPdVB4WmhSNUFfNFBLQU5SYUo2Zl9vLXl0OU1ESTdvWE16VWhsaUVXanVkYjZHR2cxMW80emhGZ2c2RkdCRWJwUzZMZQ?oc=5",
@@ -172,6 +172,16 @@
       "summary": "UNC moves up in women’s soccer Top 25 ahead of ACC opener vs. Cal Tar Heel Tribune"
     },
     {
+      "id": "feed-TWFycXVldHRlIG9wZW5zIGFyZWEg",
+      "title": "Marquette opens area boys soccer power rankings as the No. 1 team",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWTV1Qzc1VkJtdEFRWlpFTDA4VFFhVWgtZ2QzNXFrZ2JaOEpJQ0tKTU9CeC1Kc2ZoaHljQzJnSkwtaV9sRTJvaEk0a2QxWkxyTVJqVzNmRjNKOGpFUVpiUWNUWHVISUdIOWhNV0IybVRCcmFmZnNUZTdLZUJxUzUwQUJmLXBjNk9fanU0Z0xGMldmbkVtYlZtdURGbHFHcU9KQTh4Q0pWR2didVpEemg2RE1VZ2xNSm9adEJnV3BjYll5R0JvOE8tRE83Tk9Zdw?oc=5",
+      "source": "jsonline.com",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-09-09",
+      "summary": "Marquette opens area boys soccer power rankings as the No. 1 team jsonline.com"
+    },
+    {
       "id": "feed-Q29tbWl0bWVudHM6IEJheSBBcmVh",
       "title": "Commitments: Bay Area to Brown | High School Soccer News",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNM3g3b0hIeHctVzJHMXd4LUhLN2wzU0twR3dCVUtfS3VWMmVJNGd4VmFQc2t6TjFCTHE1QlNQRVU3bWJsckhWNVFuUHVpWlNqdXY5SEVTMGlhelRPVTloRW9oUDFLYk1EZmMwSGhXUGptR1RGbzdpaUlxcU9DN3RJMmxrU25oZXBvZ2d4WjlCTTZldms2c2FCUW1JaElUX0E?oc=5",
@@ -180,16 +190,6 @@
       "category": "local",
       "date": "2026-09-09",
       "summary": "Commitments: Bay Area to Brown | High School Soccer News Top Drawer Soccer"
-    },
-    {
-      "id": "feed-TWFycXVldHRlIG9wZW5zIGFyZWEg",
-      "title": "Marquette opens area boys soccer power rankings as the No. 1 team",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWTV1Qzc1VkJtdEFRWlpFTDA4VFFhVWgtZ2QzNXFrZ2JaOEpJQ0tKTU9CeC1Kc2ZoaHljQzJnSkwtaV9sRTJvaEk0a2QxWkxyTVJqVzNmRjNKOGpFUVpiUWNUWHVISUdIOWhNV0IybVRCcmFmZnNUZTdLZUJxUzUwQUJmLXBjNk9fanU0Z0xGMldmbkVtYlZtdURGbHFHcU9KQTh4Q0pWR2didVpEemg2RE1VZ2xNSm9adEJnV3BjYll5R0JvOE8tRE83Tk9Zdw?oc=5",
-      "source": "Milwaukee Journal Sentinel",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-09-09",
-      "summary": "Marquette opens area boys soccer power rankings as the No. 1 team Milwaukee Journal Sentinel"
     },
     {
       "id": "feed-V29tZW7igJlzIFNvY2NlciBUbyBC",
