@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-22T17:41:16.126Z",
+  "lastUpdated": "2026-09-23T17:54:19.356Z",
   "items": [
     {
       "id": "feed-U29waG9tb3JlIEVhdG9uIGNvbXBl",
@@ -20,6 +20,16 @@
       "category": "local",
       "date": "2026-09-19",
       "summary": "Suttons Bay vs Away - Boys Varsity Soccer 09/19/2026 | Watch Live & On Demand NFHS Network"
+    },
+    {
+      "id": "feed-TWNDbGF0Y2h5IEhpZ2ggU2Nob29s",
+      "title": "McClatchy High School (Sacramento, CA) Girls Soccer",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQallPQmFCX2RaVFpaTlNjVFV2T0JnWTg0eVhTU3NuQ0M3c3F4V1NSY2tVTnd3NGRuLUgwMDAyR0FjU2RjUEtYX0dFUXBFdURHNXlmekF5Vzd0Y1diUTJYcEJENThjRUtoeXhWY0ZIaEN3SmViZVNjSV9fdHBYa0labQ?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-09-18",
+      "summary": "McClatchy High School (Sacramento, CA) Girls Soccer MaxPreps"
     },
     {
       "id": "feed-QmlzaG9wIE8nRG93ZCBIaWdoIFNj",
@@ -55,21 +65,11 @@
       "id": "feed-Q2FsIE5vcnRoIE9EUCBvZmZpY2lh",
       "title": "Cal North ODP officially sanctioned by U.S. Soccer for 2026-2027 year",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSVh5X2ktY2poNzNRc29qNlR4TXdNeF9NU2hkbEFMM0VqcUIxVHFjcDlfQlJHZDc4ZzJoNjJ0U20yeWR2UWZFM1RuQV85bzNDRzhNQnNtTzdaTVd2c1BJMTVpdWdEelFYYTdJMENBdlFGRmE2Z2FtWGJ3VGFidWJheTlaczZ6MDZJNFV2R0JiUFNaLUptakZndnhkN05WaDJV0gGwAUFVX3lxTFA0X1JWV1FvOXg4TWsyMkpmQ2VIeENRMHpoVWJqZ0RaQUgxS1FNUkY3NThEV2ZhM0tabk81WURXS3lENzh4OGVHdXlTYS1ZT1JuSWhmQ0ZnZkNNZW9TT0VtTzQxWF8wNWNEenczVE1vbEItSHJ3S1ZwM3lxRlgybzdmcDhrOUVORTdEZlFqcVpOYXlXLWpuQjZLNnp6TWk4NXNsaFdhOUtBamJOZTBLaE5m?oc=5",
-      "source": "calnorth.org",
+      "source": "Cal North Soccer",
       "sourceUrl": "https://news.google.com",
       "category": "local",
       "date": "2026-09-16",
-      "summary": "Cal North ODP officially sanctioned by U.S. Soccer for 2026-2027 year calnorth.org"
-    },
-    {
-      "id": "feed-QWxsLUVDTkwgUmVnaW9uYWwgTGVh",
-      "title": "All-ECNL Regional League Girls Teams: NorCal (2025-26)",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSlg2RGROa3BCYmxGX1ROS293RFlDeXBKVnhsVkEtSENzWGt0NjFReDhNMjJrT2hrSkUzR3ltT1FyWld6TkdXQmZrU2ZyM2h5M0JBX0lHOFU1QnpZZDBhV3Z4ajFONlpUU0hPSDVhY2lPRVc1dGthQlh6dzlRYVkwTlFvWWNQZS03VHI0OA?oc=5",
-      "source": "SoccerWire",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-09-16",
-      "summary": "All-ECNL Regional League Girls Teams: NorCal (2025-26) SoccerWire"
+      "summary": "Cal North ODP officially sanctioned by U.S. Soccer for 2026-2027 year Cal North Soccer"
     },
     {
       "id": "feed-Q2FsIE5vcnRoIGFuZCBNZW1iZXIg",
@@ -80,6 +80,16 @@
       "category": "local",
       "date": "2026-09-16",
       "summary": "Cal North and Member Organizations Pursue Nearly $2 Million in Innovate to Grow Funding Cal North Soccer"
+    },
+    {
+      "id": "feed-QWxsLUVDTkwgUmVnaW9uYWwgTGVh",
+      "title": "All-ECNL Regional League Girls Teams: NorCal (2025-26)",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSlg2RGROa3BCYmxGX1ROS293RFlDeXBKVnhsVkEtSENzWGt0NjFReDhNMjJrT2hrSkUzR3ltT1FyWld6TkdXQmZrU2ZyM2h5M0JBX0lHOFU1QnpZZDBhV3Z4ajFONlpUU0hPSDVhY2lPRVc1dGthQlh6dzlRYVkwTlFvWWNQZS03VHI0OA?oc=5",
+      "source": "SoccerWire",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-09-16",
+      "summary": "All-ECNL Regional League Girls Teams: NorCal (2025-26) SoccerWire"
     },
     {
       "id": "feed-QWxsLUVDTkwgUmVnaW9uYWwgTGVh",
@@ -110,16 +120,6 @@
       "category": "national",
       "date": "2026-09-14",
       "summary": "All-ECNL Regional League Girls Teams: North Atlantic (2025-26) SoccerWire"
-    },
-    {
-      "id": "feed-S2luZ3NsZXkgdnMgU3V0dG9ucyBC",
-      "title": "Kingsley vs Suttons Bay - Boys Varsity Soccer 09/12/2026 | Watch Live & On Demand",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSkh2ZmNBaUdDcUxUb1BpZ3I2MHhWX2JhTjBIbTctRU1lY1N6MGtMR1RqYkMwSC1ucDEtc3M4a201Z3dlWjJ0aklKa2pMU3pFWGxhYWNSUkZTTktKZHNCeERhVklsNVo4MjlmWFJLbHgyVUdQU2VPdFJaNFpQeHl0Vy1jOWhCQWlOcFFraXRBVQ?oc=5",
-      "source": "NFHS Network",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-09-12",
-      "summary": "Kingsley vs Suttons Bay - Boys Varsity Soccer 09/12/2026 | Watch Live & On Demand NFHS Network"
     },
     {
       "id": "feed-TWVzc2Fsb25za2VlIHZzIFdhdGVy",
@@ -175,11 +175,11 @@
       "id": "feed-TWFycXVldHRlIG9wZW5zIGFyZWEg",
       "title": "Marquette opens area boys soccer power rankings as the No. 1 team",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWTV1Qzc1VkJtdEFRWlpFTDA4VFFhVWgtZ2QzNXFrZ2JaOEpJQ0tKTU9CeC1Kc2ZoaHljQzJnSkwtaV9sRTJvaEk0a2QxWkxyTVJqVzNmRjNKOGpFUVpiUWNUWHVISUdIOWhNV0IybVRCcmFmZnNUZTdLZUJxUzUwQUJmLXBjNk9fanU0Z0xGMldmbkVtYlZtdURGbHFHcU9KQTh4Q0pWR2didVpEemg2RE1VZ2xNSm9adEJnV3BjYll5R0JvOE8tRE83Tk9Zdw?oc=5",
-      "source": "jsonline.com",
+      "source": "Milwaukee Journal Sentinel",
       "sourceUrl": "https://news.google.com",
       "category": "local",
       "date": "2026-09-09",
-      "summary": "Marquette opens area boys soccer power rankings as the No. 1 team jsonline.com"
+      "summary": "Marquette opens area boys soccer power rankings as the No. 1 team Milwaukee Journal Sentinel"
     },
     {
       "id": "feed-Q29tbWl0bWVudHM6IEJheSBBcmVh",
