@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-23T17:54:19.356Z",
+  "lastUpdated": "2026-09-24T17:54:15.046Z",
   "items": [
     {
       "id": "feed-U29waG9tb3JlIEVhdG9uIGNvbXBl",
@@ -22,16 +22,6 @@
       "summary": "Suttons Bay vs Away - Boys Varsity Soccer 09/19/2026 | Watch Live & On Demand NFHS Network"
     },
     {
-      "id": "feed-TWNDbGF0Y2h5IEhpZ2ggU2Nob29s",
-      "title": "McClatchy High School (Sacramento, CA) Girls Soccer",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQallPQmFCX2RaVFpaTlNjVFV2T0JnWTg0eVhTU3NuQ0M3c3F4V1NSY2tVTnd3NGRuLUgwMDAyR0FjU2RjUEtYX0dFUXBFdURHNXlmekF5Vzd0Y1diUTJYcEJENThjRUtoeXhWY0ZIaEN3SmViZVNjSV9fdHBYa0labQ?oc=5",
-      "source": "MaxPreps",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-09-18",
-      "summary": "McClatchy High School (Sacramento, CA) Girls Soccer MaxPreps"
-    },
-    {
       "id": "feed-QmlzaG9wIE8nRG93ZCBIaWdoIFNj",
       "title": "Bishop O'Dowd High School (Oakland, CA) Girls Soccer",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNY3FzbHVSZkhTc2RXS1RhbTF5b3M4NS1qSVl2RTlwWUJMSU1TdV9HUWRiWmVRRUJIM1FzaF9uazI1TGdOTktNalRlNHUtUEV5WFBmMTJ5RF9jTVJSMENvN243VHJvVUtBTDctOFYxRm9KX014YTc2VnBIellMSnRZdUZhUQ?oc=5",
@@ -40,6 +30,16 @@
       "category": "local",
       "date": "2026-09-18",
       "summary": "Bishop O'Dowd High School (Oakland, CA) Girls Soccer MaxPreps"
+    },
+    {
+      "id": "feed-TWNDbGF0Y2h5IEhpZ2ggU2Nob29s",
+      "title": "McClatchy High School (Sacramento, CA) Girls Soccer",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQallPQmFCX2RaVFpaTlNjVFV2T0JnWTg0eVhTU3NuQ0M3c3F4V1NSY2tVTnd3NGRuLUgwMDAyR0FjU2RjUEtYX0dFUXBFdURHNXlmekF5Vzd0Y1diUTJYcEJENThjRUtoeXhWY0ZIaEN3SmViZVNjSV9fdHBYa0labQ?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-09-18",
+      "summary": "McClatchy High School (Sacramento, CA) Girls Soccer MaxPreps"
     },
     {
       "id": "feed-UXVhbGlmeWluZyB0ZWFtcyBhbm5v",
