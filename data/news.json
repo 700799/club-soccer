@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-25T18:00:54.136Z",
+  "lastUpdated": "2026-09-26T17:20:11.033Z",
   "items": [
     {
       "id": "feed-U29waG9tb3JlIEVhdG9uIGNvbXBl",
@@ -55,11 +55,11 @@
       "id": "feed-Q29tbWl0bWVudHM6IEhlYWRpbmcg",
       "title": "Commitments: Heading Back to the Bay Area | Club Soccer | Youth Soccer",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQmR1X0V6WmxLOHE1MkxLQ3JtVmpoa2VvVjdlZlg3emczQzMzYkM5c3k5S0twcVRFa1NLVFVHRlRHUExUOGkyWEFtNlR5ekZLNTVlVElpWTFiRkhzUlhINGI0V1Zvb3NRWXc4SHBGb3U3QlFlWEd4ckV6LVVuLV9SRVp0eVZVbnZPUmY1c3pLOEhPOWdnbnFzQUJJZUlIREdDRVRtcXZR?oc=5",
-      "source": "Top Drawer Soccer",
+      "source": "TopDrawer Soccer",
       "sourceUrl": "https://news.google.com",
       "category": "local",
       "date": "2026-09-16",
-      "summary": "Commitments: Heading Back to the Bay Area | Club Soccer | Youth Soccer Top Drawer Soccer"
+      "summary": "Commitments: Heading Back to the Bay Area | Club Soccer | Youth Soccer TopDrawer Soccer"
     },
     {
       "id": "feed-Q2FsIE5vcnRoIE9EUCBvZmZpY2lh",
@@ -105,11 +105,11 @@
       "id": "feed-Q2xhc3Mgb2YgMjAyODogR2lybHMg",
       "title": "Class of 2028: Girls soccer commitments from New England",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPYkhaamdLN3NlaG41Y1p4RzVZelk2MFM4c0hNcC1jdXh3TTE3RzdYay15Y2tRcTZTLWZkOGR5S1NROFpTblY5X25tbVJXX0h5bGQ2akNaM3o2THRPYWVEWVR2UjdvdDNIQ0Mzc2cwNklCOXNkOWtfVG9pclJYQ2l3Q2dveDZ6LTZ0ZVdLdXNjVQ?oc=5",
-      "source": "soccerjournal.com",
+      "source": "New England Soccer Journal",
       "sourceUrl": "https://news.google.com",
       "category": "national",
       "date": "2026-09-15",
-      "summary": "Class of 2028: Girls soccer commitments from New England soccerjournal.com"
+      "summary": "Class of 2028: Girls soccer commitments from New England New England Soccer Journal"
     },
     {
       "id": "feed-QWxsLUVDTkwgUmVnaW9uYWwgTGVh",
@@ -162,16 +162,6 @@
       "summary": "TAHS vs Oakland Cath. - Girls Varsity Soccer 09/09/2026 | Watch Live & On Demand NFHS Network"
     },
     {
-      "id": "feed-VU5DIG1vdmVzIHVwIGluIHdvbWVu",
-      "title": "UNC moves up in women’s soccer Top 25 ahead of ACC opener vs. Cal",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUnA3UV9CTHB0Zi1HY3VFbnp0UkJwZ0xYWENqRGRnWTBsTkwyazUyM01oLUJKREtORnZHcmp1WXBUWGhtME5LeVdrUVo5emhMb2dTSkluOTlKUWM5eUVIUjhPdVB4WmhSNUFfNFBLQU5SYUo2Zl9vLXl0OU1ESTdvWE16VWhsaUVXanVkYjZHR2cxMW80emhGZ2c2RkdCRWJwUzZMZQ?oc=5",
-      "source": "Tar Heel Tribune",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-09-09",
-      "summary": "UNC moves up in women’s soccer Top 25 ahead of ACC opener vs. Cal Tar Heel Tribune"
-    },
-    {
       "id": "feed-TWFycXVldHRlIG9wZW5zIGFyZWEg",
       "title": "Marquette opens area boys soccer power rankings as the No. 1 team",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWTV1Qzc1VkJtdEFRWlpFTDA4VFFhVWgtZ2QzNXFrZ2JaOEpJQ0tKTU9CeC1Kc2ZoaHljQzJnSkwtaV9sRTJvaEk0a2QxWkxyTVJqVzNmRjNKOGpFUVpiUWNUWHVISUdIOWhNV0IybVRCcmFmZnNUZTdLZUJxUzUwQUJmLXBjNk9fanU0Z0xGMldmbkVtYlZtdURGbHFHcU9KQTh4Q0pWR2didVpEemg2RE1VZ2xNSm9adEJnV3BjYll5R0JvOE8tRE83Tk9Zdw?oc=5",
@@ -180,6 +170,16 @@
       "category": "local",
       "date": "2026-09-09",
       "summary": "Marquette opens area boys soccer power rankings as the No. 1 team Milwaukee Journal Sentinel"
+    },
+    {
+      "id": "feed-VU5DIG1vdmVzIHVwIGluIHdvbWVu",
+      "title": "UNC moves up in women’s soccer Top 25 ahead of ACC opener vs. Cal",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUnA3UV9CTHB0Zi1HY3VFbnp0UkJwZ0xYWENqRGRnWTBsTkwyazUyM01oLUJKREtORnZHcmp1WXBUWGhtME5LeVdrUVo5emhMb2dTSkluOTlKUWM5eUVIUjhPdVB4WmhSNUFfNFBLQU5SYUo2Zl9vLXl0OU1ESTdvWE16VWhsaUVXanVkYjZHR2cxMW80emhGZ2c2RkdCRWJwUzZMZQ?oc=5",
+      "source": "Tar Heel Tribune",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-09-09",
+      "summary": "UNC moves up in women’s soccer Top 25 ahead of ACC opener vs. Cal Tar Heel Tribune"
     },
     {
       "id": "feed-Q29tbWl0bWVudHM6IEJheSBBcmVh",
