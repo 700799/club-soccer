@@ -1,6 +1,16 @@
 {
-  "lastUpdated": "2026-09-26T17:20:11.033Z",
+  "lastUpdated": "2026-09-27T17:53:31.292Z",
   "items": [
+    {
+      "id": "feed-U2hpbmVPbiBTYXR1cmRheSBicmlu",
+      "title": "ShineOn Saturday brings youth soccer clinic to Oakland for 11th year",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOalNjdUR0NVg5Qk1CS1ZuaVg0clVMdkVBY2xVcGlzdS1mOFZsN2ZYNzRlMUhXZHVNRXhYOTIyUzBrXzRUcWl3QllXajNMUmZtcWRQS3dNc2c2ZXdrM0UxNUo4cktLX3FkWDBvVEQzb2tkUkZCeGMwcW9TNUJDQVRXVzV4YmNONFFYR2cwQVNRRXUwaHNNSG5VNndPb0tmNmx6VHd0ZWRURURGbVFk0gGsAUFVX3lxTE5qU2N1RHQ1WDlCTUJLVm5pWDRyVUx2RUFjbFVwaXN1LWY4Vmw3Zlg3NGUxSFdkdU1FeFg5MjJTMGtfNFRxaXdCWVdqM0xSZm1xZFBLd01zZzZld2szRTE1SjhyS0tfcWRYMG9URDNva2RSRkJ4YzBxb1M1QkNBVFdXNXhiY040UVhHZzBBU1FFdTBoc01IblU2d09vS2Y2bHpUd3RlZFRFREZtUWQ?oc=5",
+      "source": "wabi.tv",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-09-26",
+      "summary": "ShineOn Saturday brings youth soccer clinic to Oakland for 11th year wabi.tv"
+    },
     {
       "id": "feed-U29waG9tb3JlIEVhdG9uIGNvbXBl",
       "title": "Sophomore Eaton competes for international select team, furthers soccer career",
@@ -22,16 +32,6 @@
       "summary": "Suttons Bay vs Away - Boys Varsity Soccer 09/19/2026 | Watch Live & On Demand NFHS Network"
     },
     {
-      "id": "feed-QmlzaG9wIE8nRG93ZCBIaWdoIFNj",
-      "title": "Bishop O'Dowd High School (Oakland, CA) Girls Soccer",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNY3FzbHVSZkhTc2RXS1RhbTF5b3M4NS1qSVl2RTlwWUJMSU1TdV9HUWRiWmVRRUJIM1FzaF9uazI1TGdOTktNalRlNHUtUEV5WFBmMTJ5RF9jTVJSMENvN243VHJvVUtBTDctOFYxRm9KX014YTc2VnBIellMSnRZdUZhUQ?oc=5",
-      "source": "MaxPreps",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-09-18",
-      "summary": "Bishop O'Dowd High School (Oakland, CA) Girls Soccer MaxPreps"
-    },
-    {
       "id": "feed-TWNDbGF0Y2h5IEhpZ2ggU2Nob29s",
       "title": "McClatchy High School (Sacramento, CA) Girls Soccer",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQallPQmFCX2RaVFpaTlNjVFV2T0JnWTg0eVhTU3NuQ0M3c3F4V1NSY2tVTnd3NGRuLUgwMDAyR0FjU2RjUEtYX0dFUXBFdURHNXlmekF5Vzd0Y1diUTJYcEJENThjRUtoeXhWY0ZIaEN3SmViZVNjSV9fdHBYa0labQ?oc=5",
@@ -40,6 +40,16 @@
       "category": "local",
       "date": "2026-09-18",
       "summary": "McClatchy High School (Sacramento, CA) Girls Soccer MaxPreps"
+    },
+    {
+      "id": "feed-QmlzaG9wIE8nRG93ZCBIaWdoIFNj",
+      "title": "Bishop O'Dowd High School (Oakland, CA) Girls Soccer",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNY3FzbHVSZkhTc2RXS1RhbTF5b3M4NS1qSVl2RTlwWUJMSU1TdV9HUWRiWmVRRUJIM1FzaF9uazI1TGdOTktNalRlNHUtUEV5WFBmMTJ5RF9jTVJSMENvN243VHJvVUtBTDctOFYxRm9KX014YTc2VnBIellMSnRZdUZhUQ?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-09-18",
+      "summary": "Bishop O'Dowd High School (Oakland, CA) Girls Soccer MaxPreps"
     },
     {
       "id": "feed-UXVhbGlmeWluZyB0ZWFtcyBhbm5v",
@@ -230,16 +240,6 @@
       "category": "local",
       "date": "2026-09-08",
       "summary": "Cal North TOPSoccer & Special Olympics Northern California Unite To Expand Access To The Game Cal North Soccer"
-    },
-    {
-      "id": "feed-Q2FsIHdvbWVu4oCZcyBzb2NjZXIg",
-      "title": "Cal women’s soccer remains undefeated at home, heads to North Carolina for revenge",
-      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNd2Uxczctcll1WkpkNEZQMmd2ZzBwR0h6RkZ6WTROXzhPV01LbGtrTTlhX0ZXM0FVMGFHN2M5eDhuWkRlcG90dFQycEdma3pmMWZJUTJubmdlR1NRUE1kbFBZVXZUMkNEZUJNYzI4b0x6bmZWUTUyaUJRejlYc1VtVkFFeld6V0d6aF9xM1V1MUlrcE1xYzJfM000MWdvN2MtZ2dSZjd3SGwzeVN3Q0UyRjJ1RS1SV0Q2aUxiYTM2aU1IX2tJQmotZkVoVmxuVVVsckhjb0F4dkh4LTg0clJuSVAyRFg5RTV5MElsTDB1SjV2Yzd5X3JJem5uSHhPRzJQajl5TklEdVNPdw?oc=5",
-      "source": "Daily Cal",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-09-08",
-      "summary": "Cal women’s soccer remains undefeated at home, heads to North Carolina for revenge Daily Cal"
     }
   ]
 }
