@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-03T17:29:50.761Z",
+  "lastUpdated": "2026-10-04T17:44:33.890Z",
   "items": [
     {
       "id": "feed-Q0FMIEdpcmxzIFZhcnNpdHkgU29j",
@@ -22,6 +22,16 @@
       "summary": "High school soccer players say Santa Clara Valley Athletic League’s rule is red card for college play The Mercury News"
     },
     {
+      "id": "feed-Q2FsIE5vcnRoIExhdW5jaGVzIE9w",
+      "title": "Cal North Launches Open Cup, Creating New Pathway to State Cup for Teams Across Northern California",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQOUFSWFNneGNlMnQzRzJ1WTAzTEJoTnZJMWNkN2xqZjU2Ry1yQlpoZDk3NkVwazBYVFBkelZ2S3JObnhnb1NNbXg1R1FiOEI2Xzk0UVNySXJNczNIR0tmLVVCZTlDd1dYQ0NzMHZFRkdoc3Rmb1p3U3pCenZLbXVvVlRQNUtTWWZhZUZNc2NjRmVTR2NHRVZ2LXJuRzFuUXkzLUhBRGZwd0ZrMVl1V21DY19odEVnXzFJZzB1bFpGMXNkNDBaVG400gHXAUFVX3lxTE13UzBRX3lBdmpYZm5velBZdVN6MFpaZ0I3ZlZ0ak9oZklsSjAyVGFPd0dRVHVaRVdjY0lvXzFCNHlLanhXc3RrVkdTX282bV9WYW51b3dibWVFQlRvY1dWMkZWUUl5b2M3OXhnWEJGMGZpSFVvTFpoaERVZVVXc01aR211N1hLNWM2MjRmcWw5NHp4LWFDdTR3bXRIWjBKZnAwTEUzUWw2ZFJDNWJjZmRKakNtaHpRaTZZNTl6WWMxNmhENVpDQlBMeHBwR0ZOaGMtZlo4a2lN?oc=5",
+      "source": "Cal North Soccer",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-09-29",
+      "summary": "Cal North Launches Open Cup, Creating New Pathway to State Cup for Teams Across Northern California Cal North Soccer"
+    },
+    {
       "id": "feed-V2hpdGVmaXNoIEJheSBuYW1lZCB0",
       "title": "Whitefish Bay named team of the week in new area boys soccer rankings",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOcy1mMjBPUE9razVFVm5kU211VE15TkRtWWFRNHMyU2pENFhNQlhiYVVQSlZGRmJtSTJJSEl5aGQtcDZ4M0hzc3VqZDdtOGo4amYzTFY1WVhVMzdxcHlSX3hVckRqTmx3aTNWTXRfeEVjYjZPV2tld19UbF83ZmdWSl9rVEtYM1BuMC04YUtZRExOYV9yUV9uQ2x3eVc0MGE3VDNTcC1VckJiU0tTNDg3T19wM0cyUnh0T3EyUlo3NGlFaGNQd3pYU2tRczZpQQ?oc=5",
@@ -30,16 +40,6 @@
       "category": "local",
       "date": "2026-09-29",
       "summary": "Whitefish Bay named team of the week in new area boys soccer rankings Milwaukee Journal Sentinel"
-    },
-    {
-      "id": "feed-Q2FsIE5vcnRoIExhdW5jaGVzIE9w",
-      "title": "Cal North Launches Open Cup, Creating New Pathway to State Cup for Teams Across Northern California",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNd1MwUV95QXZqWGZub3pQWXVTejBaWmdCN2ZWdGpPaGZJbEowMlRhT3dHUVR1WkVXY2NJb18xQjR5S2p4V3N0a1ZHU19vNm1fVmFudW93Ym1lRUJUb2NXVjJGVlFJeW9jNzl4Z1hCRjBmaUhVb0xaaGhEVWVVV3NNWkdtdTdYSzVjNjI0ZnFsOTR6eC1hQ3U0d210SFowSmZwMExFM1FsNmRSQzViY2ZkSmpDbWh6UWk2WTU5elljMTZoRDVaQ0JQTHhwcEdGTmhjLWZaOGtpTdIB1wFBVV95cUxNd1MwUV95QXZqWGZub3pQWXVTejBaWmdCN2ZWdGpPaGZJbEowMlRhT3dHUVR1WkVXY2NJb18xQjR5S2p4V3N0a1ZHU19vNm1fVmFudW93Ym1lRUJUb2NXVjJGVlFJeW9jNzl4Z1hCRjBmaUhVb0xaaGhEVWVVV3NNWkdtdTdYSzVjNjI0ZnFsOTR6eC1hQ3U0d210SFowSmZwMExFM1FsNmRSQzViY2ZkSmpDbWh6UWk2WTU5elljMTZoRDVaQ0JQTHhwcEdGTmhjLWZaOGtpTQ?oc=5",
-      "source": "Cal North Soccer",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-09-29",
-      "summary": "Cal North Launches Open Cup, Creating New Pathway to State Cup for Teams Across Northern California Cal North Soccer"
     },
     {
       "id": "feed-UGxheWVycyB0byBXYXRjaDogRUNO",
@@ -122,14 +122,14 @@
       "summary": "Qualifying teams announced for expanded 2026-27 ECNL Boys Super Cup SoccerWire"
     },
     {
-      "id": "feed-Q2FsIE5vcnRoIE9EUCBvZmZpY2lh",
-      "title": "Cal North ODP officially sanctioned by U.S. Soccer for 2026-2027 year",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSVh5X2ktY2poNzNRc29qNlR4TXdNeF9NU2hkbEFMM0VqcUIxVHFjcDlfQlJHZDc4ZzJoNjJ0U20yeWR2UWZFM1RuQV85bzNDRzhNQnNtTzdaTVd2c1BJMTVpdWdEelFYYTdJMENBdlFGRmE2Z2FtWGJ3VGFidWJheTlaczZ6MDZJNFV2R0JiUFNaLUptakZndnhkN05WaDJV0gGwAUFVX3lxTFA0X1JWV1FvOXg4TWsyMkpmQ2VIeENRMHpoVWJqZ0RaQUgxS1FNUkY3NThEV2ZhM0tabk81WURXS3lENzh4OGVHdXlTYS1ZT1JuSWhmQ0ZnZkNNZW9TT0VtTzQxWF8wNWNEenczVE1vbEItSHJ3S1ZwM3lxRlgybzdmcDhrOUVORTdEZlFqcVpOYXlXLWpuQjZLNnp6TWk4NXNsaFdhOUtBamJOZTBLaE5m?oc=5",
-      "source": "calnorth.org",
+      "id": "feed-Q2FsIE5vcnRoIGFuZCBNZW1iZXIg",
+      "title": "Cal North and Member Organizations Pursue Nearly $2 Million in Innovate to Grow Funding",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxONm5ubm5nSnFZWHVrZjhjMWdWRzYtMTBpQWVJT2RWbWliVVhvdlNhZ1plYVJ4LUR0MXp0b0p1US1Ddk5acTR1THdwRS05QnYtTVRDLVFWS2dWWFpyNlRjWmhDWHlnSjJUeXg2cUE1LXZTYjRkbzVWTWhFcGdLM21VZlk4SnA3Nkc1UHZ2UU5MMXZCSjkwbHdNY3JSZWQ4S2ZmcFQ1N250NTFyeDVGTldZNFVydy1kR3fSAccBQVVfeXFMT3dqWlhfRC1rV2s3UUt5S0RYY0ZsNWlvNmR5NHl1TWxPRjBoVm5Rbjh5LVA2X3Q0cEtUc2J5RkJNUVJJVTlJTnFzSzJXb0FhUEVSZ0k1Qmt0RGk5RFlYOGVPXzhQZV9qZXJLMnBzdXNjMjc2LVFGR0VQdTVQdTh5dV9QVXNoeDhERlh4dW5zWVpUNG9ubUJtblJ3cllROW95SmNqYW93TG1VaWl2azh4WmNQT2R2Z2JjUUs2bFNIenpreVh2akRfbw?oc=5",
+      "source": "Cal North Soccer",
       "sourceUrl": "https://news.google.com",
       "category": "local",
       "date": "2026-09-16",
-      "summary": "Cal North ODP officially sanctioned by U.S. Soccer for 2026-2027 year calnorth.org"
+      "summary": "Cal North and Member Organizations Pursue Nearly $2 Million in Innovate to Grow Funding Cal North Soccer"
     },
     {
       "id": "feed-QWxsLUVDTkwgUmVnaW9uYWwgTGVh",
@@ -142,14 +142,14 @@
       "summary": "All-ECNL Regional League Girls Teams: NorCal (2025-26) SoccerWire"
     },
     {
-      "id": "feed-Q2FsIE5vcnRoIGFuZCBNZW1iZXIg",
-      "title": "Cal North and Member Organizations Pursue Nearly $2 Million in Innovate to Grow Funding",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxONm5ubm5nSnFZWHVrZjhjMWdWRzYtMTBpQWVJT2RWbWliVVhvdlNhZ1plYVJ4LUR0MXp0b0p1US1Ddk5acTR1THdwRS05QnYtTVRDLVFWS2dWWFpyNlRjWmhDWHlnSjJUeXg2cUE1LXZTYjRkbzVWTWhFcGdLM21VZlk4SnA3Nkc1UHZ2UU5MMXZCSjkwbHdNY3JSZWQ4S2ZmcFQ1N250NTFyeDVGTldZNFVydy1kR3fSAccBQVVfeXFMT3dqWlhfRC1rV2s3UUt5S0RYY0ZsNWlvNmR5NHl1TWxPRjBoVm5Rbjh5LVA2X3Q0cEtUc2J5RkJNUVJJVTlJTnFzSzJXb0FhUEVSZ0k1Qmt0RGk5RFlYOGVPXzhQZV9qZXJLMnBzdXNjMjc2LVFGR0VQdTVQdTh5dV9QVXNoeDhERlh4dW5zWVpUNG9ubUJtblJ3cllROW95SmNqYW93TG1VaWl2azh4WmNQT2R2Z2JjUUs2bFNIenpreVh2akRfbw?oc=5",
-      "source": "Cal North Soccer",
+      "id": "feed-Q2FsIE5vcnRoIE9EUCBvZmZpY2lh",
+      "title": "Cal North ODP officially sanctioned by U.S. Soccer for 2026-2027 year",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSVh5X2ktY2poNzNRc29qNlR4TXdNeF9NU2hkbEFMM0VqcUIxVHFjcDlfQlJHZDc4ZzJoNjJ0U20yeWR2UWZFM1RuQV85bzNDRzhNQnNtTzdaTVd2c1BJMTVpdWdEelFYYTdJMENBdlFGRmE2Z2FtWGJ3VGFidWJheTlaczZ6MDZJNFV2R0JiUFNaLUptakZndnhkN05WaDJV0gGwAUFVX3lxTFA0X1JWV1FvOXg4TWsyMkpmQ2VIeENRMHpoVWJqZ0RaQUgxS1FNUkY3NThEV2ZhM0tabk81WURXS3lENzh4OGVHdXlTYS1ZT1JuSWhmQ0ZnZkNNZW9TT0VtTzQxWF8wNWNEenczVE1vbEItSHJ3S1ZwM3lxRlgybzdmcDhrOUVORTdEZlFqcVpOYXlXLWpuQjZLNnp6TWk4NXNsaFdhOUtBamJOZTBLaE5m?oc=5",
+      "source": "calnorth.org",
       "sourceUrl": "https://news.google.com",
       "category": "local",
       "date": "2026-09-16",
-      "summary": "Cal North and Member Organizations Pursue Nearly $2 Million in Innovate to Grow Funding Cal North Soccer"
+      "summary": "Cal North ODP officially sanctioned by U.S. Soccer for 2026-2027 year calnorth.org"
     },
     {
       "id": "feed-Q29tbWl0bWVudHM6IEhlYWRpbmcg",
