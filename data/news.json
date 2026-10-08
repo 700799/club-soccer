@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-10-07T19:26:07.636Z",
+  "lastUpdated": "2026-10-08T19:21:09.319Z",
   "items": [
+    {
+      "id": "feed-RUNOTCBBTk5PVU5DRVMgVEVBTVMg",
+      "title": "ECNL ANNOUNCES TEAMS FOR SECOND ANNUAL ECNL CHALLENGE CUP, POWERED BY THE COACHES VOICE",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPTnRGTWhVOUxfeWlSalpzZXF3ZVR6NnpNYVhCNm0tTnVwUWxmcXRZMEZIVDAxSDZfaFY4QmlhN0ZNSjhTVlBfLV94TGk4UnA3elZOR3ZBUGJWemxJTWdweVBCMkVib1lYcGJweU1lWDJXV1NNbndodjBIWlN1TFpKX2NLNjEtMExFbW5feWhYWkJrRDRfN01iM3FSam5DaGN6cEdIVFg3S0VKS0oyZTU1Ml9aVVVSVWwtUzdzTnkzeXBJWkQ4cG8wRElWb2lrblhpQUE?oc=5",
+      "source": "ECNL",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-10-08",
+      "summary": "ECNL ANNOUNCES TEAMS FOR SECOND ANNUAL ECNL CHALLENGE CUP, POWERED BY THE COACHES VOICE ECNL"
+    },
+    {
+      "id": "feed-V2h5IHRoaXMgV2F5emF0YSBzb2Nj",
+      "title": "Why this Wayzata soccer standout chose North Carolina on her path to the pros",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUnItdG1pZ2JkelR4TktrVUdaSHFFNng4dHV1dFYyTmpHY0YxMUtaUW1pZGk4M0lERjQ0VXg2Qk9zYkZmakh1VmZ6b1FnWldaWWV5MW5EcE1zLXpOdWU2cXItTzJwWlhmcVpydTBVaHEycEhnR0tmWW1YWnhIQlUzTWNXMjNWWGlfTFB3VUJveEVDZ3VNb1BtS3JQbm5DVDVPcXFHbGE0cXRtdHNpd3V0NEJSMVlXYUlE?oc=5",
+      "source": "Star Tribune",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-10-07",
+      "summary": "Why this Wayzata soccer standout chose North Carolina on her path to the pros Star Tribune"
+    },
     {
       "id": "feed-MjAyNyBNTFMgTkVYVCBDdXAgY29t",
       "title": "2027 MLS NEXT Cup coming to Greater Cincinnati next year",
@@ -40,26 +60,6 @@
       "category": "national",
       "date": "2026-10-05",
       "summary": "Cincinnati to host major youth soccer championship event; $30M economic impact expected WKRC"
-    },
-    {
-      "id": "feed-TUxTIE5FWFQgQ3VwIHNvY2NlciB0",
-      "title": "MLS NEXT Cup soccer tourney comes to Greater Cincinnati next year",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRjJjOUp1bEZMaTlKMjBhYlFHR2hWUUVobDJtbWsxSWZydVdXVkVaVlE0d1lQN0tpSmY0Z3VPNmJ1YkRmRWNkUndNVUQ3LXlFZzV4SDh4LU1MZ2NrQ1lUOFo3bHJLWi04YUNEc214M2tyVEgyRjRrTkp3Zl9fZnQwWGNseWkyaWttTm10ajA4WHZfQnVjbkRhWEJwcUUyUzhfUlNZM0FHWkg4YjJ5R2dv?oc=5",
-      "source": "Cincinnati Enquirer",
-      "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-10-05",
-      "summary": "MLS NEXT Cup soccer tourney comes to Greater Cincinnati next year Cincinnati Enquirer"
-    },
-    {
-      "id": "feed-Q2luY2lubmF0aSBsYW5kcyB5b3V0",
-      "title": "Cincinnati lands youth soccer tournament with $30M economic impact",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUkl3eG05SGFxQUJqMkx1blN4RTV5Z1ZCQWhFaG1jaGJGWVpGSmNOekc4bU1EM1V1SlljaUZxeU9zX21TNFRPM0lBd1h4MUFiTlNBcmROb3Zpa3lrbDRfWG40U1ZpdkJuV0hOTVhVOHlrTkNWR2ZGZEtmZXltYm56M2g2ejFrV2NnRG82enEwZEhWVHBOS1YtQWFXOHNUa09HQWc?oc=5",
-      "source": "The Business Journals",
-      "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-10-05",
-      "summary": "Cincinnati lands youth soccer tournament with $30M economic impact The Business Journals"
     },
     {
       "id": "feed-Q0FMIEdpcmxzIFZhcnNpdHkgU29j",
@@ -215,11 +215,11 @@
       "id": "feed-V29tZW7igJlzIFNvY2NlciBTaHV0",
       "title": "Women’s Soccer Shuts Out Cal To Open ACC Play, 3-0",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPU1Q5ZEpzbFhFZzZnemdWWVVlUThBRUxkMWZKVHpxUzNKNFpwQlBxLTFLZFhmbkQ1YVR5cHJKZGZmcUFkd2QzTVVMY3llMUN5N3hwQkFzQmxQOENONjA4U2NvdTdSc3FoYUx3bWRTeG83OWVOckNxYko4LU1keXRwR2VvdmlBYVdtVHkwR2QxQ3NUU1RtWDExVW9tcUhMdw?oc=5",
-      "source": "goheels.com",
+      "source": "University of North Carolina Athletics",
       "sourceUrl": "https://news.google.com",
       "category": "local",
       "date": "2026-09-10",
-      "summary": "Women’s Soccer Shuts Out Cal To Open ACC Play, 3-0 goheels.com"
+      "summary": "Women’s Soccer Shuts Out Cal To Open ACC Play, 3-0 University of North Carolina Athletics"
     },
     {
       "id": "feed-VEFIUyB2cyBPYWtsYW5kIENhdGgu",
