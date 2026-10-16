@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-15T17:50:02.172Z",
+  "lastUpdated": "2026-10-16T17:35:02.992Z",
   "items": [
     {
       "id": "feed-UGxheWVycyBUaGF0IEltcHJlc3Nl",
@@ -62,6 +62,16 @@
       "summary": "Glens Academy soccer club exec chosen for U.S. Navy Blue Angels flight CBS News"
     },
     {
+      "id": "feed-UGxheWVycyB0byBXYXRjaDogRUNO",
+      "title": "Players to Watch: ECNL Girls San Diego Event (October 2026)",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQzFSczY1dmRDZXdRYkNwNE9TdTV0ZFJNM214SUhOWWJZRWxiSlY2TTVPaFVMZFozMWFGN2VXTEY5NDQtc081ZF8zSVVxTmRJRnl2UzJaUlJ4bGxfdldtQjJ1TkFjRW1JaFU0Q3dxdTEwYUprNFRkbG56bjVnbU52RHo4cjl3SkZxWDE3RUlCa3pwbUU?oc=5",
+      "source": "SoccerWire",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-10-09",
+      "summary": "Players to Watch: ECNL Girls San Diego Event (October 2026) SoccerWire"
+    },
+    {
       "id": "feed-UGFydGljaXBhdGluZyB0ZWFtcyBh",
       "title": "Participating teams announced for 2027 ECNL Challenge Cup in England",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUVNySl8yWFV4OEJXa2JlZk9xejBCX050Z19iVjFUa2R6VGZDeVpnVWFfQTB0MVdObjdTdDBHN0owbTRhTGVqMGxEczMwQkFmMGpQTVc2V0RPeFFNVmNSR25DenozVFhvMEhIa0MzMEZES1JHS1pKWUJfNmNpQjRjNXIwQlZzTTV3eVR4NnRPeTdsSGg4Z3I2WW9nUi04UmY2QXI0?oc=5",
@@ -80,16 +90,6 @@
       "category": "national",
       "date": "2026-10-08",
       "summary": "ECNL ANNOUNCES TEAMS FOR SECOND ANNUAL ECNL CHALLENGE CUP, POWERED BY THE COACHES VOICE ECNL"
-    },
-    {
-      "id": "feed-V2h5IHRoaXMgV2F5emF0YSBzb2Nj",
-      "title": "Why this Wayzata soccer standout chose North Carolina on her path to the pros",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUnItdG1pZ2JkelR4TktrVUdaSHFFNng4dHV1dFYyTmpHY0YxMUtaUW1pZGk4M0lERjQ0VXg2Qk9zYkZmakh1VmZ6b1FnWldaWWV5MW5EcE1zLXpOdWU2cXItTzJwWlhmcVpydTBVaHEycEhnR0tmWW1YWnhIQlUzTWNXMjNWWGlfTFB3VUJveEVDZ3VNb1BtS3JQbm5DVDVPcXFHbGE0cXRtdHNpd3V0NEJSMVlXYUlE?oc=5",
-      "source": "Star Tribune",
-      "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-10-07",
-      "summary": "Why this Wayzata soccer standout chose North Carolina on her path to the pros Star Tribune"
     },
     {
       "id": "feed-SW5kZXJrdW0gSGlnaCBTY2hvb2wg",
@@ -182,16 +182,6 @@
       "summary": "Bishop O'Dowd High School (Oakland, CA) Girls Soccer MaxPreps"
     },
     {
-      "id": "feed-QWxsLUVDTkwgUmVnaW9uYWwgTGVh",
-      "title": "All-ECNL Regional League Girls Teams: NorCal (2025-26)",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSlg2RGROa3BCYmxGX1ROS293RFlDeXBKVnhsVkEtSENzWGt0NjFReDhNMjJrT2hrSkUzR3ltT1FyWld6TkdXQmZrU2ZyM2h5M0JBX0lHOFU1QnpZZDBhV3Z4ajFONlpUU0hPSDVhY2lPRVc1dGthQlh6dzlRYVkwTlFvWWNQZS03VHI0OA?oc=5",
-      "source": "SoccerWire",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-09-16",
-      "summary": "All-ECNL Regional League Girls Teams: NorCal (2025-26) SoccerWire"
-    },
-    {
       "id": "feed-Q2FsIE5vcnRoIGFuZCBNZW1iZXIg",
       "title": "Cal North and Member Organizations Pursue Nearly $2 Million in Innovate to Grow Funding",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxONm5ubm5nSnFZWHVrZjhjMWdWRzYtMTBpQWVJT2RWbWliVVhvdlNhZ1plYVJ4LUR0MXp0b0p1US1Ddk5acTR1THdwRS05QnYtTVRDLVFWS2dWWFpyNlRjWmhDWHlnSjJUeXg2cUE1LXZTYjRkbzVWTWhFcGdLM21VZlk4SnA3Nkc1UHZ2UU5MMXZCSjkwbHdNY3JSZWQ4S2ZmcFQ1N250NTFyeDVGTldZNFVydy1kR3fSAccBQVVfeXFMT3dqWlhfRC1rV2s3UUt5S0RYY0ZsNWlvNmR5NHl1TWxPRjBoVm5Rbjh5LVA2X3Q0cEtUc2J5RkJNUVJJVTlJTnFzSzJXb0FhUEVSZ0k1Qmt0RGk5RFlYOGVPXzhQZV9qZXJLMnBzdXNjMjc2LVFGR0VQdTVQdTh5dV9QVXNoeDhERlh4dW5zWVpUNG9ubUJtblJ3cllROW95SmNqYW93TG1VaWl2azh4WmNQT2R2Z2JjUUs2bFNIenpreVh2akRfbw?oc=5",
@@ -200,6 +190,16 @@
       "category": "local",
       "date": "2026-09-16",
       "summary": "Cal North and Member Organizations Pursue Nearly $2 Million in Innovate to Grow Funding Cal North Soccer"
+    },
+    {
+      "id": "feed-QWxsLUVDTkwgUmVnaW9uYWwgTGVh",
+      "title": "All-ECNL Regional League Girls Teams: NorCal (2025-26)",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSlg2RGROa3BCYmxGX1ROS293RFlDeXBKVnhsVkEtSENzWGt0NjFReDhNMjJrT2hrSkUzR3ltT1FyWld6TkdXQmZrU2ZyM2h5M0JBX0lHOFU1QnpZZDBhV3Z4ajFONlpUU0hPSDVhY2lPRVc1dGthQlh6dzlRYVkwTlFvWWNQZS03VHI0OA?oc=5",
+      "source": "SoccerWire",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-09-16",
+      "summary": "All-ECNL Regional League Girls Teams: NorCal (2025-26) SoccerWire"
     },
     {
       "id": "feed-Q2FsIE5vcnRoIE9EUCBvZmZpY2lh",
