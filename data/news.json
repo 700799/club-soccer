@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-18T16:41:05.439Z",
+  "lastUpdated": "2026-10-19T19:24:20.017Z",
   "items": [
     {
       "id": "feed-UGxheWVycyBUaGF0IEltcHJlc3Nl",
@@ -10,6 +10,16 @@
       "category": "national",
       "date": "2026-10-14",
       "summary": "Players That Impressed: ECNL Girls North Carolina National Event (Fall 2026) SoccerWire"
+    },
+    {
+      "id": "feed-R3JlYXRlciBDaW5jaW5uYXRpIGlz",
+      "title": "Greater Cincinnati is Set to Host 2027 MLS NEXT Cup",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNLTlTbm1hRkIwWXlObHJ2VEdMRUEtRmhFaTZIQ1VXeVV2UHI5Nml6TmxlY1ZLdTVqTG9qbWxLVGtkd3F5V2Rxcy1raGU0NGEyeloyMXVwVTltY2VqY0tYR2NYaDB6bFFrcHJEdHl5dTRTaXprU0toeUIyUUFwR0VCNW8wVlEtZjhjaE5ybU5sNUJ1U3NY0gGaAUFVX3lxTFB0SzVpVWxKa3dYdk8tZjJxTVZYb0hseUNoZUVYeHVBN2tCTG54NWFLU2pZTVNSY09yRUlMRTJiZHhfNWxIcHlJVVVOVmV0REVZdnIzR1pMWTBPSlg3dFZOX25QX3VKNW5lYUVTdzBhaGdwdUZNZVphdFBPVkRNdEcwdGhhczF6SVFaSnRXZDB3ZFNGNk9vR1JYQVE?oc=5",
+      "source": "Xavier Newswire",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-10-13",
+      "summary": "Greater Cincinnati is Set to Host 2027 MLS NEXT Cup Xavier Newswire"
     },
     {
       "id": "feed-UGxheWVycyBUaGF0IEltcHJlc3Nl",
@@ -52,16 +62,6 @@
       "summary": "Boys soccer: Boniface’s ‘best game’ yet may be Naperville North’s best too Daily Herald"
     },
     {
-      "id": "feed-R2xlbnMgQWNhZGVteSBzb2NjZXIg",
-      "title": "Glens Academy soccer club exec chosen for U.S. Navy Blue Angels flight",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZXFGSm5Nb1RHeFp1dHZfZ3dublk0anpZN1prdk5QYUlibXpPbXVsTF9RdFNQTDRQYklWN2NYcTVyM3ZPREVST1puSGVlMDFZbG1aYVIweVN0YU1Obm9HMGZUN0VmWGtyMFFVd19DOW5RMUtjZmlfRTVabUY0SFBKNDk4QUFEMTRrMG1yQmJUOENONHJYbmNsSi1tX2xTR2N4?oc=5",
-      "source": "CBS News",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-10-09",
-      "summary": "Glens Academy soccer club exec chosen for U.S. Navy Blue Angels flight CBS News"
-    },
-    {
       "id": "feed-UGxheWVycyB0byBXYXRjaDogRUNO",
       "title": "Players to Watch: ECNL Girls San Diego Event (October 2026)",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQzFSczY1dmRDZXdRYkNwNE9TdTV0ZFJNM214SUhOWWJZRWxiSlY2TTVPaFVMZFozMWFGN2VXTEY5NDQtc081ZF8zSVVxTmRJRnl2UzJaUlJ4bGxfdldtQjJ1TkFjRW1JaFU0Q3dxdTEwYUprNFRkbG56bjVnbU52RHo4cjl3SkZxWDE3RUlCa3pwbUU?oc=5",
@@ -82,14 +82,14 @@
       "summary": "Participating teams announced for 2027 ECNL Challenge Cup in England SoccerWire"
     },
     {
-      "id": "feed-RUNOTCBBTk5PVU5DRVMgVEVBTVMg",
-      "title": "ECNL ANNOUNCES TEAMS FOR SECOND ANNUAL ECNL CHALLENGE CUP, POWERED BY THE COACHES VOICE",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPTnRGTWhVOUxfeWlSalpzZXF3ZVR6NnpNYVhCNm0tTnVwUWxmcXRZMEZIVDAxSDZfaFY4QmlhN0ZNSjhTVlBfLV94TGk4UnA3elZOR3ZBUGJWemxJTWdweVBCMkVib1lYcGJweU1lWDJXV1NNbndodjBIWlN1TFpKX2NLNjEtMExFbW5feWhYWkJrRDRfN01iM3FSam5DaGN6cEdIVFg3S0VKS0oyZTU1Ml9aVVVSVWwtUzdzTnkzeXBJWkQ4cG8wRElWb2lrblhpQUE?oc=5",
-      "source": "ECNL",
+      "id": "feed-R2xlbnMgQWNhZGVteSBzb2NjZXIg",
+      "title": "Glens Academy soccer club exec chosen for U.S. Navy Blue Angels flight",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZXFGSm5Nb1RHeFp1dHZfZ3dublk0anpZN1prdk5QYUlibXpPbXVsTF9RdFNQTDRQYklWN2NYcTVyM3ZPREVST1puSGVlMDFZbG1aYVIweVN0YU1Obm9HMGZUN0VmWGtyMFFVd19DOW5RMUtjZmlfRTVabUY0SFBKNDk4QUFEMTRrMG1yQmJUOENONHJYbmNsSi1tX2xTR2N4?oc=5",
+      "source": "CBS News",
       "sourceUrl": "https://news.google.com",
-      "category": "national",
+      "category": "local",
       "date": "2026-10-08",
-      "summary": "ECNL ANNOUNCES TEAMS FOR SECOND ANNUAL ECNL CHALLENGE CUP, POWERED BY THE COACHES VOICE ECNL"
+      "summary": "Glens Academy soccer club exec chosen for U.S. Navy Blue Angels flight CBS News"
     },
     {
       "id": "feed-SW5kZXJrdW0gSGlnaCBTY2hvb2wg",
@@ -110,6 +110,16 @@
       "category": "local",
       "date": "2026-10-02",
       "summary": "CAL Girls Varsity Soccer @ North Oldham MaxPreps"
+    },
+    {
+      "id": "feed-Qm95bmUgQ2l0eSB2cyBDaGVib3ln",
+      "title": "Boyne City vs Cheboygan - Boys Varsity Soccer 10/01/2026 | Watch Live & On Demand",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQTTdhd2MtRUt6dFNyb0NiVFhHc3dkR1ozWGxGWnNQMFBYZWZMZmJISURLTVVmY2hyajZuRnM0LTZGWXFXMDlHYmRIQ0xVVTNEMlBCNTdUanNmeU41a3lSZWdzdkdaSmVEdWVqUV9GQS1sRkIyZmY1WmZ4Q2pvSjBjTGYzSW5jSGhPRXl4djBB?oc=5",
+      "source": "NFHS Network",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-10-01",
+      "summary": "Boyne City vs Cheboygan - Boys Varsity Soccer 10/01/2026 | Watch Live & On Demand NFHS Network"
     },
     {
       "id": "feed-SGlnaCBzY2hvb2wgc29jY2VyIHBs",
@@ -230,16 +240,6 @@
       "category": "local",
       "date": "2026-09-12",
       "summary": "Kingsley vs Suttons Bay - Boys Varsity Soccer 09/12/2026 | Watch Live & On Demand NFHS Network"
-    },
-    {
-      "id": "feed-TWVzc2Fsb25za2VlIHZzIFdhdGVy",
-      "title": "Messalonskee vs Waterville - Girls Junior Varsity Soccer 09/11/2026 | Watch Live & On Demand",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNXZqMlhSd0hGUVZRS21ESnIwZGZ1U2IxOFlQU1VyN2hHc0xOMmRKelJLUFJ0WGgxNVlRUEJ2ZGxzektMSTE4MzV1M2hyWnU5a1RjZzRBMVMyOFBxYjd1ZHZaRkZ1cTNLVl9vdGd5Nmx6U2RLZzE2RnB5Tk9PWkNmb2ZMM2lXTkpwTVBUTw?oc=5",
-      "source": "NFHS Network",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-09-11",
-      "summary": "Messalonskee vs Waterville - Girls Junior Varsity Soccer 09/11/2026 | Watch Live & On Demand NFHS Network"
     }
   ]
 }
