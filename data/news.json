@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "2026-10-19T19:24:20.017Z",
+  "lastUpdated": "2026-10-20T18:03:41.614Z",
   "items": [
+    {
+      "id": "feed-Q2FsVkVDSFM",
+      "title": "CalVECHS",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFAtU0I1aGtyUkEySXpmWXJuN053emhmLTVwVjN6ZVJnZ2VZT2lkNldralF2YU5Cb1gxUlBJYzFQc0RPME12eGxUOQ?oc=5",
+      "source": "Cal North Soccer",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-10-20",
+      "summary": "CalVECHS Cal North Soccer"
+    },
+    {
+      "id": "feed-RUNOTCBBTk5PVU5DRVMgUE9TVFNF",
+      "title": "ECNL ANNOUNCES POSTSEASON STRUCTURE FOR 2026-27 SEASON, INCLUDING INAUGURAL ECNL CONFERENCE LEAGUE PLAYOFFS",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB2ZndDWnEzUXMzOFp4TDk3c1hEdWZNYWF5eFFJamtzQ082WUpsX0UzZ3NhTUpGT0FYT3ZFWVo5TTY5RjA2dk1odmNEWlhwUmhvZ0NEemg5MlhiemQ1dU45TGFna3hKVU1aZ19MRzBWWjViU1RLQksyNzhLWFByR1U?oc=5",
+      "source": "ECNL",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-10-19",
+      "summary": "ECNL ANNOUNCES POSTSEASON STRUCTURE FOR 2026-27 SEASON, INCLUDING INAUGURAL ECNL CONFERENCE LEAGUE PLAYOFFS ECNL"
+    },
     {
       "id": "feed-UGxheWVycyBUaGF0IEltcHJlc3Nl",
       "title": "Players That Impressed: ECNL Girls North Carolina National Event (Fall 2026)",
@@ -70,16 +90,6 @@
       "category": "national",
       "date": "2026-10-09",
       "summary": "Players to Watch: ECNL Girls San Diego Event (October 2026) SoccerWire"
-    },
-    {
-      "id": "feed-UGFydGljaXBhdGluZyB0ZWFtcyBh",
-      "title": "Participating teams announced for 2027 ECNL Challenge Cup in England",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUVNySl8yWFV4OEJXa2JlZk9xejBCX050Z19iVjFUa2R6VGZDeVpnVWFfQTB0MVdObjdTdDBHN0owbTRhTGVqMGxEczMwQkFmMGpQTVc2V0RPeFFNVmNSR25DenozVFhvMEhIa0MzMEZES1JHS1pKWUJfNmNpQjRjNXIwQlZzTTV3eVR4NnRPeTdsSGg4Z3I2WW9nUi04UmY2QXI0?oc=5",
-      "source": "SoccerWire",
-      "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-10-09",
-      "summary": "Participating teams announced for 2027 ECNL Challenge Cup in England SoccerWire"
     },
     {
       "id": "feed-R2xlbnMgQWNhZGVteSBzb2NjZXIg",
@@ -230,16 +240,6 @@
       "category": "local",
       "date": "2026-09-16",
       "summary": "All-ECNL Regional League Girls Teams: NorCal (2025-26) SoccerWire"
-    },
-    {
-      "id": "feed-S2luZ3NsZXkgdnMgU3V0dG9ucyBC",
-      "title": "Kingsley vs Suttons Bay - Boys Varsity Soccer 09/12/2026 | Watch Live & On Demand",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE43cnV3RktmSmVBZkhKaUhpR3ppQks5WjFlMGRpcy1CODhBVW9DTzZ3UkxGcC1KOWVaMW1aQ0FnLWdud1pLMVVpTDdyZS1oR29QdzROQUVselUxR2lpa3dIeXhCRHVobkVX?oc=5",
-      "source": "NFHS Network",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-09-12",
-      "summary": "Kingsley vs Suttons Bay - Boys Varsity Soccer 09/12/2026 | Watch Live & On Demand NFHS Network"
     }
   ]
 }
