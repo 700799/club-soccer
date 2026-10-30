@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-29T19:05:30.964Z",
+  "lastUpdated": "2026-10-30T18:42:49.607Z",
   "items": [
     {
       "id": "feed-UGxheWVycyB0byBXYXRjaDogRUNO",
@@ -50,16 +50,6 @@
       "category": "national",
       "date": "2026-10-22",
       "summary": "ECNL announces its 2026/27 postseason schedule with three playoff pathways Inside World Football"
-    },
-    {
-      "id": "feed-VmFsbGV5IENocmlzdGlhbiBIaWdo",
-      "title": "Valley Christian High School (San Jose, CA) Girls Soccer",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOR0RmVFdtYXdKZ0pVNWZadmRaSDlUTFhhNE9LY2lXOC1yR3ZzUGFzcVpRdTVhMndPZnRpLXk2U0hKMG05NEN0OW5DVEJtQ1pzcldEOEJtSFp2OW93VVQteXZqNUhRaW5oQlo1OENSdVN6RkwyOHlFVHJYUDAydVQ1cWtuRzAzVXl2TjdZ?oc=5",
-      "source": "MaxPreps",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-10-20",
-      "summary": "Valley Christian High School (San Jose, CA) Girls Soccer MaxPreps"
     },
     {
       "id": "feed-Q2FsVkVDSFM",
@@ -240,6 +230,16 @@
       "category": "local",
       "date": "2026-09-30",
       "summary": "High school soccer players say Santa Clara Valley Athletic League’s rule is red card for college play The Mercury News"
+    },
+    {
+      "id": "feed-V2hpdGVmaXNoIEJheSBuYW1lZCB0",
+      "title": "Whitefish Bay named team of the week in new area boys soccer rankings",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOcy1mMjBPUE9razVFVm5kU211VE15TkRtWWFRNHMyU2pENFhNQlhiYVVQSlZGRmJtSTJJSEl5aGQtcDZ4M0hzc3VqZDdtOGo4amYzTFY1WVhVMzdxcHlSX3hVckRqTmx3aTNWTXRfeEVjYjZPV2tld19UbF83ZmdWSl9rVEtYM1BuMC04YUtZRExOYV9yUV9uQ2x3eVc0MGE3VDNTcC1VckJiU0tTNDg3T19wM0cyUnh0T3EyUlo3NGlFaGNQd3pYU2tRczZpQQ?oc=5",
+      "source": "Milwaukee Journal Sentinel",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-09-29",
+      "summary": "Whitefish Bay named team of the week in new area boys soccer rankings Milwaukee Journal Sentinel"
     }
   ]
 }
