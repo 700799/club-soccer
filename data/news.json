@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-09T23:04:58.226Z",
+  "lastUpdated": "2026-11-10T20:31:43.563Z",
   "items": [
     {
       "id": "feed-Tm8uIDE3IE1lbidzIFNvY2NlciBI",
@@ -32,16 +32,6 @@
       "summary": "ECNL National Finals Head to U.S. Soccer’s Atlanta Training Center in July 2027 Youth Sports Business Report"
     },
     {
-      "id": "feed-TWNDbGF0Y2h5IEhpZ2ggU2Nob29s",
-      "title": "McClatchy High School (Sacramento, CA) Girls Soccer",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQallPQmFCX2RaVFpaTlNjVFV2T0JnWTg0eVhTU3NuQ0M3c3F4V1NSY2tVTnd3NGRuLUgwMDAyR0FjU2RjUEtYX0dFUXBFdURHNXlmekF5Vzd0Y1diUTJYcEJENThjRUtoeXhWY0ZIaEN3SmViZVNjSV9fdHBYa0labQ?oc=5",
-      "source": "MaxPreps",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-11-05",
-      "summary": "McClatchy High School (Sacramento, CA) Girls Soccer MaxPreps"
-    },
-    {
       "id": "feed-Tm8uIDE3IE1lbuKAmXMgU29jY2Vy",
       "title": "No. 17 Men’s Soccer Advances In Penalties Over Cal Wednesday Night - University of North Carolina Athletics",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQlNNbkhTLWI3SGdEMlFXMWtMX3hPTzU2dW0zamNHQlAtX0VMX0I2amRqWEZfX2U1SnhEOFhrQW9QQmNZYW1HODNaOW1Fc1FsRXRvRTRQNGFpNUpTNzdxR1hVTzZZSi0wU1hhTEw5S1pzTHR0SktZRXVpYkdLLUtBZ1NNdzVsWE5sekxXOGh6NElRZW9iSFg1cFk4dkpxM2VzWkdZbEE2bGhJN254S3VRUw?oc=5",
@@ -62,9 +52,19 @@
       "summary": "Cal's Heartbreaking Loss May Cost It a Berth in Men's NCAA Soccer Tournament Sports Illustrated"
     },
     {
+      "id": "feed-TWNDbGF0Y2h5IEhpZ2ggU2Nob29s",
+      "title": "McClatchy High School (Sacramento, CA) Girls Soccer",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQallPQmFCX2RaVFpaTlNjVFV2T0JnWTg0eVhTU3NuQ0M3c3F4V1NSY2tVTnd3NGRuLUgwMDAyR0FjU2RjUEtYX0dFUXBFdURHNXlmekF5Vzd0Y1diUTJYcEJENThjRUtoeXhWY0ZIaEN3SmViZVNjSV9fdHBYa0labQ?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-11-05",
+      "summary": "McClatchy High School (Sacramento, CA) Girls Soccer MaxPreps"
+    },
+    {
       "id": "feed-RUNOTCBBTk5PVU5DRVMgTkFUSU9O",
       "title": "ECNL ANNOUNCES NATIONAL FINALS AT THE ARTHUR M. BLANK U.S. SOCCER NATIONAL TRAINING CENTER",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVWl4d25sQ21OSkZBLTVSd21IclRPMkNKN281MnRsbTRsUTZObXFhcEl1dFNPVkNvSUM4T1UtYkJQZlFjOTRlYTliYXc2TDROQkNlMy1qNGJ5UFNpMU4ybDRON2tGT2tNX1E2QV8tSnBBMmVsQ2I5OTdqazhHYjV2eVBTQQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1QellRNE5PWjFScHB6NlhtS3VKUnBxUUhsMWhJQUJHaW9wVF9UaWI2eGZIWE5mTEd6UjhMd1ktSFVZN2pWTXJBWW82NjRHR3NCUW9aQmtudkhQbHg3Sm51cnhMc1g0UWFi?oc=5",
       "source": "ECNL",
       "sourceUrl": "https://news.google.com",
       "category": "national",
@@ -90,6 +90,16 @@
       "category": "local",
       "date": "2026-11-04",
       "summary": "Hill High School (San Jose, CA) Girls Soccer MaxPreps"
+    },
+    {
+      "id": "feed-VW5pdmVyc2l0eSBIaWdoIFNjaG9v",
+      "title": "University High School (San Francisco, CA) Girls Soccer",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQOGtjRVBLNUdyci13V1V1eFVfQjRrTjlCVEhsMTk1SEhhcEpLdHFQUU5tUFBmaFJqS3E3SVVvRmh0cjYwQnl4MldHUHdkN1UweU9rSzlpd3BRYlVQVF9KaUs3a1JncVZBbDZ2c05HQ1N4bkg0Zm9LaUdoQ245QW9QbEJNVTlQaE1WMTlWeg?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-11-04",
+      "summary": "University High School (San Francisco, CA) Girls Soccer MaxPreps"
     },
     {
       "id": "feed-QXJlYSBoaWdoIHNjaG9vbCBmb290",
@@ -122,16 +132,6 @@
       "summary": "Cal’s Guimaraes, Pickett Notch ACC Men’s Soccer Player of Week Honors Atlantic Coast Conference"
     },
     {
-      "id": "feed-U2NoZWR1bGUgLSBQaWVkbW9udCBI",
-      "title": "Schedule - Piedmont Hills Pirates (San Jose, CA) Girls Soccer 26-27",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSUdZei12cDhNRVFQU2VkWFEzLVIxT0dDakNjNUFYWThCZ3QtZUdENENaT25sb0F1VkFudEgxU3lkV3duR1JRbW02VTRoaVFORzRjSHlEMmlMZGJJUC1KUUJwaVFPcWhjYTVsZkVxQTNxZmc0N2FVaFBlaWFMeHJZTHRNWU5Zb3pQMC1lWEFLbGwwSXc?oc=5",
-      "source": "MaxPreps",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-11-02",
-      "summary": "Schedule - Piedmont Hills Pirates (San Jose, CA) Girls Soccer 26-27 MaxPreps"
-    },
-    {
       "id": "feed-Tm8uIDE3IE1lbidzIFNvY2NlciBX",
       "title": "No. 17 Men's Soccer Welcomes Cal Wednesday For ACC Championship First Round",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNGRKWmQ4ajMtdjlrU1hoek1QTmY0dW40SzY0UXRVZTJUSGJPcVJSenlpYnlLR1BmVXdzMk9zamhFVFJrUFpJTnltSTZNUEZLSlBEOWRKZTFjRHNtYmhJaG1kT2tMa3FCbDh3anpVMUdHTmY4UzBGZVRaVTM3eUNZajRwRzhNNmVjR2tOd2pMSXBhVEN1dWp5UnZTUG9kYlF2djVCcmlucnNwZEZn?oc=5",
@@ -140,6 +140,16 @@
       "category": "local",
       "date": "2026-11-02",
       "summary": "No. 17 Men's Soccer Welcomes Cal Wednesday For ACC Championship First Round University of North Carolina Athletics"
+    },
+    {
+      "id": "feed-U2NoZWR1bGUgLSBQaWVkbW9udCBI",
+      "title": "Schedule - Piedmont Hills Pirates (San Jose, CA) Girls Soccer 26-27",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSUdZei12cDhNRVFQU2VkWFEzLVIxT0dDakNjNUFYWThCZ3QtZUdENENaT25sb0F1VkFudEgxU3lkV3duR1JRbW02VTRoaVFORzRjSHlEMmlMZGJJUC1KUUJwaVFPcWhjYTVsZkVxQTNxZmc0N2FVaFBlaWFMeHJZTHRNWU5Zb3pQMC1lWEFLbGwwSXc?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-11-02",
+      "summary": "Schedule - Piedmont Hills Pirates (San Jose, CA) Girls Soccer 26-27 MaxPreps"
     },
     {
       "id": "feed-Tm8uIDE3IE1lbidzIFNvY2NlciBX",
@@ -220,16 +230,6 @@
       "category": "national",
       "date": "2026-10-31",
       "summary": "Players to Watch: ECNL Girls Phoenix National Event (Fall 2026) SoccerWire"
-    },
-    {
-      "id": "feed-TmV3IE1IIHNvY2NlciBwcm9ncmFt",
-      "title": "New MH soccer program debuts in Bay Area tournaments",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOR19jOElCYkRnWHJMNnZ1RDlnVy1tNXhRNXJDdk9vcVRjd0FWQWRWbmlXZUJra0gwQUg2MXlPZWRWNmljTFVkanVrVjFhWGlUY3R6TW9weEkxWEJiT2pHWUQzUlc1VUE5ZXRJRE5YZ3Jia1dMRk1oMjdCOU92aE8xUzJmeWk5dFdqX0FIcWlwOFZvVmtXNVhaSlhnU3FIX1NYT3RNakExUXpzU2FEdXZFNU53UHlsWXhkMXJOSW5sRWxBR3lET1h1SFlmQ0RZUENfajZ1TkZmcVM?oc=5",
-      "source": "ttownmedia.com",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-10-30",
-      "summary": "New MH soccer program debuts in Bay Area tournaments ttownmedia.com"
     },
     {
       "id": "feed-THVpcyBSb2JsZXMgSW50ZXJ2aWV3",
