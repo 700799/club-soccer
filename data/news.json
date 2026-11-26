@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-25T22:39:13.272Z",
+  "lastUpdated": "2026-11-26T22:29:19.093Z",
   "items": [
     {
       "id": "feed-UGxheWVycyB0byBXYXRjaDogRUNO",
@@ -8,7 +8,7 @@
       "source": "SoccerWire",
       "sourceUrl": "https://news.google.com",
       "category": "national",
-      "date": "2026-11-25",
+      "date": "2026-11-26",
       "summary": "Players to Watch: ECNL Girls Florida National Event (Sanford 2026) SoccerWire"
     },
     {
@@ -32,9 +32,19 @@
       "summary": "Cal men’s soccer falls flat at first NCAA match since 2019, ends season Daily Cal"
     },
     {
+      "id": "feed-RXZlcmdyZWVuIFZhbGxleSBIaWdo",
+      "title": "Evergreen Valley High School (San Jose, CA) Girls Soccer",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNWGNwSk5tVVZmTDh0WW9oS05ISHZmVUtNSUpBX0F4ZktoWmwyV3c4YkRzWkQ2YXNxYzluNHBEVTE3OWtGV0pva2J1SW5zVFk1YUdOZ1NrTmFDcllTN1Y2WEVCeTJZVGx1cFlkN3ZvWndERlJyR0k1b1JoSXFpZHZWUDRpZUtGRkJVQ2c?oc=5",
+      "source": "MaxPreps",
+      "sourceUrl": "https://news.google.com",
+      "category": "local",
+      "date": "2026-11-23",
+      "summary": "Evergreen Valley High School (San Jose, CA) Girls Soccer MaxPreps"
+    },
+    {
       "id": "feed-QmVzdCBXZXN0ZXJuwq4gSG90ZWxz",
       "title": "Best Western® Hotels & Resorts and United Soccer League™ Name Sacramento Republic FC’s Matt Briseno as 2026 Hometown Hero",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9Zc0JiZzZjd1hpMmM2R3YzVUl2U2dnWDU4emQ4WGh1eTRQRDBXVDJZSG9mOVU0Y3hyNHMtN2dsZlhYbVgxUHlZU2pCLUl5blFvQzhFNVEzZEllemc1dXZNZnY0ZHRmd1ZSUERMNnFWSEZ5NXZ2ckVSbjRhcw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5GY3lkZEVDaWxWUkF1enVHbFNNbVlyUXBNNzJLOWtEbDIxMGJweHY0YnVmZHp5UnlVY1o2WlY0Y3Z5cFc5cFI0ZVhnN05QMWVsX3FLX3ZRMllmTlV5SXVyNQ?oc=5",
       "source": "uslsoccer.com",
       "sourceUrl": "https://news.google.com",
       "category": "local",
@@ -92,16 +102,6 @@
       "summary": "ECNL GIRLS ANNOUNCES THREE NEW CLUBS FOR 2027-28 SEASON ECNL"
     },
     {
-      "id": "feed-Tm9ydGggQ2Fyb2xpbmEgaGlnaCBz",
-      "title": "North Carolina high school girls soccer recruiting tracker",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9nTl9mZ1BSVUJTaFZTOGlJRC1qZkhMWDZxZldMLVZUSHdTc1ViSHE0Y0lkY29MUHNwdC1maFFQRHRDbWsxZ05fNVNiRGpRWG15WkR3elF1VkhOQQ?oc=5",
-      "source": "HighSchoolOT",
-      "sourceUrl": "https://news.google.com",
-      "category": "national",
-      "date": "2026-11-19",
-      "summary": "North Carolina high school girls soccer recruiting tracker HighSchoolOT"
-    },
-    {
       "id": "feed-UGxheWVycyBUaGF0IEltcHJlc3Nl",
       "title": "Players That Impressed: ECNL Girls Phoenix National Event (Fall 2026)",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORmpwT0cxWk1QN2NuVElVRjdJNnVkMmhQNHp3dmpuRmpRY0F4OTlMOFJWNDBmeUY1RG9xaHN0ckhPS1BQVnNHWGdGUktsaHhkUVk2LUNLSW1Yd1AwM3FhUzFRdTNSdndsalZyR2FLcUwxUGZ4ckxMelcwMmlJWjV4bGdXQkMxTy1fTkxqS094SXpCZmVpNmt3QkdPMmZTdHQ0QjlkYzRtTQ?oc=5",
@@ -130,6 +130,16 @@
       "category": "local",
       "date": "2026-11-18",
       "summary": "Lick vs San Jose - Girls Varsity Soccer 11/17/2026 | Watch Live & On Demand NFHS Network"
+    },
+    {
+      "id": "feed-RUNOTCBCb3lzIEFaIFNlbGVjdGlv",
+      "title": "ECNL Boys AZ Selection Game Rosters | Club Soccer | Youth Soccer",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPU25DR2dBUll1VVZfU29LVGVyTmdqRFp3LVVsckdSWlFZdFE5ZjZpcWdwcUdTVkxWd0xlay1zRlVHOU45STBkT0JwSkF4VENrTXJ6Qk9GWkx6N2V2dlpIUEhHZFNuanFoOXpMM29MaGE4MGdmWXhxc053Qkh1ZlYxVjFhMHRlRkdGb1dmRnktSnIzczJhQmZWME9UYklKUQ?oc=5",
+      "source": "Top Drawer Soccer",
+      "sourceUrl": "https://news.google.com",
+      "category": "national",
+      "date": "2026-11-18",
+      "summary": "ECNL Boys AZ Selection Game Rosters | Club Soccer | Youth Soccer Top Drawer Soccer"
     },
     {
       "id": "feed-SGlnaCBzY2hvb2wgYm95cyBzb2Nj",
@@ -230,16 +240,6 @@
       "category": "local",
       "date": "2026-11-08",
       "summary": "AMHS vs Carlmont - Girls Junior Varsity Soccer 12/03/2026 | Watch Live & On Demand NFHS Network"
-    },
-    {
-      "id": "feed-TWlsd2F1a2VlLWFyZWEgYm95cyBz",
-      "title": "Milwaukee-area boys soccer teams earn top seeds for state tournament",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNZTJfRjltcVpVMktmTGx3ci1rYXctZlV1ODBSeWpIYkYySW41dTJzLUluRGE1SmFaeGxxeVZuSjRhMjlJaDdrWFhSLWQxYWgwdFFxNXdvZVlISV9hTTlsRGRPNmpJcmdaNVphdUV0eGh5eC1jN2FnUklNcDhPVGt5Tm5XNDJZRTN6MXFleU5aSmh1cGNkZ2ZtbFBPZEQ2bERmc2Q5S1RETmctbENXZ3VwTWtWbl9LUnYwSTdCZ3VDQU9SUTN0dDV0N0NnYm9sa2c?oc=5",
-      "source": "Milwaukee Journal Sentinel",
-      "sourceUrl": "https://news.google.com",
-      "category": "local",
-      "date": "2026-11-04",
-      "summary": "Milwaukee-area boys soccer teams earn top seeds for state tournament Milwaukee Journal Sentinel"
     }
   ]
 }
